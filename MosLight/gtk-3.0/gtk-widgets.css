@@ -1537,36 +1537,36 @@ GtkLevelBar.vertical {
     border-width: 0;
 }
 
-/* evidenziazione stile  MAC OSX */
+/*/* evidenziazione stile  MAC OSX */*/
 
-.sidebar row:selected,
-.sidebar row:selected:hover,
-.sidebar row:selected:focus,
-.sidebar .view row:selected,
-.sidebar .view row:selected:hover,
-.sidebar .view row:selected:focus {
-    border-width: 1px 0;
-    border-style: solid;
-    border-top-color: shade(@theme_bg_color, 0.85);
-    border-bottom-color: shade(@theme_bg_color, 1.12);
-    background-image: linear-gradient(to bottom,
-                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.87),
-                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.95) 10%,
-                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.99) 92%,
-                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.92)
-                                      );
+/*.sidebar row:selected,*/
+/*.sidebar row:selected:hover,*/
+/*.sidebar row:selected:focus,*/
+/*.sidebar .view row:selected,*/
+/*.sidebar .view row:selected:hover,*/
+/*.sidebar .view row:selected:focus {*/
+/*    border-width: 1px 0;*/
+/*    border-style: solid;*/
+/*    border-top-color: shade(@theme_bg_color, 0.85);*/
+/*    border-bottom-color: shade(@theme_bg_color, 1.12);*/
+/*    background-image: linear-gradient(to bottom,*/
+/*                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.87),*/
+/*                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.95) 10%,*/
+/*                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.99) 92%,*/
+/*                                      shade(mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1), 0.92)*/
+/*                                      );*/
 
-    color: mix(@theme_text_color, @theme_base_color, 0.3);
-}
+/*    color: mix(@theme_text_color, @theme_base_color, 0.3);*/
+/*}*/
 
-.sidebar row:prelight,
-.sidebar .view row:prelight {
-    border-color: mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.3);
-    background-color: mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.3);
-    background-image: none;
-}
+/*.sidebar row:prelight,*/
+/*.sidebar .view row:prelight {*/
+/*    border-color: mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.3);*/
+/*    background-color: mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.3);*/
+/*    background-image: none;*/
+/*}*/
 
-/* x toglierla basta cancellare blocco dal commento precedente fino a qui! */
+/*/* x toglierla basta cancellare blocco dal commento precedente fino a qui! */*/
 
 
 /*************
