@@ -3572,6 +3572,31 @@ GtkProgressBar.osd.progressbar {
     border-color: shade(@error_color, 0.8);
 }
 
+/******************************
+ * suggested action buttons *
+ ******************************/
+.suggested-action.button,
+.suggested-action.button:active {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    border-radius: 2px;
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.04),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.88)
+                                      );
+    color: @theme_selected_fg_color;
+}
+
+.suggested-action.button:hover,
+.suggested-action.button:hover:active  {
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.96)
+                                      );
+}
+
 /******************
  * selection mode *
  ******************/
