@@ -8,6 +8,10 @@
 @define-color tooltip_bg_color #303030;
 @define-color tooltip_fg_color #f0f0f0;
 
+/* insensitive colors */
+@define-color insensitive_bg_color shade(@bg_color, 0.88);
+@define-color insensitive_fg_color shade(@fg_color, 1.12);
+
 /* nautilus and gtkfilechooser sidebar colors */
 @define-color sidebar_bg_color #e8edf1;
 @define-color sidebar_fg_color #555555;
