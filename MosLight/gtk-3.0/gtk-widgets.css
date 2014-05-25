@@ -163,9 +163,9 @@ GtkGrid:insensitive {
 }
 
 .entry {
-    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.10),
-                inset 0 1px alpha(@dark_shadow, 0.12),
-                inset -1px 0 alpha(@dark_shadow, 0.10);
+    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.12),
+                inset 0 1px alpha(@dark_shadow, 0.09),
+                inset -1px 0 alpha(@dark_shadow, 0.12);
 }
 
 /* disable inset shadow */
@@ -559,16 +559,13 @@ GtkComboBox.combobox-entry .button:insensitive {
     padding: 4px 3px;
     border-width: 1px;
     border-style: solid;
-    border-top-color: shade(@theme_bg_color, 0.76);
-    border-right-color: shade(@theme_bg_color, 0.76);
-    border-left-color: shade(@theme_bg_color, 0.76);
-    border-bottom-color: shade(@theme_bg_color, 0.76);
+    border-top-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
+    border-bottom-color: shade(@theme_bg_color, 0.8);
     border-radius: 2px;
     background-color: @theme_base_color;
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_base_color, 0.97),
-                                      @theme_base_color
-                                      );
+    background-image: none;
 
     color: @theme_text_color;
 }
@@ -576,9 +573,9 @@ GtkComboBox.combobox-entry .button:insensitive {
 .entry:active,
 .entry:focus {
 	background-color: @theme_base_color;
-    border-top-color: shade(@theme_bg_color, 0.6);
-    border-right-color: shade(@theme_bg_color, 0.66);
-    border-left-color: shade(@theme_bg_color, 0.66);
+    border-top-color: shade(@theme_bg_color, 0.7);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
     border-bottom-color: shade(@theme_bg_color, 0.7);
 }
 
