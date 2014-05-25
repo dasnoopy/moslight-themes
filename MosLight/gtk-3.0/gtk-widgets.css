@@ -226,13 +226,13 @@ GtkAssistant .sidebar {
 }
 
 .button:active {
-    border-top-color: shade(@theme_bg_color, 0.7);
+    border-top-color: shade(@theme_bg_color, 0.8);
     border-right-color: shade(@theme_bg_color, 0.76);
     border-left-color: shade(@theme_bg_color, 0.76);
     border-bottom-color: shade(@theme_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 0.88),
-                                      shade(shade(@theme_bg_color, 1.02), 0.96)
+                                      shade(shade(@theme_bg_color, 1.02), 0.88)
                                       );
 }
 
@@ -260,25 +260,15 @@ GtkAssistant .sidebar {
 }
 
 .button:insensitive {
-    border-top-color: shade(@theme_bg_color, 0.9);
-    border-right-color: shade(@theme_bg_color, 0.86);
-    border-left-color: shade(@theme_bg_color, 0.86);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_bg_color, 1.12),
-                                      shade(@theme_bg_color, 0.96)
-                                      );
+    border-color: shade(@theme_bg_color, 0.7);
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
 }
 
 .button:active *:insensitive {
-    border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.86);
-    border-left-color: shade(@theme_bg_color, 0.86);
-    border-bottom-color: shade(@theme_bg_color, 0.9);
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_bg_color, 0.88),
-                                      shade(@theme_bg_color, 0.96)
-                                      );
+    border-color: shade(@theme_bg_color, 0.7);
+    background-color: shade(@theme_bg_color, 0.80);
+    background-image: none;
 }
 
 /* default button */
