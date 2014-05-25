@@ -260,14 +260,14 @@ GtkAssistant .sidebar {
 }
 
 .button:insensitive {
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.96);
     background-image: none;
 }
 
 .button:active *:insensitive {
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 0.80);
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.96);
     background-image: none;
 }
 
