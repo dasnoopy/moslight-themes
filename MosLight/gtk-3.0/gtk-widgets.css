@@ -3599,7 +3599,6 @@ GtkProgressBar.osd.progressbar {
 .suggested-action.button:insensitive,
 .suggested-action.button:active *:insensitive {
 	icon-shadow: none;
-	background-color: none;
 	background-image: linear-gradient(to bottom,
                                       shade(shade(@insensitive_bg_color, 1.02), 1.04),
                                       shade(shade(@insensitive_bg_color, 1.02), 0.88)
