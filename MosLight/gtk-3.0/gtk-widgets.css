@@ -2489,8 +2489,7 @@ background-color: @toolbar_bg_color;
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar GtkToolButton .button,
 .inline-toolbar.toolbar GtkToolButton > .button {
-/*    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.85);*/
-	box-shadow: none;
+    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.96);
 }
 
 .linked .button:active,
