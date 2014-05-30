@@ -3555,13 +3555,10 @@ GtkProgressBar.osd.progressbar {
 /******************************
  * suggested action buttons *
  ******************************/
-.suggested-action.button,
-.suggested-action.button:active,
-.suggested-action.button:active:focus {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    border-radius: 2px;
+
+.toolbar .suggested-action.button,
+.header-bar .suggested-action.button {
+	border-color: shade(@theme_selected_bg_color, 0.88);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.04),
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.88)
@@ -3569,14 +3566,23 @@ GtkProgressBar.osd.progressbar {
     color: @theme_selected_fg_color;
 }
 
-.suggested-action.button:hover,
-.suggested-action.button:hover:active,
-.suggested-action.button:hover:active:focus {
-    border-color: shade(@theme_selected_bg_color, 0.8);
+.toolbar .suggested-action.button:hover,
+.header-bar .suggested-action.button:hover {
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.96)
                                       );
+}
+
+.toolbar .suggested-action.button:active,
+.toolbar .suggested-action.button:hover:active,
+.header-bar .suggested-action.button:active,
+.header-bar .suggested-action.button:hover:active  {
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.04),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.88)
+                                      );
+   color: @theme_selected_fg_color;
 }
 
 .suggested-action.button:insensitive,
@@ -3592,7 +3598,6 @@ GtkProgressBar.osd.progressbar {
 	color: @insensitive_fg_color;
 	text-shadow: none;
 }
-
 
 /******************
  * selection mode *
