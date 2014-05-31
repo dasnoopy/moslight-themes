@@ -15,7 +15,7 @@ GTK3 ENGINES REQUIREMENTS:
 How to install required gtk2/3 engines:
 
 ArchLinux:
-# pacman -S gtk-engine-murrine gtk-engines gnome-themes-standard
+pacman -S gtk-engine-murrine gtk-engines gnome-themes-standard
 
 Other distro:
 Search for the engines in your distribution's repository or install the engines from source.
