@@ -1,9 +1,8 @@
-/*************************
- * Header bar separator  *
- *************************/
-
-.header-bar > GtkBox > .separator.vertical {
-	-GtkWidget-wide-separators: 1;
+/**********************************
+ * header-bar, toolbar separator  *
+ **********************************/
+.header-bar > GtkBox > .separator.vertical  {
+	-GtkWidget-wide-separators: true;
 	-GtkWidget-separator-width: 2px;
 	background: transparent;
 	border-width: 0 1px 0 1px;
