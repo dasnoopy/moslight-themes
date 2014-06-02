@@ -1705,9 +1705,9 @@ GtkComboBox .separator {
     border-width: 0;
     border-radius: 0;
     border-style: none;
-    background-color: transparent;
+    background-color: shade(@theme_base_color, 0.96);
     background-image: none;
-    box-shadow: inset 1px 0 shade(@theme_base_color, 0.9);
+    box-shadow: inset 1px 0 shade(@theme_base_color, 0.8);
 }
 
 .spinbutton .button:insensitive {
@@ -1744,8 +1744,8 @@ GtkComboBox .separator {
     border-bottom-color: shade(@theme_bg_color, 0.7);
     border-radius: 2px;
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 1.02), 1.10),
-                                      shade(shade(@theme_bg_color, 1.02), 0.95)
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
                                       );
 
     color: @theme_fg_color;
