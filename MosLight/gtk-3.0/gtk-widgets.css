@@ -593,18 +593,18 @@ GtkComboBox.combobox-entry .button:insensitive {
  * expander *
  ************/
 .expander {
-	color: alpha(@theme_selected_bg_color, 0.7);
-	border: alpha(@theme_selected_bg_color, 0.7);
+	color: alpha(currentColor, 0.7);
+	border: alpha(currentColor, 0.7);
 }
 
 .expander:hover {
-	color: alpha(@theme_selected_bg_color, 0.8);
-	border-color: alpha(@theme_selected_bg_color, 0.8);
+	color: alpha(currentColor, 0.8);
+	border-color: alpha(currentColor, 0.8);
 }
 
 .expander:active {
-	color: alpha(@theme_selected_bg_color, 0.9);
-	border-color: alpha(@theme_selected_bg_color, 0.9);
+	color: alpha(currentColor, 0.9);
+	border-color: alpha(currentColor, 0.9);
 }
 
 
@@ -842,7 +842,7 @@ GtkInfoBar {
 
 .view.dim-label,
 .dim-label {
-    color: alpha(@theme_selected_bg_color, 0.5);
+    color: alpha(currentColor, 0.5);
 }
 
 .dnd {
@@ -1710,9 +1710,7 @@ GtkComboBox .separator {
 
 .spinbutton .button:insensitive {
     color: mix(@theme_text_color, @theme_base_color, 0.7);
-	background-color: shade(@theme_base_color, 0.9);
-    background-image: none;
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.8);
+    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.9);
 }
 
 .spinbutton .button:active,
@@ -1923,7 +1921,7 @@ GtkComboBox .separator {
                       -gtk-gradient(radial, center center, 0, center center, 0.5, to(@theme_selected_bg_color), to(transparent));
 
     background-position: 14% 14%, 0% 50%, 14% 86%, 50% 100%, 86% 86%, 100% 50%, 86% 14%, 50% 0%;
-    background-size: 24% 24%;
+    background-size: 25% 25%;
     background-repeat: no-repeat;
 }
 
@@ -3079,7 +3077,7 @@ GtkPopover.osd > .toolbar .button {
 GtkPopover .separator {
     border: 0;
     background-color: transparent;
-    color: alpha(@theme_selected_bg_color, 0.5);
+    color: alpha(currentColor, 0.5);
     font-size: 80%;
     font-weight: bold;
 }
@@ -3225,11 +3223,11 @@ GtkFileChooserButton .separator {
 }
 
 GtkFontButton GtkLabel:last-child {
-    color: alpha(@theme_selected_bg_color, 0.7);
+    color: alpha(currentColor, 0.7);
 }
 
 GtkFileChooserButton GtkImage:last-child {
-    color: alpha(@theme_selected_bg_color, 0.7);
+    color: alpha(currentColor, 0.7);
 }
 
 /*********************
