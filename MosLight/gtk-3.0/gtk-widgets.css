@@ -2473,7 +2473,7 @@ background-color: @toolbar_bg_color;
 
 .inline-toolbar.toolbar .button *:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive {
-    border-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@theme_bg_color, 0.78);
     background-image: none;
 }
 
@@ -2485,7 +2485,7 @@ background-color: @toolbar_bg_color;
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar GtkToolButton .button,
 .inline-toolbar.toolbar GtkToolButton > .button {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.96);
+    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.78);
 }
 
 .linked .button:active,
@@ -2501,7 +2501,7 @@ background-color: @toolbar_bg_color;
 .inline-toolbar.toolbar .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton > .button:insensitive {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.95);
+    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.78);
 }
 
 /* remove box shadow from last-child and only-child */
@@ -2614,7 +2614,7 @@ background-color: @toolbar_bg_color;
 .linked.vertical .button,
 .inline-toolbar.toolbar.vertical .button,
 .inline-toolbar.toolbar.vertical GtkToolButton > .button {
-    box-shadow: inset 0 -1px shade(@theme_bg_color, 0.85);
+    box-shadow: inset 0 -1px shade(@theme_bg_color, 0.78);
 }
 
 .linked.vertical .button:active,
@@ -2629,7 +2629,7 @@ background-color: @toolbar_bg_color;
 .linked.vertical .button:insensitive,
 .inline-toolbar.toolbar.vertical .button:insensitive,
 .inline-toolbar.toolbar.vertical GtkToolButton > .button:insensitive {
-    box-shadow: inset 0 -1px shade(@theme_bg_color, 0.95);
+    box-shadow: inset 0 -1px shade(@theme_bg_color, 0.78);
 }
 
 /* remove box shadow from last-child and only-child */
