@@ -68,8 +68,8 @@ StScrollView.hfade {
 }
 
 StScrollView StScrollBar {
-    min-width: 14px;
-    min-height: 14px;
+    min-width: 12px;
+    min-height: 12px;
 }
 
 StScrollBar StBin#trough {
@@ -1342,7 +1342,7 @@ StScrollBar StButton#vhandle:active {
     padding: .4em 1.7em;
     font-weight: bold;
     text-align: center;
-    color: #eeeeec;
+    color: #eeeeee;
     border-radius:2px;
 }
 
@@ -1365,29 +1365,31 @@ StScrollBar StButton#vhandle:active {
 /* MODIFICA : colore scelta giorno calendario */
 .calendar-day-base:hover,
 .calendar-day-base:focus {
-    background-color: #427fed; /* colore Azzurro */
+    background-color: #808080; /* colore Azzurro */
 }
 
 .calendar-day-base:active {
     font-size: 9pt;
-    background-color: #707070;
+    background-color: #427fed;
     color: white;
 }
 
 .calendar-day-heading {
-    color: #808080;
+	font-size: 8pt;	
+	color: #cccccc;
     padding-top: .2em;
     height: 1.7em;
 }
 
 .calendar-week-number {
-    color: #808080;
-    font-weight: normalù;
+	font-size: 8pt;
+    color: #cccccc;
+    font-weight: normal;
 }
 
 /* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day {
-    border: 1px solid #707070;
+    border: 1px solid #505050;
     color: #ffffff;
     border-top-width: 0;
     border-left-width: 0;
@@ -1405,7 +1407,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-nonwork-day {
-    background-color: rgba(128, 128, 128, .1);
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .calendar-today {
@@ -1420,7 +1422,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-other-month-day {
-    color: #333333;
+    color: #303030;
 }
 
 .events-table {
@@ -1439,9 +1441,10 @@ StScrollBar StButton#vhandle:active {
 
 .events-day-header {
     font-weight: bold;
-    color: #999999;
-    padding-left: 0.4em;
-    padding-top: 1.2em;
+    color: #ffffff;
+	padding-left: 1.2em;
+	padding-top: 0.8em;
+	padding-bottom: 0.2em;
 }
 
 .events-day-header:first-child {
@@ -1464,7 +1467,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .events-day-time {
-    color: #fff;
+    color: #cccccc;
     text-align: right;
 }
 
@@ -1475,6 +1478,7 @@ StScrollBar StButton#vhandle:active {
 .events-day-task {
     color: rgba(153, 153, 153, 1.0);
     padding-left: 8pt;
+	text-align: right;
 }
 
 .events-day-task:rtl {
