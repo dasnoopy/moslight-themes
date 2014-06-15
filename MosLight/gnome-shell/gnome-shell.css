@@ -1348,7 +1348,8 @@ StScrollBar StButton#vhandle:active {
 
 .datemenu-date-label:hover,
 .datemenu-date-label:focus {
-    background-color: #999999;
+	color: #ffffff;
+    background-color: #427fed;/* colore Azzurro */
 }
 
 .datemenu-date-label:active {
@@ -1365,12 +1366,12 @@ StScrollBar StButton#vhandle:active {
 /* MODIFICA : colore scelta giorno calendario */
 .calendar-day-base:hover,
 .calendar-day-base:focus {
-    background-color: #808080; /* colore Azzurro */
+    background-color: #808080; 
 }
 
 .calendar-day-base:active {
     font-size: 9pt;
-    background-color: #427fed;
+    background-color: #427fed;/* colore Azzurro */
     color: white;
 }
 
@@ -1389,7 +1390,7 @@ StScrollBar StButton#vhandle:active {
 
 /* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day {
-    border: 1px solid #505050;
+    border: 1px solid #101010;
     color: #ffffff;
     border-top-width: 0;
     border-left-width: 0;
@@ -1404,10 +1405,13 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-work-day {
+	color: #ffffff;
+    background-color: rgba(64, 64, 64, 0.9);
 }
 
 .calendar-nonwork-day {
-    background-color: rgba(0, 0, 0, .2);
+    color: #aaaaaa;
+    background-color: rgba(48, 48, 48, 0.9);
 }
 
 .calendar-today {
@@ -1422,7 +1426,8 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-other-month-day {
-    color: #303030;
+	color: #505050;
+    background-color: rgba(64, 64, 64, 0.2);
 }
 
 .events-table {

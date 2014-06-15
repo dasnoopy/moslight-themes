@@ -344,6 +344,3 @@ EvWindow.background EvSidebar.vertical .notebook .active-page,
 EvWindow.background EvSidebar.vertical .notebook tab .active-page GtkLabel {
     color: alpha(@toolbar_fg_color, 1.0);
 }
-
-
-
