@@ -1627,7 +1627,7 @@ GtkLevelBar.vertical {
 }
 
 .scrollbar.slider {
-    border-width: 2px;
+    border-width: 3px;
     border-color: transparent;
     border-radius: 7px;
     background-color: shade(@theme_bg_color, 0.8);
@@ -1646,7 +1646,7 @@ GtkLevelBar.vertical {
 }
 
 .scrollbar.slider.fine-tune:prelight:active {
-    border-width: 1px;
+    border-width: 3px;
     border-color: transparent;
    
 }
