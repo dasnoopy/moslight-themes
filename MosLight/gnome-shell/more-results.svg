@@ -69,9 +69,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.78431373"
      inkscape:pageshadow="2"
-     inkscape:zoom="39.285484"
-     inkscape:cx="8"
-     inkscape:cy="8"
+     inkscape:zoom="34.176569"
+     inkscape:cx="4.5465589"
+     inkscape:cy="7.9992168"
      inkscape:document-units="px"
      inkscape:current-layer="g14642-3-0"
      showgrid="false"
@@ -118,29 +118,28 @@
          id="rect3620-5-4"
          width="15.981825"
          height="16"
-         x="142"
-         y="398"
+         x="142.00893"
+         y="397.99106"
          rx="0"
          ry="0" />
       <rect
-         style="opacity:0.20000000000000001;fill:#000000;fill-opacity:1"
+         style="fill:#666666;fill-opacity:1"
          id="rect3807"
          width="16"
          height="16"
          x="141.99985"
          y="397.99106"
-         rx="3"
+         rx="0"
          ry="3" />
-      <path
-         transform="matrix(0,1,-1,0,0,0)"
-         style="fill:#ffffff;fill-opacity:1;display:inline"
-         d="m 400.99106,-156.99985 10,0 c 1.108,0 2,0.892 2,2 l 0,10 c 0,1.108 -0.892,2 -2,2 l -10,0 c -1.108,0 -2,-0.892 -2,-2 l 0,-10 c 0,-1.108 0.892,-2 2,-2 z"
-         id="rect3807-5" />
-      <path
-         style="fill:url(#linearGradient3904);fill-opacity:1;display:inline"
-         d="m 144.99984,412.99107 c -1.108,0 -2,-0.892 -2,-2 l 0,-10 c 0,-1.108 0.892,-2 2,-2 l 10,0 c 1.108,0 2,0.892 2,2 l 0,10 c 0,1.108 -0.892,2 -2,2 l -10,0 z m 0,-1 10,0 c 0.554,0 1,-0.446 1,-1 l 0,-10 c 0,-0.554 -0.446,-1 -1,-1 l -10,0 c -0.554,0 -1,0.446 -1,1 l 0,10 c 0,0.554 0.446,1 1,1 z"
-         id="rect3807-5-1"
-         inkscape:connector-curvature="0" />
+      <rect
+         ry="2.5720754"
+         rx="0"
+         y="399.1322"
+         x="143.12634"
+         height="13.717734"
+         width="13.746995"
+         id="rect2999"
+         style="fill:#ffffff;fill-opacity:1" />
       <path
          style="fill:#000000;fill-opacity:1"
          d="m 153.99984,405.99107 c 0,-0.554 -0.446,-1 -1,-1 l -2,0 0,-2 c 0,-0.554 -0.446,-1 -1,-1 -0.554,0 -1,0.446 -1,1 l 0,2 -2,0 c -0.554,0 -1,0.446 -1,1 0,0.554 0.446,1 1,1 l 2,0 0,2 c 0,0.554 0.446,1 1,1 0.554,0 1,-0.446 1,-1 l 0,-2 2,0 c 0.554,0 1,-0.446 1,-1 z"
