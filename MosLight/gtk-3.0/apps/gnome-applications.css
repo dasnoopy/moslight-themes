@@ -170,8 +170,8 @@ GeditViewFrame .gedit-search-slider {
     border-radius: 0 0 3px 3px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
-    border-color: shade(@theme_base_color, 0.8);
-    background-color: @base_color;
+    border-color: shade(@theme_base_color, 0.7);
+    background-color: @theme_base_color;
 }
 
 GeditViewFrame .gedit-search-slider .not-found {

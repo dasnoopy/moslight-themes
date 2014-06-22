@@ -170,7 +170,7 @@ GtkGrid:insensitive {
 .toolbar .button:active *:insensitive,
 .header-bar .button:active *:insensitive,
 .entry:insensitive {
-    box-shadow: inset 0 1px alpha(@dark_shadow, 0.06);
+    box-shadow: none;
 }
 
 /*************
@@ -203,9 +203,9 @@ GtkAssistant .sidebar {
     border-radius: 2px;
     border-style: solid;
     border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.76);
-    border-left-color: shade(@theme_bg_color, 0.76);
-    border-bottom-color: shade(@theme_bg_color, 0.7);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
+    border-bottom-color: shade(@theme_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 0.96)
@@ -215,50 +215,56 @@ GtkAssistant .sidebar {
 }
 
 .button:hover {
-    border-top-color: shade(@theme_bg_color, 0.6);
-    border-right-color: shade(@theme_bg_color, 0.6);
-    border-left-color: shade(@theme_bg_color, 0.6);
-    border-bottom-color: shade(@theme_bg_color, 0.6);
+    border-top-color: shade(@theme_bg_color, 0.7);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
 }
 
 .button:active {
     border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.76);
-    border-left-color: shade(@theme_bg_color, 0.76);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
     border-bottom-color: shade(@theme_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 0.88),
-                                      shade(shade(@theme_bg_color, 1.02), 0.88)
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
                                       );
 }
 
 .button:focus,
 .button:hover:focus {
     border-top-color: shade(@theme_bg_color, 0.7);
-    border-right-color: shade(@theme_bg_color, 0.66);
-    border-left-color: shade(@theme_bg_color, 0.66);
-    border-bottom-color: shade(@theme_bg_color, 0.6);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
 }
 
 .button:active:hover {
-    border-top-color: shade(@theme_bg_color, 0.6);
-    border-right-color: shade(@theme_bg_color, 0.6);
-    border-left-color: shade(@theme_bg_color, 0.6);
-    border-bottom-color: shade(@theme_bg_color, 0.6);
+    border-top-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
+    border-bottom-color: shade(@theme_bg_color, 0.8);
 }
 
 .button:active:focus,
 .button:active:hover:focus {
-    border-top-color: shade(@theme_bg_color, 0.6);
-    border-right-color: shade(@theme_bg_color, 0.6);
-    border-left-color: shade(@theme_bg_color, 0.6);
-    border-bottom-color: shade(@theme_bg_color, 0.6);
+    border-top-color: shade(@theme_bg_color, 0.7);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
 }
 
 .button:insensitive {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.92);
-    background-image: none;
+    border-style: solid;
+    border-top-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
+    border-bottom-color: shade(@theme_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_bg_color, 1.02), 0.96),
+                                      shade(shade(@theme_bg_color, 1.02), 0.88)
+                                      );
 }
 
 .button:active *:insensitive {
@@ -269,9 +275,9 @@ GtkAssistant .sidebar {
 
 /* default button */
 .button.default {
-    border-top-color: shade(@theme_selected_bg_color, 0.9);
-    border-right-color: shade(@theme_selected_bg_color, 0.86);
-    border-left-color: shade(@theme_selected_bg_color, 0.86);
+    border-top-color: shade(@theme_selected_bg_color, 0.8);
+    border-right-color: shade(@theme_selected_bg_color, 0.8);
+    border-left-color: shade(@theme_selected_bg_color, 0.8);
     border-bottom-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.12),
@@ -282,28 +288,28 @@ GtkAssistant .sidebar {
 }
 
 .button.default:hover {
-    border-top-color: shade(@theme_selected_bg_color, 0.8);
-    border-right-color: shade(@theme_selected_bg_color, 0.76);
-    border-left-color: shade(@theme_selected_bg_color, 0.76);
+    border-top-color: shade(@theme_selected_bg_color, 0.7);
+    border-right-color: shade(@theme_selected_bg_color, 0.7);
+    border-left-color: shade(@theme_selected_bg_color, 0.7);
     border-bottom-color: shade(@theme_selected_bg_color, 0.7);
 }
 
 .button.default:active {
     border-top-color: shade(@theme_selected_bg_color, 0.8);
-    border-right-color: shade(@theme_selected_bg_color, 0.86);
-    border-left-color: shade(@theme_selected_bg_color, 0.86);
-    border-bottom-color: shade(@theme_selected_bg_color, 0.9);
+    border-right-color: shade(@theme_selected_bg_color, 0.8);
+    border-left-color: shade(@theme_selected_bg_color, 0.8);
+    border-bottom-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.88),
-                                      shade(shade(@theme_selected_bg_color, 1.02), 0.88)
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.96)
                                       );
 }
 
 .button.default:active:hover {
     border-top-color: shade(@theme_selected_bg_color, 0.7);
-    border-right-color: shade(@theme_selected_bg_color, 0.76);
-    border-left-color: shade(@theme_selected_bg_color, 0.76);
-    border-bottom-color: shade(@theme_selected_bg_color, 0.8);
+    border-right-color: shade(@theme_selected_bg_color, 0.7);
+    border-left-color: shade(@theme_selected_bg_color, 0.7);
+    border-bottom-color: shade(@theme_selected_bg_color, 0.7);
 }
 
 
@@ -374,7 +380,7 @@ column-header .button:active:focus {
     border-color: shade(@theme_base_color, 0.8);
     border-bottom-color: shade(@theme_base_color, 0.8);
     background-image: linear-gradient(to bottom,
-                                      shade(@theme_base_color, 1),
+                                      shade(@theme_base_color, 1.00),
                                       shade(@theme_base_color, 0.96)
                                       );
 }
@@ -559,10 +565,10 @@ GtkComboBox.combobox-entry .button:insensitive {
 .entry:active,
 .entry:focus {
 	background-color: @theme_base_color;
-    border-top-color: shade(@theme_bg_color, 0.7);
-    border-right-color: shade(@theme_bg_color, 0.7);
-    border-left-color: shade(@theme_bg_color, 0.7);
-    border-bottom-color: shade(@theme_bg_color, 0.7);
+    border-top-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
+    border-bottom-color: shade(@theme_bg_color, 0.8);
 }
 
 .entry:selected,
@@ -572,6 +578,10 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 .entry:insensitive {
+    border-top-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
+    border-bottom-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.96);
     background-image: none;
     color: mix(@theme_text_color, @theme_base_color, 0.5);
@@ -581,8 +591,8 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-width: 0;
     border-radius: 2px;
     background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color, 1.12),
+                                      shade(@theme_selected_bg_color, 0.96)
                                       );
 
     color: @theme_selected_fg_color;
@@ -644,8 +654,8 @@ GtkIconView.view.cell:selected:focus {
     border-color: shade(@theme_selected_bg_color, 0.9);
     border-radius: 0px;
     background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color, 1.12),
+                                      shade(@theme_selected_bg_color, 0.96)
                                       );
 
     color: @theme_selected_fg_color;
@@ -1282,15 +1292,15 @@ GtkProgressBar {
     border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color, 1.12),
+                                      shade(@theme_selected_bg_color, 0.96)
                                       );
 }
 
 .progressbar.vertical {
     background-image: linear-gradient(to right,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color, 1.12),
+                                      shade(@theme_selected_bg_color, 0.96)
                                       );
 }
 
@@ -1336,8 +1346,8 @@ GtkLevelBar.vertical {
     border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color, 1.12),
+                                      shade(@theme_selected_bg_color, 0.96)
                                       );
 }
 
@@ -1415,8 +1425,8 @@ GtkLevelBar.vertical {
 .scale.slider {
     border-radius: 12px;
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 1.02), 1.10),
-                                      shade(shade(@theme_bg_color, 1.02), 0.95)
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
                                       );
 
     /* we will draw the border using box shadow for now */
@@ -1447,8 +1457,8 @@ GtkLevelBar.vertical {
 
 .scale.slider.vertical {
     background-image: linear-gradient(to right,
-                                      shade(shade(@theme_bg_color, 1.02), 1.10),
-                                      shade(shade(@theme_bg_color, 1.02), 0.95)
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
                                       );
 }
 
@@ -1519,8 +1529,8 @@ GtkLevelBar.vertical {
 .scale.highlight.bottom {
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to right,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color, 1.12),
+                                      shade(@theme_selected_bg_color, 0.96)
                                       );
 }
 
@@ -1603,7 +1613,7 @@ GtkLevelBar.vertical {
  * scrollbar *
  *************/
 .scrollbar {
-    border-width: 1px;
+    border-width: 0;
     border-style: solid;
     padding: 0;
 }
@@ -1750,19 +1760,28 @@ GtkComboBox .separator {
     border-width: 0;
     border-radius: 0;
     border-style: none;
-    background-color: shade(@theme_base_color, 0.96);
-    background-image: none;
-    box-shadow: inset 1px 0 shade(@theme_base_color, 0.8);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
+                                      );
+    box-shadow: inset 1px 0 shade(@theme_base_color, 0.7);
 }
 
 .spinbutton .button:insensitive {
     color: mix(@theme_text_color, @theme_base_color, 0.7);
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.9);
+    border-style: none;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_bg_color, 1.02), 0.96),
+                                      shade(shade(@theme_bg_color, 1.02), 0.88)
+                                      );
+    box-shadow: inset 1px 0 shade(@theme_base_color, 0.7);
 }
 
 .spinbutton .button:active,
 .spinbutton .button:hover {
-    color: @theme_fg_color;
+    color: @theme_text_color;
 }
 
 .spinbutton .button:first-child {
@@ -1784,8 +1803,8 @@ GtkComboBox .separator {
     border-width: 1px;
     border-style: solid;
     border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.76);
-    border-left-color: shade(@theme_bg_color, 0.76);
+    border-right-color: shade(@theme_bg_color, 0.8);
+    border-left-color: shade(@theme_bg_color, 0.8);
     border-bottom-color: shade(@theme_bg_color, 0.7);
     border-radius: 2px;
     background-image: linear-gradient(to bottom,
@@ -1793,7 +1812,7 @@ GtkComboBox .separator {
                                       shade(shade(@theme_bg_color, 1.02), 0.96)
                                       );
 
-    color: @theme_fg_color;
+    color: mix(@theme_text_color, @theme_base_color, 0.2);
     box-shadow: none;
 }
 
@@ -1818,8 +1837,8 @@ GtkComboBox .separator {
     border-left-color: shade(@theme_bg_color, 0.76);
     border-bottom-color: shade(@theme_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 1.02), 0.90),
-                                      shade(shade(@theme_bg_color, 1.02), 0.95)
+                                      shade(shade(@theme_bg_color, 1.02), 0.88),
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
                                       );
 }
 
@@ -1839,13 +1858,13 @@ GtkComboBox .separator {
 }
 
 .spinbutton.vertical .button:insensitive {
-    border-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@theme_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(@theme_bg_color, 1.04),
                                       shade(@theme_bg_color, 0.96)
                                       );
 
-    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    color: mix(@theme_fg_color, @theme_bg_color, 0.7);
 }
 
 .spinbutton.vertical .button:first-child {
@@ -2413,8 +2432,8 @@ background-color: @toolbar_bg_color;
     border-left-color: shade(@toolbar_bg_color, 0.86);
     border-bottom-color: shade(@toolbar_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 1.10),
-                                      shade(@toolbar_bg_color, 0.95)
+                                      shade(@toolbar_bg_color, 1.12),
+                                      shade(@toolbar_bg_color, 0.96)
                                       );
 }
 
