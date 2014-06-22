@@ -125,8 +125,8 @@ GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
     border-width: 0 1px 1px 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 1.0);
-    background-color: shade(@theme_bg_color, 1.0);
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.8);
     background-image: url("assets/null.png");
     color: shade(@theme_bg_color, 1.0);
 }
