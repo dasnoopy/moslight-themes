@@ -8,13 +8,13 @@
 @define-color tooltip_bg_color #555555;
 @define-color tooltip_fg_color #f9f9f9;
 
-@define-color borders shade(@bg_color, 0.78);
-@define-color notebook_active_tab_border @selected_bg_color;
-@define-color theme_unfocused_base_color @borders;
-@define-color unfocused_borders shade(@bg_color,1.12);
-@define-color unfocused_insensitive_borders @selected_bg_color;
-@define-color theme_unfocused_fg_color @fg_color;
-@define-color theme_unfocused_base_color @base_color;
+/* insensitive colors */
+@define-color insensitive_bg_color shade(@bg_color, 0.88);
+@define-color insensitive_fg_color shade(@fg_color, 1.12);
+
+/* nautilus and gtkfilechooser sidebar colors */
+@define-color sidebar_bg_color #202020;
+@define-color sidebar_fg_color #cccccc;
 
 @define-color titlebar_color @bg_color;
 
