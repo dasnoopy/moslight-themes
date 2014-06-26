@@ -26,8 +26,8 @@
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
     -GtkPaned-handle-size: 3;
-    -GtkProgressBar-min-horizontal-bar-height: 12;
-    -GtkProgressBar-min-vertical-bar-width: 12;
+    -GtkProgressBar-min-horizontal-bar-height: 14;
+    -GtkProgressBar-min-vertical-bar-width: 14;
     -GtkRange-slider-width: 13;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
@@ -157,11 +157,13 @@ GtkGrid:insensitive {
 .primary-toolbar .button:active,
 .toolbar .button:active,
 .header-bar .button:active {
-    box-shadow: inset 0 1px alpha(@dark_shadow, 0.06);
+    box-shadow: inset 0 1px alpha(@dark_shadow, 0.16);
 }
 
 .entry {
-    box-shadow: inset 0 1px alpha(@dark_shadow, 0.06);
+    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.12),
+    		    inset 0 1px alpha(@dark_shadow, 0.14),
+                inset -1px 0 alpha(@dark_shadow, 0.12);
 }
 
 /* disable inset shadow */
@@ -203,9 +205,9 @@ GtkAssistant .sidebar {
     border-radius: 2px;
     border-style: solid;
     border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.8);
-    border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
+    border-bottom-color: shade(@theme_bg_color, 0.6);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 0.96)
@@ -214,10 +216,10 @@ GtkAssistant .sidebar {
 }
 
 .button:hover {
-    border-top-color: shade(@theme_bg_color, 0.7);
-    border-right-color: shade(@theme_bg_color, 0.7);
-    border-left-color: shade(@theme_bg_color, 0.7);
-    border-bottom-color: shade(@theme_bg_color, 0.7);
+    border-top-color: shade(@theme_bg_color, 0.6);
+    border-right-color: shade(@theme_bg_color, 0.6);
+    border-left-color: shade(@theme_bg_color, 0.6);
+    border-bottom-color: shade(@theme_bg_color, 0.6);
 }
 
 .button:active {
@@ -229,7 +231,7 @@ GtkAssistant .sidebar {
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 1.12)
                                       );
-	box-shadow: inset 0 1px 1px alpha(@dark_shadow, 0.24);
+    box-shadow: inset 0 1px alpha(@dark_shadow, 0.16);
 }
 
 .button:focus,
@@ -260,9 +262,9 @@ GtkAssistant .sidebar {
     border-top-color: shade(@theme_bg_color, 0.8);
     border-right-color: shade(@theme_bg_color, 0.8);
     border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 1.02), 1.24),
+                                      shade(shade(@theme_bg_color, 1.02), 1.04),
                                       shade(shade(@theme_bg_color, 1.02), 1.04)
                                       );
 }
@@ -551,24 +553,26 @@ GtkComboBox.combobox-entry .button:insensitive {
     padding: 4px 3px;
     border-width: 1px;
     border-style: solid;
-    border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.8);
-    border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
+    border-top-color: shade(@theme_bg_color, 0.7);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
     border-radius: 2px;
-    background-color: @theme_base_color;
+	background-color: @theme_base_color;
     background-image: none;
-
     color: @theme_text_color;
 }
 
 .entry:active,
 .entry:focus {
 	background-color: @theme_base_color;
-    border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.8);
-    border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
+    border-top-color: shade(@theme_bg_color, 0.7);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
+	background-color: @theme_base_color;
+    background-image: none;
+    color: @theme_text_color;
 }
 
 .entry:selected,
@@ -581,10 +585,10 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-top-color: shade(@theme_bg_color, 0.8);
     border-right-color: shade(@theme_bg_color, 0.8);
     border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.96);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
+    background-color: @theme_bg_color;
     background-image: none;
-    color: mix(@theme_text_color, @theme_base_color, 0.5);
+    color: mix(@theme_text_color, @theme_base_color, 0.5);;
 }
 
 .entry.progressbar {
@@ -1312,17 +1316,13 @@ GtkProgressBar {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_bg_color, 1.02),
-                                      shade(@theme_bg_color, 1.12)
-                                      );
+	background-color: @theme_base_color;
+    background-image: none;
 }
 
 .trough.vertical {
-    background-image: linear-gradient(to right,
-                                      shade(@theme_bg_color, 1.02),
-                                      shade(@theme_bg_color, 1.12)
-                                      );
+	background-color: @theme_base_color;
+    background-image: none;
 }
 
 /* level bars as used for password quality or remaining power */
@@ -1773,8 +1773,8 @@ GtkComboBox .separator {
     border-style: none;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 1.02), 0.96),
-                                      shade(shade(@theme_bg_color, 1.02), 0.88)
+                                      shade(shade(@theme_bg_color, 1.02), 1.24),
+                                      shade(shade(@theme_bg_color, 1.02), 1.04)
                                       );
     box-shadow: inset 1px 0 shade(@theme_base_color, 0.7);
 }
