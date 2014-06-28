@@ -264,7 +264,7 @@ GtkAssistant .sidebar {
     border-left-color: shade(@theme_bg_color, 0.8);
     border-bottom-color: shade(@theme_bg_color, 0.7);
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 1.02), 1.04),
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 1.04)
                                       );
 }
