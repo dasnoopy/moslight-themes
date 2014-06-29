@@ -15,7 +15,7 @@
    height="16"
    id="svg2"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="close-hover.svg">
+   sodipodi:docname="close-press.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -311,23 +311,23 @@
      style="display:inline">
     <g
        style="fill-rule:evenodd"
-       id="g3299"
+       id="g3237"
        transform="matrix(0.12868774,0,0,0.12868774,-29.982317,-49.961737)">
       <g
-         id="g3283">
+         id="g3221">
         <g
-           id="g3285">
+           id="g3223">
           <g
-             id="g3287">
+             id="g3225">
             <path
-               id="path3289"
+               id="path3227"
                d="m 306,488.633 c 23.593,0 42.743,-19.15 42.743,-42.743 0,-23.593 -19.15,-42.743 -42.743,-42.743 -23.593,0 -42.743,19.15 -42.743,42.743 0,23.593 19.15,42.743 42.743,42.743 z"
-               style="fill:#d32735;stroke:none"
+               style="fill:#b4b4b4;stroke:none"
                inkscape:connector-curvature="0" />
             <path
-               id="path3291"
-               d="m 306,484.997 c 21.586,0 39.107,-17.521 39.107,-39.107 0,-21.586 -17.521,-39.108 -39.107,-39.108 -21.586,0 -39.108,17.522 -39.108,39.108 0,21.586 17.522,39.107 39.108,39.107 z"
-               style="fill:#f05054;stroke:none"
+               id="path3229"
+               d="m 306,484.997 c 21.586,0 39.108,-17.521 39.108,-39.107 0,-21.586 -17.522,-39.108 -39.108,-39.108 -21.586,0 -39.108,17.522 -39.108,39.108 0,21.586 17.522,39.107 39.108,39.107 z"
+               style="fill:#c5c5c5;stroke:none"
                inkscape:connector-curvature="0" />
           </g>
         </g>

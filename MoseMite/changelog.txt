@@ -1,6 +1,7 @@
 2014.06.30
-[GTK2&3] :  change base colors
-[Mutter] :  new metacity theme e CSD windows controls
+* [GTK2&3] : change base color and Nautilus siebar
+* [GTK3]   : new CSD window controls 
+* [Mutter] : new metacity theme 
 
 2014.06.29
 * [GTK3]: some small changes applied to gtkbutton and other widgets;
