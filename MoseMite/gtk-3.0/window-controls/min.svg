@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="close.svg">
+   sodipodi:docname="min_prelight.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.4"
-     inkscape:cx="1.5568563"
-     inkscape:cy="8.9213325"
+     inkscape:zoom="16"
+     inkscape:cx="16.706506"
+     inkscape:cy="4.6169098"
      inkscape:document-units="px"
-     inkscape:current-layer="g4092"
+     inkscape:current-layer="g4415"
      showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -64,22 +64,31 @@
          transform="scale(0.1,0.1)"
          id="g4092">
         <g
-           transform="matrix(9.9999999,0,0,9.9999999,3.1284009,-0.36309974)"
+           transform="matrix(9.9999999,0,0,9.9999999,-4.0034923,0.11816995)"
            inkscape:label="ink_ext_XXXXXX"
-           id="g4195">
+           id="g4285">
           <g
              transform="scale(0.1,0.1)"
-             id="g4197">
-            <path
-               id="path4199"
-               style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:none"
-               d="m 430.199,4.57031 c 236.063,0 427.43,191.36369 427.43,427.42969 0,236.059 -191.367,427.426 -427.43,427.426 C 194.137,859.426 2.76953,668.059 2.76953,432 2.76953,195.934 194.137,4.57031 430.199,4.57031"
-               inkscape:connector-curvature="0" />
-            <path
-               id="path4201"
-               style="fill:#c7c7c7;fill-opacity:1;fill-rule:evenodd;stroke:none"
-               d="m 430.199,40.9219 c 215.985,0 391.078,175.0901 391.078,391.0781 0,215.98 -175.093,391.074 -391.078,391.074 C 214.215,823.074 39.1211,647.98 39.1211,432 39.1211,216.012 214.215,40.9219 430.199,40.9219"
-               inkscape:connector-curvature="0" />
+             id="g4287">
+            <g
+               transform="matrix(10,0,0,10,4.1388913,2.0175489)"
+               inkscape:label="ink_ext_XXXXXX"
+               id="g4413">
+              <g
+                 transform="scale(0.1,0.1)"
+                 id="g4415">
+                <path
+                   id="path4417"
+                   style="fill:#da9e10;fill-opacity:1;fill-rule:evenodd;stroke:none"
+                   d="m 433.035,1.94922 c 236.063,0 427.43,191.36678 427.43,427.42978 0,236.059 -191.367,427.426 -427.43,427.426 C 196.973,856.805 5.60547,665.438 5.60547,429.379 5.60547,193.316 196.973,1.94922 433.035,1.94922"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path4419"
+                   style="fill:#fac536;fill-opacity:1;fill-rule:evenodd;stroke:none"
+                   d="m 433.035,38.3008 c 215.985,0 391.074,175.0902 391.074,391.0782 0,215.984 -175.089,391.074 -391.074,391.074 -215.984,0 -391.078,-175.09 -391.078,-391.074 0,-215.988 175.094,-391.0782 391.078,-391.0782"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
           </g>
         </g>
       </g>

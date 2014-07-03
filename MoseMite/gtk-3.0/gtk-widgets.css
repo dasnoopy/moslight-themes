@@ -3821,7 +3821,7 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .titlebutton {
-    padding: 4px;
+    padding: 5px 0px 6px 0px;
     border-style: none;
     background: none;
     color: @wm_title_focused;
@@ -3838,6 +3838,7 @@ GtkBubbleWindow .toolbar {
     background: none;
     color: shade(@wm_title_focused, 0.7);
     box-shadow: none;
+	padding: 5px 0px 6px 0px;
 }
 
 /*
@@ -3859,6 +3860,7 @@ GtkBubbleWindow .toolbar {
 .titlebar .titlebutton:backdrop {
     background-image: none;
     color: @wm_title_unfocused;
+	padding: 5px 0px 6px 0px;
 }
 
 .window-frame {
