@@ -30,7 +30,7 @@
 .check row:selected,
 .check row:selected:focus {
 	background-image: none;
-    background-image: url("assets/checkbox-unchecked.svg");
+    background-image: url("assets/checkbox-unchecked-dark.svg");
 	border-radius: 2px;
 	box-shadow: none;
 }
