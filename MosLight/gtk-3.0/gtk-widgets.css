@@ -373,6 +373,7 @@ column-header .button:active {
     border-width: 0 1px 1px 0;
     border-radius: 0;
     font: bold;
+	box-shadow: inset 0 -1px 1px 0 @theme_bg_color;
 }
 
 column-header .button,
@@ -380,7 +381,6 @@ column-header .button:active,
 column-header .button:focus,
 column-header .button:active:focus {
     border-color: shade(@theme_base_color, 0.8);
-    border-bottom-color: shade(@theme_base_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(@theme_base_color, 1.00),
                                       shade(@theme_base_color, 0.96)
@@ -391,8 +391,7 @@ column-header .button:hover,
 column-header .button:active:hover,
 column-header .button:hover:focus,
 column-header .button:active:hover:focus {
-    border-color: shade(@theme_base_color, 0.9);
-    border-bottom-color: shade(@theme_base_color, 0.7);
+    border-color: shade(@theme_base_color, 0.8);
 }
 
 column-header:last-child .button {
@@ -893,7 +892,7 @@ GtkComboBox .menu {
     border-radius: 0;
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@menu_bg_color, 0.7);
+    border-color: shade(@menu_bg_color, 0.8);
     background-color: @menu_bg_color;
     color: @menu_fg_color;
 }
@@ -935,7 +934,7 @@ GtkComboBox .menu {
  ***************/
 .menubar.menuitem,
 .menubar .menuitem {
-    padding: 3px 5px;
+    padding: 3px 6px;
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
@@ -2217,7 +2216,7 @@ GtkColorButton.button {
  **************/
 .header-bar,
 .header-bar.toolbar {
-    padding: 4px 4px 3px 4px; /* sopra destra sotto sinistra*/
+    padding: 4px 12px 3px 12px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
@@ -2229,7 +2228,7 @@ GtkColorButton.button {
 }
 
 .header-bar .button.text-button {
-    padding: 4px 12px;
+    padding: 3px 12px;
 }
 
 .header-bar .button.image-button {
@@ -2265,7 +2264,7 @@ GtkColorButton.button {
 }
 
 .action-bar .button.text-button {
-    padding: 4px 10px;
+    padding: 3px 12px;
 }
 
 .action-bar .button.image-button {
@@ -2302,11 +2301,11 @@ background-color: @toolbar_bg_color;
 }
 
 .toolbar .button.text-button {
-    padding: 2px 4px;
+    padding: 3px 12px;
 }
 
 .toolbar .button.image-button {
-    padding: 4px 3px 3px 4px;
+    padding: 4px;
 }
 
 .toolbar:insensitive {
@@ -3036,8 +3035,8 @@ background-color: @toolbar_bg_color;
  ************/
 GtkTreeView {
     -GtkTreeView-vertical-separator: 0;
-    -GtkWidget-focus-line-width: 1;
-    -GtkWidget-focus-padding: 1;
+    -GtkWidget-focus-line-width: 1px;
+    -GtkWidget-focus-padding: 1px;
 }
 
 GtkTreeView.dnd {
@@ -3853,7 +3852,7 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .titlebutton {
-    padding: 4px;
+    padding: 5px 0px 6px 0px;
     border-style: none;
     background: none;
     color: @wm_title_focused;
@@ -3870,6 +3869,7 @@ GtkBubbleWindow .toolbar {
     background: none;
     color: shade(@wm_title_focused, 0.7);
     box-shadow: none;
+	padding: 5px 0px 6px 0px;
 }
 
 /*
@@ -3891,6 +3891,7 @@ GtkBubbleWindow .toolbar {
 .titlebar .titlebutton:backdrop {
     background-image: none;
     color: @wm_title_unfocused;
+	padding: 5px 0px 6px 0px;
 }
 
 .window-frame {

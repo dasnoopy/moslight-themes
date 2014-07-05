@@ -13,7 +13,7 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="checkbox-checked.svg">
   <metadata
      id="metadata20">
@@ -30,20 +30,20 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
-     objecttolerance="10000"
-     gridtolerance="10000"
-     guidetolerance="10000"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1029"
-     inkscape:window-height="735"
+     inkscape:window-width="1042"
+     inkscape:window-height="763"
      id="namedview18"
-     showgrid="true"
+     showgrid="false"
      inkscape:zoom="19.462742"
      inkscape:cx="8.0006788"
-     inkscape:cy="7.9749887"
-     inkscape:window-x="79"
-     inkscape:window-y="136"
+     inkscape:cy="8.0006788"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
