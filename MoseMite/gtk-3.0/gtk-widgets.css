@@ -3,7 +3,7 @@
 
 /* default */
 * {
-	engine: adwaita;  
+	engine: none;  
 	background-clip: padding-box;
 
     -GtkArrow-arrow-scaling: 0.6;
@@ -216,10 +216,14 @@ GtkAssistant .sidebar {
 }
 
 .button:hover {
-    border-top-color: shade(@theme_bg_color, 0.6);
-    border-right-color: shade(@theme_bg_color, 0.6);
-    border-left-color: shade(@theme_bg_color, 0.6);
+    border-top-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
     border-bottom-color: shade(@theme_bg_color, 0.6);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_bg_color, 1.02), 1.04)
+                                      );
 }
 
 .button:active {
@@ -1589,7 +1593,7 @@ GtkLevelBar.vertical {
 .scrollbar.trough {
     border-width: 0;
     border-radius: 0;
-    background-color: @theme_base_color;
+    background-color: @theme_bg_color;
     background-image: none;
 }
 
@@ -2184,7 +2188,7 @@ GtkColorButton.button {
  **************/
 .header-bar,
 .header-bar.toolbar {
-    padding: 4px 12px 3px 12px; /* sopra destra sotto sinistra*/
+    padding: 4px 8px 4px 8px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
@@ -2196,11 +2200,11 @@ GtkColorButton.button {
 }
 
 .header-bar .button.text-button {
-    padding: 3px 12px;
+    padding: 4px 8px;
 }
 
 .header-bar .button.image-button {
-    padding: 6px;
+    padding: 4px 8px;
 }
 
 .header-bar .title {
@@ -2221,7 +2225,7 @@ GtkColorButton.button {
  * action-bar *
  **************/
 .action-bar {
-    padding: 5px;
+    padding: 4px 8px 4px 8px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.7);
@@ -2232,11 +2236,11 @@ GtkColorButton.button {
 }
 
 .action-bar .button.text-button {
-    padding: 3px 12px;
+    padding: 4px 8px;
 }
 
 .action-bar .button.image-button {
-    padding: 6px;
+    padding: 4px 8px;
 }
 
 .action-bar .title {
@@ -2253,7 +2257,7 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 3px;
+    padding: 4px 8px 4px 8px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
@@ -2265,15 +2269,15 @@ background-color: @toolbar_bg_color;
 }
 
 .toolbar .button {
-    padding: 2px;
+    padding: 4px 8px;
 }
 
 .toolbar .button.text-button {
-    padding: 3px 12px;
+    padding: 4px 8px;
 }
 
 .toolbar .button.image-button {
-    padding: 4px;
+    padding: 4px 8px;
 }
 
 .toolbar:insensitive {
@@ -2518,7 +2522,7 @@ background-color: @toolbar_bg_color;
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar GtkToolButton .button,
 .inline-toolbar.toolbar GtkToolButton > .button {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.78);
+    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.8),inset 1px 0 shade(@theme_bg_color, 1.12);
 }
 
 .linked .button:active,
@@ -2526,7 +2530,7 @@ background-color: @toolbar_bg_color;
 .inline-toolbar.toolbar GtkToolButton .button:active,
 .inline-toolbar.toolbar GtkToolButton > .button:active {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.85),
-                inset 1px 0 alpha(@dark_shadow, 0.07),
+                inset 1px 0 alpha(@dark_shadow, 0.08),
                 inset 0 1px alpha(@dark_shadow, 0.08);
 }
 
