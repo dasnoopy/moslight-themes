@@ -186,9 +186,9 @@ GtkAssistant .sidebar {
     padding: 3px;
     border-width: 0 1px 0 0;
     border-style: solid;
-    border-right-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.88);
     border-radius: 0;
-    background-color: shade(@theme_bg_color, 1.08);
+    background-color: shade(@sidebar_bg_color, 1.0);
     color: mix(@theme_fg_color, @theme_bg_color, 0.1);
 }
 
@@ -641,7 +641,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 GtkScrolledWindow.frame {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.88);
     border-radius: 0;
 }
 
