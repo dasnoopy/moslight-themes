@@ -1,0 +1,58 @@
+2014.07.11
+* [GS] : modified application running-indicator  
+* [GTK3] : fixed small bug with check and radio widgets in treeview selected
+	      item plus other various and minor changes. 
+
+2014.06.29
+* [GTK3]: some small changes applied to gtkbutton and other widgets;
+* [GTK2]: minor changes applied to GtkNotebook and GtkTreeview
+
+2014.06.19
+* [GTK3]: small changes to scrollbars and other gtk3 widgets;
+* [GTK3]: change spinner color;
+* [GTK2]: support Chromium (thanks to Mickyz)
+* [GS] : small changes for calendar and adjust panel/modal dialogs transparency.
+
+2014.06.02:
+* [GTK3]: small changes for suggested button (again!);
+* [GTK3]: bg color for dark theme from #333333 to #404040;
+* [GTK3]: small changes for some gtk3 widgets & assets.
+
+2014.05.25:
+* [GTK3]: fix insensitive buttons and comboboxes;
+* [GTK3]: tweaked insensitive suggested button;
+* [GTK3]: adjust entry shadows and borders.
+
+2014.05.21:
+* [GTK3]: adjust infobar colors in gtk-dark.css
+* [GTK3]: tweaked the suggested button in the headerbar;
+* [GTK3]: gnome-applications.css: minor changes applied to gedit pane separator.
+
+2014.05.01:
+* [GS]: Minor tweaks on modal dialog windows
+* [GTK3]: various small changes.
+* [GTK3]: some minor changes on GtkNotebook..again!
+* [GTK3]: gnome-applications.css: changes applied to evince side pane.
+
+2014.04.26:
+* [GTK3]: bold font for notebook tabs
+* [GTK3]: tweaked GtkDialog titlebar
+* [GTK3]: solve issue : missing right border for buttons in GtkDialog.
+
+2014.04.22:
+* [GTK3]: some minor adjustments in CSD section (padding, border-radius)
+
+2014.04.21:
+* [GTK3]: gnome-applications: removed unused settings for  notebook tabs
+* [GTK3]: modified a bit the look of header-bar (font size and text padding)
+* [GTK3]: add bottom border to CSD/GtkDialog windows
+
+2014.04.20:
+* [Mutter]: new metacity buttons.
+* [GTK3]: new GtkNotebook tabs (unfortunately not nice as previous version! ;-)
+* [GTK3]:  new GtkSwitches (same used for gnome-shell theme)
+* BG color changed from #d8d8d8 to #dddddd
+* FG color changed from #505050 to #404040
+
+2014.04.17:
+* Initial release for gnome 3.12: tweaked all new widget for gtk+3 ver 3.12
