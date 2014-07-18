@@ -19,3 +19,5 @@ ArchLinux:
 
 Other distro:
 Search for the engines in your distribution's repository or install the engines from source.
+
+![Moslight GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/gwf.png)
