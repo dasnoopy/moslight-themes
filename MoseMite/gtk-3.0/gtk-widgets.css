@@ -2443,14 +2443,16 @@ background-color: @toolbar_bg_color;
 }
 
 
-/*inline-toolbar :*/
+/*******************
+ * inline-toolbar *
+ *******************/
 /*e' quella usata nelle varie impostazione del control center*/
 /*la barra sotto con le frecce o con +/-*/
 
 .inline-toolbar.toolbar {
     -GtkToolbar-button-relief: normal;
 
-    padding: 4px;
+    padding: 3px;
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
@@ -2465,7 +2467,7 @@ background-color: @toolbar_bg_color;
 
 .inline-toolbar.toolbar:last-child {
     border-width: 0 1px 1px 1px;
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: shade(@theme_bg_color, 0.88);
     border-radius: 0;
 }
 
@@ -2522,7 +2524,7 @@ background-color: @toolbar_bg_color;
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar GtkToolButton .button,
 .inline-toolbar.toolbar GtkToolButton > .button {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.8),inset 1px 0 shade(@theme_bg_color, 1.12);
+    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.8);
 }
 
 .linked .button:active,
@@ -2538,7 +2540,7 @@ background-color: @toolbar_bg_color;
 .inline-toolbar.toolbar .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton > .button:insensitive {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.78);
+    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.8);
 }
 
 /* remove box shadow from last-child and only-child */

@@ -53,7 +53,7 @@ NautilusWindow * {
 }
 
 NautilusWindow .pane-separator {
-	background-image: url("assets/null.png");
+	background-image: url("../assets/null.png");
 }
 
 
@@ -127,7 +127,7 @@ GeditWindow .pane-separator:hover {
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.8);
-    background-image: url("assets/null.png");
+    background-image: url("../assets/null.png");
     color: shade(@theme_bg_color, 1.0);
 }
 
