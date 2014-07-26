@@ -158,20 +158,20 @@ GtkIconView.content-view.cell.check:active {
  * Pane separators *
  *******************/
 .pane-separator {
-    background-image: url("assets/dark/pane-separator-grip-dark.svg");
+    background-image: url("assets/pane-separator-grip-dark.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .pane-separator:hover {
-    background-image: url("assets/dark/pane-separator-grip-prelight-dark.svg");
+    background-image: url("assets/pane-separator-grip-prelight-dark.svg");
 }
 
 .pane-separator.vertical {
-    background-image: url("assets/dark/pane-separator-grip-vertical-dark.svg");
+    background-image: url("assets/pane-separator-grip-vertical-dark.svg");
 }
 
 .pane-separator.vertical:hover {
-    background-image: url("assets/dark/pane-separator-grip-vertical-prelight-dark.svg");
+    background-image: url("assets/pane-separator-grip-vertical-prelight-dark.svg");
 }
 

@@ -25,7 +25,7 @@
     -GtkIMHtml-hyperlink-color: @link_color;
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
-    -GtkPaned-handle-size: 5;
+    -GtkPaned-handle-size: 4;
     -GtkProgressBar-min-horizontal-bar-height: 14;
     -GtkProgressBar-min-vertical-bar-width: 14;
     -GtkRange-slider-width: 13;
@@ -1277,7 +1277,7 @@ GtkModelButton.button:selected {
  * pane separator *
  ******************/
 .pane-separator {
-    background-color: @theme_bg_color;
+    background-color: @theme_base_color;
     color: transparent;
 }
 
