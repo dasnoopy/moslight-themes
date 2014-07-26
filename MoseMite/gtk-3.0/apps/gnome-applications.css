@@ -49,7 +49,7 @@ NautilusWindow .sidebar row:hover {
 }
 
 NautilusWindow * {
-	-GtkPaned-handle-size: 1;
+	-GtkPaned-handle-size: 1px;
 }
 
 NautilusWindow .pane-separator {

@@ -1274,17 +1274,8 @@ GtkModelButton.button:selected {
 
 
 /******************
- * pane separator *
+ *notebook pane separator *
  ******************/
-.pane-separator {
-    background-color: @theme_base_color;
-    color: transparent;
-}
-
-.pane-separator:hover,
-.pane-separator:selected {
-    color: @theme_text_color;
-}
 
 .notebook .pane-separator,
 .notebook .pane-separator:hover {
@@ -1570,8 +1561,8 @@ GtkLevelBar.vertical {
  * sidebar *
  ***********/
 .sidebar {
-    -GtkTreeView-horizontal-separator: 6px;
-    -GtkTreeView-vertical-separator: 1px;
+    -GtkTreeView-horizontal-separator: 0;
+    -GtkTreeView-vertical-separator: 0;
 }
 
 .sidebar,
@@ -1589,6 +1580,13 @@ GtkLevelBar.vertical {
 
 .sidebar .frame {
     border-width: 0;
+}
+
+.sidebar .radio,
+.sidebar .radio:focus,
+.sidebar .radio:selected {
+    background-image: none;
+    background-color: transparent;
 }
 
 /*************
@@ -1732,6 +1730,17 @@ GtkComboBox .separator {
     -GtkWidget-horizontal-separator: 0;
     -GtkWidget-vertical-separator: 0;
 }
+
+.pane-separator {
+    background-color: @theme_bg_color;
+    color: transparent;
+}
+
+.pane-separator:hover,
+.pane-separator:selected {
+    color: @theme_text_color;
+}
+
 
 /**************
  * spinbutton *
@@ -2272,7 +2281,7 @@ GtkColorButton.button {
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
-background-color: @toolbar_bg_color;
+    background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
                                       shade(@toolbar_bg_color, 1.00),
                                       shade(@toolbar_bg_color, 0.88)
