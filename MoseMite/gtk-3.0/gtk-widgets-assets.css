@@ -11,6 +11,13 @@
 	border-image: -gtk-scaled(url("assets/header-separator.png"),url("assets/header-separator@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
 }
 
+/****************
+ * Content view *
+ ****************/
+.content-view.view {
+    background-image: url("assets/noise-texture-light.png");
+}
+
 /*******************
  * check and radio *
  *******************/
@@ -150,14 +157,24 @@ GtkIconView.content-view.cell.check:active {
 /******************
  * pane separator *
  ******************/
-.pane-separator.horizontal {
-    background-image: url("assets/pane-handle.svg");
+/*******************
+ * Pane separators *
+ *******************/
+.pane-separator {
+    background-image: url("assets/pane-separator-grip.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+}
+
+.pane-separator:hover {
+    background-image: url("assets/pane-separator-grip-prelight.svg");
 }
 
 .pane-separator.vertical {
-    background-image: url("assets/pane-handle-vertical.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-image: url("assets/pane-separator-grip-vertical.svg");
 }
+
+.pane-separator.vertical:hover {
+    background-image: url("assets/pane-separator-grip-vertical-prelight.svg");
+}
+

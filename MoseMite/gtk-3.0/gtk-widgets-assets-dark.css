@@ -11,6 +11,12 @@
 	border-image: -gtk-scaled(url("assets/header-separator_dark.png"),url("assets/header-separator_dark@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
 }
 
+/****************
+ * Content view *
+ ****************/
+.content-view.view {
+    background-image: url("assets/noise-texture-dark.png");
+}
 
 
 /*******************
@@ -148,17 +154,24 @@ GtkIconView.content-view.cell.check:active {
     background-image: url("assets/grid-selection-checked-dark.svg");
 }
 
-/******************
- * pane separator *
- ******************/
-.pane-separator.horizontal {
-    background-image: url("assets/pane-handle.svg");
+/*******************
+ * Pane separators *
+ *******************/
+.pane-separator {
+    background-image: url("assets/dark/pane-separator-grip-dark.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+}
+
+.pane-separator:hover {
+    background-image: url("assets/dark/pane-separator-grip-prelight-dark.svg");
 }
 
 .pane-separator.vertical {
-    background-image: url("assets/pane-handle-vertical.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-image: url("assets/dark/pane-separator-grip-vertical-dark.svg");
 }
+
+.pane-separator.vertical:hover {
+    background-image: url("assets/dark/pane-separator-grip-vertical-prelight-dark.svg");
+}
+

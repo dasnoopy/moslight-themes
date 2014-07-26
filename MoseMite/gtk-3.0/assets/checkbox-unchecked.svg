@@ -13,7 +13,7 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="checkbox-unchecked.svg">
   <metadata
      id="metadata18">
@@ -35,15 +35,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1012"
+     inkscape:window-height="746"
      id="namedview16"
      showgrid="false"
      inkscape:zoom="16.875"
      inkscape:cx="8"
      inkscape:cy="8"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-x="179"
+     inkscape:window-y="175"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
@@ -73,7 +73,7 @@
      y="-15"
      rx="1"
      height="14"
-     style="fill:#f2f2f2"
+     style="fill:#ffffff"
      transform="rotate(90)"
      id="rect12" />
   <path

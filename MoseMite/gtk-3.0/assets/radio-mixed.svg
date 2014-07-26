@@ -13,7 +13,7 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="radio-mixed.svg">
   <metadata
      id="metadata20">
@@ -68,7 +68,7 @@
        gradientUnits="userSpaceOnUse" />
   </defs>
   <path
-     style="fill:#f2f2f2"
+     style="fill:#ffffff"
      d="M 7.9999998,15 C 4.1340073,15 1.0000003,11.865993 1.0000003,7.9999999 c 0,-3.8659932 3.1340069,-7 6.9999995,-7 3.8659932,0 7.0000002,3.1340068 7.0000002,7 C 15,11.865993 11.865993,15 7.9999997,15 z"
      id="path12" />
   <path

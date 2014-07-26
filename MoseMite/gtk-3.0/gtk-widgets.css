@@ -25,7 +25,7 @@
     -GtkIMHtml-hyperlink-color: @link_color;
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
-    -GtkPaned-handle-size: 3;
+    -GtkPaned-handle-size: 5;
     -GtkProgressBar-min-horizontal-bar-height: 14;
     -GtkProgressBar-min-vertical-bar-width: 14;
     -GtkRange-slider-width: 13;
@@ -1281,6 +1281,17 @@ GtkModelButton.button:selected {
     color: transparent;
 }
 
+.pane-separator:hover,
+.pane-separator:selected {
+    color: @theme_text_color;
+}
+
+.notebook .pane-separator,
+.notebook .pane-separator:hover {
+    background-color: @theme_base_color;
+}
+
+
 /**************
  * progressbar 
  **************/
@@ -2188,7 +2199,7 @@ GtkColorButton.button {
  **************/
 .header-bar,
 .header-bar.toolbar {
-    padding: 4px 12px 3px 12px; /* sopra destra sotto sinistra*/
+    padding: 4px 8px 3px 8px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
@@ -3036,6 +3047,15 @@ GtkTreeView row:nth-child(even) {
 GtkTreeView row:nth-child(odd) {
     background-color: shade(@sidebar_bg_color, 1.02);
 }    
+
+
+GtkTreeView.view.separator,
+GtkTreeView.separator,
+.separator,
+.separator:hover {
+    color: shade(@theme_bg_color, 0.8);
+    background-color: transparent;
+}
 
 /************
  * viewport *
