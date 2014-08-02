@@ -1,3 +1,7 @@
+2014.08.01
+* [GTK3] : minor changes and improvements applied to nautilus searchbar and other
+		   gtk3 applications.
+
 2014.07.11
 * [GS] : modified application running-indicator  
 * [GTK3] : fixed small bug with check and radio widgets in treeview selected

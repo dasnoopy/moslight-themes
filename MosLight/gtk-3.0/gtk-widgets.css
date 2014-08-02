@@ -589,7 +589,7 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-right-color: shade(@theme_bg_color, 0.8);
     border-left-color: shade(@theme_bg_color, 0.8);
     border-bottom-color: shade(@theme_bg_color, 0.7);
-    background-color: @theme_bg_color;
+    background-color: shade (@theme_bg_color,1.06);
     background-image: none;
     color: mix(@theme_text_color, @theme_base_color, 0.5);;
 }
@@ -1604,8 +1604,8 @@ GtkLevelBar.vertical {
 
 .sidebar row:prelight,
 .sidebar .view row:prelight {
-    border-color: mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.3);
-    background-color: mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.2);
+    border-color: mix(shade(@theme_base_color, 0.9), shade(@theme_bg_color, 1.35), 0.2);
+    background-color: mix(shade(@theme_base_color, 0.9), shade(@theme_bg_color, 1.35), 0.8);
     background-image: none;
 }
 

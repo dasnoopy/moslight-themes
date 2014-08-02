@@ -11,7 +11,12 @@
 	border-image: -gtk-scaled(url("assets/header-separator_dark.png"),url("assets/header-separator_dark@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
 }
 
-
+/****************
+ * Content view *
+ ****************/
+.content-view.view {
+    background-image: url("assets/noise-texture-dark.png");
+}
 
 /*******************
  * check and radio *
