@@ -10,7 +10,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    width="100%"
    height="100%"
    sodipodi:docname="radio-selected-insensitive.svg">
@@ -36,8 +36,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="687"
-     inkscape:window-height="480"
+     inkscape:window-width="1280"
+     inkscape:window-height="974"
      id="namedview14"
      showgrid="false"
      inkscape:zoom="14.75"
@@ -45,14 +45,14 @@
      inkscape:cy="8"
      inkscape:window-x="0"
      inkscape:window-y="25"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <g
      transform="translate(0 -1036.3622)"
      id="g4"
-     style="fill:#cccccc">
+     style="fill:#f2f2f2">
     <path
-       style="fill:#cccccc"
+       style="fill:#f2f2f2"
        d="m 8.0315672,1036.8571 c 4.1275048,0 7.4735088,3.3602 7.4735088,7.5051 0,4.1449 -3.346004,7.5051 -7.4735088,7.5051 -4.1275049,0 -7.47350894,-3.3602 -7.47350894,-7.5051 0,-4.1449 3.34600404,-7.5051 7.47350894,-7.5051 z"
        id="path6" />
   </g>
