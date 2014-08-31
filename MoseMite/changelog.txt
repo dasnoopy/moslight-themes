@@ -1,5 +1,8 @@
+2014.08.01
+* [GTK3] : changed applied to spinner and insensitive radio/check button 
+
 2014.06.30
-* [GTK2&3] : change base color and Nautilus siebar
+* [GTK2&3] : change base color and Nautilus sidebar
 * [GTK3]   : new CSD window controls 
 * [Mutter] : new metacity theme 
 
