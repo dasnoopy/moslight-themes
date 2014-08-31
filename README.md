@@ -21,7 +21,7 @@ Other distro:
 Search for the engines in your distribution's repository or install the engines from source.
 
 MosLight:
-![Moslight GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/moelight.png)
+![Moslight GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/moslight.png)
 
 Mosemite:
 ![Mosemite GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/mosemite.png)
