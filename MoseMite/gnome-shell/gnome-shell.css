@@ -21,7 +21,7 @@
 
 /* default text style */
 stage {
-    font-family: Helvetica Neue, Cantarell, sans-serif;
+    font-family: Source Sans Pro, Cantarell, sans-serif;
     font-size: 10pt;
     color: white;
 }
@@ -612,7 +612,7 @@ StScrollBar StButton#vhandle:active {
 .panel-button {
     -natural-hpadding: 6px;
     -minimum-hpadding: 6px;
-    font-weight: normal;
+    font-weight: bold;
     color: #ccc;
     transition-duration: 100ms;
 }

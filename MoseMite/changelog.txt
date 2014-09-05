@@ -1,4 +1,9 @@
+2014.09.05
+* [GS] : change default fonts to Source Sans Pro and selection colors
+
 2014.08.01
+* [GTK3] : minor changes and improvements applied to nautilus searchbar and other
+		   gtk3 applications.
 * [GTK3] : changed applied to spinner and insensitive radio/check button 
 
 2014.06.30
