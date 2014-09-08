@@ -1,3 +1,7 @@
+2014.09.05
+* [GS] : change default fonts to Source Sans Pro and selection colors
+* [GTK3] : evince pages appearance improved
+
 2014.08.01
 * [GTK3] : minor changes and improvements applied to nautilus searchbar and other
 		   gtk3 applications.
