@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=MosLight
+Comment=yet another osx/elementary clone theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=MosLight
+MetacityTheme=MosLight
+ButtonLayout=close,maximize,minimize:

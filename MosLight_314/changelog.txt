@@ -1,0 +1,5 @@
+
+2014.04.17:
+* Initial release for gnome 3.14: tweaked all new widget for gtk+3 ver 3.12
+* change colors
+* new metacity theme
