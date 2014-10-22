@@ -1,7 +1,10 @@
 moslight-themes
 ===============
 
-Themes for GTK2/3 and Gnome shell 3.12
+Note:
+
+* Moslight is a theme for GTK2/3 and Gnome shell version 3.12 only...
+* Mosemite is a theme for GTK2/3 and Gnome shell version 3.14 only...
 
 To install the theme, extract the archive into /usr/share/themes then use Gnome-Tweak-Tool to choose the theme.
 
