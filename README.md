@@ -1,5 +1,5 @@
-moslight-themes
-===============
+Mos*-themes
+-----------
 
 Note:
 

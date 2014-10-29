@@ -468,6 +468,7 @@ column-header:last-child .button {
 	border-radius: 0;
 	border: none;
 }
+
 /****************
  * content view *
  ****************/
@@ -1800,15 +1801,15 @@ GtkComboBox .separator {
 	-GtkPaned-handle-size: 1;
 	border-width: 0 1px 1px 1px;
 	border-style: solid;
-	border-color: shade(@borders, 0.88);
-	background-color: @sidebar_bg;
+	border-color: transparent;
+	background-color: transparent;
 	background-image: url("assets/null.png");
-	color: @borders;
+	color: transparent;
 }
 
 .pane-separator:hover,
 .pane-separator:selected {
-	color: @theme_text_color;
+	color: transparent;
 }
 
 
@@ -2291,7 +2292,12 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: @toolbar_bg_color;
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                      shade(@toolbar_bg_color, 1.00),
+                                      shade(@toolbar_bg_color, 0.88)
+                                      );
+
+    color: @toolbar_fg_color;
 }
 
 .toolbar .button {
@@ -2323,13 +2329,16 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
-	-GtkToolbar-button-relief: normal;
+
     padding: 3px;
-    border-width: 0;
-    border-style: none;
-    border-color: @borders;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: shade(@toolbar_bg_color, 0.7);
     background-color: @toolbar_bg_color;
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                      shade(@toolbar_bg_color, 1.00),
+                                      shade(@toolbar_bg_color, 0.88)
+                                      );
 
     color: @toolbar_fg_color;
 }
@@ -2349,7 +2358,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .primary-toolbar .raised .button,
 .primary-toolbar .raised.button,
 .toolbar GtkComboBox,
-.toolbar .button,
 .header-bar GtkComboBox,
 .header-bar .button {
     border-top-color: shade(@toolbar_bg_color, 0.8);
@@ -2371,6 +2379,12 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-right-color: shade(@toolbar_bg_color, 0.66);
     border-left-color: shade(@toolbar_bg_color, 0.66);
     border-bottom-color: shade(@toolbar_bg_color, 0.6);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@toolbar_bg_color, 1.02), 1.12),
+                                      shade(shade(@toolbar_bg_color, 1.02), 0.96)
+                                      );
+
+    color: @toolbar_fg_color;
 }
 
 .primary-toolbar .button:focus,
@@ -2386,15 +2400,18 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 .primary-toolbar .button:active,
+.primary-toolbar .button:checked,
 .toolbar .button:active,
-.header-bar .button:active {
+.toolbar .button:checked,
+.header-bar .button:active,
+.toolbar .button:checked {
     border-top-color: shade(@toolbar_bg_color, 0.76);
     border-right-color: shade(@toolbar_bg_color, 0.76);
     border-left-color: shade(@toolbar_bg_color, 0.76);
     border-bottom-color: shade(@toolbar_bg_color, 0.76);
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@toolbar_bg_color, 1.02), 1.12),
-                                      shade(shade(@toolbar_bg_color, 1.02), 1.04)
+                                      shade(shade(@toolbar_bg_color, 1.02), 0.96),
+                                      shade(shade(@toolbar_bg_color, 1.02), 1.12)
                                       );
 }
 
@@ -2441,7 +2458,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-bottom-color: shade(@toolbar_bg_color, 0.9);
     background-image: linear-gradient(to bottom,
                                       shade(@toolbar_bg_color, 0.90),
-                                      shade(@toolbar_bg_color, 0.95)
+                                      shade(@toolbar_bg_color, 0.96)
                                       );
 }
 
@@ -2465,8 +2482,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-left-color: shade(@toolbar_bg_color, 0.66);
     border-bottom-color: shade(@toolbar_bg_color, 0.7);
 }
-
-
 /*******************
  * inline-toolbar *
  *******************/
