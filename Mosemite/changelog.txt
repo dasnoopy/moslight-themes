@@ -1,5 +1,9 @@
+2014.11.15
+* GTK3: reworked menu section using new css style (adwaita theme)
 
-2014.04.17:
-* Initial release for gnome 3.14: tweaked all new widget for gtk+3 ver 3.12
-* change colors
-* new metacity theme
+2014.11.12:
+* Initial release for gnome 3.14: gtk3 theme is usable but not perfect :); gtk2 and gnome shell theme works fine.
+* GTK2/3: lighter colors
+* GTK3 : implemented basic changes to work with gtk+ 3.14.x
+* GS:  implemented changes for gnome 3.14
+* new metacity/mutter  theme

@@ -23,8 +23,8 @@ ArchLinux:
 Other distro:
 Search for the engines in your distribution's repository or install the engines from source.
 
-MosLight:
+MosLight (GTK+3.12) :
 ![Moslight GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/moslight.png)
 
-Mosemite:
+Mosemite (GTK+3.14) :
 ![Mosemite GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/mosemite.png)

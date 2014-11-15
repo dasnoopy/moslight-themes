@@ -937,238 +937,64 @@ GtkInfoBar {
     color: alpha(@theme_fg_color, 0.7);
 }
 
-/********
- * menu *
- ********/
-GtkTreeMenu.menu,
-GtkMenuToolButton.menu,
-GtkComboBox .menu {
-    background-color: @menu_bg_color;
-}
 
-.primary-toolbar .menu,
-.primary-toolbar .button .menu,
-.toolbar .menu,
-.toolbar .primary-toolbar .menu,
-.header-bar .menu,
-.header-bar .primary-toolbar .menu,
-.menu {
-	background-color: @menu_bg_color;
-	color: @menu_fg_color;
-	padding: 0;
-	border: 1px solid @borders;
-	margin: 4px;
-}
 
-.menu.button:hover,
-.menu.button:active,
-.menu.button:active *:insensitive,
-.menu.button:insensitive,
-.menu.button {
-    border-style: none;
-    background-color: @menu_bg_color;
-    background-image: none;
-}
-
-.context-menu {
-    font: initial;
-}
-
-/* ubuntu software center menu */
-#toolbar-popup {
-    background-color: @menu_bg_color;
-    color: @menu_fg_color;
-}
-
-/***********
- * menubar *
- ***********/
+/*********
+ * Menus *
+ *********/
 .menubar {
-    -GtkWidget-window-dragging: true;
+  -GtkWidget-window-dragging: true;
+  padding: 0px; }
+  .menubar:backdrop {
+    background-color: @theme_bg_color }
+  .menubar > .menuitem {
+    padding: 3px 6px; }
+    .menubar > .menuitem:hover {
+      background-color: @theme_selected_bg_color;
+      color: @theme_selected_fg_color; }
+    .menubar > .menuitem:insensitive {
+      color: #8d9091;
+      box-shadow: none; }
 
+.menu {
+  margin: 4px;
+  padding: 0px;
+  background-color: @menu_bg_color; }
+  .menu .menuitem {
+    text-shadow: none;
+    padding: 4px; }
+    .menu .menuitem:hover {
+      color: @theme_selected_fg_color_fg_color;
+      background-color: @theme_selected_bg_color; }
+    .menu .menuitem:insensitive {
+      color: #8d9091; }
+      .menu .menuitem:insensitive:backdrop {
+        color: #c7c7c7; }
+    .menu .menuitem:backdrop, .menu .menuitem:backdrop:hover {
+      color: #8d9091;
+      background-color: #fcfcfc; }
+    .menu .menuitem.arrow {
+      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+    .menu .menuitem.arrow:dir(rtl) {
+      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
+  .menu.button, .header-bar .menu.button.titlebutton,
+  .titlebar .menu.button.titlebutton,
+  GtkCalendar.header .menu.button.titlebutton {
     border-style: none;
-    background-color: @menubar_bg_color;
-    background-image: none;
-    color: @menubar_fg_color;
-}
-
-/***************
- * menubaritem *
- ***************/
-.menubar.menuitem,
-.menubar .menuitem {
-    padding: 3px 6px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    color: @menubar_fg_color;
-}
-
-.menubar.menuitem:hover,
-.menubar .menuitem:hover {
-    border-color: shade(@theme_selected_bg_color, 1.0);
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.0),
-                                      shade(@theme_selected_bg_color, 1.0)
-                                      );
-
-    color: @theme_selected_fg_color;
-}
-
-.menubar .menuitem *:hover {
-    color: @theme_selected_fg_color;
-}
-
-/************
- * menuitem *
- ************/
-GtkTreeMenu .menuitem {
-    padding: 0;
-    border-width: 0;
-}
-
-.menuitem,
-.menu .menuitem {
-    padding: 3px 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 0;
-    background-color: transparent;
-    background-image: none;
-    color: @menu_fg_color;
-
-    -GtkMenuItem-arrow-scaling: 0.5;
-}
-
-.menu .menuitem:active,
-.menu .menuitem:hover {
-    border-color: @theme_selected_bg_color;
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.0),
-                                      shade(@theme_selected_bg_color, 1.0)
-                                      );
-}
-
-.menu .menuitem:active,
-.menu .menuitem *:active,
-.menu .menuitem:hover,
-.menu .menuitem *:hover {
-    color: @theme_selected_fg_color;
-}
-
-.menu .menuitem:insensitive,
-.menu .menuitem *:insensitive {
-    color: mix(@menu_fg_color, @menu_bg_color, 0.5);
-}
-
-.menuitem.check,
-.menuitem.radio,
-.menuitem.check:hover,
-.menuitem.radio:hover,
-.menuitem.check:insensitive,
-.menuitem.radio:insensitive {
-    border-style: none;
-    background-color: transparent;
-    background-image: none;
-}
-
-.menuitem.check:active,
-.menuitem.radio:active {
-    border-style: none;
-    background-color: transparent;
-}
-
-.menuitem.arrow {
-    color: alpha(@menu_fg_color, 0.6);
-}
-
-.menuitem GtkCalendar:inconsistent {
-    color: mix(@menu_fg_color, @menu_bg_color, 0.5);
-}
-
-.menuitem GtkCalendar.button {
-    border-style: none;
-    background-color: transparent;
-    background-image: none;
-}
-
-.menuitem .entry {
-    border-color: shade(@menu_bg_color, 0.7);
-    background-color: @menu_bg_color;
-    background-image: none;
-    color: @menu_fg_color;
-}
-
-.menuitem .entry:active,
-.menuitem .entry:focus {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-}
+    border-radius: 0; }
+    .menu.button.top {
+      border-bottom: 1px solid #eaeaea; }
+    .menu.button.bottom {
+      border-top: 1px solid #eaeaea; }
+    .menu.button:hover {
+      background-color: #eaeaea; }
+    .menu.button:insensitive {
+      color: transparent;
+      background-color: transparent;
+      border-color: transparent; }
 
 .menuitem .accelerator {
-    color: alpha(@menu_fg_color, 0.6);
-}
-
-.menuitem .accelerator:hover {
-    color: alpha(@theme_selected_fg_color, 0.8);
-}
-
-.menuitem .accelerator:insensitive {
-    color: alpha(mix(@menu_fg_color, @menu_bg_color, 0.5), 0.6);
-}
-
-GtkModelMenuItem GtkBox GtkImage {
-    padding-right: 4px;
-}
-
-GtkModelButton.button
-{
-    color: @theme_fg_color;
-}
-
-GtkModelButton.button:active,
-GtkModelButton.button:insensitive,
-GtkModelButton.button:active:insensitive,
-GtkModelButton.button {
-    background-color: transparent;
-    background-image: none;
-    border-color: transparent;
-    border-image: none;
-    border-style: none;
-    box-shadow: none;
-}
-
-GtkModelButton.button:backdrop,
-GtkModelButton.button:hover:backdrop,
-GtkModelButton.button:insensitive:backdrop,
-GtkModelButton.button:active:insensitive:backdrop,
-GtkModelButton.button:active:backdrop,
-GtkModelButton.button:active:hover:backdrop,
-GtkModelButton.button:active:selected:backdrop {
-    text-shadow: none;
-    icon-shadow: none;
-    color: @theme_selected_fg_color;
-    background-color: transparent;
-    background-image: none;
-    border-color: transparent;
-    border-image: none;
-    border-style: none;
-    box-shadow: none;
-}
-
-GtkModelButton.button:active:hover,
-GtkModelButton.button:hover,
-GtkModelButton.button:selected {
-    background-image: none;
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-    text-shadow: none;
-    border-width: 0;
-    border-color: transparent;
-}
-
+  color: alpha(currentColor,0.55); }
 
 /**********************
  * Notebooks and tabs *
@@ -3976,21 +3802,62 @@ GtkBubbleWindow .toolbar {
 	padding: 5px 0px 6px 0px;
 }
 
+/**********************
+ * Window Decorations *
+ *********************/
 .window-frame {
-    border-style: none;
-    border-radius: 3px 3px 0 0;
-    box-shadow: 0 1px 6px alpha(black, 0.5),
-                0 0 0 1px alpha(black, 0.2);
-
-    /* this is used for the resize cursor area */
-    margin: 4px;
-}
-
-.window-frame.tiled {
+  border-radius: 3px 3px 0 0;
+  border-width: 0px;
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.23);
+  /* this is used for the resize cursor area */
+  margin: 10px; }
+  .window-frame:backdrop {
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.18); }
+  .window-frame.tiled {
+    border-radius: 0; }
+  .window-frame.csd.popup {
     border-radius: 0;
-}
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
+  .window-frame.csd.tooltip {
+    border-radius: 3px;
+    box-shadow: none; }
+  .window-frame.csd.message-dialog {
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
 
-.window-frame:backdrop {
-    box-shadow: 0 1px 5px alpha(black, 0.5),
-                0 0 0 1px alpha(black, 0.2);
-}
+.header-bar .titlebutton.button,
+.titlebar .titlebutton.button,
+GtkCalendar.header .titlebutton.button {
+  text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
+  icon-shadow: 0 1px rgba(255, 255, 255, 0.76923); }
+  .header-bar .titlebutton.button:backdrop,
+  .titlebar .titlebutton.button:backdrop,
+  GtkCalendar.header .titlebutton.button:backdrop {
+    icon-shadow: none; }
+
+.header-bar.selection-mode .titlebutton.button,
+.titlebar.selection-mode .titlebutton.button,
+GtkCalendar.selection-mode.header .titlebutton.button {
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.54353); }
+  .header-bar.selection-mode .titlebutton.button:backdrop,
+  .titlebar.selection-mode .titlebutton.button:backdrop,
+  GtkCalendar.selection-mode.header .titlebutton.button:backdrop {
+    icon-shadow: none; }
+
+.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus, .menuitem.button.flat:selected, .header-bar .menuitem.titlebutton.button:selected,
+.titlebar .menuitem.titlebutton.button:selected,
+GtkCalendar.header .menuitem.titlebutton.button:selected, .list-row:selected {
+  background-color: @theme_selected_bg_color;
+  color: @base_color;
+  outline-color: rgba(255, 255, 255, 0.3); }
+  .view:backdrop:selected, GtkLabel:backdrop:selected, GtkFlowBox .grid-child:backdrop:selected, .entry:backdrop:selected, .menuitem.button.flat:backdrop:selected, .header-bar .menuitem.titlebutton.button:backdrop:selected,
+  .titlebar .menuitem.titlebutton.button:backdrop:selected,
+  GtkCalendar.header .menuitem.titlebutton.button:backdrop:selected, .list-row:backdrop:selected {
+    color: #fcfcfc; }
+
+/* Decouple the font of context menus from their entry/textview */
+.touch-selection,
+.context-menu {
+  font: initial; }
+
