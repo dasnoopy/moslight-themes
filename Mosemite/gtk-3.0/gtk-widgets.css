@@ -234,34 +234,14 @@ GtkAssistant .sidebar {
 }
 
 .button:focus,
-.button:hover:focus {
-    border-top-color: shade(@theme_bg_color, 0.7);
-    border-right-color: shade(@theme_bg_color, 0.7);
-    border-left-color: shade(@theme_bg_color, 0.7);
-    border-bottom-color: shade(@theme_bg_color, 0.7);
-}
+.button:hover:focus {}
 
-.button:active:hover {
-    border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.8);
-    border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
-}
+.button:active:hover {}
 
 .button:active:focus,
-.button:active:hover:focus {
-    border-top-color: shade(@theme_bg_color, 0.7);
-    border-right-color: shade(@theme_bg_color, 0.7);
-    border-left-color: shade(@theme_bg_color, 0.7);
-    border-bottom-color: shade(@theme_bg_color, 0.7);
-}
+.button:active:hover:focus {}
 
 .button:insensitive {
-    border-style: solid;
-    border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.8);
-    border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.7);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 1.04)
@@ -277,9 +257,9 @@ GtkAssistant .sidebar {
 /* default button */
 .button.default {
     border-top-color: shade(@theme_selected_bg_color, 0.8);
-    border-right-color: shade(@theme_selected_bg_color, 0.8);
-    border-left-color: shade(@theme_selected_bg_color, 0.8);
-    border-bottom-color: shade(@theme_selected_bg_color, 0.8);
+    border-right-color: shade(@theme_selected_bg_color, 0.7);
+    border-left-color: shade(@theme_selected_bg_color, 0.7);
+    border-bottom-color: shade(@theme_selected_bg_color, 0.6);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.96)
@@ -288,30 +268,17 @@ GtkAssistant .sidebar {
     color: @theme_selected_fg_color;
 }
 
-.button.default:hover {
-    border-top-color: shade(@theme_selected_bg_color, 0.7);
-    border-right-color: shade(@theme_selected_bg_color, 0.7);
-    border-left-color: shade(@theme_selected_bg_color, 0.7);
-    border-bottom-color: shade(@theme_selected_bg_color, 0.7);
-}
+.button.default:hover {}
 
-.button.default:active {
-    border-top-color: shade(@theme_selected_bg_color, 0.8);
-    border-right-color: shade(@theme_selected_bg_color, 0.8);
-    border-left-color: shade(@theme_selected_bg_color, 0.8);
-    border-bottom-color: shade(@theme_selected_bg_color, 0.8);
+.button.default:active,
+.button.default:checked {
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.96),
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.12)
                                       );
 }
 
-.button.default:active:hover {
-    border-top-color: shade(@theme_selected_bg_color, 0.7);
-    border-right-color: shade(@theme_selected_bg_color, 0.7);
-    border-left-color: shade(@theme_selected_bg_color, 0.7);
-    border-bottom-color: shade(@theme_selected_bg_color, 0.7);
-}
+.button.default:active:hover {}
 
 .button.flat {
 	border-color: transparent;
