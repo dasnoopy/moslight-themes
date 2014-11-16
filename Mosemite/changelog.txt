@@ -1,5 +1,9 @@
 2014.11.15
 * GTK3: reworked menu section using new css style (adwaita theme)
+* GTK3: insensitive spinbutton background
+* GTK3: entry error and entry warning_bg_color
+* GTK3: window frame 
+* GTK3: buttons state (e.g. : insensitive or focused)
 
 2014.11.12:
 * Initial release for gnome 3.14: gtk3 theme is usable but not perfect :); gtk2 and gnome shell theme works fine.

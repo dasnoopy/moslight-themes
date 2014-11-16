@@ -194,7 +194,7 @@ GtkAssistant .sidebar {
 }
 
 /**********
- * button *
+ * buttons *
  **********/
 
 .button {
@@ -218,21 +218,14 @@ GtkAssistant .sidebar {
 
 
 .button:hover {
-    border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.7);
-    border-left-color: shade(@theme_bg_color, 0.7);
-    border-bottom-color: shade(@theme_bg_color, 0.6);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 1.04)
                                       );
 }
 
-.button:active {
-    border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.8);
-    border-left-color: shade(@theme_bg_color, 0.8);
-    border-bottom-color: shade(@theme_bg_color, 0.8);
+.button:active,
+.button:checked {
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 1.12)
@@ -652,6 +645,26 @@ GtkComboBox.combobox-entry .button:insensitive {
                                       );
 
     color: @theme_selected_fg_color;
+}
+
+.entry.error {
+    color: @theme_selected_fg_color; }
+    .entry.error:focus {
+      background-color: #d94141;
+      background-image: none;}
+    .entry.error:selected, .entry.error:selected:focus {
+	  color: #d94141;
+      background-color: #ffffff; 
+}
+
+.entry.warning {
+    color: @theme_selected_fg_color; }
+    .entry.warning:focus {
+      background-color: #f57900;
+      background-image: none;}
+    .entry.warning:selected, .entry.warning:selected:focus {
+	  color: #f57900;
+      background-color: #ffffff;
 }
 
 
@@ -1770,11 +1783,9 @@ GtkComboBox .separator {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-
-.spinbutton.vertical.entry {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0;
+.spinbutton.entry:insensitive,
+.spinbutton.vertical.entry:insensitive {
+	background-color: transparent;
 }
 
 /*********************
@@ -2183,9 +2194,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 .primary-toolbar .raised .button,
 .primary-toolbar .raised.button,
-.toolbar GtkComboBox,
-.header-bar GtkComboBox,
-.header-bar .button {
+.toolbar GtkComboBox {
     border-top-color: shade(@toolbar_bg_color, 0.8);
     border-right-color: shade(@toolbar_bg_color, 0.76);
     border-left-color: shade(@toolbar_bg_color, 0.76);
@@ -2199,8 +2208,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 .primary-toolbar .button:hover,
-.toolbar .button:hover,
-.header-bar .button:hover {
+.toolbar .button:hover {
     border-top-color: shade(@toolbar_bg_color, 0.7);
     border-right-color: shade(@toolbar_bg_color, 0.66);
     border-left-color: shade(@toolbar_bg_color, 0.66);
@@ -2209,41 +2217,33 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
                                       shade(shade(@toolbar_bg_color, 1.02), 1.12),
                                       shade(shade(@toolbar_bg_color, 1.02), 0.96)
                                       );
-
     color: @toolbar_fg_color;
 }
 
 .primary-toolbar .button:focus,
 .primary-toolbar .button:hover:focus,
 .toolbar .button:focus,
-.toolbar .button:hover:focus,
-.header-bar .button:focus,
-.header-bar .button:hover:focus {
-    border-top-color: shade(@toolbar_bg_color, 0.7);
-    border-right-color: shade(@toolbar_bg_color, 0.66);
-    border-left-color: shade(@toolbar_bg_color, 0.66);
-    border-bottom-color: shade(@toolbar_bg_color, 0.6);
+.toolbar .button:hover:focus {
+
 }
 
 .primary-toolbar .button:active,
 .primary-toolbar .button:checked,
 .toolbar .button:active,
-.toolbar .button:checked,
-.header-bar .button:active,
 .toolbar .button:checked {
-    border-top-color: shade(@toolbar_bg_color, 0.76);
-    border-right-color: shade(@toolbar_bg_color, 0.76);
-    border-left-color: shade(@toolbar_bg_color, 0.76);
-    border-bottom-color: shade(@toolbar_bg_color, 0.76);
+    border-top-color: shade(@toolbar_bg_color, 0.6);
+    border-right-color: shade(@toolbar_bg_color, 0.66);
+    border-left-color: shade(@toolbar_bg_color, 0.66);
+    border-bottom-color: shade(@toolbar_bg_color, 0.7);
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@toolbar_bg_color, 1.02), 0.96),
-                                      shade(shade(@toolbar_bg_color, 1.02), 1.12)
+                                      shade(shade(@toolbar_bg_color, 1.02), 1.12),
+                                      shade(shade(@toolbar_bg_color, 1.02), 0.96)
                                       );
+    color: @toolbar_fg_color;
 }
 
 .primary-toolbar .button:active:hover,
-.toolbar .button:active:hover,
-.header-bar .button:active:hover {
+.toolbar .button:active:hover {
     border-top-color: shade(@toolbar_bg_color, 0.6);
     border-right-color: shade(@toolbar_bg_color, 0.66);
     border-left-color: shade(@toolbar_bg_color, 0.66);
@@ -2253,9 +2253,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .primary-toolbar .button:active:focus,
 .primary-toolbar .button:active:hover:focus,
 .toolbar .button:active:focus,
-.toolbar .button:active:hover:focus,
-.header-bar .button:active:focus,
-.header-bar .button:active:hover:focus {
+.toolbar .button:active:hover:focus {
     border-top-color: shade(@toolbar_bg_color, 0.6);
     border-right-color: shade(@toolbar_bg_color, 0.66);
     border-left-color: shade(@toolbar_bg_color, 0.66);
@@ -2263,34 +2261,17 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 .primary-toolbar .button:insensitive,
-.toolbar .button:insensitive,
-.header-bar .button:insensitive {
-    border-top-color: shade(@toolbar_bg_color, 0.9);
-    border-right-color: shade(@toolbar_bg_color, 0.86);
-    border-left-color: shade(@toolbar_bg_color, 0.86);
-    border-bottom-color: shade(@toolbar_bg_color, 0.8);
-    background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 1.12),
-                                      shade(@toolbar_bg_color, 0.96)
-                                      );
+.toolbar .button:insensitive {
+    background-image: none;
 }
 
 .primary-toolbar .button:active *:insensitive,
-.toolbar .button:active *:insensitive,
-.header-bar .button:active *:insensitive {
-    border-top-color: shade(@toolbar_bg_color, 0.8);
-    border-right-color: shade(@toolbar_bg_color, 0.86);
-    border-left-color: shade(@toolbar_bg_color, 0.86);
-    border-bottom-color: shade(@toolbar_bg_color, 0.9);
-    background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 0.90),
-                                      shade(@toolbar_bg_color, 0.96)
-                                      );
+.toolbar .button:active *:insensitive {
+    background-image: none;
 }
 
 .primary-toolbar .entry,
-.toolbar .entry,
-.header-bar .entry {
+.toolbar .entry {
     border-top-color: shade(@toolbar_bg_color, 0.7);
     border-right-color: shade(@toolbar_bg_color, 0.76);
     border-left-color: shade(@toolbar_bg_color, 0.76);
@@ -2300,9 +2281,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .primary-toolbar .entry:active,
 .primary-toolbar .entry:focus,
 .toolbar .entry:active,
-.toolbar .entry:focus,
-.header-bar .entry:active,
-.header-bar .entry:focus {
+.toolbar .entry:focus {
     border-top-color: shade(@toolbar_bg_color, 0.6);
     border-right-color: shade(@toolbar_bg_color, 0.66);
     border-left-color: shade(@toolbar_bg_color, 0.66);
