@@ -2463,6 +2463,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .linked .entry:last-child,
 .linked .entry:only-child {
 	border-width: 1px;
+	border-radius: 0;
 }
 
 /* linked button shadows (vertical) */
