@@ -924,6 +924,8 @@ GtkInfoBar {
  *********/
 .menubar {
   -GtkWidget-window-dragging: true;
+    background-color: transparent;
+    background-image: linear-gradient(to top, @toolbar_bg_color, @toolbar_bg_color);
   padding: 0px; }
   .menubar:backdrop {
     background-color: @theme_bg_color }
@@ -933,7 +935,7 @@ GtkInfoBar {
       background-color: @theme_selected_bg_color;
       color: @theme_selected_fg_color; }
     .menubar > .menuitem:insensitive {
-      color: #8d9091;
+      color: @insensitive_fg_color;
       box-shadow: none; }
 
 .menu {
@@ -2140,9 +2142,8 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
-    background-color: @toolbar_bg_color;
-    background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 1.00),
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, @toolbar_bg_color,
                                       shade(@toolbar_bg_color, 0.88)
                                       );
 
@@ -2389,6 +2390,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 /* middle button */
+.linked .entry,
 .linked .button,
 .linked .button:active,
 .linked .button:active:hover,
@@ -2406,6 +2408,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 /*leftmost button */
+.linked .entry:first-child,
 .linked .button:first-child,
 .linked .button:active:first-child,
 .linked .button:active:hover:first-child,
@@ -2424,6 +2427,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 /* rightmost button */
+.linked .entry:last-child,
 .linked .button:last-child,
 .linked .button:active:last-child,
 .linked .button:active:hover:last-child,
@@ -2442,6 +2446,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 /* linked single button */
+.linked .entry:only-child,
 .linked .button:only-child,
 .linked .button:active:only-child,
 .linked .button:active:hover:only-child,
@@ -2454,16 +2459,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .inline-toolbar.toolbar GtkToolButton:only-child .button:insensitive {
     border-width: 1px;
     border-radius: 2px;
-}
-
-
-/* linked entries only */
-.linked .entry,
-.linked .entry:first-child,
-.linked .entry:last-child,
-.linked .entry:only-child {
-	border-width: 1px;
-	border-radius: 0;
 }
 
 /* linked button shadows (vertical) */
