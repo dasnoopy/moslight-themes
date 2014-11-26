@@ -157,7 +157,11 @@ GtkGrid:insensitive {
 .button:active,
 .primary-toolbar .button:active,
 .toolbar .button:active,
-.header-bar .button:active {
+.header-bar .button:active,
+.button:checked,
+.primary-toolbar .button:checked,
+.toolbar .button:checked,
+.header-bar .button:checked {
     box-shadow: inset 0 1px alpha(@dark_shadow, 0.16);
 }
 
@@ -172,7 +176,11 @@ GtkGrid:insensitive {
 .primary-toolbar .button:active *:insensitive,
 .toolbar .button:active *:insensitive,
 .header-bar .button:active *:insensitive,
-.entry:insensitive {
+.entry:insensitive,
+.button:checked *:insensitive,
+.primary-toolbar .button:checked *:insensitive,
+.toolbar .button:checked *:insensitive,
+.header-bar .button:checked *:insensitive {
     box-shadow: none;
 }
 
@@ -189,7 +197,7 @@ GtkAssistant .sidebar {
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.88);
     border-radius: 0;
-    background-color: shade(@sidebar_bg_color, 1.0);
+    background-color: @sidebar_bg_color;
     color: mix(@theme_fg_color, @theme_bg_color, 0.1);
 }
 
@@ -233,19 +241,20 @@ GtkAssistant .sidebar {
     box-shadow: inset 0 1px alpha(@dark_shadow, 0.16);
 }
 
+.button:active:hover,
+.button:checked:hover {}
+
 .button:focus,
-.button:hover:focus {}
-
-.button:active:hover {}
-
+.button:hover:focus 
 .button:active:focus,
-.button:active:hover:focus {}
+.button:active:hover:focus,
+.button:active:hover:focus,
+.button:checked:focus,
+.button:checked:hover:focus {}
 
 .button:insensitive {
-    background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 1.02), 1.12),
-                                      shade(shade(@theme_bg_color, 1.02), 1.04)
-                                      );
+    background-color: shade (@insensitive_bg_color, 1.22);
+    background-image: none;
 }
 
 .button:active *:insensitive {
@@ -278,7 +287,8 @@ GtkAssistant .sidebar {
                                       );
 }
 
-.button.default:active:hover {}
+.button.default:active:hover,
+.button.default:checked:hover  {}
 
 .button.flat {
 	border-color: transparent;
@@ -351,7 +361,8 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
  * column-header *
  *****************/
 column-header .button,
-column-header .button:active {
+column-header .button:active,
+column-header .button:checked  {
 	padding: 2px 4px 2px 4px;
     border-width: 0 1px 1px 0;
     border-radius: 0;
@@ -360,8 +371,10 @@ column-header .button:active {
 
 column-header .button,
 column-header .button:active,
+column-header .button:checked,
 column-header .button:focus,
-column-header .button:active:focus {
+column-header .button:active:focus,
+column-header .button:checked:focus  {
     border-color: shade(@theme_base_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(@theme_base_color, 1.00),
@@ -371,8 +384,10 @@ column-header .button:active:focus {
 
 column-header .button:hover,
 column-header .button:active:hover,
+column-header .button:checked:hover,
 column-header .button:hover:focus,
-column-header .button:active:hover:focus {
+column-header .button:active:hover:focus,
+column-header .button:checked:hover:focus {
     border-color: shade(@theme_base_color, 0.8);
 }
 
@@ -554,10 +569,12 @@ GtkComboBox.combobox-entry .entry:insensitive {
 .primary-toolbar GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:checked,
 .primary-toolbar GtkComboBox.combobox-entry .button:insensitive,
 GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:active,
+GtkComboBox.combobox-entry .button:checked,
 GtkComboBox.combobox-entry .button:insensitive {
     border-width: 1px 1px 1px 1px;
     border-bottom-left-radius: 0;
@@ -1452,7 +1469,6 @@ GtkLevelBar.vertical {
 	background-color: shade (@theme_bg_color, 0.95);
 }
 
-
 .sidebar .scrollbar.trough {
     background-color: @sidebar_bg_color;
     background-image: none;
@@ -2221,7 +2237,9 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 .primary-toolbar .button:active:hover,
-.toolbar .button:active:hover {
+.toolbar .button:active:hover,
+.primary-toolbar .button:checked:hover,
+.toolbar .button:checked:hover {
     border-top-color: shade(@toolbar_bg_color, 0.6);
     border-right-color: shade(@toolbar_bg_color, 0.66);
     border-left-color: shade(@toolbar_bg_color, 0.66);
@@ -2230,8 +2248,12 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 .primary-toolbar .button:active:focus,
 .primary-toolbar .button:active:hover:focus,
+.primary-toolbar .button:checked:focus,
+.primary-toolbar .button:checked:hover:focus,
 .toolbar .button:active:focus,
-.toolbar .button:active:hover:focus {
+.toolbar .button:active:hover:focus,
+.toolbar .button:checked:focus,
+.toolbar .button:checked:hover:focus {
     border-top-color: shade(@toolbar_bg_color, 0.6);
     border-right-color: shade(@toolbar_bg_color, 0.66);
     border-left-color: shade(@toolbar_bg_color, 0.66);
@@ -2244,7 +2266,9 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 .primary-toolbar .button:active *:insensitive,
-.toolbar .button:active *:insensitive {
+.toolbar .button:active *:insensitive,
+.primary-toolbar .button:checked *:insensitive,
+.toolbar .button:checked *:insensitive {
     background-image: none;
 }
 
@@ -2310,7 +2334,8 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-color: shade(@theme_bg_color, 0.7);
 }
 
-.inline-toolbar.toolbar .button:active {
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:checked  {
     border-color: shade(@theme_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 0.88),
@@ -2318,14 +2343,17 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
                                       );
 }
 
-.inline-toolbar.toolbar .button:active:hover {
+.inline-toolbar.toolbar .button:active:hover,
+.inline-toolbar.toolbar .button:checked:hover {
     border-color: shade(@theme_bg_color, 0.7);
 }
 
 .inline-toolbar.toolbar .button:focus,
 .inline-toolbar.toolbar .button:hover:focus,
 .inline-toolbar.toolbar .button:active:focus,
-.inline-toolbar.toolbar .button:active:hover:focus {
+.inline-toolbar.toolbar .button:active:hover:focus,
+.inline-toolbar.toolbar .button:checked:focus,
+.inline-toolbar.toolbar .button:checked:hover:focus {
     border-color: shade(@theme_bg_color, 0.7);
 }
 
@@ -2911,7 +2939,7 @@ GtkViewport.frame {
 /**************
  *  popovers  *
  **************/
-.popover {
+GtkPopover {
 	background-clip: initial;
 	margin: 10px;
 	padding: 2px;
@@ -2919,34 +2947,42 @@ GtkViewport.frame {
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 3px;
+	background-image: none;
 	background-color: @sidebar_bg_color;
 	box-shadow: 0 1px 2px @wm_shadow;
 	text-shadow: none;
 	icon-shadow: none; 
 }
-.popover > .list, 
-.popover > .view, 
-.popover > .toolbar .popover.osd > .toolbar, 
-.popover > .inline-toolbar .popover.osd > .toolbar, 
-.popover > .search-bar .popover.osd > .toolbar, 
-.popover > .location-bar .popover.osd > .toolbar,
-.popover > .toolbar .popover.osd > .inline-toolbar, 
-.popover > .inline-toolbar .popover.osd > .inline-toolbar, 
-.popover > .search-bar .popover.osd > .inline-toolbar, 
-.popover > .location-bar .popover.osd > .inline-toolbar,
-.popover > .toolbar .popover.osd > .search-bar, 
-.popover > .inline-toolbar .popover.osd > .search-bar, 
-.popover > .search-bar .popover.osd > .search-bar,
-.popover > .location-bar .popover.osd > .search-bar,
-.popover > .toolbar .popover.osd > .location-bar,
-.popover > .inline-toolbar .popover.osd > .location-bar, 
-.popover > .search-bar .popover.osd > .location-bar, 
-.popover > .location-bar .popover.osd > .location-bar {
+
+GtkPopover.background {
+ background-image: none;
+ background-color: @sidebar_bg_color;
+}
+
+GtkPopover > .list, 
+GtkPopover > .view, 
+GtkPopover > .toolbar GtkPopover.osd > .toolbar, 
+GtkPopover > .inline-toolbar GtkPopover.osd > .toolbar, 
+GtkPopover > .search-bar GtkPopover.osd > .toolbar, 
+GtkPopover > .location-bar GtkPopover.osd > .toolbar,
+GtkPopover > .toolbar GtkPopover.osd > .inline-toolbar, 
+GtkPopover > .inline-toolbar GtkPopover.osd > .inline-toolbar, 
+GtkPopover > .search-bar GtkPopover.osd > .inline-toolbar, 
+GtkPopover > .location-bar GtkPopover.osd > .inline-toolbar,
+GtkPopover > .toolbar GtkPopover.osd > .search-bar, 
+GtkPopover > .inline-toolbar GtkPopover.osd > .search-bar, 
+GtkPopover > .search-bar GtkPopover.osd > .search-bar,
+GtkPopover > .location-bar GtkPopover.osd > .search-bar,
+GtkPopover > .toolbar GtkPopover.osd > .location-bar,
+GtkPopover > .inline-toolbar GtkPopover.osd > .location-bar, 
+GtkPopover > .search-bar GtkPopover.osd > .location-bar, 
+GtkPopover > .location-bar GtkPopover.osd > .location-bar {
 	border-style: none;
+	background-image: none;
 	background-color: transparent;
 }
 
-.popover .separator {
+GtkPopover .separator {
 	font-size: 80%;
 	font-weight: bold;
 	color: alpha(@theme_fg_color,0.1);
@@ -2955,32 +2991,32 @@ GtkViewport.frame {
 	icon-shadow: none;
 	border: 0;
 }
-.popover.osd {
+GtkPopover.osd {
 	background-image: none;
 	background-color: alpha(shade(#3D3E40, 0.85), 0.75);
 	border: 1px solid black;
 	box-shadow: none;
 	color: @theme_selected_fg_color;
 }
-.popover.osd .toolbar {
+GtkPopover.osd .toolbar {
 	background-image: none;
 	background-color: transparent;
 	border: none;
 	box-shadow: none;
 }
-.popover.osd .button {
+GtkPopover.osd .button {
 	text-shadow: 0 -1px @osd_text_shadow;
 	icon-shadow: 0 -1px @osd_text_shadow;
 }
-.popover.osd .button:active,
-.popover.osd .button:checked {
+GtkPopover.osd .button:active,
+GtkPopover.osd .button:checked {
         box-shadow: none;
 }
-.popover.osd .button:insensitive {
+GtkPopover.osd .button:insensitive {
 	color: alpha(@theme_selected_fg_color, 0.4);
 }
 
-.popover .list {
+GtkPopover .list {
 	background-color: @theme_base_color;
 }
 
