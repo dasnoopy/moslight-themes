@@ -1494,13 +1494,15 @@ GtkLevelBar.vertical {
     padding: 0;
 }
 
-.scrollbars-junction,
-.scrollbar.trough {
-    border-width: 0;
-    border-radius: 0;
-    background-color: @theme_bg_color;
-    background-image: none;
-}
+.scrollbars-junction, .scrollbar.trough,
+.scrollbars-junction.frame,
+.frame.scrollbar.trough {
+  border-color: transparent;
+  background-color: @theme_bg_color; }
+  .scrollbars-junction:backdrop, .scrollbar.trough:backdrop,
+  .scrollbars-junction.frame:backdrop,
+  .frame.scrollbar.trough:backdrop {
+    background-color: transparent; }
 
 .scrollbar.button,
 .scrollbar.button:active,

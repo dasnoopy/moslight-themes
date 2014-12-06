@@ -1,7 +1,8 @@
-2014.11.xx
-* GTK3: Scrolledwindow radius 0
-* GTK3: gtkentry borders
-* GTK3: gtklist padding and minor changes
+2014.12.08
+* GTK3: scrollbar junction now looks fine
+
+2014.11.27
+* GTK3: some adjustments applied to various widgets;
 
 2014.11.15
 * GTK3: reworked menu section using new css style (adwaita theme)
