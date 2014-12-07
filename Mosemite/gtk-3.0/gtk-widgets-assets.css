@@ -1,7 +1,7 @@
 /**********************************
  * header-bar, toolbar separator  *
  **********************************/
-.header-bar > GtkBox > .separator.vertical  {
+.header-bar > GtkBox > .separator.vertical {
 	-GtkWidget-wide-separators: true;
 	-GtkWidget-separator-width: 2px;
 	background: transparent;
@@ -178,25 +178,3 @@ GtkIconView.content-view.cell.check:active {
     background-image: url("assets/grid-selection-checked.svg");
 }
 
-
-/*******************
- * Pane separators *
-
-.pane-separator {
-    background-image: url("assets/pane-separator-grip.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.pane-separator:hover {
-    background-image: url("assets/pane-separator-grip-prelight.svg");
-}
-
-.pane-separator.vertical {
-    background-image: url("assets/pane-separator-grip-vertical.svg");
-}
-
-.pane-separator.vertical:hover {
-    background-image: url("assets/pane-separator-grip-vertical-prelight.svg");
-}
- *******************/
