@@ -1,6 +1,6 @@
-2014.12.08
-* GTK3: scrollbar junction now looks fine
-* GTK3: adjust check and radio item with dark theme
+2014.12.07
+* GTK3: scrollbar junction now looks fine;
+* GTK3: check and radio item now works properly with dark theme; 
 
 2014.11.27
 * GTK3: some adjustments applied to various widgets;

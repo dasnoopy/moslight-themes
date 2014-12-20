@@ -682,20 +682,17 @@ GtkComboBox.combobox-entry .button:insensitive {
  *********/
 
 .frame {
-	border-width: 1px;
-	border-color: @borders;
-	border-style: solid;
-	padding: 0;
+	border: 1px solid @borders;
+	border-radius: 0;
+	padding: 0;	
 }
 
-.frame.flat {
-	border-style: none; 
-}
+.frame.flat { border: none; }
 
 .frame.action-bar {
 	border-color: @borders;
 	padding: 6px;
-	border-width: 1px 0 0; 
+	border-width: 1px 0 0 0; 
 }
 
 /*******************
