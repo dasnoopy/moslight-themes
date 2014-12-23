@@ -1,3 +1,6 @@
+2014.12.xx
+* GTK3: adjust buttons within inforbars
+
 2014.12.07
 * GTK3: scrollbar junction now looks fine;
 * GTK3: check and radio item now works properly with dark theme; 
