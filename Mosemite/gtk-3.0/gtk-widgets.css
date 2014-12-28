@@ -1665,6 +1665,13 @@ GtkComboBox .separator {
     box-shadow: inset 1px 0 shade(@theme_base_color, 0.7);
 }
 
+
+
+.spinbutton.entry {
+	border-radius: 0;
+   box-shadow: none;
+}
+
 .spinbutton .button:insensitive {
     color: mix(@theme_text_color, @theme_base_color, 0.7);
     border-style: none;
