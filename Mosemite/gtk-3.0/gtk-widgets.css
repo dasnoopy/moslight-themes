@@ -517,21 +517,18 @@ GtkHTML {
  **************/
 
 GtkCalendar {
-	padding: 2px;
+	padding: 1px;
 }
 
-GtkCalendar.view {
-	border-radius: 0px;
-	border-style: solid;
-	border-color: @borders;
-	border-width: 1px;
-	padding: 2px;
-}
 
-GtkCalendar.header {
+GtkCalendar.view,
+GtkCalendar.header,
+GtkCalendar.button,
+GtkCalendar.button:hover,
+GtkCalendar.button:insensitive {
 	border-radius: 0;
 	background-image: none;
-	background-color: shade(@theme_base_color, 0.88);
+	background-color: @theme_base_color;
 	border-width: 1px;
 	border-color: @borders;
 }
@@ -547,7 +544,6 @@ GtkCalendar.highlight {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 	border-radius: 0;
-	padding: 0;
 	border-width: 0;
 }
 /******************

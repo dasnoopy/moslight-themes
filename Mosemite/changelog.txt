@@ -1,6 +1,7 @@
 2014.12.xx
 * GTK3: adjust buttons within inforbars
 * GTK3: adjust spinbutton entry
+* GTK3: adjust gtkcalendar
 
 2014.12.07
 * GTK3: scrollbar junction now looks fine;
