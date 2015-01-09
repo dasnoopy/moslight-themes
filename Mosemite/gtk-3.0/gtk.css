@@ -56,6 +56,8 @@
 @define-color error_bg_color @infobar_bg_color;
 
 /* widget colors */
+@define-color titlebar_bg_color @bg_color;
+@define-color titlebar_fg_color @fg_color;
 @define-color menubar_bg_color @theme_bg_color;
 @define-color menubar_fg_color @theme_fg_color;
 @define-color toolbar_bg_color @theme_bg_color;

@@ -1,6 +1,6 @@
-2014.12.xx
-* GTK3: adjust buttons within inforbars
-* GTK3: adjust spinbutton entry
+2015.01.03
+* GTK3: adjust infobars button colors
+* GTK3: adjust spinbutton entry borders
 * GTK3: adjust gtkcalendar
 
 2014.12.07
