@@ -762,8 +762,9 @@ GtkLabel:insensitive {
  * infobar *
  ***********/
 GtkInfoBar {
+	border-style: solid;
 	border-width: 0;
-	border-style: none;
+	border-color: shade(@theme_bg_color, 0.88);
 }
 
 .info,
@@ -3224,7 +3225,7 @@ GtkMessageDialog {
 .dialog-action-area.linked .button:insensitive:last-child {
     border-style: solid;
     border-radius: 2px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 1px;
     border-top-color: shade(@theme_bg_color, 0.8);
     border-right-color: shade(@theme_bg_color, 0.76);
     border-left-color: shade(@theme_bg_color, 0.76);
@@ -3261,7 +3262,10 @@ GtkMessageDialog {
 .dialog-action-area.linked .button:focus,
 .dialog-action-area.linked .suggested-action.button {
 
-	border-color: shade(@theme_selected_bg_color, 0.8);
+    border-top-color: shade(@theme_bg_color, 0.8);
+    border-right-color: shade(@theme_bg_color, 0.76);
+    border-left-color: shade(@theme_bg_color, 0.76);
+    border-bottom-color: shade(@theme_bg_color, 0.7);
     border-width: 1px;
 	box-shadow: none;
 }
