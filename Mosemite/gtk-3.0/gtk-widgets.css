@@ -3263,9 +3263,9 @@ GtkMessageDialog {
 .dialog-action-area.linked .suggested-action.button {
 
     border-top-color: shade(@theme_bg_color, 0.8);
-    border-right-color: shade(@theme_bg_color, 0.76);
-    border-left-color: shade(@theme_bg_color, 0.76);
-    border-bottom-color: shade(@theme_bg_color, 0.7);
+    border-right-color: shade(@theme_bg_color, 0.7);
+    border-left-color: shade(@theme_bg_color, 0.7);
+    border-bottom-color: shade(@theme_bg_color, 0.6);
     border-width: 1px;
 	box-shadow: none;
 }
