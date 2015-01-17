@@ -1,3 +1,7 @@
+2015.01.16
+* GTK3: small fixes applied to headerbar buttons and other widgets
+* GTK2: small fix applied to the gtktreeview widget
+
 2015.01.03
 * GTK3: adjust infobars button colors
 * GTK3: adjust spinbutton entry borders

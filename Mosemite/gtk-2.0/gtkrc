@@ -1,5 +1,5 @@
 #
-# Mac Light #D8D8D8 (based on Murrine Git)
+# Mosemite GTK2
 #
 
 gtk_color_scheme = "fg_color:#404040\nbg_color:#e2e2e2"
@@ -122,7 +122,7 @@ style "default" {
   	GtkTreeView::horizontal-separator	= 4
   	#GtkTreeView::allow-rules			= 1
   	GtkTreeView::odd-row-color			= mix (0.96, @base_color, @fg_color)
-  	GtkTreeView::even-row-color			= "#FFFFFF"
+  	#GtkTreeView::even-row-color		= "#FFFFFF"
   	#GtkTreeView::indent-expanders		= 1
   	#GtkTreeView::row-ending-details	= 1
 
