@@ -1,4 +1,9 @@
-2015.01.16
+2015.02.02
+* GTK3: fix? gnome-terminal with transparency pacth?
+* GTK3: gtkscale fine tuning
+* GTK3: new gtk switches
+
+2015.01.17
 * GTK3: small fixes applied to headerbar buttons and other widgets
 * GTK2: small fix applied to the gtktreeview widget
 

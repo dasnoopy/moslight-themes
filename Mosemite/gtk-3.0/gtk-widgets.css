@@ -60,36 +60,15 @@
  * base states *
  ***************/
 .background {
-    background-color: @theme_bg_color;
     color: @theme_fg_color;
-}
-
-.background.client-decorated {
-    background-color: transparent;
-}
-
-.background.window-content {
     background-color: @theme_bg_color;
 }
 
-GtkClutterOffscreen {
+.background:backdrop {
+	text-shadow: none;
+	icon-shadow: none;
+    color: @insensitive_fg_color;
     background-color: @theme_bg_color;
-    color: @theme_fg_color;
-}
-
-*:selected,
-*:selected:focus {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-}
-
-*:active {
-    background-color: shade(@theme_bg_color, 0.85);
-}
-
-*:insensitive,
-*:insensitive:insensitive {
-    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
 }
 
 /* apply effects to insensitive and prelight images */
@@ -107,7 +86,7 @@ GtkClutterOffscreen {
 }
 
 .gtkstyle-fallback:prelight {
-    background-color: shade(@theme_bg_color, 1.1);
+    background-color: shade(@theme_bg_color, 1.12);
     color: @theme_fg_color;
 }
 
@@ -501,7 +480,7 @@ GtkDrawingArea {
 }
 
 GtkDrawingArea:insensitive {
-    background-color: @theme_bg_color;
+    background-color: shade(@theme_bg_color, 0.9);
 }
 
 /***********
@@ -1374,9 +1353,10 @@ GtkLevelBar.vertical {
 .scale.slider.fine-tune:active:hover,
 .scale.slider.fine-tune.horizontal:active,
 .scale.slider.fine-tune.horizontal:active:hover {
-      background-size: 50%;
-      background-repeat: no-repeat;
-      background-position: center;
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
+                                      );
 }
 
 .scale.mark {
@@ -1845,7 +1825,7 @@ GtkSwitch.trough:backdrop {
     color: transparent;
     box-shadow: none;
     background-image: url("assets/switch-off.svg");
-    background-size: 56px 20px;
+    background-size: 54px 20px;
     background-position: center center;
     background-repeat: no-repeat;
     text-shadow: none;

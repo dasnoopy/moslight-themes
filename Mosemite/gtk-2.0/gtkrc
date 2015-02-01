@@ -121,7 +121,7 @@ style "default" {
   	GtkTreeView::vertical-separator		= 1
   	GtkTreeView::horizontal-separator	= 4
   	#GtkTreeView::allow-rules			= 1
-  	#GtkTreeView::odd-row-color			= mix (0.96, @base_color, @fg_color)
+  	GtkTreeView::odd-row-color			= mix (0.96, @base_color, @fg_color)
   	#GtkTreeView::even-row-color		= "#FFFFFF"
   	#GtkTreeView::indent-expanders		= 1
   	#GtkTreeView::row-ending-details	= 1
@@ -332,12 +332,12 @@ style "button"
 # changes the x/ythickness
 style "notebook" 
 {
-	xthickness = 1
+	xthickness = 2
 	ythickness = 2
 
 	engine "murrine" 
 	{
-		roundness = 0
+		roundness = 1
 		
 	}
 }
