@@ -71,6 +71,36 @@
     background-color: @theme_bg_color;
 }
 
+.background.client-decorated {
+    background-color: transparent;
+}
+
+.background.window-content {
+    background-color: @theme_bg_color;
+}
+
+GtkClutterOffscreen {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+*:selected,
+*:selected:focus {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+*:active {
+    background-color: shade(@theme_bg_color, 0.85);
+}
+
+*:insensitive,
+*:insensitive:insensitive {
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+}
+
+
+
 /* apply effects to insensitive and prelight images */
 *:insensitive {
     -gtk-image-effect: dim;
@@ -1825,7 +1855,7 @@ GtkSwitch.trough:backdrop {
     color: transparent;
     box-shadow: none;
     background-image: url("assets/switch-off.svg");
-    background-size: 54px 20px;
+    background-size: 56px 20px;
     background-position: center center;
     background-repeat: no-repeat;
     text-shadow: none;
