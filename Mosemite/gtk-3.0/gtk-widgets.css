@@ -99,8 +99,6 @@ GtkClutterOffscreen {
     color: mix(@theme_fg_color, @theme_bg_color, 0.5);
 }
 
-
-
 /* apply effects to insensitive and prelight images */
 *:insensitive {
     -gtk-image-effect: dim;
@@ -3600,8 +3598,8 @@ GtkProgressBar.osd.progressbar {
     border-color: shade(@error_color, 0.9);
     border-radius: 2px;
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@error_color, 1.02), 1.3),
-                                      shade(shade(@error_color, 1.02), 1.1)
+                                      shade(shade(@error_color, 1.02), 1.12),
+                                      shade(shade(@error_color, 1.02), 0.96)
                                       );
 
     color: @theme_selected_fg_color;
@@ -3615,8 +3613,8 @@ GtkProgressBar.osd.progressbar {
 .destructive-action.button:active {
     border-color: shade(@error_color, 0.9);
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@error_color, 1.02), 1.1),
-                                      shade(shade(@error_color, 1.02), 1.15)
+                                      shade(shade(@error_color, 1.02), 0.96),
+                                      shade(shade(@error_color, 1.02), 1.12)
                                       );
 }
 
