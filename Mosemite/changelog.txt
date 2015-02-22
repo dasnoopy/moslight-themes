@@ -1,7 +1,12 @@
+2015.02.22
+* GTK3: fix destructive button hover bg colors
+* GTK2/3 : change a bit menu bg color and selected bg color
+
 2015.02.07
 * GTK3: fix? gnome-terminal with transparency pacth?
 * GTK3: gtkscale fine tuning
 * GTK2: small fix in notebook tab design
+
 2015.01.17
 * GTK3: small fixes applied to headerbar buttons and other widgets
 * GTK2: small fix applied to the gtktreeview widget

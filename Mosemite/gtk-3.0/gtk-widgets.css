@@ -3601,17 +3601,24 @@ GtkProgressBar.osd.progressbar {
                                       shade(shade(@error_color, 1.02), 1.12),
                                       shade(shade(@error_color, 1.02), 0.96)
                                       );
-
+    background-color: transparent;
     color: @theme_selected_fg_color;
     box-shadow: none;
 }
 
 .destructive-action.button:hover {
     border-color: shade(@error_color, 0.8);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@error_color, 1.02), 1.16),
+                                      shade(shade(@error_color, 1.02), 1.00)
+                                      );
 }
 
-.destructive-action.button:active {
+.destructive-action.button:active,
+.destructive-action.button:checked {
     border-color: shade(@error_color, 0.9);
+    background-color: transparent;
     background-image: linear-gradient(to bottom,
                                       shade(shade(@error_color, 1.02), 0.96),
                                       shade(shade(@error_color, 1.02), 1.12)

@@ -3,11 +3,22 @@
 @define-color fg_color #404040;
 @define-color base_color #ffffff;
 @define-color text_color #222222;
-@define-color selected_bg_color #569be4;
+@define-color selected_bg_color #4E98FB;
 @define-color selected_fg_color #ffffff;
 @define-color tooltip_bg_color #303030;
 @define-color tooltip_fg_color #f0f0f0;
 
+/* widget colors */
+@define-color menu_bg_color #f9f9f9;
+@define-color menu_fg_color @theme_text_color;
+@define-color titlebar_bg_color @bg_color;
+@define-color titlebar_fg_color @fg_color;
+@define-color menubar_bg_color @theme_bg_color;
+@define-color menubar_fg_color @theme_fg_color;
+@define-color toolbar_bg_color @theme_bg_color;
+@define-color toolbar_fg_color @theme_fg_color;
+@define-color panel_bg_color @theme_bg_color;
+@define-color panel_fg_color @theme_fg_color;
 @define-color borders shade(@theme_bg_color, 0.88);
 @define-color unfocused_borders shade(@theme_bg_color, 0.88);
 
@@ -54,18 +65,6 @@
 @define-color warning_bg_color @infobar_bg_color;
 @define-color question_bg_color @infobar_bg_color;
 @define-color error_bg_color @infobar_bg_color;
-
-/* widget colors */
-@define-color titlebar_bg_color @bg_color;
-@define-color titlebar_fg_color @fg_color;
-@define-color menubar_bg_color @theme_bg_color;
-@define-color menubar_fg_color @theme_fg_color;
-@define-color toolbar_bg_color @theme_bg_color;
-@define-color toolbar_fg_color @theme_fg_color;
-@define-color menu_bg_color @theme_base_color;
-@define-color menu_fg_color @theme_text_color;
-@define-color panel_bg_color @theme_bg_color;
-@define-color panel_fg_color @theme_fg_color;
 
 /* osd */
 @define-color osd_base #333;
