@@ -1,6 +1,5 @@
 2015.02.22
 * GTK3: fix destructive button hover bg colors
-* GTK2/3 : change a bit menu bg color and selected bg color
 
 2015.02.07
 * GTK3: fix? gnome-terminal with transparency pacth?
