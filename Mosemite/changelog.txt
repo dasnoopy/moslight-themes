@@ -1,5 +1,6 @@
-2015.02.22
+2015.03.07
 * GTK3: fix destructive button hover bg colors
+* GTK3: modified statusbar padding
 
 2015.02.07
 * GTK3: fix? gnome-terminal with transparency pacth?

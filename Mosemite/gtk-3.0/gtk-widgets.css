@@ -1821,12 +1821,18 @@ GtkComboBox .separator {
 GtkStatusbar {
     padding: 3px;
     color: @theme_fg_color;
-    border-width: 0px;
+    border-width: 0;
 }
 
-GtkStatusbar .frame {
-    padding: 3px;
-    border: none;
+GtkStatusbar .button {
+    color: @theme_fg_color;
+}
+
+GtkStatusbar .button:hover,
+GtkStatusbar .button:active,
+GtkStatusbar .button:active:hover {
+    transition: none;
+    color: @theme_selected_bg_color;
     background-color: @theme_bg_color;
 }
 
