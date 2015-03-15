@@ -1468,6 +1468,9 @@ GtkLevelBar.vertical {
 .sidebar GtkScrolledWindow {
     background-color: @sidebar_bg_color;
     color: @sidebar_fg_color;
+	/* Don't use symbolic icons in the sidebar
+	-gtk-icon-style: regular
+    */
 }
 
 .sidebar row:hover {
