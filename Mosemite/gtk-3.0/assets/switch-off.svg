@@ -24,11 +24,11 @@
     <linearGradient
        id="linearGradient3803">
       <stop
-         style="stop-color:#202020;stop-opacity:0.5529412;"
+         style="stop-color:#202020;stop-opacity:1;"
          offset="0"
          id="stop3805" />
       <stop
-         style="stop-color:#484848;stop-opacity:0.1254902;"
+         style="stop-color:#484848;stop-opacity:0.34131736;"
          offset="1"
          id="stop3807" />
     </linearGradient>
@@ -57,22 +57,22 @@
     <linearGradient
        id="linearGradient3809">
       <stop
-         style="stop-color:#969696;stop-opacity:1;"
+         style="stop-color:#787878;stop-opacity:1;"
          offset="0"
          id="stop3811" />
       <stop
-         style="stop-color:#aaaaaa;stop-opacity:1;"
+         style="stop-color:#8c8c8c;stop-opacity:1;"
          offset="1"
          id="stop3813" />
     </linearGradient>
     <linearGradient
        id="linearGradient3786">
       <stop
-         style="stop-color:#828282;stop-opacity:0.47058824;"
+         style="stop-color:#898989;stop-opacity:0.43113771;"
          offset="0"
          id="stop3788" />
       <stop
-         style="stop-color:#888888;stop-opacity:1;"
+         style="stop-color:#939393;stop-opacity:1;"
          offset="1"
          id="stop3790" />
     </linearGradient>
@@ -101,26 +101,26 @@
     <linearGradient
        id="linearGradient3769">
       <stop
-         style="stop-color:#e1e1e1;stop-opacity:1;"
+         style="stop-color:#fdfdfd;stop-opacity:1;"
          offset="0"
          id="stop3771" />
       <stop
-         style="stop-color:#c3c3c3;stop-opacity:1;"
+         style="stop-color:#e0e0e0;stop-opacity:1;"
          offset="1"
          id="stop3773" />
     </linearGradient>
     <linearGradient
        id="linearGradient3759">
       <stop
-         style="stop-color:#c3c3c3;stop-opacity:1;"
+         style="stop-color:#000000;stop-opacity:0.03921569;"
          offset="0"
          id="stop3761" />
       <stop
-         id="stop3801"
+         id="stop3792"
          offset="0.68748617"
-         style="stop-color:#bebebe;stop-opacity:1;" />
+         style="stop-color:#000000;stop-opacity:0.05882353;" />
       <stop
-         style="stop-color:#9e9e9e;stop-opacity:1;"
+         style="stop-color:#000000;stop-opacity:0.15686275;"
          offset="1"
          id="stop3763" />
     </linearGradient>
@@ -147,11 +147,11 @@
     <linearGradient
        id="linearGradient4071-3-6">
       <stop
-         style="stop-color:#ffffff;stop-opacity:0.27450982;"
+         style="stop-color:#000000;stop-opacity:0.15686275;"
          offset="0"
          id="stop4073-8-9" />
       <stop
-         style="stop-color:#ffffff;stop-opacity:0.09268293;"
+         style="stop-color:#000000;stop-opacity:0.09268293;"
          offset="1"
          id="stop4075-4-4" />
     </linearGradient>
@@ -178,18 +178,18 @@
     <linearGradient
        id="linearGradient4071-3">
       <stop
-         style="stop-color:#000000;stop-opacity:0.59215689;"
+         style="stop-color:#000000;stop-opacity:0.78431374;"
          offset="0"
          id="stop4073-8" />
       <stop
-         style="stop-color:#797979;stop-opacity:0.39024389;"
+         style="stop-color:#000000;stop-opacity:0.10980392;"
          offset="1"
          id="stop4075-4" />
     </linearGradient>
     <linearGradient
-       y2="19.159962"
+       y2="22.170641"
        x2="35.5"
-       y1="6.1136856"
+       y1="3.1030066"
        x1="35.5"
        gradientTransform="matrix(1.3333334,0,0,0.99645293,-17.333334,1031.2702)"
        gradientUnits="userSpaceOnUse"
@@ -210,9 +210,9 @@
        xlink:href="#linearGradient3769"
        id="linearGradient3802"
        x1="44.5"
-       y1="11.035255"
+       y1="10.188188"
        x2="44.5"
-       y2="16.117661"
+       y2="17.38826"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
@@ -241,16 +241,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="13.810607"
-     inkscape:cx="22.088866"
-     inkscape:cy="4.1579843"
+     inkscape:cx="24.11588"
+     inkscape:cy="4.1217802"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="false"
      inkscape:window-width="1300"
      inkscape:window-height="917"
-     inkscape:window-x="421"
-     inkscape:window-y="68"
+     inkscape:window-x="482"
+     inkscape:window-y="102"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
