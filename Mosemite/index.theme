@@ -5,6 +5,7 @@ Comment=yet another osx/elementary clone theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=MosLight
-MetacityTheme=MosLight
+GtkTheme=Mosemite
+MetacityTheme=Mosemite
+
 ButtonLayout=close,maximize,minimize:

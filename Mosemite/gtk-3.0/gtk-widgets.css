@@ -2315,7 +2315,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-bottom-color: shade(@toolbar_bg_color, 0.6);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@toolbar_bg_color, 1.02), 1.12),
-                                      shade(shade(@toolbar_bg_color, 1.02), 0.96)
+                                      shade(shade(@toolbar_bg_color, 1.02), 1.04)
                                       );
     color: @toolbar_fg_color;
 }
@@ -2331,15 +2331,12 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .primary-toolbar .button:checked,
 .toolbar .button:active,
 .toolbar .button:checked {
-    border-top-color: shade(@toolbar_bg_color, 0.6);
-    border-right-color: shade(@toolbar_bg_color, 0.66);
-    border-left-color: shade(@toolbar_bg_color, 0.66);
+    border-top-color: shade(@toolbar_bg_color, 0.8);
+    border-right-color: shade(@toolbar_bg_color, 0.76);
+    border-left-color: shade(@toolbar_bg_color, 0.76);
     border-bottom-color: shade(@toolbar_bg_color, 0.7);
-    background-image: linear-gradient(to bottom,
-                                      shade(shade(@toolbar_bg_color, 1.02), 1.12),
-                                      shade(shade(@toolbar_bg_color, 1.02), 0.96)
-                                      );
-    color: @toolbar_fg_color;
+    background-color: shade(@titlebar_bg_color, 1.12);
+    background-image: none;
 }
 
 .primary-toolbar .button:active:hover,
@@ -2360,10 +2357,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .toolbar .button:active:hover:focus,
 .toolbar .button:checked:focus,
 .toolbar .button:checked:hover:focus {
-    border-top-color: shade(@toolbar_bg_color, 0.6);
-    border-right-color: shade(@toolbar_bg_color, 0.66);
-    border-left-color: shade(@toolbar_bg_color, 0.66);
-    border-bottom-color: shade(@toolbar_bg_color, 0.7);
+
 }
 
 .primary-toolbar .button:insensitive,
@@ -2418,7 +2412,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 .inline-toolbar.toolbar:last-child {
     border-width: 0 1px 1px 1px;
-    border-color: shade(@theme_bg_color, 0.88);
+    border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0;
 }
 
