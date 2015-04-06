@@ -9,7 +9,7 @@ Note:
 * Mosemite is a theme for GTK2/3 and Gnome shell version 3.14 only:
   - it works only with GTK2 v2.24.x and GTK3 v3.14.x libs
 
-* MosSkai is a theme for GTK2/3 and Gnome shell version 3.16 only:
+* MosSky is a theme for GTK2/3 and Gnome shell version 3.16 only:
   - it works only with GTK2 v2.24.x and GTK3 v3.16.x libs
 
 To install the theme, extract the archive into /usr/share/themes then use Gnome-Tweak-Tool to choose the theme.

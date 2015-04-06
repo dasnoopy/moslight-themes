@@ -1,0 +1,4 @@
+2015.05.04
+* Try to implement changes for gnome 3.16 for gtk3 and gnome-shell
+
+
