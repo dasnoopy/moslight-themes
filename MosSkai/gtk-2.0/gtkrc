@@ -2,11 +2,11 @@
 # Mosemite GTK2
 #
 
-gtk_color_scheme = "fg_color:#404040\nbg_color:#f1f1f1"
+gtk_color_scheme = "fg_color:#404040\nbg_color:#e2e2e2"
 gtk_color_scheme = "text_color:#1a1a1a\nbase_color:#ffffff"
 gtk_color_scheme = "selected_fg_color:#ffffff\nselected_bg_color:#569be4"
 gtk_color_scheme = "tooltip_fg_color:#f0f0f0\ntooltip_bg_color:#101010"
-gtk_color_scheme = "menubar_bg_color:#f1f1f1\nmenubar_fg_color:#404040"
+gtk_color_scheme = "menubar_bg_color:#e2e2e2\nmenubar_fg_color:#404040"
 
 gtk-button-images	= 1 # Enables or disables icons on buttons (OS X-like).
 gtk-icon-sizes = "panel-menu=16,16:panel=24,24:gtk-button=16,16:gtk-large-toolbar=24,24"

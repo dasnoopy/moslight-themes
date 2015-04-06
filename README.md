@@ -3,9 +3,14 @@ Mos*-themes
 
 Note:
 
-* Moslight is a theme for GTK2/3 and Gnome shell version 3.12 only...
-* Mosemite is a theme for GTK2/3 and Gnome shell version 3.14 only...
-* MosSkai is a theme for GTK2/3 and Gnome shell version 3.16 only...
+* Moslight is a theme for GTK2/3 and Gnome shell version 3.12 only: 
+  - it works only with GTK2 v2.24.x and GTK3 v3.12.x libs
+
+* Mosemite is a theme for GTK2/3 and Gnome shell version 3.14 only:
+  - it works only with GTK2 v2.24.x and GTK3 v3.14.x libs
+
+* MosSkai is a theme for GTK2/3 and Gnome shell version 3.16 only:
+  - it works only with GTK2 v2.24.x and GTK3 v3.16.x libs
 
 To install the theme, extract the archive into /usr/share/themes then use Gnome-Tweak-Tool to choose the theme.
 
@@ -14,7 +19,8 @@ GTK2 ENGINES REQUIREMENT
 * GTK2 pixbuf engine or the gtk(2)-engines package.
 
 GTK3 ENGINES REQUIREMENTS:
-* GTK3 engine Adwaita 3.12
+* GTK3 engine Adwaita 3.12 (only for Moslight)
+* since Gnome 3.14 adwaita theme is embedded within gtk3+ libs 
 
 How to install required gtk2/3 engines:
 
