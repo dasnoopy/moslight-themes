@@ -1,3 +1,7 @@
+2015.05.04
+* Try to implement changes for gnome 3.16..
+
+
 2015.03.07
 * GTK3: fix destructive button hover bg colors
 * GTK3: modified statusbar padding
