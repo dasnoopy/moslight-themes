@@ -1,3 +1,81 @@
+/******************
+ * window actions *
+ ******************/
+/* minimize */
+.titlebar .titlebutton.minimize {
+   color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("window-controls/min.svg"));
+}
+
+.titlebar .titlebutton.minimize:backdrop {
+    background-image: -gtk-scaled(url("window-controls/min_unfocused.svg"));
+}
+
+.titlebar .titlebutton.minimize:hover,
+.titlebar .titlebutton.minimize:active {
+   color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("window-controls/min_prelight.svg"));
+}
+
+/* maximize */
+.titlebar .titlebutton.maximize {
+   color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("window-controls/max.svg"));
+}
+
+.titlebar .titlebutton.maximize:backdrop {
+    background-image: -gtk-scaled(url("window-controls/max_unfocused.svg"));
+}
+
+
+.titlebar .titlebutton.maximize:hover, 
+.titlebar .titlebutton.maximize:active {
+   color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("window-controls/max_prelight.svg"));
+}
+
+/* close */
+.titlebar .titlebutton.close {
+   color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("window-controls/close.svg"));
+}
+
+.titlebar .titlebutton.close:backdrop {
+    background-image: -gtk-scaled(url("window-controls/close_unfocused.svg"));
+}
+
+
+.titlebar .titlebutton.close:hover,
+.titlebar .titlebutton.close:active {
+   color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("window-controls/close_prelight.svg"));
+}
+
+
 /**********************************
  * header-bar, toolbar separator  *
  **********************************/

@@ -89,7 +89,7 @@
 @define-color content_view_bg #2d2d2d;
 @define-color list_box_bg #404040;
 
-@import url("gtk-contained.css");
+@import url("gtk-widgets.css");
 @import url("gtk-widgets-assets-dark.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/xfce.css");

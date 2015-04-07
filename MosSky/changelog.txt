@@ -1,4 +1,11 @@
+2015.07.04
+
+GTK3 theme:
+   * flat window manager / csd decoration
+   * flat toolbar
+   * styled titlebar buttons
+
 2015.05.04
-* Try to implement changes for gnome 3.16 for gtk3 and gnome-shell
+* gnome 3.16 changes (not completed) for gtk3 and gnome-shell
 
 

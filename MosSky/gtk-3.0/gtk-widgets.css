@@ -464,9 +464,9 @@ column-header:last-child .button {
   .list-row.button:hover {
     background-color: shade (@theme_base_color, 0.98) }
   .list-row.button:active {
-    box-shadow: inset 0 2px 2px -1px rgba(0, 0, 0, 0.2); }
+     }
   .list-row.button:selected:active {
-    box-shadow: inset 0 2px 2px -1px rgba(0, 0, 0, 0.2); }
+     }
   .list-row.button:selected:hover {
    color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
@@ -787,8 +787,8 @@ GtkLabel:insensitive {
  ***********/
 GtkInfoBar {
 	border-style: none none solid none;
-	border-width: 1px;
-	border-color: shade(@theme_bg_color, 0.9);
+	border-width: 0;
+	border-color: shade(@theme_bg_color, 0.7);
 }
 
 .info,
@@ -2081,7 +2081,7 @@ GtkColorButton.button {
 }
 
 /**************
- * header-bar *
+ * header-bar * finestra
  **************/
 .header-bar,
 .header-bar.toolbar {
@@ -2281,12 +2281,12 @@ GtkColorButton.button {
 
 
 /**************
- * action-bar *
+ * action-bar * finestra
  **************/
 .action-bar {
     padding: 4px 12px 3px 12px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
-    border-style: solid;
+    border-style: none;
     border-color: shade(@theme_bg_color, 0.7);
     background-image: linear-gradient(to bottom,
                                       shade(@theme_bg_color, 1.00),
@@ -2353,19 +2353,19 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 
 /***********
- * toolbar *
+ * toolbar barra strumeti*
  ***********/
 .toolbar {
     padding: 3px;
     border-width: 0 0 1px 0;
-    border-style: solid;
+    border-style: none;
     border-right-color: shade(@toolbar_bg_color, 0.8);
     border-left-color: shade(@toolbar_bg_color, 0.8);
     border-bottom-color: shade(@toolbar_bg_color, 0.7);
-    background-color: @toolbar_bg_color;
+    background-color: transparent;
     background-image: linear-gradient(to bottom,
                                       shade(@toolbar_bg_color, 1.00),
-                                      shade(@toolbar_bg_color, 0.88)
+                                      shade(@toolbar_bg_color, 1.00)
                                       );
 
     color: @toolbar_fg_color;
@@ -2406,8 +2406,9 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: transparent;
-    background-image: linear-gradient(to bottom, @toolbar_bg_color,
-                                      shade(@toolbar_bg_color, 0.88)
+    background-image: linear-gradient(to bottom,
+                                      shade(@toolbar_bg_color, 1.00),
+                                      shade(@toolbar_bg_color, 1.00)
                                       );
 
     color: @toolbar_fg_color;
@@ -3961,17 +3962,19 @@ GtkBubbleWindow .toolbar {
 }
 
 /*******
- * CSD *
+ * CSD *  
+bordo finestra
  *******/
 .titlebar {
     border-radius: 3px 3px 0 0;
     border-width: 0 0 1px 0;
-    border-style: solid;
+    border-style: none;
+    padding: 6px 6px 6px 6px; /* sopra  sinistra sotto destra */
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 1.04),
-                                      shade(@toolbar_bg_color, 0.88)
+                                      shade(@toolbar_bg_color, 1.00),
+                                      shade(@toolbar_bg_color, 1.00)
                                       );
     text-shadow: none;
 }
@@ -3995,12 +3998,19 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .title {
     font: bold 10;
+	color: @fg_color;
 }
+
+.titlebar .title:backdrop {
+    font: bold 10;
+    color: shade (@theme_fg_color, 1.12);
+}
+
 
 .titlebar:backdrop {
     background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 0.98),
-                                      shade(@toolbar_bg_color, 0.92)
+                                      shade(@toolbar_bg_color, 1.00),
+                                      shade(@toolbar_bg_color, 1.00)
 				   );
     text-shadow: none;
 }
@@ -4023,7 +4033,7 @@ GtkBubbleWindow .toolbar {
     background: none;
     color: shade(@fg_color, 0.7);
     box-shadow: none;
-	padding: 5px 0px 6px 0px;
+    padding: 5px 0px 6px 0px;
 }
 
 /*
@@ -4052,7 +4062,7 @@ GtkBubbleWindow .toolbar {
  * Window Decorations *
  *********************/
 .window-frame {
-  border-radius: 2px 2px 0 0;
+  border-radius: 3px 3px 0 0;
   border-width: 0;
   box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.23);
   /* this is used for the resize cursor area */
