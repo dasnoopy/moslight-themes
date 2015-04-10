@@ -3,16 +3,23 @@ Mos*-themes
 
 Note:
 
-* Moslight is a theme for GTK2/3 and Gnome shell version 3.12 only: 
-  - it works only with GTK2 v2.24.x and GTK3 v3.12.x libs
+* **Moslight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
+  GTK3 v3.12.x libs.
 
-* Mosemite is a theme for GTK2/3 and Gnome shell version 3.14 only:
-  - it works only with GTK2 v2.24.x and GTK3 v3.14.x libs
+* **Mosemite** is a theme designed **only** for Gnome 3.14: it works only with GTK2 v2.24.x and
+  GTK3 v3.14.x libs
 
-* MosSky is a theme for GTK2/3 and Gnome shell version 3.16 only:
-  - it works only with GTK2 v2.24.x and GTK3 v3.16.x libs
+* **MosSky** is a theme designed **only** for Gnome 3.16: it works only with GTK2 v2.24.x 
+  and GTK3 v3.16.x libs
 
-To install the theme, extract the archive into /usr/share/themes then use Gnome-Tweak-Tool to choose the theme.
+To install the theme, copy it into `/usr/share/themes` (for all users)
+
+If you copy theme in your `~/.local/share/themes`, create also a symbolic links in your home dir to
+that folder
+
+`$ ln -s .~/.local/share/themes .themes`
+
+then use Gnome-Tweak-Tool to choose the theme.
 
 GTK2 ENGINES REQUIREMENT
 * GTK2 engine Murrine 0.98.1.1 or later.
