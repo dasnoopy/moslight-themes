@@ -2,8 +2,7 @@
  * window actions *
  ******************/
 /* minimize */
-.titlebar .titlebutton.minimize,
-.titlebar .titlebutton.minimize:active {
+.titlebar .titlebutton.minimize {
    color: transparent;
     border-image: none;
     box-shadow: none;
@@ -16,7 +15,8 @@
     background-image: -gtk-scaled(url("window-controls/min_unfocused.svg"));
 }
 
-.titlebar .titlebutton.minimize:hover {
+.titlebar .titlebutton.minimize:hover,
+.titlebar .titlebutton.minimize:active {
    color: transparent;
     border-image: none;
     box-shadow: none;

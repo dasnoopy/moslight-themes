@@ -1,6 +1,8 @@
 Mos*-themes
 -----------
 
+Simple GTK2/GTK3 and Gnome shell themes
+
 Note:
 
 * **Moslight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
@@ -17,7 +19,7 @@ To install the theme, copy it into `/usr/share/themes` (for all users)
 If you copy theme in your `~/.local/share/themes`, create also a symbolic links in your home dir to
 that folder
 
-`$ ln -s .~/.local/share/themes .themes`
+`$ ln -s ~/.local/share/themes .themes`
 
 then use Gnome-Tweak-Tool to choose the theme.
 

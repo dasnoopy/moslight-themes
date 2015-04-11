@@ -27,8 +27,8 @@
     -GtkMenu-vertical-padding: 0;
 	-GtkCheckMenuItem-indicator-size: 12;
     -GtkPaned-handle-size: 1;
-    -GtkProgressBar-min-horizontal-bar-height: 14;
-    -GtkProgressBar-min-vertical-bar-width: 14;
+    -GtkProgressBar-min-horizontal-bar-height: 10;
+    -GtkProgressBar-min-vertical-bar-width: 10;
     -GtkRange-slider-width: 13;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
@@ -2092,10 +2092,19 @@ GtkColorButton.button {
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
                                       shade(@toolbar_bg_color, 1.00),
-                                      shade(@toolbar_bg_color, 0.88)
+                                      shade(@toolbar_bg_color, 1.00)
                                       );
 }
 
+.header-bar.default-decoration {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.header-bar.default-decoration .button.titlebutton {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
 
 .header-bar .button.text-button {
     padding: 4px 12px;
@@ -3991,7 +4000,10 @@ bordo finestra
  * when client-side decorations are in use and the application
  * did not set a custom titlebar.
  */
+
+
 .titlebar.default-decoration {
+    padding: 2px 3px 2px 3px;
     border: none;
     box-shadow: none;
 }
