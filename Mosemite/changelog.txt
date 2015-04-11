@@ -1,3 +1,6 @@
+2015.04.11 : final release
+* GTK3: solved a issue with hover state in Rhythmbox
+
 2015.03.07
 * GTK3: fix destructive button hover bg colors
 * GTK3: modified statusbar padding
