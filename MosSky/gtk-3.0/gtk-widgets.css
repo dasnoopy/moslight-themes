@@ -2092,7 +2092,7 @@ GtkColorButton.button {
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
                                       shade(@toolbar_bg_color, 1.00),
-                                      shade(@toolbar_bg_color, 1.00)
+                                      shade(@toolbar_bg_color, 0.88)
                                       );
 }
 
@@ -2295,7 +2295,7 @@ GtkColorButton.button {
 .action-bar {
     padding: 4px 12px 3px 12px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
-    border-style: none;
+    border-style: solid;
     border-color: shade(@theme_bg_color, 0.7);
     background-image: linear-gradient(to bottom,
                                       shade(@theme_bg_color, 1.00),
@@ -3977,13 +3977,12 @@ bordo finestra
 .titlebar {
     border-radius: 3px 3px 0 0;
     border-width: 0 0 1px 0;
-    border-style: none;
-    padding: 6px 6px 6px 6px; /* sopra  sinistra sotto destra */
+    border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
                                       shade(@toolbar_bg_color, 1.00),
-                                      shade(@toolbar_bg_color, 1.00)
+                                      shade(@toolbar_bg_color, 0.88)
                                       );
     text-shadow: none;
 }
@@ -4005,6 +4004,7 @@ bordo finestra
 .titlebar.default-decoration {
     padding: 2px 3px 2px 3px;
     border: none;
+    background-image: none;
     box-shadow: none;
 }
 
