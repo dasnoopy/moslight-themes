@@ -1,14 +1,15 @@
 2015.04.12
+GTK3       : small fixes.
+GTK3       : fixed titlebar for non csd windows
+Gnome Shell: new theme based on Paper theme...
 
-Gnome Shell:
-   * new theme based on Paper theme...
-
+2015.04.09
 GTK3 theme:
    * flat window decoration for non csd windows
    * flat toolbar
    * styled titlebar buttons
 
 2015.04.05
-* gnome 3.16 changes for gtk3 
+* initiale version: changes for gtk3 v3.16 
 
 

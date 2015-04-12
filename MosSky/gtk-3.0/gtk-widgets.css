@@ -458,20 +458,15 @@ column-header:last-child .button {
 }
 
 .list-row.button {
-  border-style: none;
-  border-radius: 0;
-  box-shadow: none; }
-  .list-row.button:hover {
-    background-color: shade (@theme_base_color, 0.88); }
-  .list-row.button:active {
-     }
-  .list-row.button:selected:active {
-     }
-  .list-row.button:selected:hover {
-   color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color; }
-  .list-row.button:selected:backdrop {
-    background-color: shade (@theme_bg_color, 0.88); }
+	border-color: transparent;
+	background-image: none;
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0);
+	text-shadow: none;
+	icon-shadow: none;
+	border-image: none;
+	border-radius: 0;
+	border: none;
+}
 
 /****************
  * content view *
@@ -3087,7 +3082,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-color: shade(@theme_tooltip_bg_color, 0.88);
     border-radius: 2px;
     background-color: alpha(black, 0.66);
-
     color: @theme_tooltip_fg_color;
 }
 
@@ -3099,13 +3093,14 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
  * treeview *
  ************/
 GtkTreeView.view {
-  -GtkTreeView-grid-line-width: 0;
-  -GtkTreeView-grid-line-pattern: '';
-  -GtkTreeView-tree-line-width: 0;
-  -GtkTreeView-tree-line-pattern: '';
-    -GtkTreeView-vertical-separator: 0;
-    -GtkWidget-focus-line-width: 1px;
-    -GtkWidget-focus-padding: 1px;
+  -GtkTreeView-grid-line-width: 1;
+  -GtkTreeView-grid-line-pattern: '\001\001';
+  -GtkTreeView-tree-line-width: 1;
+  -GtkTreeView-tree-line-pattern: '\001\001';
+  -GtkTreeView-horizontal-separator: 0;
+  -GtkTreeView-vertical-separator: 0;
+  -GtkWidget-focus-line-width: 1px;
+  -GtkWidget-focus-padding: 1px;
 }
 
 GtkTreeView.dnd {
