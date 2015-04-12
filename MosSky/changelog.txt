@@ -1,11 +1,14 @@
-2015.07.04
+2015.04.12
+
+Gnome Shell:
+   * new theme based on Paper theme...
 
 GTK3 theme:
-   * flat window manager / csd decoration
+   * flat window decoration for non csd windows
    * flat toolbar
    * styled titlebar buttons
 
-2015.05.04
-* gnome 3.16 changes (not completed) for gtk3 and gnome-shell
+2015.04.05
+* gnome 3.16 changes for gtk3 
 
 

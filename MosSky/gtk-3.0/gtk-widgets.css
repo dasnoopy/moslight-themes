@@ -462,7 +462,7 @@ column-header:last-child .button {
   border-radius: 0;
   box-shadow: none; }
   .list-row.button:hover {
-    background-color: shade (@theme_base_color, 0.98) }
+    background-color: shade (@theme_base_color, 0.88); }
   .list-row.button:active {
      }
   .list-row.button:selected:active {
@@ -471,8 +471,7 @@ column-header:last-child .button {
    color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
   .list-row.button:selected:backdrop {
-    background-color: shade (@theme_bg_color, 0.88);
-}
+    background-color: shade (@theme_bg_color, 0.88); }
 
 /****************
  * content view *
@@ -3100,18 +3099,18 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
  * treeview *
  ************/
 GtkTreeView.view {
-  -GtkTreeView-grid-line-width: 1;
+  -GtkTreeView-grid-line-width: 0;
   -GtkTreeView-grid-line-pattern: '';
-  -GtkTreeView-tree-line-width: 1;
+  -GtkTreeView-tree-line-width: 0;
   -GtkTreeView-tree-line-pattern: '';
-  -GtkTreeView-expander-size: 15;
-   border-left-color: shade(@theme_bg_color, 1.04);
-   border-top-color: shade(@theme_bg_color, 1.04);
+    -GtkTreeView-vertical-separator: 0;
+    -GtkWidget-focus-line-width: 1px;
+    -GtkWidget-focus-padding: 1px;
 }
 
 GtkTreeView.dnd {
     border-width: 1px;
-    border-style: solid none;
+    border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.96);
     border-radius: 0;
 }
@@ -3127,7 +3126,7 @@ GtkTreeView.view.separator,
 GtkTreeView.separator,
 .separator,
 .separator:hover {
-    color: shade(@theme_bg_color, 0.8);
+    color: shade(@theme_bg_color, 0.88);
     background-color: transparent;
 }
 
@@ -4101,6 +4100,14 @@ bordo finestra
   .window-frame.csd.message-dialog {
     border-radius: 3px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
+
+ .window-frame.solid-csd {
+     border: solid 1px shade(@theme_bg_color, 0.5);
+     border-radius: 0;
+     margin: 2px;
+     background-color: @theme_bg_color;
+     box-shadow: none;
+ }
 
 .header-bar .titlebutton.button,
 .titlebar .titlebutton.button,

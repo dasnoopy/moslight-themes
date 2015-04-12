@@ -16,7 +16,7 @@
 */
 
 stage {
-  font-family: Roboto, Cantarell, Sans-Serif;
+  font-family: Source Sans Pro, Cantarell, Sans-Serif;
   font-size: 10pt;
   color: #dbdee0; }
 
@@ -686,7 +686,7 @@ StScrollBar {
   background-color: rgba(86,155,228,0.7); /* azzurro */ }
 
 .datemenu-today-button .date-label {
-  color: orange;
+  color: white;
   font-size: 1.5em; 
   font-weight: bold; }
 
@@ -812,21 +812,18 @@ StScrollBar {
   color: #454d50;}
 
 .message {
-  background-color: #454d50;
-  margin: 4px;
-  border-radius: 0px;}
+  background-color: #353B3D;
+  margin: 1px;
+  border-radius: 4px;}
   .message:hover, .message:focus {
-    background-color: #515a5e;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-    margin-bottom: 6px;
-    margin-top: 2px;
-    border-radius: 3px;
-    transition-duration: 200ms; }
+   background-color: rgba(86,155,228,0.7); /* azzurro */
+   box-shadow: none;
+    border-radius: 4px; }
   .message:active {
     background-color: #454d50;
     box-shadow: none;
-    margin: 4px;
-    border-radius: 0px; }
+    margin: 1px;
+    border-radius: 4px; }
 
 .message-icon-bin {
   padding: 8px 0px 8px 8px; }
