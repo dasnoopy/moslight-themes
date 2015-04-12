@@ -29,7 +29,7 @@ GTK2 ENGINES REQUIREMENT
 
 GTK3 ENGINES REQUIREMENTS:
 * GTK3 engine Adwaita 3.12 (only for Moslight)
-* since Gnome 3.14 adwaita theme is embedded within gtk3+ libs 
+* Since GTK+ 3.14, the Adwaita theme is shipped by GTK+ itself, and does not use any engine
 
 How to install required gtk2/3 engines:
 

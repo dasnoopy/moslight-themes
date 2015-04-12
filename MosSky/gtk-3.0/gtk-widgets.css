@@ -25,10 +25,10 @@
     -GtkIMHtml-hyperlink-color: @link_color;
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
-	-GtkCheckMenuItem-indicator-size: 12;
+    -GtkCheckMenuItem-indicator-size: 12;
     -GtkPaned-handle-size: 1;
-    -GtkProgressBar-min-horizontal-bar-height: 10;
-    -GtkProgressBar-min-vertical-bar-width: 10;
+    -GtkProgressBar-min-horizontal-bar-height: 12;
+    -GtkProgressBar-min-vertical-bar-width: 12;
     -GtkRange-slider-width: 13;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
@@ -787,8 +787,8 @@ GtkLabel:insensitive {
  ***********/
 GtkInfoBar {
 	border-style: none none solid none;
-	border-width: 0;
-	border-color: shade(@theme_bg_color, 0.7);
+	border-width: 1px;
+	border-color: shade(@theme_bg_color, 0.88);
 }
 
 .info,
@@ -1234,7 +1234,7 @@ GtkProgressBar {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-	background-color: @theme_base_color;
+    background-color: @theme_base_color;
     background-image: none;
 }
 
@@ -2816,8 +2816,8 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .linked.vertical .button:active:hover:first-child,
 .linked.vertical .button:insensitive:first-child {
     border-width: 1px;
-    border-radius: 2px;
-    border-bottom-width: 0;
+    border-radius: 0;
+    border-bottom-width: 1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -2829,7 +2829,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .linked.vertical .button:active:hover:last-child,
 .linked.vertical .button:insensitive:last-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0;
     border-top-width: 1px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -2842,7 +2842,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .linked.vertical .button:active:hover:only-child,
 .linked.vertical .button:insensitive:only-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0;
 }
 
 /* linked toolbar buttons */
@@ -4008,6 +4008,11 @@ bordo finestra
     box-shadow: none;
 }
 
+.titlebar.default-decoration:backdrop {
+    background-image: none;
+    box-shadow: none;
+}
+
 .titlebar .title {
     font: bold 10;
 	color: @fg_color;
@@ -4021,8 +4026,8 @@ bordo finestra
 
 .titlebar:backdrop {
     background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 1.00),
-                                      shade(@toolbar_bg_color, 1.00)
+                                      shade(@toolbar_bg_color, 1.04),
+                                      shade(@toolbar_bg_color, 0.92)
 				   );
     text-shadow: none;
 }
