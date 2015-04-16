@@ -8,11 +8,11 @@
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("window-controls/min.svg"));
+    background-image: -gtk-scaled(url("assets/min.svg"));
 }
 
 .titlebar .titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("window-controls/min_unfocused.svg"));
+    background-image: -gtk-scaled(url("assets/min_unfocused.svg"));
 }
 
 .titlebar .titlebutton.minimize:hover,
@@ -22,7 +22,7 @@
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("window-controls/min_prelight.svg"));
+    background-image: -gtk-scaled(url("assets/min_prelight.svg"));
 }
 
 /* maximize */
@@ -32,11 +32,11 @@
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("window-controls/max.svg"));
+    background-image: -gtk-scaled(url("assets/max.svg"));
 }
 
 .titlebar .titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("window-controls/max_unfocused.svg"));
+    background-image: -gtk-scaled(url("assets/max_unfocused.svg"));
 }
 
 
@@ -47,7 +47,7 @@
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("window-controls/max_prelight.svg"));
+    background-image: -gtk-scaled(url("assets/max_prelight.svg"));
 }
 
 /* close */
@@ -57,11 +57,11 @@
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("window-controls/close.svg"));
+    background-image: -gtk-scaled(url("assets/close.svg"));
 }
 
 .titlebar .titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("window-controls/close_unfocused.svg"));
+    background-image: -gtk-scaled(url("assets/close_unfocused.svg"));
 }
 
 
@@ -72,9 +72,8 @@
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("window-controls/close_prelight.svg"));
+    background-image: -gtk-scaled(url("assets/close_prelight.svg"));
 }
-
 
 /**********************************
  * header-bar, toolbar separator  *

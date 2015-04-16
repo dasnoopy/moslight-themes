@@ -1469,6 +1469,7 @@ GtkLevelBar.vertical {
  * sidebar *
  ***********/
 .sidebar {
+    border: none;
     -GtkTreeView-horizontal-separator: 0;
     -GtkTreeView-vertical-separator: 0;
 }
@@ -1477,14 +1478,15 @@ GtkLevelBar.vertical {
 .sidebar.view,
 .sidebar .view,
 .sidebar GtkScrolledWindow {
+    border: none;
     background-color: @sidebar_bg_color;
     color: @sidebar_fg_color;
-	/* Don't use symbolic icons in the sidebar
-	-gtk-icon-style: regular
-    */
+   -gtk-icon-style: regular /* symbolic */
+
 }
 
 .sidebar row:hover {
+	border:none;
 	background-color: shade (@theme_bg_color, 0.95);
 }
 
@@ -3101,7 +3103,13 @@ GtkTreeView.view {
   -GtkTreeView-vertical-separator: 0;
   -GtkWidget-focus-line-width: 1px;
   -GtkWidget-focus-padding: 1px;
+  border-left-color: #96999a;
+  border-top-color: #ededed;
 }
+
+GtkTreeView.view:selected, GtkTreeView.view:backdrop:selected {
+    border-left-color: #a4c7ec;
+    border-top-color: rgba(46, 52, 54, 0.1); }
 
 GtkTreeView.dnd {
     border-width: 1px;
@@ -4097,7 +4105,7 @@ bordo finestra
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
 
  .window-frame.solid-csd {
-     border: solid 1px shade(@theme_bg_color, 0.5);
+     border: solid 1px shade(@theme_bg_color, 0.88);
      border-radius: 0;
      margin: 2px;
      background-color: @theme_bg_color;

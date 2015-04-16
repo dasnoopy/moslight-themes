@@ -1,1 +1,0 @@
-Nautilus list view: ugly dashed bottom border
