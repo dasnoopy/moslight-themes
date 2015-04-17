@@ -2087,7 +2087,7 @@ GtkColorButton.button {
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 1.00),
+                                      shade(@toolbar_bg_color, 1.04),
                                       shade(@toolbar_bg_color, 0.88)
                                       );
 }
@@ -2294,7 +2294,7 @@ GtkColorButton.button {
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.7);
     background-image: linear-gradient(to bottom,
-                                      shade(@theme_bg_color, 1.00),
+                                      shade(@theme_bg_color, 1.04),
                                       shade(@theme_bg_color, 0.88)
                                       );
 }
@@ -3983,7 +3983,7 @@ bordo finestra
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
-                                      shade(@toolbar_bg_color, 1.00),
+                                      shade(@toolbar_bg_color, 1.04),
                                       shade(@toolbar_bg_color, 0.88)
                                       );
     text-shadow: none;
