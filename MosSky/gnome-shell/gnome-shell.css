@@ -417,7 +417,7 @@ StScrollBar {
       font-weight: bold; }
     .popup-menu .popup-menu-item:hover, .popup-menu .popup-menu-item:focus {
       background-color: rgba(86,155,228,0.9); /* azzurro */
-      color: #dbdee0; }
+      color: #ffffff; }
     .popup-menu .popup-menu-item:active {
       background-color: #515a5e;
       color: #ffffff; }
@@ -440,7 +440,7 @@ StScrollBar {
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
   -arrow-border-radius: 6px;
-  -arrow-background-color:  rgba(29, 39, 49, 0.95);
+  -arrow-background-color:  rgba(29, 39, 49, 0.95); /* sfondo */
   -arrow-border-width: 1px;
   -arrow-border-color: rgba(0,0,0,0.3);
   -arrow-base: 24px;
@@ -613,8 +613,8 @@ StScrollBar {
       text-shadow:none;
       icon-shadow:none;  }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-      background-color: rgba(0,0,0,0.01);
-      box-shadow: inset 0 -2px 0px #9fb0b9;
+      background-color: rgba(86,155,228,0.7); /* azzurro */
+      box-shadow: none;
       background-image: none;
       background-gradient-direction: none;
       color: white;
@@ -1084,9 +1084,9 @@ StScrollBar {
 /* DASHBOARD */
 #dash {
   font-size: 9pt;
-  color: #dbdee0;
+  color: #ffffff;
   /*background-color: #636E73; */
-  background-color: rgba(29, 39, 49, 0.95);
+  background-color: rgba(29, 39, 49, 0.95); /* sfondo */
   padding: 4px 0;
   border: 1px solid rgba(0,0,0,0.05);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
@@ -1109,7 +1109,7 @@ StScrollBar {
 .dash-label {
   border-radius: 2px;
   padding: 4px 12px;
-  color: #dbdee0;
+  color: #ffffff;
   background-color: rgba(69, 77, 80, 0.7);
   text-align: center;
   -x-offset: 8px; }

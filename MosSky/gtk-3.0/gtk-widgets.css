@@ -1481,7 +1481,7 @@ GtkLevelBar.vertical {
     border: none;
     background-color: @sidebar_bg_color;
     color: @sidebar_fg_color;
-   -gtk-icon-style: regular /* symbolic */
+   -gtk-icon-style: symbolic /* symbolic  - regular */
 
 }
 
