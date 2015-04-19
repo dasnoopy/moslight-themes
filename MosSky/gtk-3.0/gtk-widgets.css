@@ -2366,7 +2366,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
  ***********/
 .toolbar {
     padding: 3px;
-    border-width: 0 0 1px 0;
+    border-width: 0 0 0 0;
     border-style: none;
     border-right-color: shade(@toolbar_bg_color, 0.8);
     border-left-color: shade(@toolbar_bg_color, 0.8);
@@ -2411,7 +2411,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     -GtkWidget-window-dragging: true;
 
     padding: 3px;
-    border-width: 0 0 1px 0;
+    border-width: 0 0 0 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: transparent;

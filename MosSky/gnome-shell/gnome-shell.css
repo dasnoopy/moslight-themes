@@ -232,6 +232,7 @@ StScrollBar {
 
 .end-session-dialog-logout-icon {
   border-radius: 5px;
+  border: none;
   width: 48px;
   height: 48px;
   background-size: contain; }
@@ -1681,8 +1682,8 @@ StScrollBar {
 /* Auth Dialogs & Screen Shield */
 .framed-user-icon {
   background-size: contain;
-  border: 1px solid rgba(0,0,0,0.7);
-  border-radius: 3px; }
+  border: none;
+  border-radius: 0; }
   .framed-user-icon:hover {
     border-color: #fff; }
 

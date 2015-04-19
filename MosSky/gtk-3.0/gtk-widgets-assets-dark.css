@@ -2,7 +2,8 @@
  * window actions *
  ******************/
 /* minimize */
-.titlebar .titlebutton.minimize {
+.titlebar .titlebutton.minimize,
+.ssd .titlebar .button.minimize:not(:hover):not(:active) {
    color: transparent;
     border-image: none;
     box-shadow: none;
@@ -26,7 +27,8 @@
 }
 
 /* maximize */
-.titlebar .titlebutton.maximize {
+.titlebar .titlebutton.maximize,
+.ssd .titlebar .button.maximize:not(:hover):not(:active) {
    color: transparent;
     border-image: none;
     box-shadow: none;
@@ -51,7 +53,8 @@
 }
 
 /* close */
-.titlebar .titlebutton.close {
+.titlebar .titlebutton.close,
+.ssd .titlebar .button.minimize:not(:hover):not(:active) {
    color: transparent;
     border-image: none;
     box-shadow: none;
