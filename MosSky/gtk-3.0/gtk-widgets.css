@@ -1535,7 +1535,7 @@ GtkLevelBar.vertical {
   .scrollbars-junction:backdrop, .scrollbar.trough:backdrop,
   .scrollbars-junction.frame:backdrop,
   .frame.scrollbar.trough:backdrop {
-	border-color: transparent;
+    border-color: transparent;
     background-color: transparent; }
 
 .scrollbar.button,
@@ -3083,10 +3083,10 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
  * tooltip *
  ***********/
 .tooltip {
-    border-width: 0px;
-    border-style: solid;
+    border-width: 0;
+    border-style: none;
     border-color: shade(@theme_tooltip_bg_color, 0.88);
-    border-radius: 2px;
+    border-radius: 0;
     background-color: alpha(black, 0.66);
     color: @theme_tooltip_fg_color;
 }
@@ -3100,9 +3100,9 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
  ************/
 GtkTreeView.view {
   -GtkTreeView-grid-line-width: 1;
-  -GtkTreeView-grid-line-pattern: '\001\001';
+  -GtkTreeView-grid-line-pattern: '';
   -GtkTreeView-tree-line-width: 1;
-  -GtkTreeView-tree-line-pattern: '\001\001';
+  -GtkTreeView-tree-line-pattern: '';
   -GtkTreeView-horizontal-separator: 0;
   -GtkTreeView-vertical-separator: 0;
   -GtkWidget-focus-line-width: 1px;
@@ -3136,6 +3136,18 @@ GtkTreeView.separator,
     color: shade(@theme_bg_color, 0.88);
     background-color: transparent;
 }
+
+  GtkTreeView.view.progressbar, GtkTreeView.view.progressbar:selected {
+    color: #ffffff;
+    border-radius: 0;
+    border: 1px solid shade(@theme_selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_selected_bg_color, 1.12),
+                                      shade(@theme_selected_bg_color, 0.96)
+                                      );
+    box-shadow: none;
+    text-shadow: none;
+    icon-shadow: none; }
 
 /************
  * viewport *
@@ -3456,16 +3468,18 @@ GtkFileChooserButton GtkImage:last-child {
 /*********************
  * app notifications *
  *********************/
-.app-notification {
-    border-style: solid;
-    border-color: shade(@theme_base_color, 0.8);
-    border-width: 0 1px 1px 1px;
-    border-radius: 0 0 3px 3px;
-    padding: 8px;
-    background-color: @theme_base_color;
-    background-image: none;
-    color: @theme_text_color;
-}
+.app-notification,
+.app-notification.frame {
+  font: bold;
+  padding: 8px;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 3px 3px;
+  background-color: #D94141;
+  background-image: none;
+  color: white;
+  background-clip: padding-box; }
 
 /*******
  * osd *

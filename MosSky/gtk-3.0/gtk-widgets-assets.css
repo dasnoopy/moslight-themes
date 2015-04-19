@@ -18,7 +18,8 @@
 }
 
 .titlebar .titlebutton.minimize:hover,
-.titlebar .titlebutton.minimize:active {
+.titlebar .titlebutton.minimize:active,
+.titlebar .titlebutton.minimize:checked {
    color: transparent;
     border-image: none;
     box-shadow: none;
@@ -44,7 +45,8 @@
 
 
 .titlebar .titlebutton.maximize:hover, 
-.titlebar .titlebutton.maximize:active {
+.titlebar .titlebutton.maximize:active,
+.titlebar .titlebutton.maximize:checked  {
    color: transparent;
     border-image: none;
     box-shadow: none;
@@ -70,7 +72,8 @@
 
 
 .titlebar .titlebutton.close:hover,
-.titlebar .titlebutton.close:active {
+.titlebar .titlebutton.close:active,
+.titlebar .titlebutton.close:checked  {
    color: transparent;
     border-image: none;
     box-shadow: none;
