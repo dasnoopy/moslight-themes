@@ -1,7 +1,9 @@
-2015.04.12
-----------
-GTK3       : applied almost changes for gtk3+ v3.16.x
-Gnome Shell: new theme based on Paper theme...
+2015.04.19:
+- convert titlebar buttons to png (seems that svg images  don't scale well) and
+  make them a little bit bigger 
 
 
-
+2015.04.17:
+- Initial release for gnome 3.16:
+- GTK3 : applied almost changes for gtk3+ v3.16.x
+- Gnome Shell: new theme based on Paper theme...

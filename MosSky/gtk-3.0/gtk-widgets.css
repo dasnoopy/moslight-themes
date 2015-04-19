@@ -1028,7 +1028,7 @@ GtkInfoBar {
     -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 0;
 
-    padding: 0;
+    padding: 2px 2px 2px 2px;
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.8);
@@ -1073,15 +1073,16 @@ GtkInfoBar {
 }
 
 .notebook tab {
-	padding: 4px 6px;
-	border-radius: 0;
+    padding: 4px 6px;
+    border-radius: 0;
     border-width: 1px;
     border-color: transparent; /* shade(@theme_base_color, 0.7); */
     background-color: transparent;
-	background-image: none;
+    background-image: none;
 }
 
 .notebook tab GtkLabel {
+    padding: 0 2px;
     color: mix(@theme_fg_color, @theme_bg_color, 0.40);
     font-weight: bold;
     transition: all 100ms ease-out;
@@ -1109,7 +1110,7 @@ GtkInfoBar {
 /* horizontal tabs */
 
 .notebook tab.top {
-    padding: 4px 6px 4px 6px; /* sopra  sinistra sotto destra */
+    padding: 4px 4px; /* sopra  sinistra sotto destra */
     border-width: 0 0 0 0;
 }
 
@@ -1120,7 +1121,7 @@ GtkInfoBar {
 }
 
 .notebook tab.bottom {
-    padding: 4px 6px 4px 6px; /* sopra  sinistra sotto destra */
+    padding: 4px 4px; /* sopra  sinistra sotto destra */
     border-width: 0 0 0 0;
 }
 
@@ -1137,7 +1138,7 @@ GtkInfoBar {
 /* vertical tabs */
 
 .notebook tab.right {
-    padding: 4px 6px 4px 6px; /* sopra  sinistra sotto destra */
+    padding: 4px 4px; /* sopra  sinistra sotto destra */
     border-width: 0 0 0 0;
 }
 .notebook tab.right:active {
@@ -1147,7 +1148,7 @@ GtkInfoBar {
 }
 
 .notebook tab.left {
-    padding: 4px 6px 4px 6px; /* sopra  sinistra sotto destra */
+    padding: 4px 4px; /* sopra  sinistra sotto destra */
     border-width: 0 0 0 0;
 }
 
@@ -1165,6 +1166,7 @@ GtkInfoBar {
 /* close button styling */
 .notebook tab .button,
 .notebook tab .button:active {
+    padding: 0;
     border-width: 1px;
     border-radius: 16px;
     border-style: solid;
@@ -1179,6 +1181,8 @@ GtkInfoBar {
     border-color: shade(@theme_base_color, 0.5);
 }
 
+.notebook tab .button > GtkImage {
+        padding: 2px; }
 
 /******************
  *notebook pane separator *
@@ -3980,7 +3984,7 @@ bordo finestra
     border-radius: 3px 3px 0 0;
     border-width: 0 0 1px 0;
     border-style: solid;
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: shade(@toolbar_bg_color, 0.8);
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(to bottom,
                                       shade(@toolbar_bg_color, 1.04),
@@ -4004,8 +4008,9 @@ bordo finestra
 
 
 .titlebar.default-decoration {
-    padding: 2px 3px 2px 3px;
-    border: none;
+    padding: 2px 4px 2px 4px;
+    border-style: none;
+    border-color: shade(@toolbar_bg_color, 0.8);
     background-image: none;
     box-shadow: none;
 }
