@@ -688,14 +688,14 @@ StScrollBar {
 
 .datemenu-today-button .date-label {
   color: white;
-  font-size: 1.5em; 
-  font-weight: bold; }
+  font-size: 1.5em; /* data completa nel calendario */
+  font-weight: normal; }
 
 .world-clocks-header,
 .message-list-section-title {
   color: rgba(255,255,255,0.3);
   font-weight: bold;
-  font-size: 1.04em; }
+  font-size: 1.04em; } /* add world clock label */
 
 .world-clocks-grid {
   spacing-rows: 0.4em; }
@@ -704,7 +704,7 @@ StScrollBar {
   color: rgba(255,255,255,0.7);
   font-weight: bold;
   padding: 8px 0;
-  font-size: 1.2em; }
+  font-size: 1.2em; } /* month label */
 
 /* Calendar page buttons */
 .pager-button {
@@ -757,7 +757,6 @@ StScrollBar {
     font-weight: bold;
 }
 
-
 .calendar-day-top {
   border-top-width: 0px; }
 
@@ -777,7 +776,7 @@ StScrollBar {
   border: 0px solid rgba(0,0,0,0.2); }
 
 .calendar-day-with-events {
-  font: bold;	
+  font-weight: bold;	
   color: rgba(255,255,255,0.9);
  }
 
