@@ -3,8 +3,7 @@
  ******************/
 
 /* minimize */
-.titlebar .titlebutton.minimize,
-.ssd .titlebar .button.minimize:not(:hover):not(:active) {
+.titlebar .titlebutton.minimize {
    color: transparent;
     border-image: none;
     box-shadow: none;
@@ -29,8 +28,7 @@
 }
 
 /* maximize */
-.titlebar .titlebutton.maximize,
-.ssd .titlebar .button.maximize:not(:hover):not(:active)  {
+.titlebar .titlebutton.maximize {
    color: transparent;
     border-image: none;
     box-shadow: none;
@@ -56,8 +54,7 @@
 }
 
 /* close */
-.titlebar .titlebutton.close,
-.ssd .titlebar .button.close:not(:hover):not(:active)  {
+.titlebar .titlebutton.close {
    color: transparent;
     border-image: none;
     box-shadow: none;
