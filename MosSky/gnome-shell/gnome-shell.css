@@ -1127,33 +1127,33 @@ StScrollBar {
 
 .app-view-control {
   background-gradient-direction: none;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0,0,0,0);
   padding: 4px 32px;
   border-width: 0px;
-  color: #dbdee0; }
+  color: rgba(128,128,128,1.0); }
   .app-view-control:hover {
     color: #fff;
     background-gradient-direction: none;
-    background-color: rgba(255,255,255,0.2);
-    border-color: rgba(0,0,0,0);
-    border-width: 0px; }
+    background-color: rgba(255,255,255,0.1);
+    border-width: 0px; 
+    border-color: rgba(0,0,0,0); }
   .app-view-control:checked {
-    color: #454d50;
+    color: white;
     border-color: rgba(0,0,0,0);
     border-width: 0px;
     background-gradient-direction: none;
-    background-color: #fff;
+    background-color: rgba(29, 39, 49, 0.8);
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5); }
   .app-view-control:first-child {
     background-gradient-direction: none;
-    border-radius: 2px 0 0 2px; }
+    border-radius: 0px; }
   .app-view-control:last-child {
     border-right-width: 0;
     background-gradient-direction: none;
-    border-radius: 0 2px 2px 0; }
+    border-radius: 0px; }
 
 .search-provider-icon:active, .search-provider-icon:checked,
 .list-search-result:active,
