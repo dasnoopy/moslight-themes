@@ -1,5 +1,8 @@
-2015.04.24:
-- small fixes and refinement
+2015.05.01
+- Gnome-Shell : small refinement
+- GTK2:  some changes applied to buttons and treeview header to match gtk3 theme
+
+2015.04.19:
 - convert titlebar buttons to png (seems that svg images  don't scale well) and
   make them a little bit bigger 
 - GTK3 toolbar : no bottom border (match GTK2 theme)

@@ -179,50 +179,50 @@ style "default" {
 	engine "murrine" {
 	
 	# https://wiki.ubuntu.com/Artwork/Documentation/Murrine
-		animation			= FALSE
-		arrowstyle			= 0
+		animation		= FALSE
+		arrowstyle		= 0
 		border_colors		= FALSE 
 		border_shades		= { 1.0, 1.0 }
-		cellstyle			= 0
+		cellstyle		= 0
 		colorize_scrollbar	= FALSE
 		comboboxstyle		= 0
-		contrast			= 1.0
+		contrast		= 1.0
 		#default_button_color	= @selected_bg_color
 		#disable_focus		= TRUE
 		expanderstyle		= 2
-		focusstyle			= 0
-		focus_color			= shade (1.0, @selected_bg_color)
-		glazestyle			= 0
-		glow_shade			= 1.4
-		glowstyle			= 0
+		focusstyle		= 0
+		focus_color		= shade (1.0, @selected_bg_color)
+		glazestyle		= 0
+		glow_shade		= 1.4
+		glowstyle		= 0
 		gradient_colors		= FALSE
-		gradient_shades     = { 1.01, 1.0, 1.0, 0.99 }
-		handlestyle			= 2
+		gradient_shades     	= { 1.02, 1.0, 1.0, 0.98}
+		handlestyle		= 2
 		highlight_shade		= 1.00
-		lightborder_shade	= 1.24
+		lightborder_shade	= 1.00
 		lightborderstyle	= 0
-		listviewheaderstyle	= 2
+		listviewheaderstyle	= 1
 		listviewstyle		= 1
 		menubaritemstyle	= 0
 		menubarstyle		= 0
 		menuitemstyle		= 0
-		menustyle		    = 0
+		menustyle		= 0
 		prelight_shade		= 0.95
 		progressbarstyle	= 1
-		reliefstyle			= 3
-		rgba				= FALSE
-		roundness			= 2
+		reliefstyle		= 3
+		rgba			= FALSE
+		roundness		= 2
 		scrollbarstyle		= 2
 		separatorstyle		= 1
 		shadow_shades		= { 0.8, 2.2 }
-		sliderstyle			= 0
+		sliderstyle		= 0
 		spinbuttonstyle		= 0
 		stepperstyle		= 1
-		textstyle			= 0
-		text_shade			= 1.0
+		textstyle		= 0
+		text_shade		= 1.0
 		toolbarstyle		= 0
 		trough_shades		= { 0.9, 1.1}
-		trough_border_shades= { 1.0, 1.0 }
+		trough_border_shades	= { 1.0, 1.0 }
 	}
 }
 
@@ -253,18 +253,18 @@ bg[SELECTED]        = shade (1.07, @selected_bg_color)
 
 	engine "murrine"
   	{
-    	roundness			= 6
-		highlight_shade		= 1.05 
-		contrast			=  1.0 #1.10 
-		glazestyle 			= 1
-		glow_shade          = 1.5   
-		glowstyle           = 2   
-    	lightborder_shade   = 1.25
-    	lightborderstyle    = 2 
-		gradient_shades     = {1.08,1.04,1.00,0.96}
-		border_shades       	= { 0.8,0.8}
-		trough_shades	    = { 0.88 , 0.78 }
-		trough_border_shades = { 0.72, 1.24 } #to draw a gradient on the border of trough of GtkScrollbar and GtkProgressBar
+    	roundness		= 6
+	highlight_shade		= 1.05 
+	contrast		=  1.0 #1.10 
+	glazestyle 		= 1
+	glow_shade          	= 1.5   
+	glowstyle           	= 2   
+    	lightborder_shade   	= 1.25
+    	lightborderstyle    	= 2 
+	gradient_shades     	= {1.08,1.04,1.00,0.96}
+	border_shades       	= { 0.8,0.8}
+	trough_shades	    	= { 0.88 , 0.78 }
+	trough_border_shades 	= { 0.72, 1.24 } #to draw a gradient on the border of trough of GtkScrollbar and GtkProgressBar
 	}
 }
 
@@ -290,7 +290,7 @@ style "progressbar"
 	{
 		roundness			= 2
 		lightborder_shade  	= 1.25
-    	lightborderstyle	= 1
+    	        lightborderstyle	= 1
 		highlight_shade		= 1.05 
 		contrast			=  1.20
 		gradient_shades 	= {1.2,1.0,1.0,0.6}
@@ -317,14 +317,16 @@ style "button"
 	ythickness = 3
 	engine "murrine" 
 	{
-		contrast			= 1.0
+		roundness	    = 1	
+		contrast	    = 1.12
 		glazestyle          = 5     # 0 = flat, 1 = curved, 2 = concave, 3 = top curved, 4 = beryl highlight, 5 = new
 		glow_shade          = 1.04   # sets glow amount for buttons or widgets
 		glowstyle           = 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
-		gradient_shades     = {1.14,1.08,1.02,0.92}
+		gradient_shades     = {1.14,1.08,1.02,0.98}
 		highlight_shade     = 1.00  # set highlight amount for buttons or widgets
-		lightborder_shade   = 2.00  # sets lightborder amount for buttons or widgets 
+		lightborder_shade   = 1.00  # sets lightborder amount for buttons or widgets 
 		lightborderstyle    = 1
+		border_shades 	    = { 1.2, 0.98 } # to draw a gradient on the border.
 	}
 }
 
@@ -422,14 +424,14 @@ style "frame_title"
 
 # This style is based on the default style, so that the colors from the button
 # style are overriden again.
-style "treeview_header" = "default" 
+style "treeview_header" 
 {
 	xthickness = 2
 	ythickness = 2
 
-	bg[NORMAL]        = @base_color
+	bg[NORMAL]        = shade (1.08, @bg_color)
 	bg[PRELIGHT]      = shade (1.02, @bg_color)
-
+        font_name = "Bold"
 }
 
 style "treeview" 
@@ -617,17 +619,17 @@ widget_class "*<GtkMenuBar>*<GtkMenuItem>" style "menubar_item"
 widget_class "*<GtkRadioButton>*" style "radiocheck"
 widget_class "*<GtkCheckButton>*" style "radiocheck"
 
-widget_class "*.<GtkFrame>.<GtkLabel>" style "frame_title"
-widget_class "*.<GtkTreeView>*" style "treeview"
+widget_class "*<GtkFrame>.<GtkLabel>" style "frame_title"
+widget_class "*<GtkTreeView>*" style "treeview"
 
 widget_class "*<GtkProgress>" style "progressbar"
-widget_class "*.<GtkMenuItem>.*.<GtkProgressBar>" style "progressbar_menu_item"
+widget_class "*<GtkMenuItem>.*.<GtkProgressBar>" style "progressbar_menu_item"
 
 # Treeview headers (and similar stock GTK+ widgets)
-widget_class "*.<GtkTreeView>.<GtkButton>" style "treeview_header"
-widget_class "*.<GtkCTree>.<GtkButton>" style "treeview_header"
-widget_class "*.<GtkList>.<GtkButton>" style "treeview_header"
-widget_class "*.<GtkCList>.<GtkButton>" style "treeview_header"
+widget_class "*<GtkTreeView>*<GtkButton>*"      style "treeview_header"
+widget_class "*<GtkCTree>.<GtkButton>" style "treeview_header"
+widget_class "*<GtkList>.<GtkButton>" style "treeview_header"
+widget_class "*<GtkCList>.<GtkButton>" style "treeview_header"
 
 # The window of the tooltip is called "gtk-tooltip"
 ##################################################################

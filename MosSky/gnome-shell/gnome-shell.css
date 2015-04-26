@@ -1125,6 +1125,7 @@ StScrollBar {
 .app-view-controls {
   padding-bottom: 32px; }
 
+/* FREQUENT / ALL buttons in apps view */
 .app-view-control {
   background-gradient-direction: none;
   background-color: rgba(0,0,0,0);
