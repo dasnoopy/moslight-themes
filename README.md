@@ -23,13 +23,13 @@ that folder
 
 then use Gnome-Tweak-Tool to choose the theme.
 
-GTK2 ENGINES REQUIREMENT
+**GTK2 ENGINES REQUIREMENT**
 * GTK2 engine Murrine 0.98.1.1 or later.
 * GTK2 pixbuf engine or the gtk(2)-engines package.
 
-GTK3 ENGINES REQUIREMENTS:
+**GTK3 ENGINES REQUIREMENTS**
 * GTK3 engine Adwaita 3.12 (only for Moslight)
-* Since GTK+ 3.14, the Adwaita theme is shipped by GTK+ itself, and does not use any engine
+* Since GTK+ 3.14, the Adwaita theme is shipped by GTK+ itself and it does not use any engine
 
 How to install required gtk2/3 engines:
 
@@ -39,8 +39,6 @@ ArchLinux:
 Other distro:
 Search for the engines in your distribution's repository or install the engines from source.
 
-MosLight (GTK+3.12) :
-![Moslight GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/moslight.png)
+How they looks like :
+![MosSky GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MosSky.png)
 
-Mosemite (GTK+3.14) :
-![Mosemite GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/mosemite.png)
