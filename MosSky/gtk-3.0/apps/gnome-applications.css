@@ -126,6 +126,22 @@ TerminalWindow GtkNotebook.notebook {
     border-bottom-width: 0;
 }
 
+/* no transparent background for gnome terminal scrollbars :
+remove this section if you have installed a patched version 
+of gnome-terminal with transparency enabled */
+
+
+TerminalWindow .scrollbars-junction,TerminalWindow .scrollbar.trough,
+TerminalWindow .scrollbars-junction.frame,
+TerminalWindow .frame.scrollbar.trough {
+  border-color: transparent;
+  background-color: @theme_bg_color;  }
+  TerminalWindow .scrollbars-junction:backdrop,TerminalWindow .scrollbar.trough:backdrop,
+  TerminalWindow .scrollbars-junction.frame:backdrop,
+  TerminalWindow .frame.scrollbar.trough:backdrop {
+    border-color: transparent;
+    background-color: @theme_bg_color;  }
+
 /*********
  * gedit *
  *********/

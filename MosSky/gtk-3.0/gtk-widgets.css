@@ -3474,8 +3474,8 @@ GtkFileChooserButton GtkImage:last-child {
   padding: 8px;
   border-width: 0 1px 1px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 3px 3px;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 2px 2px;
   background-color: @infobar_bg_color;
   background-image: none;
   color: @fg_color;

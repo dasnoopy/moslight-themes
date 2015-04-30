@@ -39,6 +39,6 @@ ArchLinux:
 Other distro:
 Search for the engines in your distribution's repository or install the engines from source.
 
-How they looks like :
+**How they looks like :**
 ![MosSky GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MosSky.png)
 

@@ -1,6 +1,7 @@
 2015.05.01
 - Gnome-Shell : small refinement
 - GTK2:  some changes applied to buttons and treeview header to match gtk3 theme
+- no transparent background for gnome-terminal scrollbars 
 
 2015.04.19:
 - convert titlebar buttons to png (seems that svg images  don't scale well) and
