@@ -3109,6 +3109,7 @@ GtkTreeView.view {
   -GtkWidget-focus-padding: 1px;
   border-left-color: #96999a;
   border-top-color: #ededed;
+  padding: 0px 0px 0px 2px;
 }
 
 GtkTreeView.view:selected, GtkTreeView.view:backdrop:selected {
