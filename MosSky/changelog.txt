@@ -1,3 +1,6 @@
+2015.05.08
+- GTK3: better progressbar in a treeview widget
+
 2015.05.01
 - Gnome-Shell : small refinement
 - GTK2:  some changes applied to buttons and treeview headers to match gtk3 theme
