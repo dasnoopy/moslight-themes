@@ -241,6 +241,12 @@ GtkAssistant .sidebar {
     color: @theme_fg_color;
 }
 
+.button.image-button {
+  padding: 6px 6px; }
+
+.button.text-button {
+  padding: 3px 6px; }
+
 
 .button:hover {
     background-image: linear-gradient(to bottom,
@@ -734,17 +740,24 @@ GtkScrolledWindow GtkViewport.frame {
 /************
  * iconview *
  ************/
+GtkIconView.view.cell:hover {
+    border-width: 0;
+    border: none;
+    border-radius: 0;
+    background-color: shade(@theme_base_color, 0.92);
+    background-image: none;
+    color: @fg_color;
+}
+
+
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focus {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    border-radius: 0px;
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.12),
-                                      shade(@theme_selected_bg_color, 0.96)
-                                      );
-
+    border-width: 0;
+    border-style: none;
+    border-color: shade(@theme_selected_bg_color, 0.88);
+    border-radius: 0;
+	background-color: @theme_selected_bg_color;
+    background-image: none;
     color: @theme_selected_fg_color;
 }
 
@@ -2398,7 +2411,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 .toolbar .button {
-    padding: 2px;
+    padding: 3px;
 }
 
 .toolbar .button.text-button {
@@ -2428,8 +2441,8 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     -GtkWidget-window-dragging: true;
 
     padding: 3px;
-    border-width: 0 0 0 0;
-    border-style: solid;
+    border-width: 0;
+    border-style: none;
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -3104,7 +3117,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     border-style: none;
     border-color: shade(@theme_tooltip_bg_color, 0.88);
     border-radius: 0;
-    background-color: alpha(black, 0.66);
+    background-color: @theme_tooltip_bg_color;
     color: @theme_tooltip_fg_color;
 }
 
@@ -3156,7 +3169,7 @@ GtkTreeView.separator,
     background-color: transparent;
 }
 
-  GtkTreeView.view.progressbar {
+GtkTreeView.view.progressbar {
     color: white;
     border: 1px solid shade(@theme_selected_bg_color, 0.88);
     border-radius: 0;
@@ -3165,7 +3178,6 @@ GtkTreeView.separator,
                                       shade(@theme_selected_bg_color, 0.96)
                                       );
     box-shadow: none; }
-
     GtkTreeView.view.progressbar:selected {
       color: white;
       box-shadow: none;
@@ -3173,7 +3185,7 @@ GtkTreeView.separator,
                                       shade(@theme_selected_bg_color, 1.12),
                                       shade(@theme_selected_bg_color, 0.96)
                                       ); }
-      GtkTreeView.view.progressbar:selected:backdrop {
+    GtkTreeView.view.progressbar:selected:backdrop {
         color: white;
         border-color: shade(@theme_selected_bg_color, 0.88);
            background-image: linear-gradient(to bottom,
@@ -3519,16 +3531,41 @@ GtkFileChooserButton GtkImage:last-child {
  *********************/
 .app-notification,
 .app-notification.frame {
-  font: bold;
-  padding: 7px;
-  border-width: 0 1px 1px;
-  border-style: solid;
-  border-color: shade(@theme_bg_color, 0.88);
-  border-radius: 0;
-  background-color: shade(@infobar_bg_color,1.08);
-  background-image: none;
-  color: @fg_color;
-  background-clip: padding-box; }
+    font: bold;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.88);
+    border-width: 0 1px 1px 1px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 8px;
+    background-color: shade(@infobar_bg_color,1.08);
+    background-image: none;
+    color: @fg_color;
+    background-clip: padding-box; 
+}
+
+.app-notification .button,
+.app-notification .button:hover {
+    background-color: shade(@theme_bg_color, 0.88);
+    color: @fg_color;
+}
+
+.app-notification .button:active,
+.app-notification .button:hover:active {
+    background-color: shade(@theme_bg_color, 0.88);
+    color: @fg_color;
+}
+
+.app-notification .button.flat {
+    background-color: transparent;
+    color: @fg_color;
+}
+
+.app-notification .button.flat:hover,
+.app-notification .button.flat:hover:active {
+    background-color: transparent;
+    color: @fg_color;
+}
 
 /*******
  * osd *

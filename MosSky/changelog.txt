@@ -1,4 +1,5 @@
 2015.05.08
+- GTK3: some small refinement
 - GTK3: better progressbar in a treeview widget
 
 2015.05.01
