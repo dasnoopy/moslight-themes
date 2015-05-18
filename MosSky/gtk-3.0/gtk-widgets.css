@@ -242,10 +242,10 @@ GtkAssistant .sidebar {
 }
 
 .button.image-button {
-  padding: 6px 6px; }
+  padding: 4px 4px; }
 
 .button.text-button {
-  padding: 3px 6px; }
+  padding: 4px 6px; }
 
 
 .button:hover {
@@ -570,9 +570,11 @@ GtkCalendar.highlight {
 	border-radius: 0;
 	border-width: 0;
 }
+
 /******************
  * combobox entry *
  ******************/
+
 .primary-toolbar GtkComboBox.combobox-entry .entry,
 .primary-toolbar GtkComboBox.combobox-entry .entry:active,
 .primary-toolbar GtkComboBox.combobox-entry .entry:focus,
@@ -3881,8 +3883,9 @@ GtkProgressBar.osd.progressbar {
                                       );
 }
 
-.destructive-action.button:hover:active {
-    border-color: shade(@error_color, 0.8);
+.destructive-action.button:hover:active,
+.destructive-action.button:hover:checked {
+    
 }
 
 /******************************
@@ -3891,7 +3894,7 @@ GtkProgressBar.osd.progressbar {
 
 .toolbar .suggested-action.button,
 .header-bar .suggested-action.button {
-	border-color: shade(@theme_selected_bg_color, 0.88);
+	border-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.04),
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.88)
@@ -3901,6 +3904,7 @@ GtkProgressBar.osd.progressbar {
 
 .toolbar .suggested-action.button:hover,
 .header-bar .suggested-action.button:hover {
+   	border-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.96)
@@ -3911,26 +3915,61 @@ GtkProgressBar.osd.progressbar {
 .toolbar .suggested-action.button:hover:active,
 .header-bar .suggested-action.button:active,
 .header-bar .suggested-action.button:hover:active  {
+   	border-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_selected_bg_color, 1.02), 1.04),
                                       shade(shade(@theme_selected_bg_color, 1.02), 0.88)
                                       );
-   color: @theme_selected_fg_color;
-}
+   color: @theme_selected_fg_color; }
 
-.suggested-action.button:insensitive,
-.suggested-action.button:active *:insensitive {
-	icon-shadow: none;
+.button.suggested-action {
+	border-color: shade(@theme_selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.04),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.88)
+                                      );
+    color: @theme_selected_fg_color; }
+
+.button.suggested-action:hover {
+   	border-color: shade(@theme_selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.96)
+                                      );
+    color: @theme_selected_fg_color; }
+
+.button.suggested-action:active, .button.suggested-action:checked {
+   	border-color: shade(@theme_selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12)
+                                      );
+     color: @theme_selected_fg_color; }
+
+.button.suggested-action:insensitive {
 	background-image: linear-gradient(to bottom,
                                       shade(shade(@insensitive_bg_color, 1.02), 1.04),
                                       shade(shade(@insensitive_bg_color, 1.02), 0.88)
                                       );
-}
+    text-shadow: none;
+    icon-shadow: none; }
 
-.suggested-action.button GtkLabel:insensitive {
-	color: @insensitive_fg_color;
-	text-shadow: none;
-}
+.button.suggested-action:insensitive > GtkLabel, .button.suggested-action:insensitive GtkLabel {
+   	color: @insensitive_fg_color;
+	text-shadow: none; }
+
+.button.suggested-action:insensitive:active, .button.suggested-action:insensitive:checked {
+	background-image: linear-gradient(to bottom,
+                                      shade(shade(@insensitive_bg_color, 1.02), 1.04),
+                                      shade(shade(@insensitive_bg_color, 1.02), 0.88)
+                                      );
+    text-shadow: none;
+    icon-shadow: none;}
+
+.button.suggested-action:insensitive:active > GtkLabel, .button.suggested-action:insensitive:active GtkLabel, .button.suggested-action:insensitive:checked > GtkLabel, .button.suggested-action:insensitive:checked GtkLabel {
+   	color: @insensitive_fg_color;
+	text-shadow: none;}
+
 
 /******************
  * selection mode *
@@ -4210,7 +4249,7 @@ bordo finestra
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
 
  .window-frame.solid-csd {
-     border: solid 1px shade(@theme_bg_color, 0.88);
+     border: solid 1px shade(@theme_bg_color, 0.8);
      border-radius: 0;
      margin: 2px;
      background-color: @theme_bg_color;

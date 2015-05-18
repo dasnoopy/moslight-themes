@@ -1,3 +1,6 @@
+2015.05.17
+- GTK3:  tweaked suggested buttons
+
 2015.05.08
 - GTK3: some small refinement
 - GTK3: better progressbar in a treeview widget
