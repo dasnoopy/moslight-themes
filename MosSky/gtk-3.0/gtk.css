@@ -52,7 +52,7 @@
 @define-color dark_shadow #000000;
 
 /* infobars colors and other gtk+ colors */
-@define-color infobar_bg_color #fffca9;
+@define-color infobar_bg_color #eaebec;
 @define-color infobar_fg_color @fg_color;
 @define-color infobar_text_shadow alpha(white, 0.5);
 @define-color link_color #4a90d9;

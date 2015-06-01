@@ -177,9 +177,9 @@ GtkGrid:insensitive {
 }
 
 .entry {
-    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.12),
-    		    inset 0 1px alpha(@dark_shadow, 0.14),
-                inset -1px 0 alpha(@dark_shadow, 0.12);
+    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.10),
+    		    inset 0 1px alpha(@dark_shadow, 0.10),
+                inset -1px 0 alpha(@dark_shadow, 0.10);
 }
 
 /* disable inset shadow */
@@ -261,7 +261,7 @@ GtkAssistant .sidebar {
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
                                       shade(shade(@theme_bg_color, 1.02), 1.12)
                                       );
-    box-shadow: inset 0 1px alpha(@dark_shadow, 0.16);
+    box-shadow: none;
 }
 
 .button:active:hover,
@@ -312,6 +312,73 @@ GtkAssistant .sidebar {
 
 .button.default:active:hover,
 .button.default:checked:hover  {}
+
+.inline-toolbar GtkToolButton > .button {
+  border-width: 1px;
+  border-style: solid;
+  color: @theme_fg_color;
+  background-image: none; 
+}
+  .inline-toolbar GtkToolButton > .button:hover {
+    border-width: 1px;
+    border-style: solid;
+    color: @theme_fg_color;
+    background-image: none; }
+  .inline-toolbar GtkToolButton > .button:active {
+    border-width: 1px;
+    border-style: solid;
+    background-image: none; 
+    color:  @theme_fg_color; }
+  .inline-toolbar GtkToolButton > .button:insensitive {
+    border-width: 1px;
+    border-style: solid;
+    color: shade (@theme_bg_color, 0.7);
+    border-color: shade (@theme_bg_color, 0.88);
+    background-color: @theme_bg_color;
+	background-image: none;
+    text-shadow: none;
+    icon-shadow: none; }
+  .inline-toolbar GtkToolButton > .button:insensitive:active {
+    border-width: 1px;
+    border-style: solid;
+    color: shade (@theme_bg_color, 0.7);
+    border-color: shade (@theme_bg_color, 0.88);
+    background-color: @theme_bg_color;
+	background-image: none; }
+
+.inline-toolbar.toolbar GtkToolButton > .button.flat {
+  border-radius: 0;
+  border-left-style: none; }
+.inline-toolbar.toolbar GtkToolButton:first-child > .button.flat {
+  border-radius: 2px 0 0 2px;
+  border-left-style: solid; }
+.inline-toolbar.toolbar GtkToolButton:last-child > .button.flat {
+  border-radius: 0 2px 2px 0; }
+.inline-toolbar.toolbar GtkToolButton:last-child:dir(rtl) > .button.flat {
+  border-right-style: solid; }
+.inline-toolbar.toolbar GtkToolButton:only-child > .button.flat {
+  border-radius: 2px;
+  border-style: solid; }
+
+.osd .button, .osd .button:hover, .osd .button:active, .osd .button:checked, .osd .button:insensitive, .inline-toolbar .button, .linked .button, .linked > GtkComboBox > .button:dir(ltr) {
+  border-radius: 0;
+  border-left-style: none; }
+  .osd .button:dir(rtl), .inline-toolbar .button:dir(rtl), .linked .button:dir(rtl), .linked > GtkComboBox > .button:dir(rtl) {
+    border-radius: 0;
+    border-right-style: none;
+    border-left-style: solid; }
+
+.osd .button:first-child, .inline-toolbar .button:first-child, .linked .button:first-child, .linked > GtkComboBox:first-child > .button {
+  border-radius: 2px 0 0 2px;
+  border-left-style: solid; }
+.osd .button:last-child, .inline-toolbar .button:last-child, .linked .button:last-child, .linked > GtkComboBox:last-child > .button {
+  border-radius: 0 2px 2px 0; }
+  .osd .button:last-child:dir(rtl), .inline-toolbar .button:last-child:dir(rtl), .linked .button:last-child:dir(rtl), .linked > GtkComboBox:last-child > .button:dir(rtl) {
+    border-right-style: solid; }
+.osd .button:only-child, .inline-toolbar .button:only-child, .linked .button:only-child, .linked > GtkComboBox:only-child > .button {
+  border-radius: 2px;
+  border-style: solid; }
+
 
 .button.flat {
 	border-color: transparent;
@@ -679,6 +746,19 @@ GtkComboBox.combobox-entry .button:insensitive {
       background-color: #ffffff;
 }
 
+  .linked .entry:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; 
+    border-right-style: solid;}
+    .linked .entry:first-child:dir(rtl) {
+      border-right-style: solid; }
+
+  .linked .entry:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-style: solid; }
+    .linked .entry:last-child:dir(rtl) {
+      border-left-style: solid; }
 
 /************
  * expander *
@@ -1563,12 +1643,12 @@ GtkLevelBar.vertical {
 .scrollbars-junction.frame,
 .frame.scrollbar.trough {
   border-color: transparent;
-  background-color: transparent; }
+  background-color: white; }
   .scrollbars-junction:backdrop, .scrollbar.trough:backdrop,
   .scrollbars-junction.frame:backdrop,
   .frame.scrollbar.trough:backdrop {
     border-color: transparent;
-    background-color: transparent; }
+    background-color: white; }
 
 .scrollbar.button,
 .scrollbar.button:active,
@@ -2644,14 +2724,14 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
  * linked buttons *
  *****************/
 /* set up shadows for visual separation */
-.linked .button,
+
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar GtkToolButton .button,
 .inline-toolbar.toolbar GtkToolButton > .button {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.8);
 }
 
-.linked .button:active,
+
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar GtkToolButton .button:active,
 .inline-toolbar.toolbar GtkToolButton > .button:active {
@@ -2660,7 +2740,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
                 inset 0 1px alpha(@dark_shadow, 0.08);
 }
 
-.linked .button:insensitive,
+
 .inline-toolbar.toolbar .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton > .button:insensitive {
@@ -2668,12 +2748,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 /* remove box shadow from last-child and only-child */
-.linked .button:last-child,
-.linked .button:only-child,
-.linked .button:insensitive:last-child,
-.linked .button:insensitive:only-child,
-.linked .button:active *:insensitive:last-child,
-.linked .button:active *:insensitive:only-child,
 .inline-toolbar.toolbar .button:last-child,
 .inline-toolbar.toolbar .button:only-child,
 .inline-toolbar.toolbar .button:insensitive:last-child,
@@ -2690,8 +2764,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 /* add back the inset shadow effect */
-.linked .button:active:last-child,
-.linked .button:active:only-child,
 .inline-toolbar.toolbar .button:active:last-child,
 .inline-toolbar.toolbar .button:active:only-child,
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:active,
@@ -2703,10 +2775,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 /* middle button */
 .linked .entry,
-.linked .button,
-.linked .button:active,
-.linked .button:active:hover,
-.linked .button:insensitive,
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar .button:insensitive,
@@ -2721,10 +2789,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 /*leftmost button */
 .linked .entry:first-child,
-.linked .button:first-child,
-.linked .button:active:first-child,
-.linked .button:active:hover:first-child,
-.linked .button:insensitive:first-child,
 .inline-toolbar.toolbar .button:first-child,
 .inline-toolbar.toolbar .button:active:first-child,
 .inline-toolbar.toolbar .button:insensitive:first-child,
@@ -2740,10 +2804,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 /* rightmost button */
 .linked .entry:last-child,
-.linked .button:last-child,
-.linked .button:active:last-child,
-.linked .button:active:hover:last-child,
-.linked .button:insensitive:last-child,
 .inline-toolbar.toolbar .button:last-child,
 .inline-toolbar.toolbar .button:active:last-child,
 .inline-toolbar.toolbar .button:insensitive:last-child,
@@ -2759,10 +2819,6 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 /* linked single button */
 .linked .entry:only-child,
-.linked .button:only-child,
-.linked .button:active:only-child,
-.linked .button:active:hover:only-child,
-.linked .button:insensitive:only-child,
 .inline-toolbar.toolbar .button:only-child,
 .inline-toolbar.toolbar .button:active:only-child,
 .inline-toolbar.toolbar .button:insensitive:only-child,
@@ -3299,15 +3355,25 @@ GtkPopover > .location-bar GtkPopover.osd > .location-bar {
 	background-color: transparent;
 }
 
+GtkPopover .label.separator {
+	font-size: 100%;
+	font-weight: bold;
+	color: @theme_fg_color;
+	text-shadow: none;
+	background-color: transparent;
+	icon-shadow: none;
+	border: 0;
+}
+
 GtkPopover .separator {
 	font-size: 80%;
-	font-weight: bold;
 	color: alpha(@theme_fg_color,0.1);
 	text-shadow: none;
 	background-color: transparent;
 	icon-shadow: none;
 	border: 0;
 }
+
 GtkPopover.osd {
 	background-image: none;
 	background-color: alpha(shade(#3D3E40, 0.85), 0.75);
@@ -3535,12 +3601,12 @@ GtkFileChooserButton GtkImage:last-child {
 .app-notification.frame {
     font: bold;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.88);
+    border-color: shade(@theme_bg_color, 0.72);
     border-width: 0 1px 1px 1px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    padding: 8px;
-    background-color: shade(@infobar_bg_color,1.08);
+    padding: 7px;
+    background-color: @toolbar_bg_color;
     background-image: none;
     color: @fg_color;
     background-clip: padding-box; 
@@ -4239,7 +4305,7 @@ bordo finestra
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
   .window-frame.ssd {
     border-radius: 3px 3px 0 0;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
  }
   .window-frame.csd.tooltip {
     border-radius: 3px;
