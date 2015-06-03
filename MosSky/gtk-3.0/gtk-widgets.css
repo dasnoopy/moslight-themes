@@ -988,14 +988,15 @@ GtkInfoBar {
 /*****************
  * miscellaneous *
  *****************/
+
 .floating-bar {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.98);
     border-radius: 0px;
-    background-color: @theme_bg_color;
+    background-color: @bg_color;
     background-image: none;
-    color: @theme_fg_color;
+    color: @fg_color;
 }
 
 .floating-bar.top {
@@ -3180,6 +3181,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 .tooltip * {
+	padding: 0 4px;
     background-color: transparent;
 }
 
