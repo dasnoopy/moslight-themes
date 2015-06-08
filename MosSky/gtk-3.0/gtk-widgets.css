@@ -1124,7 +1124,7 @@ GtkInfoBar {
     -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 0;
 
-    padding: 2px 2px 2px 2px;
+    padding: 0;
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.8);
@@ -1631,9 +1631,9 @@ GtkLevelBar.vertical {
   .sidebar-item.needs-attention > .label {
     background-size: 6px 6px, 0 0; }
 
-/*************
- * scrollbar *
- *************/
+/**************
+ * Scrollbars *
+ **************/
 .scrollbar {
     border-width: 0;
     border-style: solid;
@@ -1644,12 +1644,12 @@ GtkLevelBar.vertical {
 .scrollbars-junction.frame,
 .frame.scrollbar.trough {
   border-color: transparent;
-  background-color: white; }
+  background-color: @theme_bg_color; }
   .scrollbars-junction:backdrop, .scrollbar.trough:backdrop,
   .scrollbars-junction.frame:backdrop,
   .frame.scrollbar.trough:backdrop {
     border-color: transparent;
-    background-color: white; }
+    background-color: @theme_bg_color; }
 
 .scrollbar.button,
 .scrollbar.button:active,

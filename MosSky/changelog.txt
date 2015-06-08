@@ -1,7 +1,7 @@
-2015.06.xx
-- GTK3: new titlebuttons and some GTK3 assets improvement
+2015.06.04
+- GTK3: new titlebuttons and some minor GTK3 assets improvement
 - GTK3: improved linked buttons
-- GTK3: scrollbars reworked (no transparent background) due to an issue with Epiphany
+- GTK3: no trasparent background for scrollbars due to an issue with Epiphany
 
 2015.05.23
 - GTK3:  tweaked suggested buttons and other small refinements.
