@@ -134,12 +134,12 @@ of gnome-terminal with transparency enabled */
 TerminalWindow .scrollbars-junction,TerminalWindow .scrollbar.trough,
 TerminalWindow .scrollbars-junction.frame,
 TerminalWindow .frame.scrollbar.trough {
-  border-color: transparent;
+  border-color: @borders;
   background-color: @theme_bg_color;  }
   TerminalWindow .scrollbars-junction:backdrop,TerminalWindow .scrollbar.trough:backdrop,
   TerminalWindow .scrollbars-junction.frame:backdrop,
   TerminalWindow .frame.scrollbar.trough:backdrop {
-    border-color: transparent;
+    border-color: @borders;
     background-color: @theme_bg_color;  }
 
 /*********
@@ -226,6 +226,10 @@ GeditFileBrowserWidget .primary-toolbar.toolbar  {
     margin: 2px;
     padding: 2px;
 }
+
+GeditStatusbar {
+  border-top: 1px solid @borders;
+  background-color: @theme_bg_color; }
 
 /*************
  * gucharmap *

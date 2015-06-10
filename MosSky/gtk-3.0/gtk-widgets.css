@@ -1112,10 +1112,9 @@ GtkInfoBar {
 .menuitem .accelerator {
   color: alpha(currentColor,0.55); }
 
-/**********************
- * Notebooks and tabs *
- **********************/
-
+/************
+ * notebook *
+ ************/
 .notebook {
 
     -GtkNotebook-tab-overlap: 0;
@@ -1125,41 +1124,10 @@ GtkInfoBar {
     -GtkWidget-focus-line-width: 0;
 
     padding: 0;
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_base_color, 0.8);
     background-color: @theme_base_color;
+    background-image: none;
     background-clip: border-box;
-}
-
-.notebook.frame {
-    border-width: 1px;
-}
-
-.notebook.header {
-    border-width: 0;
-    background-color: @theme_bg_color;
-}
-
-.notebook.header.frame {
-    border-width: 1px;
-    border-color: transparent;
-}
-
-.notebook.header.frame.top {
-    border-width: 1px 1px 0 1px;
-}
-
-.notebook.header.frame.right {
-    border-width: 1px 1px 1px 0;
-}
-
-.notebook.header.frame.bottom {
-    border-width: 0 1px 1px 1px;
-}
-
-.notebook.header.frame.left {
-    border-width: 1px 0 1px 1px;
+    border: none;
 }
 
 .notebook GtkViewport {
@@ -1168,19 +1136,17 @@ GtkInfoBar {
     color: @theme_text_color;
 }
 
-.notebook tab {
-    padding: 4px 6px;
-    border-radius: 0;
-    border-width: 1px;
-    border-color: transparent; /* shade(@theme_base_color, 0.7); */
-    background-color: transparent;
+.notebook.header {
+    background-color: @theme_bg_color;
     background-image: none;
+    box-shadow: none;
+    border-width: 0;
 }
 
 .notebook tab GtkLabel {
     padding: 0 2px;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.40);
-    font-weight: bold;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.60);
+    font-weight: normal;
     transition: all 100ms ease-out;
 }
 
@@ -1193,71 +1159,74 @@ GtkInfoBar {
 .notebook .active-page,
 .notebook tab .active-page GtkLabel {
     color: @theme_fg_color;
-    font-weight: bold;
+    font-weight: normal;
     transition: all 100ms ease-in;
 }
 
-.notebook tab:active {
+.notebook tab {
+    padding: 6px;
+    box-shadow: none;
 	border-radius: 0;
-    border-color: shade(@theme_base_color, 0.7);
+    border: none;
+    background-color: @theme_bg_color;			
+    background-image: none;
+}
+
+.notebook tab:active {
     background-color: @theme_base_color;
 }
 
-/* horizontal tabs */
-
-.notebook tab.top {
-    padding: 4px 4px; /* sopra  sinistra sotto destra */
-    border-width: 0 0 0 0;
-}
-
 .notebook tab.top:active {
-	box-shadow: inset 1px 0 0 0 shade(@theme_base_color, 0.8),
-				inset -1px 0 0 0 shade(@theme_base_color, 0.8),
-				inset 0 3px 0 0 @theme_selected_bg_color;
-}
-
-.notebook tab.bottom {
-    padding: 4px 4px; /* sopra  sinistra sotto destra */
-    border-width: 0 0 0 0;
-}
-
-.notebook tab.bottom:active {
-	box-shadow: inset 1px 0 0 0 shade(@theme_base_color, 0.8),
-				inset -1px 0 0 0 shade(@theme_base_color, 0.8),
-				inset 0 -3px 0 0 @theme_selected_bg_color;
-}
-
-.notebook tab.top:hover,
-.notebook tab.bottom:hover {
-}
-
-/* vertical tabs */
-
-.notebook tab.right {
-    padding: 4px 4px; /* sopra  sinistra sotto destra */
-    border-width: 0 0 0 0;
-}
-.notebook tab.right:active {
-	box-shadow: inset 0 1px 0 0 shade(@theme_base_color, 0.8),
-				inset 0 -1px 0 0 shade(@theme_base_color, 0.8),
-				inset -3px 0 0 0 @theme_selected_bg_color;
+	box-shadow: inset 0 3px 0 0 @theme_selected_bg_color;
+    border-bottom: 0px;
 }
 
 .notebook tab.left {
-    padding: 4px 4px; /* sopra  sinistra sotto destra */
-    border-width: 0 0 0 0;
+    border-right: 1px solid @theme_bg_color;
 }
 
 .notebook tab.left:active {
-	box-shadow: inset 0 1px 0 0 shade(@theme_base_color, 0.8),
-				inset 0 -1px 0 0 shade(@theme_base_color, 0.8),
-				inset 3px 0 0 0 @theme_selected_bg_color;
+	box-shadow: inset 3px 0 0 0 @theme_selected_bg_color;
+    border-right: 0px;
 }
 
-.notebook tab.right:hover,
-.notebook tab.left:hover {
+.notebook tab.bottom {
+    border-top: 1px solid @theme_bg_color;
 }
 
+.notebook tab.bottom:active {
+	box-shadow: inset 0 -3px 0 0 @theme_selected_bg_color;
+    border-top: 0px;
+}
+
+.notebook tab.right {
+    border-left: 1px solid @theme_bg_color;
+}
+
+.notebook tab.right:active {
+	box-shadow: inset -3px 0 0 0 @theme_selected_bg_color;
+    border-left: 0px;
+}
+
+.notebook tab.left:first-child:active,
+.notebook tab.right:first-child:active {
+    border-top: 0px;
+}
+
+.notebook tab.left:last-child:active,
+.notebook tab.right:last-child:active {
+    border-bottom: 0px;
+}
+
+.notebook tab.top:first-child:active,
+.notebook tab.bottom:first-child:active {
+    border-left: 0px;
+}
+
+.notebook tab.top:last-child:active,
+.notebook tab.bottom:last-child:active {
+    border-right: 0px;
+}
 
 /* close button styling */
 .notebook tab .button,
@@ -1269,16 +1238,14 @@ GtkInfoBar {
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-       color: mix(@theme_text_color, @theme_base_color, 0.5);
+    color: mix(@theme_text_color, @theme_base_color, 0.4);
 }
 
 .notebook tab .button:hover {
-    color: @theme_text_color;
-    border-color: shade(@theme_base_color, 0.5);
+    color: white;
+	background-color: #ef2929;
+    border: 1px solid transparent;
 }
-
-.notebook tab .button > GtkImage {
-        padding: 2px; }
 
 /******************
  *notebook pane separator *
@@ -1635,76 +1602,80 @@ GtkLevelBar.vertical {
  * Scrollbars *
  **************/
 .scrollbar {
-    border-width: 0;
-    border-style: solid;
-    padding: 0;
-}
+  -GtkRange-slider-width: 13;
+  -GtkRange-trough-border: 1;
+  -GtkScrollbar-has-backward-stepper: false;
+  -GtkScrollbar-has-forward-stepper: false;
+  -GtkScrollbar-min-slider-length: 42;
+  -GtkRange-stepper-spacing: 0;
+  -GtkRange-trough-under-steppers: 1; }
+  .scrollbar .button {
+    border: none; }
+  .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
+    opacity: 0.4;
+    -GtkRange-slider-width: 6px; }
+    .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
+      margin: 0;
+      background-color: #8b8e96;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background-clip: padding-box; }
+    .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .trough {
+      border-style: none;
+      background-color: transparent; }
+    .scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical .slider {
+      margin-top: 2px;
+      margin-bottom: 2px; }
+    .scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal .slider {
+      margin-left: 2px;
+      margin-right: 2px; }
+  .scrollbar.overlay-indicator.dragging, .scrollbar.overlay-indicator.hovering {
+    opacity: 0.99; }
+  .scrollbar .trough {
+    background-color: shade(@theme_bg_color, 1.04);
+    border: 1px none shade(@borders, 1.04); }
+  .scrollbar .slider {
+    background-color: shade(@theme_bg_color, 0.8) }
+    .scrollbar .slider:hover {
+      background-color: shade(@theme_bg_color, 0.5) }
+    .scrollbar .slider:prelight:active {
+      background-color: @theme_selected_bg_color; }
+    .scrollbar .slider:insensitive {
+      background-color: transparent; }
+  .scrollbar .slider {
+    border-radius: 100px;
+    margin: 3px; }
+  .scrollbar.fine-tune .slider {
+    margin: 4px; }
+  .scrollbar.vertical .slider {
+    margin-left: 4px; }
+    .scrollbar.vertical .slider:dir(rtl) {
+      margin-left: 3px;
+      margin-right: 4px; }
+  .scrollbar.vertical.fine-tune .slider {
+    margin-left: 5px; }
+    .scrollbar.vertical.fine-tune .slider:dir(rtl) {
+      margin-left: 4px;
+      margin-right: 5px; }
+  .scrollbar.vertical .trough {
+    border-left-style: solid; }
+    .scrollbar.vertical .trough:dir(rtl) {
+      border-left-style: none;
+      border-right-style: solid; }
+  .scrollbar.horizontal .slider {
+    margin-top: 4px; }
+  .scrollbar.horizontal.fine-tune .slider {
+    margin-top: 5px; }
+  .scrollbar.horizontal .trough {
+    border-top-style: solid; }
 
-.scrollbars-junction, .scrollbar.trough,
-.scrollbars-junction.frame,
-.frame.scrollbar.trough {
+.scrollbars-junction,
+.scrollbars-junction.frame {
   border-color: transparent;
-  background-color: @theme_bg_color; }
-  .scrollbars-junction:backdrop, .scrollbar.trough:backdrop,
-  .scrollbars-junction.frame:backdrop,
-  .frame.scrollbar.trough:backdrop {
-    border-color: transparent;
-    background-color: @theme_bg_color; }
-
-.scrollbar.button,
-.scrollbar.button:active,
-.scrollbar.button:active:hover {
-    border-width: 0;
-    border-radius: 0;
-    background-color: transparent;
-    background-image: none;
-    color: shade(@theme_bg_color, 0.6);
-}
-
-.scrollbar.slider {
-    border-width: 3px;
-    border-color: transparent;
-    border-radius: 7px;
-    background-color: shade(@theme_bg_color, 0.8);
-}
-
-.scrollbar.slider:hover,
-.scrollbar.slider.vertical:hover {
-    border-color: transparent;
-    background-color: shade(@theme_bg_color, 0.5);
-}
-
-.scrollbar.slider:active,
-.scrollbar.slider.vertical:active {
-    border-color: transparent;
-    background-color: shade(@theme_bg_color, 0.5);
-}
-
-.scrollbar.slider.fine-tune:prelight:active {
-    border-width: 3px;
-    border-color: transparent;
-   
-}
-
-/* overlay scrollbar */
-OsThumb {
-    color: shade(@theme_bg_color, 0.7);
-}
-
-OsThumb:selected,
-OsScrollbar:selected {
-    background-color: @theme_selected_bg_color;
-}
-
-OsThumb:active,
-OsScrollbar:active {
-    background-color: @theme_selected_bg_color;
-}
-
-OsThumb:insensitive,
-OsScrollbar:insensitive {
-    background-color: shade(@theme_bg_color, 0.9);
-}
+  border-image: linear-gradient(to bottom, #dde3e9 1px, transparent 1px) 0 0 0 1/0 1px stretch;
+  background-color: #fcfcfc; }
+  .scrollbars-junction:dir(rtl),
+  .scrollbars-junction.frame:dir(rtl) {
+    border-image-slice: 0 1 0 0; }
 
 /*************
  * separator *
