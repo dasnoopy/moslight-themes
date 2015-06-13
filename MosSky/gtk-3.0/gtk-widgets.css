@@ -29,7 +29,7 @@
     -GtkPaned-handle-size: 1;
     -GtkProgressBar-min-horizontal-bar-height: 12;
     -GtkProgressBar-min-vertical-bar-width: 12;
-    -GtkRange-slider-width: 13;
+    -GtkRange-slider-width: 14;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
     -GtkRange-trough-under-steppers: 1;
@@ -1602,7 +1602,7 @@ GtkLevelBar.vertical {
  * Scrollbars *
  **************/
 .scrollbar {
-  -GtkRange-slider-width: 13;
+  -GtkRange-slider-width: 14;
   -GtkRange-trough-border: 1;
   -GtkScrollbar-has-backward-stepper: false;
   -GtkScrollbar-has-forward-stepper: false;
@@ -1616,8 +1616,8 @@ GtkLevelBar.vertical {
     -GtkRange-slider-width: 6px; }
     .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
       margin: 0;
-      background-color: #8b8e96;
-      border: 1px solid rgba(255, 255, 255, 0.6);
+      background-color: transparent;
+      border: none;
       background-clip: padding-box; }
     .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .trough {
       border-style: none;
@@ -1631,14 +1631,14 @@ GtkLevelBar.vertical {
   .scrollbar.overlay-indicator.dragging, .scrollbar.overlay-indicator.hovering {
     opacity: 0.99; }
   .scrollbar .trough {
-    background-color: shade(@theme_bg_color, 1.04);
-    border: 1px none shade(@borders, 1.04); }
+    background-color: shade(@theme_bg_color, 1.12);
+    border: none;}
   .scrollbar .slider {
     background-color: shade(@theme_bg_color, 0.8) }
     .scrollbar .slider:hover {
-      background-color: shade(@theme_bg_color, 0.5) }
+      background-color: shade(@theme_bg_color, 0.8) }
     .scrollbar .slider:prelight:active {
-      background-color: @theme_selected_bg_color; }
+      background-color: shade(@theme_bg_color, 0.5) }
     .scrollbar .slider:insensitive {
       background-color: transparent; }
   .scrollbar .slider {
