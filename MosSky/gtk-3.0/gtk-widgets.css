@@ -1243,7 +1243,7 @@ GtkInfoBar {
 
 .notebook tab .button:hover {
     color: white;
-	background-color: #ef2929;
+    background-color: @theme_selected_bg_color;
     border: 1px solid transparent;
 }
 
@@ -1612,12 +1612,12 @@ GtkLevelBar.vertical {
   .scrollbar .button {
     border: none; }
   .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    opacity: 0.4;
+    opacity: 0.6;
     -GtkRange-slider-width: 6px; }
     .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
       margin: 0;
-      background-color: transparent;
-      border: none;
+      background-color: shade(@theme_bg_color, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.4);
       background-clip: padding-box; }
     .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .trough {
       border-style: none;
@@ -1631,14 +1631,14 @@ GtkLevelBar.vertical {
   .scrollbar.overlay-indicator.dragging, .scrollbar.overlay-indicator.hovering {
     opacity: 0.99; }
   .scrollbar .trough {
-    background-color: shade(@theme_bg_color, 1.12);
-    border: none;}
+    background-color: shade(@theme_bg_color, 1.04);
+    border: 1px none shade(@borders, 1.04); }
   .scrollbar .slider {
-    background-color: shade(@theme_bg_color, 0.8) }
+    background-color: shade(@theme_bg_color, 0.7); }
     .scrollbar .slider:hover {
-      background-color: shade(@theme_bg_color, 0.8) }
+      background-color: shade(@theme_bg_color, 0.7); }
     .scrollbar .slider:prelight:active {
-      background-color: shade(@theme_bg_color, 0.5) }
+      background-color: shade(@theme_bg_color, 0.5); }
     .scrollbar .slider:insensitive {
       background-color: transparent; }
   .scrollbar .slider {
