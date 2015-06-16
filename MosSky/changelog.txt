@@ -1,5 +1,6 @@
 2015.06.10
-- GTK3: reworked notebook tabs and scrollbar widgets;
+- GTK3: reworked notebook tabs and scrollbar widgets; 
+- GTK2/3 : change a bit the fg theme color
 
 2015.06.04
 - GTK3: new titlebuttons and some minor GTK3 assets improvement
