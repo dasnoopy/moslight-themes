@@ -95,7 +95,7 @@ GtkClutterOffscreen {
 }
 
 *:active {
-    background-color: shade(@theme_bg_color, 0.85);
+    background-color: shade(@theme_bg_color, 0.88);
 }
 
 *:insensitive,
@@ -2161,7 +2161,7 @@ GtkColorEditor GtkColorSwatch.color-light:hover {
 }
 
 GtkColorButton.button {
-    padding: 2px;
+    padding: 4px;
 }
 
 /**************
@@ -2396,7 +2396,7 @@ GtkColorButton.button {
 }
 
 .action-bar .title {
-    font: bold 11;
+    font: bold;
     padding: 1px 12px 1px 12px;
 }
 
@@ -3143,17 +3143,26 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
  * tooltip *
  ***********/
 .tooltip {
-    border-width: 0;
-    border-style: none;
-    border-color: shade(@theme_tooltip_bg_color, 0.88);
-    border-radius: 0;
-    background-color: @theme_tooltip_bg_color;
-    color: @theme_tooltip_fg_color;
+  color: @tooltip_fg_color;
+  padding: 0 4px;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+.tooltip.background {
+  background-color: @tooltip_bg_color;
+  background-clip: padding-box;
+  border: none;
 }
 
+.tooltip.window-frame.csd {
+  background-color: transparent;
+
+}
 .tooltip * {
-	padding: 0 4px;
-    background-color: transparent;
+  padding: 0 4px;
+  background-color: transparent;
+  color: inherit;
 }
 
 /************
@@ -3986,6 +3995,7 @@ GtkProgressBar.osd.progressbar {
      color: @theme_selected_fg_color; }
 
 .button.suggested-action:insensitive {
+    border-color: shade(@insensitive_bg_color, 0.8);
 	background-image: linear-gradient(to bottom,
                                       shade(shade(@insensitive_bg_color, 1.02), 1.04),
                                       shade(shade(@insensitive_bg_color, 1.02), 0.88)
@@ -3998,6 +4008,7 @@ GtkProgressBar.osd.progressbar {
 	text-shadow: none; }
 
 .button.suggested-action:insensitive:active, .button.suggested-action:insensitive:checked {
+	border-color: shade(@insensitive_bg_color, 0.8);
 	background-image: linear-gradient(to bottom,
                                       shade(shade(@insensitive_bg_color, 1.02), 1.04),
                                       shade(shade(@insensitive_bg_color, 1.02), 0.88)
@@ -4199,12 +4210,12 @@ bordo finestra
 }
 
 .titlebar .title {
-    font: bold 10;
+    font: bold;
 	color: @fg_color;
 }
 
 .titlebar .title:backdrop {
-    font: bold 10;
+    font: bold;
     color: shade (@theme_fg_color, 1.12);
 }
 
@@ -4278,22 +4289,19 @@ bordo finestra
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
   .window-frame.ssd {
     border-radius: 3px 3px 0 0;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
- }
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18); }
   .window-frame.csd.tooltip {
-    border-radius: 3px;
+    border-radius: 0;
     box-shadow: none; }
   .window-frame.csd.message-dialog {
     border-radius: 3px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
-
  .window-frame.solid-csd {
      border: solid 1px shade(@theme_bg_color, 0.8);
      border-radius: 0;
      margin: 2px;
      background-color: @theme_bg_color;
-     box-shadow: none;
- }
+     box-shadow: none; }
 
 .header-bar .titlebutton.button,
 .titlebar .titlebutton.button,
