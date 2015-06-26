@@ -2161,7 +2161,7 @@ GtkColorButton.button {
  **************/
 .header-bar,
 .header-bar.toolbar {
-    padding: 4px 8px 3px 8px; /* sopra destra sotto sinistra*/
+    padding: 4px 9px 4px 9px; /* sopra destra sotto sinistra*/
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
@@ -2180,6 +2180,9 @@ GtkColorButton.button {
 .header-bar.default-decoration .button.titlebutton {
     padding-top: 3px;
     padding-bottom: 3px;
+/*non-csd windows: left-right padding between titlebuttons */
+	padding-left: 1px; 
+	padding-right: 1px;
 }
 
 .header-bar .button.text-button {
@@ -4188,7 +4191,8 @@ GtkBubbleWindow .toolbar {
 
 
 .titlebar.default-decoration {
-    padding: 2px 8px 2px 8px;
+    padding: 2px 8px 2px 8px; /* non csd-windows button distance from left/right borders
+								 and from top/bottom */
     border-style: none;
     border-color: shade(@toolbar_bg_color, 0.8);
     background-image: none;
@@ -4220,7 +4224,8 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .titlebutton {
-    padding: 6px 0px 6px 0px;
+/* csd windows: padding between titlebuttons */
+    padding: 6px 1px 6px 1px;
     border-style: none;
     background: none;
     color: @fg_color;
@@ -4237,8 +4242,13 @@ GtkBubbleWindow .toolbar {
     background: none;
     color: shade(@fg_color, 0.7);
     box-shadow: none;
-    padding: 6px 0px 6px 0px;
 }
+
+.titlebar .titlebutton:backdrop {
+    background-image: none;
+    color: @insensitive_fg_color;
+}
+
 
 /*
 .titlebar .right .titlebutton:first-child {
@@ -4256,11 +4266,6 @@ GtkBubbleWindow .toolbar {
 }
 */
 
-.titlebar .titlebutton:backdrop {
-    background-image: none;
-    color: @insensitive_fg_color;
-	padding: 5px 0px 6px 0px;
-}
 
 /**********************
  * Window Decorations *
