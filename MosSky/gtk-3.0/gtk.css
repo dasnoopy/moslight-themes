@@ -2,7 +2,7 @@
 @define-color bg_color #e2e2e2;
 @define-color fg_color #5c616c;
 @define-color base_color #ffffff;
-@define-color text_color #222222;
+@define-color text_color #5c616c;
 @define-color selected_bg_color #569be4;
 @define-color selected_fg_color #ffffff;
 @define-color tooltip_bg_color #303030;
@@ -10,7 +10,7 @@
 
 /* widget colors */
 @define-color menu_bg_color #f9f9f9;
-@define-color menu_fg_color @theme_text_color;
+@define-color menu_fg_color @text_color;
 @define-color titlebar_bg_color @bg_color;
 @define-color titlebar_fg_color @fg_color;
 @define-color menubar_bg_color @theme_bg_color;
@@ -28,7 +28,7 @@
 
 /* nautilus and gtkfilechooser sidebar colors */
 @define-color sidebar_bg_color #f5f4f5;
-@define-color sidebar_fg_color #4d4d4d;
+@define-color sidebar_fg_color @text_color;
 
 @define-color sidebar_bg @sidebar_bg_color;
 @define-color sidebar_fg @sidebar_fg_color;

@@ -595,14 +595,6 @@ GtkDrawingArea:insensitive {
     background-color: shade(@theme_bg_color, 0.9);
 }
 
-/***********
- * gtkhtml *
- ***********/
-GtkHTML {
-    background-color: @theme_base_color;
-    color: @theme_text_color;
-}
-
 /**************
  * Calendar   *
  **************/
@@ -791,7 +783,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 .frame.flat { 
-	border: none;
+	border-style: none;
 	box-shadow: none;
 }
 
@@ -811,7 +803,6 @@ GtkScrolledWindow.frame {
 	border-radius: 0;
 	padding: 0;
 }
-
 
 /* avoid double borders when a viewport is 
  * packed into a GtkScrolledWindow */
@@ -1075,20 +1066,21 @@ GtkInfoBar {
 .menu {
   margin: 4px;
   padding: 0px;
+  color: @menu_fg_color;
   background-color: @menu_bg_color; }
   .menu .menuitem {
     text-shadow: none;
     padding: 4px; }
     .menu .menuitem:hover {
-      color: @theme_selected_fg_color_fg_color;
+      color: @theme_selected_fg_color;
       background-color: @theme_selected_bg_color; }
     .menu .menuitem:insensitive {
-      color: #8d9091; }
+      color: @insensitive_fg_color; }
       .menu .menuitem:insensitive:backdrop {
-        color: #c7c7c7; }
+        color: @insensitive_fg_color; }
     .menu .menuitem:backdrop, .menu .menuitem:backdrop:hover {
-      color: #8d9091;
-      background-color: #fcfcfc; }
+      color: @menu_fg_color;
+      background-color: @menu_bg_color; }
     .menu .menuitem.arrow {
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
     .menu .menuitem.arrow:dir(rtl) {
@@ -3177,8 +3169,8 @@ GtkTreeView.view {
   -GtkTreeView-vertical-separator: 2;
   -GtkWidget-focus-line-width: 1px;
   -GtkWidget-focus-padding: 1px;
-  border-left-color: #96999a;
-  border-top-color: #ededed;
+  border-left-color: shade(@bg_color, 0.88);
+  border-top-color: @base_color;
 }
 
 GtkTreeView.view:selected, GtkTreeView.view:backdrop:selected {
@@ -3254,7 +3246,7 @@ GtkTreeView.view.progressbar {
  * viewport *
  ************/
 GtkViewport.frame {
-    border-width: 0;
+    border-style: none;
 }
 
 .view {

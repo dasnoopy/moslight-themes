@@ -248,9 +248,26 @@ GucharmapChartable:selected {
 /*************
  * evolution *
  *************/
-EPreviewPane .entry {
-    background-color: @theme_base_color;
-    color: @theme_text_color;
+EPreviewPane {
+    background-color: @base_color;
+    color: @fg_color;
+}
+
+/***********
+ * gtkhtml *
+ ***********/
+GtkHTML {
+    background-color: @base_color;
+    color: @fg_color;
+}
+
+/* needed for webkit/GtkStyle/Evolution compatibility */
+GtkHTML:active,
+GtkHTML:active:backdrop,
+.entry:active,
+.entry:active:backdrop {
+    background-color: @base_color;
+    color: @fg_color;
 }
 
 /******************
@@ -282,14 +299,6 @@ EPreviewPane .entry {
 .contacts-right-header-bar:dir(ltr),
 .contacts-left-header-bar:dir(rtl) {
 	border-top-left-radius: 0;
-}
-
-/* gcalctool */
-
-MathWindow.background > GtkBox.vertical > GtkBox.vertical > GtkScrolledWindow {
-	padding: 4px;
-	background-color: @theme_base_color;
-	border-radius: 3px;
 }
 
 /*

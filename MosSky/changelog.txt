@@ -1,7 +1,7 @@
-2015.xx.yy
-- GTK3 :  remove forced font size for CSD and SSD windows
+2015.06.26
+- GTK3 : remove forced font size for CSD and SSD windows
 - GTK3 : fix transparent tooltips background using Firefox compiled with gtk3 libs
-- GTK3 :  minor fixes
+- GTK3 : minor fixes and css code cleanup
 
 2015.06.16
 - GTK3: reworked notebook tabs and scrollbar widgets; 
