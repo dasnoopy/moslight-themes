@@ -4158,8 +4158,7 @@ GtkBubbleWindow .toolbar {
 }
 
 /*******
- * CSD *  
-bordo finestra
+ * CSD *  bordo finestra
  *******/
 .titlebar {
     border-radius: 3px 3px 0 0;
@@ -4189,7 +4188,7 @@ bordo finestra
 
 
 .titlebar.default-decoration {
-    padding: 2px 4px 2px 4px;
+    padding: 2px 8px 2px 8px;
     border-style: none;
     border-color: shade(@toolbar_bg_color, 0.8);
     background-image: none;
@@ -4221,7 +4220,7 @@ bordo finestra
 }
 
 .titlebar .titlebutton {
-    padding: 5px 0px 6px 0px;
+    padding: 6px 0px 6px 0px;
     border-style: none;
     background: none;
     color: @fg_color;
@@ -4238,7 +4237,7 @@ bordo finestra
     background: none;
     color: shade(@fg_color, 0.7);
     box-shadow: none;
-    padding: 5px 0px 6px 0px;
+    padding: 6px 0px 6px 0px;
 }
 
 /*
