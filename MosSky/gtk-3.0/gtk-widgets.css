@@ -4249,7 +4249,6 @@ GtkBubbleWindow .toolbar {
     color: @insensitive_fg_color;
 }
 
-
 /*
 .titlebar .right .titlebutton:first-child {
     border-left: 1px solid shade(@wm_bg_a, 0.9);
