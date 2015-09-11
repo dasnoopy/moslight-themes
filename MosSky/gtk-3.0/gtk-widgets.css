@@ -1137,7 +1137,7 @@ GtkInfoBar {
 
 .notebook tab GtkLabel {
     padding: 0 2px;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.60);
+    color: mix(@theme_fg_color, @theme_bg_color, 0.40);
     font-weight: normal;
     transition: all 100ms ease-out;
 }
@@ -2161,7 +2161,7 @@ GtkColorButton.button {
  **************/
 .header-bar,
 .header-bar.toolbar {
-    padding: 4px 9px 4px 9px; /* sopra destra sotto sinistra*/
+    padding: 4px 9px 4px 9px; /* top/left/bottom/right */
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.7);
@@ -2372,7 +2372,7 @@ GtkColorButton.button {
  * action-bar * finestra
  **************/
 .action-bar {
-    padding: 4px 12px 3px 12px; /* sopra destra sotto sinistra*/
+    padding: 4px 12px 3px 12px; /* top/left/bottom/right */
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.7);
@@ -4191,8 +4191,7 @@ GtkBubbleWindow .toolbar {
 
 
 .titlebar.default-decoration {
-    padding: 2px 8px 2px 8px; /* non csd-windows button distance from left/right borders
-								 and from top/bottom */
+    padding: 2px 8px 2px 8px; /* top/right/bottom/left */
     border-style: none;
     border-color: shade(@toolbar_bg_color, 0.8);
     background-image: none;

@@ -1,9 +1,13 @@
-2015.06.26
+2015.09.14
+- GTK3: solved an issue with Trasmission (https://github.com/horst3180/Arc-theme/issues/171)
+- GTK2: applied a gradient to Gtktoolbar for obtain a sort of consistency with CSD windows
+
+2015.06.28
 - GTK3 : remove forced font size for CSD and SSD titlebar / minor changes 
 		 about titlebar buttons padding and design
 - GTK3 : fix transparent tooltips background using Firefox compiled with gtk3 libs
 - GTK3 : minor fixes, improvements and css code cleanup
-- GTK3 : change the default fg color.
+- GTK3 : change a bit the default fg color.
 
 
 2015.06.16

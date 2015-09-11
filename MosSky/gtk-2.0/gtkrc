@@ -134,7 +134,7 @@ style "default" {
 	#GtkMenuItem::arrow-scaling = 0.7
 	#GtkArrow::arrow-scaling = 0.7
 	
-    GtkToolbar::shadow-type       = GTK_SHADOW_NONE  # Makes toolbars flat and unified.
+	#GtkToolbar::shadow-type       = GTK_SHADOW_NONE  # Makes toolbars flat and unified.
 	GtkToolbar::internal-padding = 0
 	GtkMenuBar::shadow-type       = GTK_SHADOW_NONE  # Makes toolbars flat and unified.
 	GtkMenuBar::internal-padding = 0
@@ -251,16 +251,16 @@ style "scale" {
 bg[NORMAL]        = shade (1.12, @bg_color)
 bg[SELECTED]        = shade (1.08, @selected_bg_color)
 
-	engine "murrine"
+engine "murrine"
   	{
-    	roundness		= 6
-	    highlight_shade		= 1.04 
-     	contrast		=  1.0 #1.10 
+   	roundness		= 6
+	highlight_shade		= 1.04 
+   	contrast		=  1.0 #1.10 
 	glazestyle 		= 1
 	glow_shade          	= 1.5   
 	glowstyle           	= 2   
-    	lightborder_shade   	= 1.25
-    	lightborderstyle    	= 2 
+   	lightborder_shade   	= 1.25
+   	lightborderstyle    	= 2 
 	gradient_shades     	= {1.08,1.04,1.00,0.96}
 	border_shades       	= { 0.8,0.8}
 	trough_shades	    	= { 0.88 , 0.78 }
@@ -290,7 +290,7 @@ style "progressbar"
 	{
 		roundness			= 2
 		lightborder_shade  	= 1.25
-    	        lightborderstyle	= 1
+		lightborderstyle	= 1
 		highlight_shade		= 1.05 
 		contrast			=  1.20
 		gradient_shades 	= {1.2,1.0,1.0,0.6}
@@ -500,9 +500,21 @@ engine "murrine"
 }
 
 style "infobar" {
-	engine "murrine" {
+	engine "murrine" {}
+}
+
+style "toolbar" {
+	engine "murrine" 
+   {
+		glazestyle			= 0
+		glow_shade			= 1.0
+		glowstyle			= 0
+		gradient_colors		= FALSE
+		gradient_shades     = { 1.0, 0.99, 0.99, 0.92}
+		toolbarstyle		= 1
 	}
 }
+
 # Wrokaroudn style for places where the text color is used instead of the fg color.
 style "text_is_fg_color_workaround" {
 	text[NORMAL]      = @fg_color
@@ -590,7 +602,7 @@ class "GtkHScrollbar" style "hscrollbar"
 class "GtkVScrollbar" style "vscrollbar"
 class "GtkCalendar" style "calendar"
 class "GtkInfoBar" style "infobar"
-
+class "GtkToolbar" style "toolbar"
 
 # General matching follows. The order is choosen so that the right styles override
 # each other. EG. progressbar needs to be more important than the menu match.

@@ -432,3 +432,10 @@ TotemGrilo.vertical .search-bar {
 GtkApplicationWindow.background GtkStack GtkVBox.vertical GtkOverlay GtkRevealer.top {
 	background-color: @borders;
 }
+
+/* Transmission */
+
+.tr-workarea .undershoot,
+.tr-workarea .overshoot {
+  border-color: transparent; /* Remove black border on over- and undershoot */
+}
