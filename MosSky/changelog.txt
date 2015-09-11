@@ -1,6 +1,6 @@
 2015.09.14
 - GTK3: solved an issue with Trasmission (https://github.com/horst3180/Arc-theme/issues/171)
-- GTK2: applied a gradient to Gtktoolbar for obtain a sort of consistency with CSD windows
+- GTK3: better contrast for text color of active/inactive window
 
 2015.06.28
 - GTK3 : remove forced font size for CSD and SSD titlebar / minor changes 

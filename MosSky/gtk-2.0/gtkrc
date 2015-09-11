@@ -134,7 +134,7 @@ style "default" {
 	#GtkMenuItem::arrow-scaling = 0.7
 	#GtkArrow::arrow-scaling = 0.7
 	
-	#GtkToolbar::shadow-type       = GTK_SHADOW_NONE  # Makes toolbars flat and unified.
+	GtkToolbar::shadow-type       = GTK_SHADOW_NONE  # Makes toolbars flat and unified.
 	GtkToolbar::internal-padding = 0
 	GtkMenuBar::shadow-type       = GTK_SHADOW_NONE  # Makes toolbars flat and unified.
 	GtkMenuBar::internal-padding = 0

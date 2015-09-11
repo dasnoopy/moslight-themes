@@ -4205,12 +4205,12 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .title {
     font: bold;
-	color: @fg_color;
+	color: @titlebar_focused_text_color;
 }
 
 .titlebar .title:backdrop {
     font: bold;
-    color: shade (@theme_fg_color, 1.12);
+    color: @titlebar_unfocused_text_color;
 }
 
 

@@ -36,6 +36,8 @@
 @define-color sidebar_fg_unfocused @sidebar_fg_color;
 
 @define-color titlebar_color @bg_color;
+@define-color titlebar_focused_text_color #505050;
+@define-color titlebar_unfocused_text_color #a0a0a0;
 
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color @bg_color;
