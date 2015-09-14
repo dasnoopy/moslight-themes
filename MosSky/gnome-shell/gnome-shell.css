@@ -119,9 +119,9 @@ StScrollBar {
 .slider {
   height: 1.09em;
   -slider-height: 3px;
-  -slider-background-color: rgba(29, 39, 49, 0.95);
+  -slider-background-color: rgba(219, 222, 224, 1.0); /* change of color, so we can see the whole bar */
   -slider-border-color: #394042;
-  -slider-active-background-color: rgba(86,155,228,0.7); /* azzurro */
+  -slider-active-background-color: rgba(86,155,228,1.0); /* azzurro */
   -slider-active-border-color: rgba(86,155,228,0.7); /* azzurro */
   -slider-border-width: 0px;
   -slider-handle-radius: 6px; }
@@ -417,7 +417,7 @@ StScrollBar {
       box-shadow: none;
       font-weight: bold; }
     .popup-menu .popup-menu-item:hover, .popup-menu .popup-menu-item:focus {
-      background-color: rgba(86,155,228,0.9); /* azzurro */
+      background-color: rgba(86,155,228,0.7); /* azzurro */
       color: #ffffff; }
     .popup-menu .popup-menu-item:active {
       background-color: #515a5e;
@@ -955,7 +955,7 @@ StScrollBar {
   spacing: 20px; }
 
 .nm-dialog-item:selected {
-  background-color: #9fb0b9;
+  background-color: rgba(86,155,228,0.7);
   color: #dbdee0; }
 
 .nm-dialog-icons {
@@ -1656,7 +1656,7 @@ StScrollBar {
   padding: 0.3em 0.5em 0.3em 0.5em;
   border-radius: 4px; }
   .candidate-box:selected, .candidate-box:hover {
-    background-color: #9fb0b9;
+    background-color: rgba(86,155,228,0.7);
     color: #ffffff; }
 
 .candidate-page-button-box {
