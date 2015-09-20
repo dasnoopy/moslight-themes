@@ -868,7 +868,7 @@ GtkLabel:insensitive {
 GtkInfoBar {
 	border-style: none none solid none;
 	border-width: 1px;
-	border-color: shade(@theme_bg_color, 0.88);
+	border-color: shade(@theme_bg_color, 0.96);
 }
 
 .info,

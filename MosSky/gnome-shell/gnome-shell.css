@@ -99,7 +99,7 @@ StScrollView.hfade {
   -st-hfade-offset: 68px; }
 
 StScrollBar {
-  padding: 0; }
+  padding: 4px; }
   StScrollView StScrollBar {
     min-width: 14px;
     min-height: 14px; }
@@ -107,19 +107,19 @@ StScrollBar {
     border-radius: 0;
     background-color: transparent; }
   StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
-    border-radius: 8px;
-    background-color: rgba(50,50,50,0.7);
+    border-radius: 3px;
+    background-color: rgba(86,155,228,0.8);
     margin: 3px; }
     StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
-      background-color: #515a5e; }
+      background-color: #569BE4 }
     StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
-      background-color: rgba(86,155,228,0.7); /* azzurro */}
+      background-color: rgba(86,155,228,1.0); /* azzurro */}
 
 /* Slider */
 .slider {
   height: 1.09em;
   -slider-height: 3px;
-  -slider-background-color: rgba(219, 222, 224, 1.0); /* change of color, so we can see the whole bar */
+  -slider-background-color: rgba(219, 222, 224, 0.5); /* change of color, so we can see the whole bar */
   -slider-border-color: #394042;
   -slider-active-background-color: rgba(86,155,228,1.0); /* azzurro */
   -slider-active-border-color: rgba(86,155,228,0.7); /* azzurro */
