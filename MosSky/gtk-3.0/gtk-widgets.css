@@ -362,6 +362,7 @@ GtkAssistant .sidebar {
 
 .osd .button, .osd .button:hover, .osd .button:active, .osd .button:checked, .osd .button:insensitive, .inline-toolbar .button, .linked .button, .linked > GtkComboBox > .button:dir(ltr) {
   border-radius: 0;
+  border-right-style: solid;
   border-left-style: none; }
   .osd .button:dir(rtl), .inline-toolbar .button:dir(rtl), .linked .button:dir(rtl), .linked > GtkComboBox > .button:dir(rtl) {
     border-radius: 0;
@@ -378,7 +379,6 @@ GtkAssistant .sidebar {
 .osd .button:only-child, .inline-toolbar .button:only-child, .linked .button:only-child, .linked > GtkComboBox:only-child > .button {
   border-radius: 2px;
   border-style: solid; }
-
 
 .button.flat {
 	border-color: transparent;
@@ -1805,7 +1805,12 @@ GtkPaned.wide {
 
 
 .spinbutton.entry {
-	border-radius: 0;
+   border-radius: 2px;
+   box-shadow: none;
+}
+
+.spinbutton.vertical.entry {
+   border-radius: 0px;
    box-shadow: none;
 }
 
