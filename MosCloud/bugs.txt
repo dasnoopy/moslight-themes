@@ -1,0 +1,3 @@
+* gedit search bar : border around result
+* button's placement on some windows is strange (eg preferences windows of homebank and transmission)
+

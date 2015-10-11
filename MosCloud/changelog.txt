@@ -1,0 +1,4 @@
+2015.10.11:
+- Initial release for gnome 3.18:
+- GTK3 : applied almost changes for gtk3+ v3.18.x
+- Gnome Shell: new theme based on Arc theme...
