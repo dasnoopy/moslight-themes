@@ -14,6 +14,9 @@ Note:
 * **MosSky** is a theme designed **only** for Gnome 3.16: it works only with GTK2 v2.24.x 
   and GTK3 v3.16.x libs
 
+* **MosCloud** is a theme designed **only** for Gnome 3.18: it works only with GTK2 v2.24.x 
+  and GTK3 v3.18.x libs
+
 To install the theme, copy it into `/usr/share/themes` (for all users)
 
 If you copy theme in your `~/.local/share/themes`, create also a symbolic links in your home dir to

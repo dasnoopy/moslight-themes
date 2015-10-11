@@ -3,8 +3,8 @@
 
 /* default */
 * {
-	engine: none;  
-	background-clip: padding-box;
+      engine: none;  
+      background-clip: padding-box;
 
     -GtkArrow-arrow-scaling: 0.6;
     -GtkButton-child-displacement-x: 0;
@@ -3583,7 +3583,7 @@ GtkMessageDialog {
 
 
 .message-dialog .dialog-action-area .button {
-  padding: 8px; }
+  padding: 6px; }
 
 .message-dialog {
   -GtkDialog-button-spacing: 0; }
@@ -3595,7 +3595,7 @@ GtkMessageDialog {
     border-bottom-right-radius: 3px;
     border: none; }
   .message-dialog.csd .dialog-action-area .button {
-    padding: 8px;
+    padding: 6px;
     border-radius: 0; }
   .message-dialog.csd .dialog-action-area .button, .message-dialog.csd .dialog-action-area .button:hover, .message-dialog.csd .dialog-action-area .button:active, .message-dialog.csd .dialog-action-area .button:insensitive {
     border-right-style: none;

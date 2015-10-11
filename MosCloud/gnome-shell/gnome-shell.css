@@ -657,6 +657,7 @@ StScrollBar {
   #panel .popup-menu-arrow {
     width: 0; }
 
+/*
 #panel #panelActivities.panel-button > * {
   background-image: url("common-assets/panel/activities.svg");
   background-position: center top;
@@ -677,6 +678,7 @@ StScrollBar {
   border-color: transparent; }
   #panel #panelActivities.panel-button:active > *, #panel #panelActivities.panel-button:overview > *, #panel #panelActivities.panel-button:focus > *, #panel #panelActivities.panel-button:checked > * {
     background-image: url("common-assets/panel/activities-active.svg"); }
+*/
 
 .system-switch-user-submenu-icon {
   icon-size: 20px;
