@@ -3196,27 +3196,26 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 }
 
 /***********
- * tooltip *
+ * tooltips *
  ***********/
 .tooltip {
   color: @tooltip_fg_color;
-  padding: 0 4px;
-  border-radius: 0;
+  padding: 4px 0;
+  border-radius: 2px;
   box-shadow: none;
   text-shadow: none;
 }
+
 .tooltip.background {
   background-color: @tooltip_bg_color;
   background-clip: padding-box;
   border: none;
 }
 
-.tooltip.window-frame.csd {
-  background-color: transparent;
-
 }
 .tooltip * {
-  padding: 0 4px;
+  padding: 4px 0;
+  border-radius: 2px;
   background-color: transparent;
   color: inherit;
 }
@@ -4314,7 +4313,7 @@ GtkBubbleWindow .toolbar {
     border-radius: 3px 3px 0 0;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18); }
   .window-frame.csd.tooltip {
-    border-radius: 0;
+    border-radius: 2px;
     box-shadow: none; }
   .window-frame.csd.message-dialog {
     border-radius: 3px;
