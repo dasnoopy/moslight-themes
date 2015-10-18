@@ -17,7 +17,7 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 stage {
-  font-family: SFNS Display, Cantarell, Sans-Serif;
+  font-family: Source Sans Pro, Cantarell, Sans-Serif;
   font-size: 10pt;
   color: #D3DAE3; }
 
@@ -407,7 +407,7 @@ StScrollBar {
     .popup-menu .popup-menu-item:rtl {
       padding: 0.4em 0em 0.4em 3em; }
     .popup-menu .popup-menu-item:checked {
-      font-weight: normal;
+      font-weight: bold;
       background: none;
       box-shadow: none;
       border-image: url("dark-assets/menu/submenu-open.svg") 9 9 9 9; }
@@ -603,8 +603,8 @@ StScrollBar {
   #panel .panel-button {
     -natural-hpadding: 10px;
     -minimum-hpadding: 6px;
-    font-weight: normal;
-    color: #ffffff;
+    font-weight: bold;
+    color: #ccc;
     transition-duration: 100ms;
     border-bottom-width: 1px;
     border-color: transparent; }
@@ -682,7 +682,7 @@ StScrollBar {
   padding: 0 2px; }
 
 .system-switch-user-submenu-icon.default-icon {
-  icon-size: 16px;
+  icon-size: 20px;
   padding: 0 4px; }
 
 #appMenu {
@@ -698,14 +698,14 @@ StScrollBar {
     padding: 0 4px; }
 
 .system-menu-action {
-  padding: 7px;
+  padding: 9px;
   color: #f2f2f2;
-  border-radius: 32px;
+  border-radius: 4px;
   /* wish we could do 50% */
   border: 1px solid transparent; }
   .system-menu-action:hover, .system-menu-action:focus {
     transition-duration: 100ms;
-    padding: 7px;
+    padding: 9px;
     color: #f2f2f2;
     background-color: transparent;
     border: 1px solid #569be4; }
@@ -714,7 +714,7 @@ StScrollBar {
     background-color: #569be4;
     border: 1px solid #569be4; }
   .system-menu-action > StIcon {
-    icon-size: 16px; }
+    icon-size: 20px; }
 
 #calendarArea {
   padding: 0.75em 1em; }
@@ -1163,7 +1163,8 @@ StScrollBar {
 .right #dash .app-well-app .overview-icon,
 .bottom #dash .app-well-app .overview-icon,
 .top #dash .app-well-app .overview-icon {
-  padding: 10px; }
+  padding: 10px;
+  border-radius: 0px; }
 
 #dash .app-well-app:hover .overview-icon,
 .right #dash .app-well-app:hover .overview-icon,
@@ -1203,19 +1204,19 @@ StScrollBar {
 
 .show-apps .overview-icon {
   padding: 11px;
-  border-radius: 2px;
+  border-radius: 0px;
   border: 0px solid; }
 
 .show-apps:hover .overview-icon {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #151515;
   color: #569be4; }
 
 .show-apps:active .overview-icon,
 .show-apps:active .show-apps-icon,
 .show-apps:checked .overview-icon,
 .show-apps:checked .show-apps-icon {
-  color: #ffffff;
-  background-color: #569be4;
+  color: #569be4;
+  background-color: #151515;
   box-shadow: none;
   transition-duration: 0ms; }
 
