@@ -390,69 +390,64 @@ StScrollBar {
   spacing-rows: 15px;
   spacing-columns: 1em; }
 
+/* Popvers/Menus */
 .popup-menu {
-  min-width: 200px;
-  color: #D3DAE3;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9; }
+  border-radius: 8px;
+  min-width: 200px; }
   .popup-menu .popup-sub-menu {
-    background: none;
-    box-shadow: none;
-    border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9; }
+    background-color: rgba(29, 39, 49, 0.95);
+    background-gradient-direction: none;
+    border-width: 0px;
+    box-shadow: inset 1px 2px rgba(0,0,0,0.2);
+    padding: 6px 0;
+    box-shadow: none;}
   .popup-menu .popup-menu-content {
-    padding: 1em 0em 1em 0em; }
+    padding: 1em 0em; }
   .popup-menu .popup-menu-item {
     spacing: 12px; }
     .popup-menu .popup-menu-item:ltr {
-      padding: 0.4em 3em 0.4em 0em; }
+      padding: .5em 2em .5em 0em; }
     .popup-menu .popup-menu-item:rtl {
-      padding: 0.4em 0em 0.4em 3em; }
+      padding: .5em 0em .5em 2em; }
     .popup-menu .popup-menu-item:checked {
-      font-weight: bold;
-      background: none;
+      background-color: rgba(19, 29, 39, 1.0);
       box-shadow: none;
-      border-image: url("dark-assets/menu/submenu-open.svg") 9 9 9 9; }
-    .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
-      color: #D3DAE3;
-      background-color: transparent;
-      border-image: url("dark-assets/menu/menu-hover.svg") 9 9 1 1; }
+      font-weight: bold; }
+    .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item:selected {
+      background-color: rgba(86,155,228,1.0); /* azzurro */
+      color: #ffffff; }
     .popup-menu .popup-menu-item:insensitive {
-      color: rgba(211, 218, 227, 0.5);
-      background: none; }
+      color: rgba(255,255,255,0.2); }
+  .popup-menu .active {
+    background-color: #9fb0b9; }
   .popup-menu .popup-inactive-menu-item {
-    color: #D3DAE3; }
+    color: #dbdee0; }
     .popup-menu .popup-inactive-menu-item:insensitive {
-      color: rgba(211, 218, 227, 0.45); }
+      color: rgba(255,255,255,0.2); }
   .popup-menu.panel-menu {
-    -boxpointer-gap: 0px;
+    -boxpointer-gap: 4px;
     margin-bottom: 1.75em; }
 
 .popup-menu-ornament {
   text-align: right;
-  margin-left: 10px;
-  width: 16px; }
+  width: 1em; }
 
-.popup-menu-boxpointer {
-  -arrow-border-radius: 2px;
-  -arrow-background-color: transparent;
-  -arrow-border-width: 1px;
-  -arrow-border-color: transparent;
-  -arrow-base: 0;
-  -arrow-rise: 0; }
-
+.popup-menu-boxpointer,
 .candidate-popup-boxpointer {
-  -arrow-border-radius: 2px;
-  -arrow-background-color: rgba(53, 57, 69, 0.95);
+  -arrow-border-radius: 6px;
+  -arrow-background-color:  rgba(29, 39, 49, 0.95); /* sfondo */
   -arrow-border-width: 1px;
-  -arrow-border-color: rgba(0, 0, 0, 0.4);
-  -arrow-base: 5;
-  -arrow-rise: 5; }
+  -arrow-border-color: rgba(0,0,0,0.3);
+  -arrow-base: 24px;
+  -arrow-rise: 11px;
+  -arrow-box-shadow: 0 1px 3px black; }
 
 .popup-separator-menu-item {
-  height: 2px;
-  margin: 10px 0px;
+  height: 1px;
+  margin: 0;
   background-color: transparent;
-  border: none;
-  border-image: url("common-assets/menu/menu-separator.svg") 1 1 1 1; }
+  border-color: rgba(128,128,128,0.5);
+}
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -700,7 +695,7 @@ StScrollBar {
 .system-menu-action {
   padding: 9px;
   color: #f2f2f2;
-  border-radius: 4px;
+  border-radius: 32px;
   /* wish we could do 50% */
   border: 1px solid transparent; }
   .system-menu-action:hover, .system-menu-action:focus {

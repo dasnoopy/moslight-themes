@@ -14,6 +14,9 @@
     -GtkButton-inner-border: 1;
     -GtkButton-interior-focus: true;
 
+    -GtkButtonBox-child-min-height: 24;
+    -GtkButtonBox-child-internal-pad-y: 1;
+
     -GtkDialog-button-spacing: 4;
     -GtkDialog-action-area-border: 0;
 
@@ -44,9 +47,13 @@
     -GtkTreeView-expander-size: 12;
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 0;
+    -GtkWidget-link-color: @link_color;
+    -GtkWidget-visited-link-color: @link_color;
     -GtkWindow-resize-grip-height: 2;
     -GtkWindow-resize-grip-width: 2;
     -WnckTasklist-fade-overlay-rect: 0;
+
+    background-clip: padding-box;
 
     outline-color: alpha(@theme_selected_bg_color, 0.4);
     outline-style: dashed;
@@ -256,7 +263,7 @@ GtkAssistant .sidebar {
 .button:checked {
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
-                                      shade(shade(@theme_bg_color, 1.02), 1.12)
+                                      shade(shade(@theme_bg_color, 1.02), 1.04)
                                       );
     box-shadow: none;
 }
@@ -290,8 +297,8 @@ GtkAssistant .sidebar {
     border-left-color: shade(@theme_selected_bg_color, 0.7);
     border-bottom-color: shade(@theme_selected_bg_color, 0.6);
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_selected_bg_color, 1.02), 1.00),
-                                      shade(shade(@theme_selected_bg_color, 1.02), 1.00)
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.96)
                                       );
 
     color: @theme_selected_fg_color;
@@ -306,8 +313,8 @@ GtkAssistant .sidebar {
 .button.default:active,
 .button.default:checked {
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_selected_bg_color, 1.02), 1.06),
-                                      shade(shade(@theme_selected_bg_color, 1.02), 1.06)
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.04)
                                       );
 }
 
