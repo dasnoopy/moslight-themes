@@ -678,7 +678,7 @@ StScrollBar {
 
 .system-switch-user-submenu-icon.default-icon {
   icon-size: 20px;
-  padding: 0 4px; }
+  padding: 0 2px; }
 
 #appMenu {
   spinner-image: url("common-assets/misc/process-working.svg");
@@ -943,30 +943,6 @@ StScrollBar {
   -gradient-start: rgba(255,255,255,0);
   -gradient-end: rgba(255,255,255,0);
 }
-
-.system-switch-user-submenu-icon {
-  icon-size: 24px;
-  border: none; }
-
-#appMenu {
-  spinner-image: url("assets/process-working.svg");
-  spacing: 4px; }
-  #appMenu .label-shadow {
-    color: transparent; }
-
-.aggregate-menu {
-  width: 360px; }
-  .aggregate-menu .popup-menu-icon {
-    padding: 0 4px; }
-
-
-
-
-
-
-
-
-
 
 .ripple-box {
   width: 52px;
