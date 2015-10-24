@@ -819,7 +819,7 @@ StScrollBar {
       background-image: url("dark-assets/misc/calendar-arrow-left.svg"); }
 
 .calendar-day-base {
-  font-size: 80%;
+  font-size: 100%;
   text-align: center;
   width: 25px;
   height: 25px;
@@ -877,66 +877,96 @@ StScrollBar {
   color: rgba(211, 218, 227, 0.3);
   opacity: 1; }
 
+/* Message list */
 .message-list {
   width: 420px; }
-  .message-list-sections {
-    spacing: 1.5em; }
-  .message-list-section,
-  .message-list-section-list {
-    spacing: 0.7em; }
-  .message-list-section-list-title-box {
-    spacing: 0.4em; }
-  .message-list-placeholder StIcon {
-    width: 0;
-    height: 0; }
-  .message-list-placeholder StLabel {
-    color: rgba(211, 218, 227, 0.45); }
-  .message-list-section-close > StIcon {
-    icon-size: 18px;
-    border-radius: 0px;
-    color: transparent;
-    background-color: transparent;
-    background-image: url("dark-assets/misc/message-close.svg"); }
-  .message-list-section-close:hover > StIcon {
-    color: transparent;
-    background-color: transparent;
-    background-image: url("dark-assets/misc/message-close-hover.svg"); }
-  .message-list-section-close:active > StIcon {
-    color: transparent;
-    background-color: transparent;
-    background-image: url("dark-assets/misc/message-close-active.svg"); }
+
+.message-list-sections {
+  spacing: 1.5em; }
+
+.message-list-section,
+.message-list-section-list {
+  spacing: 0.7em;}
+
+.message-list-section-title-box {
+  spacing: 0.4em; }
+
+.message-list-section-close > StIcon {
+  icon-size: 16px;
+  padding: 1px;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.0); }
+
+/* FIXME: how do you do this in sass? */
+.message-list-section-close:hover > StIcon,
+.message-list-section-close:focus > StIcon {
+  background-color: rgba(255,255,255,0.9);
+  color: #454d50;}
 
 .message {
-  padding: 4px;
-  color: #D3DAE3;
-  border-image: url("dark-assets/misc/message.svg") 9 9 9 9; }
+  background-color: rgba(29, 39, 49, 0.95);
+  margin: 1px;
+  border-radius: 2px;}
   .message:hover, .message:focus {
-    color: #D3DAE3;
-    border-image: url("dark-assets/misc/message-hover.svg") 9 9 9 9; }
+   background-color: rgba(86,155,228,0.7); /* azzurro */
+   box-shadow: none;
+    border-radius: 2px; }
   .message:active {
-    color: #ffffff;
-    border-image: url("dark-assets/misc/message-active.svg") 9 9 9 9; }
-  .message-icon-bin {
-    padding: 8px 0px 8px 8px; }
-    .message-icon-bin:rtl {
-      padding: 8px 8px 8px 0px; }
-    .message-icon-bin > StIcon {
-      icon-size: 32px; }
-  .message-secondary-bin {
-    color: rgba(211, 218, 227, 0.4); }
-    .message-secondary-bin:ltr {
-      padding-left: 8px; }
-    .message-secondary-bin:rtl {
-      padding-right: 8px; }
-  .message-secondary-bin > StIcon {
-    icon-size: 16px; }
-  .message-title {
-    font-weight: bold;
-    font-size: 1em;
-    padding: 2px 0 2px 0; }
-  .message-content {
-    padding: 8px;
-    font-size: 1em; }
+    background-color: rgba(29, 39, 49, 0.95);
+    box-shadow: none;
+    margin: 1px;
+    border-radius: 2px; }
+
+.message-icon-bin {
+  padding: 8px 0px 8px 8px; }
+  .message-icon-bin:rtl {
+    padding: 8px 8px 8px 0px; }
+
+.message-icon-bin > StIcon {
+  icon-size: 48px; }
+
+.message-secondary-bin {
+  color: rgba(255,255,255,0.3);}
+
+.message-secondary-bin > StIcon {
+  icon-size: 16px; }
+
+.message-title {
+  font-weight: bold; }
+
+.message-content {
+  padding: 8px; }
+
+.messages-indicator-highlight {
+  -gradient-height: 0px;
+  -gradient-start: rgba(255,255,255,0);
+  -gradient-end: rgba(255,255,255,0);
+}
+
+.system-switch-user-submenu-icon {
+  icon-size: 24px;
+  border: none; }
+
+#appMenu {
+  spinner-image: url("assets/process-working.svg");
+  spacing: 4px; }
+  #appMenu .label-shadow {
+    color: transparent; }
+
+.aggregate-menu {
+  width: 360px; }
+  .aggregate-menu .popup-menu-icon {
+    padding: 0 4px; }
+
+
+
+
+
+
+
+
+
 
 .ripple-box {
   width: 52px;
