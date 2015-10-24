@@ -837,6 +837,12 @@ StScrollBar {
     margin-top: 1em;
     font-size: 70%; }
 
+.calendar-week-number {
+    font-size: 70%;
+    color: rgba(255,255,255,0.6);
+    font-weight: normal;
+}
+
 .calendar-day {
   border-width: 0;
   color: rgba(211, 218, 227, 0.8); }

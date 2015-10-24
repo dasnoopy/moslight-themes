@@ -156,7 +156,7 @@ style "default" {
 	fg[PRELIGHT]      = @fg_color
 	fg[SELECTED]      = @selected_fg_color
 	fg[ACTIVE]        = @fg_color
-	fg[INSENSITIVE]   = darker (@bg_color)
+	fg[INSENSITIVE]   = darker (@fg_color)
 
 	bg[NORMAL]        = @bg_color
 	bg[PRELIGHT]      = shade (1.02, @bg_color)
@@ -201,8 +201,8 @@ style "default" {
 		highlight_shade		= 1.00
 		lightborder_shade	= 1.00
 		lightborderstyle	= 0
-		listviewheaderstyle	= 1
-		listviewstyle		= 1
+		listviewheaderstyle	= 0
+		listviewstyle		= 0
 		menubaritemstyle	= 0
 		menubarstyle		= 0
 		menuitemstyle		= 0
@@ -429,9 +429,20 @@ style "treeview_header"
 	xthickness = 2
 	ythickness = 2
 
-	bg[NORMAL]        = shade (1.08, @bg_color)
+	bg[NORMAL]        = @base_color
 	bg[PRELIGHT]      = shade (1.02, @bg_color)
-        font_name = "Bold"
+    font_name = "Bold"
+
+engine "murrine" 
+		{
+		roundness = 1
+		contrast = 1.0
+		highlight_shade     = 1.00
+		lightborderstyle = 0
+		lightborder_shade   = 1.4  # sets lightborder amount for buttons or widgets 
+		reliefstyle = 0
+		}
+
 }
 
 style "treeview" 

@@ -263,7 +263,7 @@ GtkAssistant .sidebar {
 .button:checked {
     background-image: linear-gradient(to bottom,
                                       shade(shade(@theme_bg_color, 1.02), 1.12),
-                                      shade(shade(@theme_bg_color, 1.02), 1.04)
+                                      shade(shade(@theme_bg_color, 1.02), 1.12)
                                       );
     box-shadow: none;
 }
@@ -313,8 +313,8 @@ GtkAssistant .sidebar {
 .button.default:active,
 .button.default:checked {
     background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12),
-                                      shade(shade(@theme_selected_bg_color, 1.02), 1.04)
+                                      shade(shade(@theme_selected_bg_color, 1.02), 0.96),
+                                      shade(shade(@theme_selected_bg_color, 1.02), 1.12)
                                       );
 }
 
@@ -460,40 +460,31 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
 /*****************
  * column-header *
  *****************/
-column-header .button,
-column-header .button:active,
-column-header .button:checked  {
-	padding: 2px 4px 2px 4px;
-    border-width: 0 1px 1px 0;
-    border-radius: 0;
-    font: bold;
-}
+column-header:last-child .button,
+column-header:last-child.button {
+  border-right-style: none;
+  border-image: none; }
 
-column-header .button,
-column-header .button:active,
-column-header .button:checked,
-column-header .button:focus,
-column-header .button:active:focus,
-column-header .button:checked:focus  {
-    border-color: shade(@theme_base_color, 0.8);
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_base_color, 1.00),
-                                      shade(@theme_base_color, 0.96)
-                                      );
-}
+column-header.button.dnd, column-header .button.dnd, column-header.button.dnd:active, column-header.button.dnd:selected, column-header.button.dnd:hover {
+  transition: none;
+  color: #5294E2;
+  box-shadow: inset 1px 1px 0 1px #5294E2, inset -1px 0 0 1px #5294E2, inset 1px 1px #ffffff, inset -1px 0 #ffffff; }
 
-column-header .button:hover,
-column-header .button:active:hover,
-column-header .button:checked:hover,
-column-header .button:hover:focus,
-column-header .button:active:hover:focus,
-column-header .button:checked:hover:focus {
-    border-color: shade(@theme_base_color, 0.8);
-}
-
-column-header:last-child .button {
-    border-width: 0 0 1px 0;
-}
+column-header .button, column-header .button:hover, column-header .button:active {
+  font: bold;
+  padding: 3px 6px;
+  background-image: none;
+  border-style: none solid none none;
+  border-radius: 0;
+  border-image: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.11) 20%, rgba(0, 0, 0, 0.11) 80%, transparent 80%) 0 1 0 0/0 1px 0 0 stretch; }
+  column-header .button:active, column-header .button:hover {
+    color: @theme_fg_color;
+    background-color: #ffffff; }
+  column-header .button:active:hover {
+    color: @theme_selected_bg_color; }
+  column-header .button:insensitive {
+    border-color: @theme_fg_color;
+    background-image: none; }
 
 /**************
  * ComboBoxes *
@@ -1150,7 +1141,7 @@ GtkInfoBar {
 .notebook {
 
     -GtkNotebook-tab-overlap: 0;
-    -GtkNotebook-initial-gap: 0;    
+    -GtkNotebook-initial-gap: 4;    
     -GtkNotebook-has-tab-gap: true;
     -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 0;
