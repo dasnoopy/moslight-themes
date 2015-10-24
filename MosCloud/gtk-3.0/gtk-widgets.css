@@ -1595,7 +1595,7 @@ GtkLevelBar.vertical {
 
 .sidebar row:hover {
 	border:none;
-	background-color: shade (@theme_bg_color, 0.95);
+	background-color: shade (@theme_bg_color, 1.12);
 }
 
 .sidebar .scrollbar.trough {
@@ -1656,7 +1656,7 @@ GtkPlacesSidebar.sidebar .list-row.activatable {
     opacity: 0.5; }
 
 .sidebar-item {
-  padding: 10px 4px; }
+  padding: 8px 4px; }
   .sidebar-item > GtkLabel {
     padding-left: 6px;
     padding-right: 6px; }
