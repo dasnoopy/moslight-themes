@@ -108,12 +108,12 @@ StScrollBar {
   padding: 8px; }
   StScrollView StScrollBar {
     min-width: 5px;
-    min-height: 5px; }
+    min-height: 8px; }
   StScrollBar StBin#trough {
     background-color: rgba(64, 69, 82, 0.1);
-    border-radius: 8px; }
+    border-radius: 1px; }
   StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
-    border-radius: 4px;
+    border-radius: 1px;
     background-color: #767b87;
     border: 0px solid;
     margin: 0px; }
