@@ -1608,7 +1608,7 @@ GtkLevelBar.vertical {
 
 }
 
-
+.sidebar .view:hover,
 .sidebar row:hover {
 	border:none;
 	background-color: shade (@theme_bg_color, 1.12);
@@ -1651,17 +1651,6 @@ GtkSidebarRow .sidebar-label:dir(ltr) {
 
 GtkSidebarRow .sidebar-label:dir(rtl) {
   padding-left: 2px; }
-
-GtkPlacesSidebar.sidebar .sidebar-placeholder-row {
-  border: none 1px #ffffff; }
-
-GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row {
-  background-color: shade(@theme_bg_color,1.12); }
-
-GtkPlacesSidebar.sidebar .list-row.activatable {
-  color: @sidebar_fg_color;
-  border-width: 0;
-  border-style: solid; }
 
 .sidebar-button.button {
   outline-radius: 50%;
@@ -4358,34 +4347,6 @@ GtkCalendar.selection-mode.header .titlebutton.button {
   GtkCalendar.selection-mode.header .titlebutton.button:backdrop {
     icon-shadow: none; }
 
-.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus, .menuitem.button.flat:selected, .header-bar .menuitem.titlebutton.button:selected,
-.titlebar .menuitem.titlebutton.button:selected,
-GtkCalendar.header .menuitem.titlebutton.button:selected, .list-row:selected {
-  background-color: @theme_selected_bg_color;
-  color: @base_color;
-  outline-color: rgba(255, 255, 255, 0.3); }
-  .view:backdrop:selected, GtkLabel:backdrop:selected, GtkFlowBox .grid-child:backdrop:selected, .entry:backdrop:selected, .menuitem.button.flat:backdrop:selected, .header-bar .menuitem.titlebutton.button:backdrop:selected,
-  .titlebar .menuitem.titlebutton.button:backdrop:selected,
-  GtkCalendar.header .menuitem.titlebutton.button:backdrop:selected, .list-row:backdrop:selected {
-    color: #fcfcfc; }
-
-
-.view:selected,
-.view:selected:focus,
-.view:selected:hover, .label:selected,
-.label:selected:focus,
-.label:selected:hover, .grid-child:selected, .menuitem.button.flat:active, .menuitem.sidebar-button.button:active, .menuitem.button.flat:selected, .menuitem.sidebar-button.button:selected, .list-row:selected, .sidebar:selected, .sidebar .view:selected, GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected,
-GtkEntry.gb-command-bar-entry.entry.flat:selected:focus,
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected,
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover,
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected,
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover,
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active,
-NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected, NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover, NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:selected, NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:active:hover, NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:active {
-  background-image: none;
-  background-color: #569be4;
-  color: #ffffff;
-  outline-color: rgba(255, 255, 255, 0.3); }
 
 /* Decouple the font of context menus from their entry/textview */
 .touch-selection,

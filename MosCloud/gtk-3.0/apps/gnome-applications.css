@@ -6,7 +6,6 @@ SushiFontWidget {
 	padding: 6px 12px;
 }
 
-
 /************
  * nautilus *
  ************/
@@ -16,7 +15,7 @@ SushiFontWidget {
 
 .nautilus-desktop.nautilus-canvas-item {
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 2px 3px alpha(@dark_shadow, 0.9)
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
@@ -25,6 +24,10 @@ SushiFontWidget {
 
 .nautilus-desktop.nautilus-canvas-item:selected {
     color: @theme_selected_fg_color;
+}
+
+.nautilus-canvas-item:selected:backdrop {
+    background-color: shade(@bg_color,0.7);
 }
 
 .nautilus-desktop.nautilus-canvas-item:active,
@@ -42,7 +45,6 @@ NautilusWindow .toolbar {
 NautilusWindow .sidebar .frame {
     border-style: none;
 }
-
 
 NautilusWindow .sidebar row:hover {
 	background-color: shade (@theme_bg_color, 0.95);
@@ -75,7 +77,7 @@ NautilusNotebook.notebook {
 NautilusNotebook .frame,
 NautilusWindow .sidebar .frame {
     border-width: 0;
-	border-image: none;
+    border-image: none;
 }
 
 NautilusQueryEditor .search-bar.toolbar {
