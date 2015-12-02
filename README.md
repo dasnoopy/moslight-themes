@@ -5,10 +5,10 @@ Simple GTK2/GTK3 and Gnome shell themes
 
 Note:
 
-* **Moslight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
+* **MosLight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
   GTK3 v3.12.x libs.
 
-* **Mosemite** is a theme designed **only** for Gnome 3.14: it works only with GTK2 v2.24.x and
+* **MosEmite** is a theme designed **only** for Gnome 3.14: it works only with GTK2 v2.24.x and
   GTK3 v3.14.x libs
 
 * **MosSky** is a theme designed **only** for Gnome 3.16: it works only with GTK2 v2.24.x 
