@@ -418,9 +418,9 @@ GtkAssistant .sidebar {
 row:selected,
 row:selected:hover,
 row:selected:focus {
-    border-width: 1px 0;
+    border-width: 0;
     border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 1.0);
+    border-color: @theme_selected_bg_color;
     background-image: linear-gradient(to bottom,
                                       shade(@theme_selected_bg_color, 1.0),
                                       shade(@theme_selected_bg_color, 1.0)
@@ -2505,7 +2505,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 
 
 /***********
- * toolbar barra strumeti*
+ * toolbar *
  ***********/
 .toolbar {
     padding: 3px;
@@ -3235,8 +3235,7 @@ GtkTreeView.view {
   -GtkWidget-focus-line-width: 1px;
   -GtkWidget-focus-padding: 1px;
   border-left-color: shade(@bg_color, 0.88);
-  border-top-color: @base_color;
-}
+  border-top-color: @base_color; }
 
 GtkTreeView.view:selected, GtkTreeView.view:backdrop:selected {
     border-left-color: #a4c7ec;
@@ -3275,37 +3274,44 @@ GtkTreeView.view.progressbar {
                                       shade(@theme_selected_bg_color, 0.96)
                                       );
     box-shadow: none; }
-    GtkTreeView.view.progressbar:selected {
+
+GtkTreeView.view.progressbar:backdrop {
+    color: white;
+    border: 1px solid shade(@theme_selected_bg_color, 0.88);
+    border-radius: 0;
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_selected_bg_color, 1.22),
+                                      shade(@theme_selected_bg_color, 1.06)
+                                      ); }
+
+GtkTreeView.view.progressbar:selected {
       color: white;
       box-shadow: none;
-          background-image: linear-gradient(to bottom,
+      background-image: linear-gradient(to bottom,
                                       shade(@theme_selected_bg_color, 1.12),
                                       shade(@theme_selected_bg_color, 0.96)
                                       ); }
-    GtkTreeView.view.progressbar:selected:backdrop {
-        color: white;
-        border-color: shade(@theme_selected_bg_color, 0.88);
-           background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.22),
-                                      shade(@theme_selected_bg_color, 1.06)
-                                      );
-     }
-    GtkTreeView.view.progressbar:backdrop {
+
+GtkTreeView.view.progressbar:selected:backdrop {
       color: white;
+      border-color: shade(@theme_selected_bg_color, 0.88);
       background-image: linear-gradient(to bottom,
                                       shade(@theme_selected_bg_color, 1.22),
                                       shade(@theme_selected_bg_color, 1.06)
-                                      );
-      box-shadow: none; }
+                                      ); }
+
     GtkTreeView.view.trough {
-	  border-color: shade(@theme_bg_color, 1.04);
+      border-color: @borders;
       background-color: rgba(232, 232, 232, 0.4);
-      border-radius: 0; }
+      border-width: 1px;
+      border-radius: 0;
+      border-style: solid; }
+
     GtkTreeView.view.trough:selected {
-      background-color: rgba(255, 255, 255, 0.4);
+      background-color: rgba(232, 232, 232, 0.75);
       border-width: 1px;
       border-style: solid;
-      border-color: shade(@theme_selected_bg_color, 0.88); }
+      border-color: transparent; }
 
 /************
  * viewport *
