@@ -1675,7 +1675,7 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
  **************/
 .scrollbar {
   -GtkRange-slider-width: 14;
-  -GtkRange-trough-border: 1;
+  -GtkRange-trough-border: 0;
   -GtkScrollbar-has-backward-stepper: false;
   -GtkScrollbar-has-forward-stepper: false;
   -GtkScrollbar-min-slider-length: 42;
@@ -3234,12 +3234,13 @@ GtkTreeView.view {
   -GtkTreeView-vertical-separator: 2;
   -GtkWidget-focus-line-width: 1px;
   -GtkWidget-focus-padding: 1px;
-  border-left-color: shade(@bg_color, 0.88);
-  border-top-color: @base_color; }
+  border-left-color: rgba(92, 97, 108, 0.15);
+  border-top-color: rgba(0, 0, 0, 0.1); }
 
-GtkTreeView.view:selected, GtkTreeView.view:backdrop:selected {
-    border-left-color: #a4c7ec;
-    border-top-color: rgba(46, 52, 54, 0.1); }
+GtkTreeView.view:selected, GtkTreeView.view:backdrop:selected  {
+    border-radius: 0;
+    border-left-color: #a9caf1;
+    border-top-color: rgba(92, 97, 108, 0.1); }
 
 GtkTreeView.dnd {
     padding: 6px 6px;
