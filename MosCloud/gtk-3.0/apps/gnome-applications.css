@@ -144,6 +144,12 @@ TerminalWindow .frame.scrollbar.trough {
     border-color: @borders;
     background-color: @theme_bg_color;  }
 
+TerminalWindow .scrollbar.vertical .slider {
+  margin-left: 3px; }
+
+TerminalWindow .scrollbar.trough {
+  border-width: 0; }
+
 /*********
  * gedit *
  *********/
