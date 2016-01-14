@@ -3286,7 +3286,7 @@ GtkTreeView.dnd {
 }
 
 GtkTreeView .entry {
-    padding: 6px 6px;
+    padding: 1px;
     border-radius: 0;
     background-color: @theme_base_color;
     background-image: none;

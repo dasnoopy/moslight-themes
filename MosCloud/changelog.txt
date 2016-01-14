@@ -1,3 +1,6 @@
+2016.01.11
+- small fixes for gtk3 and gnome-shell theme
+
 2015.12.22
 - small fixes
 
