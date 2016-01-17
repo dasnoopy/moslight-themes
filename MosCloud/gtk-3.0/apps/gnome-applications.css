@@ -109,10 +109,10 @@ NautilusQueryEditor .search-bar.toolbar:only-child {
 }
 
 NautilusListView GtkTreeView {
-    border-color: @borders; /*Temp fix*/
+    border-color: @borders; /*Temp fix*/ }
 
-}
-
+NautilusListView .view {
+  border-bottom: 1px solid @theme_bg_color; }
 
 /******************
  * gnome terminal *

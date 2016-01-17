@@ -478,8 +478,8 @@ column-header .button, column-header .button:hover, column-header .button:active
   border-radius: 0;
   border-image: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.11) 20%, rgba(0, 0, 0, 0.11) 80%, transparent 80%) 0 1 0 0/0 1px 0 0 stretch; }
   column-header .button:active, column-header .button:hover {
-    color: @theme_fg_color;
-    background-color: #ffffff; }
+    color: @theme_selected_bg_color;
+    background-color: @base_color; }
   column-header .button:active:hover {
     color: @theme_selected_bg_color; }
   column-header .button:insensitive {
