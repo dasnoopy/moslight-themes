@@ -49,6 +49,9 @@
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
+/* link colors */
+@define-color link_color #ff8000;
+
 /* shadow effects */
 @define-color light_shadow #ffffff;
 @define-color dark_shadow #000000;
