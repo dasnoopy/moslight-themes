@@ -3,7 +3,7 @@ Mos*-themes
 
 Simple GTK2/GTK3 and Gnome shell themes
 
-Note:
+Some notes:
 
 * **MosLight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
   GTK3 v3.12.x libs.
@@ -16,6 +16,8 @@ Note:
 
 * **MosCloud** is a theme designed **only** for Gnome 3.18: it works only with GTK2 v2.24.x 
   and GTK3 v3.18.x libs
+
+these are always WIP versions. Stable versions are available on my deviantart page (http://dasnoopy.deviantart.com/)
 
 To install the theme, copy it into `/usr/share/themes` (for all users)
 
