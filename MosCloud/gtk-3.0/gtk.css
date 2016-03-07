@@ -19,6 +19,7 @@
 @define-color toolbar_fg_color @theme_fg_color;
 @define-color panel_bg_color @theme_bg_color;
 @define-color panel_fg_color @theme_fg_color;
+
 @define-color borders shade(@theme_bg_color, 0.88);
 @define-color unfocused_borders shade(@theme_bg_color, 0.88);
 
