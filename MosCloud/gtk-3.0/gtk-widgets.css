@@ -400,7 +400,7 @@ GtkAssistant .sidebar {
 	border-image: none; }
 
 .button.flat:hover, .sidebar-button.button:hover, .button.flat:hover:active, .sidebar-button.button:hover:active {
-    border-radius: 3px;
+    border-radius: 0;
     border-color: transparent;
 	color: @theme_selected_fg_color;
 	background-color: @theme_selected_bg_color;
