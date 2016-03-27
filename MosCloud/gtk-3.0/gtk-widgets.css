@@ -407,7 +407,6 @@ GtkAssistant .sidebar {
 .sidebar-button.button:hover:active {
   border-radius: 100%;
   border-color: transparent;
-	color: @theme_selected_fg_color;
 	background-color: @theme_selected_bg_color;
 	background-image: none;}
 
@@ -421,6 +420,16 @@ GtkMenuButton.button.flat:hover,
 GtkMenuButton.button.flat:hover:active {
   border-radius: 2px;
   border-color: shade(@theme_bg_color, 0.7);
+}
+
+GtkToggleButton.button.flat:hover,
+GtkToggleButton.button.flat:checked,
+GtkToggleButton.button.flat:hover:active,
+GtkMenuButton.button.flat:hover,
+GtkMenuButton.button.flat:hover:active,
+GtkMenuButton.button.flat:hover GtkLabel,
+GtkMenuButton.button.flat:hover:active GtkLabel {
+  background-color: transparent;
 }
 
 .button.flat:insensitive, .sidebar-button.button:insensitive {
