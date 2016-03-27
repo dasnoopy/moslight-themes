@@ -155,7 +155,7 @@ TerminalWindow .frame.scrollbar.trough {
 TerminalWindow .scrollbar.vertical .slider {
   margin-left: 3px; }
 
-.scrollbar.trough {
+TerminalWindow .scrollbar.trough {
   border-width: 0; }
 
 /*********
@@ -328,12 +328,12 @@ EvWindow.background > GtkBox.vertical > GtkPaned.horizontal > GtkBox.vertical > 
 }
 
 EvWindow.background EvSidebar.vertical .frame {
-    border-width: 0;
+    border-width: 1px 0;
     border-radius: 0;
 }
 
 EvWindow.background EvSidebar.vertical .notebook {
-    border-width: 0;
+    border-width: 1px 0;
 }
 
 EvWindow.background EvSidebarAnnotations.vertical GtkToolPalette > GtkToolItemGroup > .button {
