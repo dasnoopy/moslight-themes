@@ -58,6 +58,14 @@ NautilusWindow .pane-separator {
 	background-image: url("../assets/null.png");
 }
 
+NautilusWindow .button.sidebar-button:hover,
+NautilusWindow .button.sidebar-button:hover:active {
+    border: 1px solid shade(@bg_color, 0.7);
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@theme_bg_color, 1.02), 1.12),
+                                      shade(shade(@theme_bg_color, 1.02), 0.96)
+                                      );
+}
 
 NautilusWindow > GtkGrid > .pane-separator,
 NautilusWindow > GtkGrid > .pane-separator:hover {
@@ -129,7 +137,7 @@ TerminalWindow GtkNotebook.notebook {
 }
 
 /* no transparent background for gnome terminal scrollbars :
-remove this section if you have installed a patched version 
+remove this section if you have installed a patched version
 of gnome-terminal with transparency enabled */
 
 
@@ -158,7 +166,7 @@ TerminalWindow .scrollbar.trough {
 	-GtkPaned-handle-size: 1;
 }
 
-GeditWindow .pane-separator, 
+GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
     border-width: 0 1px 1px 1px;
     border-style: solid;
@@ -320,16 +328,16 @@ EvWindow.background > GtkBox.vertical > GtkPaned.horizontal > GtkBox.vertical > 
 }
 
 EvWindow.background EvSidebar.vertical .frame {
-    border-width: 1px 0 0;
+    border-width: 1px 0;
     border-radius: 0;
 }
 
 EvWindow.background EvSidebar.vertical .notebook {
-    border-width: 1px 0 0;
+    border-width: 1px 0;
 }
 
-EvWindow.background EvSidebarAnnotations.vertical GtkToolPalette > GtkToolItemGroup > .button { 
-	padding: 4px;    
+EvWindow.background EvSidebarAnnotations.vertical GtkToolPalette > GtkToolItemGroup > .button {
+	padding: 4px;
 	border-image: none;
     border-radius: 0;
     border-style: solid;
@@ -341,7 +349,7 @@ EvWindow.background EvSidebar.vertical .notebook .frame {
     border-width: 0;
 }
 
-EvWindow .pane-separator, 
+EvWindow .pane-separator,
 EvWindow .pane-separator:hover {
     border-width: 0 1px;
     border-style: solid;
@@ -363,7 +371,7 @@ EvWindow.background EvSidebar.vertical .notebook {
 	border-radius: 0;
 }
 
-EvWindow.background EvSidebar.vertical .notebook.header { 
+EvWindow.background EvSidebar.vertical .notebook.header {
     background-color: @theme_bg_color;
     box-shadow: none;
     background-image: none;
@@ -425,7 +433,7 @@ FrWindow.background GtkBox.vertical GtkTreeView.view {
 /*
  * Totem
  */
- 
+
 /*TotemGrilo.vertical .content-view {
 	border-width: 0;
 }*/
