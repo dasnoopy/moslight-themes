@@ -494,5 +494,18 @@ GtkApplicationWindow.background GtkStack GtkVBox.vertical GtkOverlay GtkRevealer
     background-image: linear-gradient(to bottom,@sidebar_bg_color,@sidebar_bg_color);
 }
 
+/*
+  Nemo
+  */
 
+NemoWindow .toolbar GtkComboBox,
+NemoWindow .toolbar GtkComboBoxText {
+    background-image: none;
+    padding: 0;
+}
 
+NemoWindow .toolbar GtkComboBox > .the-button-in-the-combobox,
+NemoWindow .toolbar GtkComboBoxText > .the-button-in-the-combobox {
+    padding-top: 0;
+    padding-bottom: 0;
+}

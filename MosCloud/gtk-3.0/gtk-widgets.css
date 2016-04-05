@@ -2649,7 +2649,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
     padding: 3px;
     border-width: 1px;
     border-color: transparent;
-	border-image: none;
+    border-image: none;
     border-radius: 2px;
     background-color: transparent;
     background-image: none;
