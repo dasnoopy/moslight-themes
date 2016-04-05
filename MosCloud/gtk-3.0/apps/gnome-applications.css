@@ -244,6 +244,26 @@ GeditFileBrowserWidget .primary-toolbar.toolbar  {
     padding: 4px;
 }
 
+GeditStatusMenuButton.button.flat:prelight,
+GeditStatusMenuButton.button.flat:backdrop:prelight {
+    border-color: transparent;
+    background-color: @theme_selected_bg_color;
+}
+
+GeditStatusMenuButton.button.flat:active:prelight GtkLabel,
+GeditStatusMenuButton.button.flat:backdrop:active:prelight GtkLabel,
+GeditStatusMenuButton.button.flat:active:prelight GtkImage,
+GeditStatusMenuButton.button.flat:backdrop:active:prelight GtkImage {
+    color: @text_color;
+}
+
+GeditStatusMenuButton.button.flat:prelight GtkLabel,
+GeditStatusMenuButton.button.flat:backdrop:prelight GtkLabel,
+GeditStatusMenuButton.button.flat:prelight GtkImage,
+GeditStatusMenuButton.button.flat:backdrop:prelight GtkImage {
+    color: @theme_selected_fg_color;
+}
+
 GeditStatusbar {
   border-top: 1px solid @borders;
   background-color: @theme_bg_color; }

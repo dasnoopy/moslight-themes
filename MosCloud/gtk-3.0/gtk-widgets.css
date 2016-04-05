@@ -414,8 +414,10 @@ GtkAssistant .sidebar {
 GtkToggleButton.button.flat:hover,
 GtkToggleButton.button.flat.image-button:hover,
 GtkToggleButton.button.flat:checked,
+GtkToggleButton.button.flat:checked:hover,
 GtkToggleButton.button.flat:hover:active,
 GtkMenuButton.button.flat:hover,
+GtkMenuButton.button.flat:backdrop:prelight,
 GtkMenuButton.button.flat:hover:active {
   border-radius: 2px;
   background-color: transparent;
