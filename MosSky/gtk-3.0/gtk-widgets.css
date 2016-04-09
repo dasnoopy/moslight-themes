@@ -3,7 +3,7 @@
 
 /* default */
 * {
-	engine: none;  
+	engine: none;
 	background-clip: padding-box;
 
     -GtkArrow-arrow-scaling: 0.6;
@@ -35,7 +35,7 @@
     -GtkRange-trough-under-steppers: 1;
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false;
-    -GtkScrollbar-min-slider-length: 80;
+    -GtkScrollbar-min-slider-length: 36;
     -GtkScrolledWindow-scrollbar-spacing: 0;
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkStatusbar-shadow-type: none;
@@ -55,7 +55,7 @@
     outline-style: dashed;
     outline-offset: -3px;
     outline-width: 1px;
-    outline-radius: 2px; 
+    outline-radius: 2px;
 }
 
 
@@ -268,7 +268,7 @@ GtkAssistant .sidebar {
 .button:checked:hover {}
 
 .button:focus,
-.button:hover:focus 
+.button:hover:focus
 .button:active:focus,
 .button:active:hover:focus,
 .button:active:hover:focus,
@@ -317,7 +317,7 @@ GtkAssistant .sidebar {
   border-width: 1px;
   border-style: solid;
   color: @theme_fg_color;
-  background-image: none; 
+  background-image: none;
 }
   .inline-toolbar GtkToolButton > .button:hover {
     border-width: 1px;
@@ -327,7 +327,7 @@ GtkAssistant .sidebar {
   .inline-toolbar GtkToolButton > .button:active {
     border-width: 1px;
     border-style: solid;
-    background-image: none; 
+    background-image: none;
     color:  @theme_fg_color; }
   .inline-toolbar GtkToolButton > .button:insensitive {
     border-width: 1px;
@@ -387,7 +387,7 @@ GtkAssistant .sidebar {
 	box-shadow: inset 0 1px rgba(255,255,255,0), 0 1px rgba(255,255,255,0);
 	text-shadow: none;
 	icon-shadow: none;
-	border-image: none; 
+	border-image: none;
 }
 
 
@@ -443,7 +443,7 @@ GtkCheckButton:insensitive {
 
 GtkCheckButton.text-button, GtkRadioButton.text-button {
 	padding: 1px 2px 4px;
-	outline-offset: 0; 
+	outline-offset: 0;
 }
 
 
@@ -725,7 +725,7 @@ GtkComboBox.combobox-entry .button:insensitive {
       background-image: none;}
     .entry.error:selected, .entry.error:selected:focus {
 	  color: #d94141;
-      background-color: #ffffff; 
+      background-color: #ffffff;
 }
 
 .entry.warning {
@@ -740,7 +740,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 
   .linked .entry:first-child {
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0; 
+    border-bottom-right-radius: 0;
     border-right-style: solid;}
     .linked .entry:first-child:dir(rtl) {
       border-right-style: solid; }
@@ -778,11 +778,11 @@ GtkComboBox.combobox-entry .button:insensitive {
 .frame {
 	border: 1px solid @borders;
 	border-radius: 0;
-	padding: 0;	
+	padding: 0;
 	box-shadow: none;
 }
 
-.frame.flat { 
+.frame.flat {
 	border-style: none;
 	box-shadow: none;
 }
@@ -790,7 +790,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 .frame.action-bar {
 	border-color: @borders;
 	padding: 6px;
-	border-width: 1px 0 0 0; 
+	border-width: 1px 0 0 0;
 }
 
 /*******************
@@ -804,7 +804,7 @@ GtkScrolledWindow.frame {
 	padding: 0;
 }
 
-/* avoid double borders when a viewport is 
+/* avoid double borders when a viewport is
  * packed into a GtkScrolledWindow */
 GtkScrolledWindow GtkViewport.frame {
     border-style: none;
@@ -1110,7 +1110,7 @@ GtkInfoBar {
 .notebook {
 
     -GtkNotebook-tab-overlap: 0;
-    -GtkNotebook-initial-gap: 0;    
+    -GtkNotebook-initial-gap: 0;
     -GtkNotebook-has-tab-gap: true;
     -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 0;
@@ -1160,7 +1160,7 @@ GtkInfoBar {
     box-shadow: none;
 	border-radius: 0;
     border: none;
-    background-color: @theme_bg_color;			
+    background-color: @theme_bg_color;
     background-image: none;
 }
 
@@ -1250,7 +1250,7 @@ GtkInfoBar {
 
 
 /**************
- * progressbar 
+ * progressbar
  **************/
 GtkProgressBar {
     padding: 0;
@@ -1260,7 +1260,7 @@ GtkProgressBar {
 }
 
 GtkProgressBar:backdrop {
-    color: @text_color; 
+    color: @text_color;
 }
 
 .progressbar,
@@ -1598,7 +1598,6 @@ GtkLevelBar.vertical {
   -GtkRange-trough-border: 1;
   -GtkScrollbar-has-backward-stepper: false;
   -GtkScrollbar-has-forward-stepper: false;
-  -GtkScrollbar-min-slider-length: 42;
   -GtkRange-stepper-spacing: 0;
   -GtkRange-trough-under-steppers: 1; }
   .scrollbar .button {
@@ -2186,7 +2185,7 @@ GtkColorButton.button {
     padding-top: 3px;
     padding-bottom: 3px;
 /*non-csd windows: left-right padding between titlebuttons */
-	padding-left: 1px; 
+	padding-left: 1px;
 	padding-right: 1px;
 }
 
@@ -2202,7 +2201,7 @@ GtkColorButton.button {
 	font: bold;
     padding: 1px 12px 1px 12px;
 	color: @theme_fg_color;
-    
+
 }
 
 .header-bar .title:backdrop {
@@ -2777,7 +2776,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 .inline-toolbar.toolbar .button:insensitive:first-child,
 .inline-toolbar.toolbar GtkToolButton:first-child .button,
 .inline-toolbar.toolbar GtkToolButton:first-child .button:active,
-.inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive {  
+.inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive {
 	border-width: 1px;
     border-radius: 2px;
     border-right-width: 0;
@@ -3211,7 +3210,7 @@ GtkTreeView .entry {
     background-image: none;
 }
 
-  
+
 GtkTreeView.view.separator,
 GtkTreeView.separator,
 .separator,
@@ -3317,7 +3316,7 @@ GtkPopover {
 	background-color: @sidebar_bg_color;
 	box-shadow: none;
 	text-shadow: none;
-	icon-shadow: none; 
+	icon-shadow: none;
 }
 
 GtkPopover.background {
@@ -3325,23 +3324,23 @@ GtkPopover.background {
  background-color: @sidebar_bg_color;
 }
 
-GtkPopover > .list, 
-GtkPopover > .view, 
-GtkPopover > .toolbar GtkPopover.osd > .toolbar, 
-GtkPopover > .inline-toolbar GtkPopover.osd > .toolbar, 
-GtkPopover > .search-bar GtkPopover.osd > .toolbar, 
+GtkPopover > .list,
+GtkPopover > .view,
+GtkPopover > .toolbar GtkPopover.osd > .toolbar,
+GtkPopover > .inline-toolbar GtkPopover.osd > .toolbar,
+GtkPopover > .search-bar GtkPopover.osd > .toolbar,
 GtkPopover > .location-bar GtkPopover.osd > .toolbar,
-GtkPopover > .toolbar GtkPopover.osd > .inline-toolbar, 
-GtkPopover > .inline-toolbar GtkPopover.osd > .inline-toolbar, 
-GtkPopover > .search-bar GtkPopover.osd > .inline-toolbar, 
+GtkPopover > .toolbar GtkPopover.osd > .inline-toolbar,
+GtkPopover > .inline-toolbar GtkPopover.osd > .inline-toolbar,
+GtkPopover > .search-bar GtkPopover.osd > .inline-toolbar,
 GtkPopover > .location-bar GtkPopover.osd > .inline-toolbar,
-GtkPopover > .toolbar GtkPopover.osd > .search-bar, 
-GtkPopover > .inline-toolbar GtkPopover.osd > .search-bar, 
+GtkPopover > .toolbar GtkPopover.osd > .search-bar,
+GtkPopover > .inline-toolbar GtkPopover.osd > .search-bar,
 GtkPopover > .search-bar GtkPopover.osd > .search-bar,
 GtkPopover > .location-bar GtkPopover.osd > .search-bar,
 GtkPopover > .toolbar GtkPopover.osd > .location-bar,
-GtkPopover > .inline-toolbar GtkPopover.osd > .location-bar, 
-GtkPopover > .search-bar GtkPopover.osd > .location-bar, 
+GtkPopover > .inline-toolbar GtkPopover.osd > .location-bar,
+GtkPopover > .search-bar GtkPopover.osd > .location-bar,
 GtkPopover > .location-bar GtkPopover.osd > .location-bar {
 	border-style: none;
 	background-image: none;
@@ -3505,7 +3504,7 @@ GtkMessageDialog {
                 inset 0 -1px 0 0 alpha (@base_color, 0.30);
 }
 
-.dialog-action-area.linked .button, 
+.dialog-action-area.linked .button,
 .dialog-action-area.linked .button:active,
 .dialog-action-area.linked .button:active:hover,
 .dialog-action-area.linked .button:insensitive,
@@ -3602,7 +3601,7 @@ GtkFileChooserButton GtkImage:last-child {
     background-color: @toolbar_bg_color;
     background-image: none;
     color: @fg_color;
-    background-clip: padding-box; 
+    background-clip: padding-box;
 }
 
 .app-notification .button,
@@ -3856,7 +3855,7 @@ GtkProgressBar.osd.trough {
 .osd GtkProgressBar.progressbar,
 GtkProgressBar.osd.progressbar {
     border-style: none;
-    border-radius: 0;    
+    border-radius: 0;
     background-color: @theme_selected_bg_color;
     background-image: none;
 }
@@ -3944,7 +3943,7 @@ GtkProgressBar.osd.progressbar {
 
 .destructive-action.button:hover:active,
 .destructive-action.button:hover:checked {
-    
+
 }
 
 /******************************

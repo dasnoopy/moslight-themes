@@ -2,7 +2,7 @@
 # SCROLLBAR
 ################################################################################
 
-style "scrollbar" 
+style "scrollbar"
 {
 	# The values I set here have to do with the relative size of three graphic elements
     # I have used: the slider, the arrow box, and the trough. They all have the same width
@@ -14,21 +14,21 @@ style "scrollbar"
     GtkRange::trough_border = 0
     GtkRange::slider_width = 15
 
-    # This sets the size of the steppers (arrow buttons on the end of the scrollbar). 
-    # The image I am using is 15x15 pixels, and if I dont set this a one pixel line 
+    # This sets the size of the steppers (arrow buttons on the end of the scrollbar).
+    # The image I am using is 15x15 pixels, and if I dont set this a one pixel line
     # gets cut off of the top of the "up" stepper.
     GtkRange::stepper_size = 15
 
-    # Set a minimum length for the slider. Since I set the border on the slider 
-    # image to 15 pixels on either end of the slider I want the min length to be 
-    # at least 30 pixels to avoid an ugly slider when gtk wants to make it smaller 
+    # Set a minimum length for the slider. Since I set the border on the slider
+    # image to 15 pixels on either end of the slider I want the min length to be
+    # at least 30 pixels to avoid an ugly slider when gtk wants to make it smaller
     # than 30 pixels.
-    GtkScrollbar::min_slider_length = 96
+    # GtkScrollbar::min_slider_length = 96
 
-	engine "pixmap" 
+	engine "pixmap"
 	{
 		# Horizontal slider background
-		image 
+		image
 		{
             function        = BOX
             recolorable     = TRUE
@@ -38,9 +38,9 @@ style "scrollbar"
             stretch         = TRUE
             orientation     = HORIZONTAL
         }
-	    
+
 	    # Vertical slider background
-	    image 
+	    image
 		{
             function        = BOX
             recolorable     = TRUE
@@ -52,7 +52,7 @@ style "scrollbar"
         }
 
 		# Normal horizontal slider
-	    image 
+	    image
 		{
 	        function        = SLIDER
 	        recolorable     = TRUE
@@ -62,9 +62,9 @@ style "scrollbar"
 	        stretch         = TRUE
 	        orientation     = HORIZONTAL
 	    }
-		
+
 		# Horizontal slider (active)
-		image 
+		image
 		{
 	        function        = SLIDER
 	        recolorable     = TRUE
@@ -76,9 +76,9 @@ style "scrollbar"
 		}
 
 		# Horizontal slider (mouse over)
-	    image 
+	    image
 		{
-	        function        = SLIDER 
+	        function        = SLIDER
 	        recolorable     = TRUE
 	        state           = PRELIGHT
 	        file            = "Scrollbars/slider-horiz-prelight.png"
@@ -86,11 +86,11 @@ style "scrollbar"
 	        stretch         = TRUE
 	        orientation     = HORIZONTAL
 	    }
-	    
+
 	    # Horizontal slider (Insesitive)
-		image 
+		image
 		{
-	        function        = SLIDER 
+	        function        = SLIDER
 	        recolorable     = TRUE
 	        state           = INSENSITIVE
 	        file            = "Scrollbars/slider-horiz.png"
@@ -100,7 +100,7 @@ style "scrollbar"
 	    }
 
 	    # Normal vertical slider
-	    image 
+	    image
 		{
 	        function        = SLIDER
 	        recolorable     = TRUE
@@ -110,9 +110,9 @@ style "scrollbar"
 	        stretch         = TRUE
 	        orientation     = VERTICAL
 		}
-		
+
 		# Vertical slider (Active)
-		image 
+		image
 		{
 	        function        = SLIDER
 	        recolorable     = TRUE
@@ -124,9 +124,9 @@ style "scrollbar"
 		}
 
 		# Vertical slider (mouse over)
-	    image 
+	    image
 		{
-	        function        = SLIDER 
+	        function        = SLIDER
 	        recolorable     = TRUE
 	        state           = PRELIGHT
 	        file            = "Scrollbars/slider-vert-prelight.png"
@@ -134,11 +134,11 @@ style "scrollbar"
 	        stretch         = TRUE
 	        orientation     = VERTICAL
 	    }
-	    
+
 	    # Vertical slider (Insesitive)
-		image 
+		image
 		{
-	        function        = SLIDER 
+	        function        = SLIDER
 	        recolorable     = TRUE
 	        state           = INSENSITIVE
 	        file            = "Scrollbars/slider-vert.png"
@@ -152,7 +152,7 @@ style "scrollbar"
 ################################################################################
 
 	# Up
-    image 
+    image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -162,7 +162,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= UP
     }
- 	image 
+ 	image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -172,7 +172,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= UP
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -182,7 +182,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= UP
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -196,7 +196,7 @@ style "scrollbar"
  ######### DOWN ############
 
 
-    image 
+    image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -206,7 +206,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= DOWN
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -216,7 +216,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= DOWN
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -226,7 +226,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= DOWN
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -239,7 +239,7 @@ style "scrollbar"
 
 ############ RIGHT ################
 
-    image 
+    image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -249,7 +249,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= RIGHT
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -259,7 +259,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= RIGHT
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -269,7 +269,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= RIGHT
     }
- image 
+ image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -283,7 +283,7 @@ style "scrollbar"
 ############### LEFT ###################
 
 
-    image 
+    image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -293,7 +293,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= LEFT
     }
-  image 
+  image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -303,7 +303,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= LEFT
     }
-  image 
+  image
     {
       function			= STEPPER
       recolorable		= TRUE
@@ -313,7 +313,7 @@ style "scrollbar"
       stretch			= TRUE
       arrow_direction	= LEFT
     }
-  image 
+  image
     {
       function			= STEPPER
       recolorable		= TRUE
