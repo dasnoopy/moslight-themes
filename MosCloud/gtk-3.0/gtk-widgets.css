@@ -227,7 +227,8 @@ GtkAssistant .sidebar {
  * buttons *
  **********/
 
-.button {
+.button,
+.primary-toolbar .button.the-button-in-the-combobox {
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 

@@ -504,8 +504,21 @@ NemoWindow .toolbar GtkComboBoxText {
     padding: 0;
 }
 
-NemoWindow .toolbar GtkComboBox > .the-button-in-the-combobox,
-NemoWindow .toolbar GtkComboBoxText > .the-button-in-the-combobox {
+NemoWindow .toolbar GtkComboBox > .button.the-button-in-the-combobox,
+NemoWindow .toolbar GtkComboBoxText > .button.the-button-in-the-combobox {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+NemoWindow GtkButton.button.flat {
+    background-image: none;
+    background-color: none;
+    border: none;
+}
+
+NemoWindow GtkButton.button.flat:hover,
+NemoWindow GtkButton.button.flat:hover:active {
+    background-image: none;
+    background-color: @theme_selected_bg_color;
+    border-radius: 2px;
 }
