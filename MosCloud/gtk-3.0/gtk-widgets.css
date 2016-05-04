@@ -416,6 +416,7 @@ GtkToggleButton.button.flat.image-button:hover,
 GtkToggleButton.button.flat:checked,
 GtkToggleButton.button.flat:checked:hover,
 GtkToggleButton.button.flat:hover:active,
+GtkButton.button.flat.menu-button:hover,
 GtkMenuButton.button.flat:hover,
 GtkMenuButton.button.flat:backdrop:prelight,
 GtkMenuButton.button.flat:hover:active {
