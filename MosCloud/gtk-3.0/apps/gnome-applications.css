@@ -512,7 +512,7 @@ NemoWindow .toolbar GtkComboBoxText > .button.the-button-in-the-combobox {
 
 NemoWindow .toolbar GtkButton.button.flat {
     background-image: none;
-    background-color: none;
+    background-color: transparent;
     border: none;
 }
 
@@ -522,3 +522,10 @@ NemoWindow GtkButton.button.flat:hover:active {
     background-color: @theme_selected_bg_color;
     border-radius: 2px;
 }*/
+
+/*
+ Terminix
+ */
+GtkButton.terminix-sidebar-close-button {
+    padding: 2px;
+}

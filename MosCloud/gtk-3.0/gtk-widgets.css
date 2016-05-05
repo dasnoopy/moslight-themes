@@ -1866,7 +1866,7 @@ GtkComboBox .separator {
 
 .pane-separator {
 	-GtkPaned-handle-size: 1;
-	border-width: 0 1px 1px 1px;
+	border-width: 0;
 	border-style: solid;
 	border-color: transparent;
 	background-color: transparent;
@@ -1890,22 +1890,22 @@ GtkPaned {
     margin-right: 0;
     margin-left: 8px; }
   GtkPaned .pane-separator {
-    background-color: #a1a1a1; }
-    GtkPaned .pane-separator:backdrop {
-      background-color: #a8a8a8; }
+    background-color: @theme_bg_color;
+    border-color: @theme_bg_color; }
+    /*GtkPaned .pane-separator:backdrop {
+      background-color: #a8a8a8; }*/
 
 GtkPaned.wide {
   -GtkPaned-handle-size: 5;
   margin: 0; }
   GtkPaned.wide .pane-separator {
-    background-color: transparent;
-    border-style: none solid;
-    border-color: #a1a1a1;
+    background-color: @theme_bg_color;
+    border-color: @theme_bg_color;
     border-width: 1px; }
-  GtkPaned.wide.vertical .pane-separator {
-    border-style: solid none; }
-  GtkPaned.wide .pane-separator:backdrop {
-    border-color: #a8a8a8; }
+  /*GtkPaned.wide.vertical .pane-separator {
+    border-style: solid none; }*/
+  /*GtkPaned.wide .pane-separator:backdrop {
+    border-color: #a8a8a8; }*/
 
 
 /**************
