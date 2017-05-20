@@ -8,5 +8,5 @@ Encoding=UTF-8
 GtkTheme=Arc
 MetacityTheme=Arc
 IconTheme=gnome
-CursorTheme=DMZ-Black
-ButtonLayout=menu:minimize,maximize,close
+CursorTheme=Bluecurve
+ButtonLayout=close,minimize,maximize:

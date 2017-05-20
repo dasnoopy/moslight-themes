@@ -3,8 +3,6 @@ Mos*-themes
 
 Simple GTK2/GTK3 and Gnome shell themes
 
-Some notes:
-
 * **MosLight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
   GTK3 v3.12.x libs.
 
@@ -17,7 +15,15 @@ Some notes:
 * **MosCloud** is a theme designed **only** for Gnome 3.18: it works only with GTK2 v2.24.x 
   and GTK3 v3.18.x libs
 
-these are always WIP versions. Stable versions are available on my deviantart page (http://dasnoopy.deviantart.com/)
+Stable versions are available on my deviantart page (http://dasnoopy.deviantart.com/)
+
+
+Just for fun: 
+
+* **MosArc** is a theme based on ARC-solid  theme  and works for Gnome 3.24 (I don't know if it works also for previous gnome versions). GTK2 v2.24.x 
+  and GTK3 v3.22.x libs are required. Noticeable changes are OSX like windows and some minor changes regarding padding.
+
+Some notes:
 
 To install the theme, copy it into `/usr/share/themes` (for all users)
 
