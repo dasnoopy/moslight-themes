@@ -17,13 +17,12 @@ Simple GTK2/GTK3 and Gnome shell themes
 
 Stable versions are available on my deviantart page (http://dasnoopy.deviantart.com/)
 
+**Just for fun:**
 
-Just for fun: 
+* **MosArc** is a GTK2/3 and gnome shell theme based on ARC theme (https://github.com/horst3180/Arc-theme) and it works for Gnome 3.24 (I don't know if it works also for previous gnome versions). GTK2 v2.24.x 
+  and GTK3 v3.22.x libs are required. Noticeable changes are OSX like windows with reduced padding and few other minor changes 
 
-* **MosArc** is a theme based on ARC-solid  theme  and works for Gnome 3.24 (I don't know if it works also for previous gnome versions). GTK2 v2.24.x 
-  and GTK3 v3.22.x libs are required. Noticeable changes are OSX like windows and some minor changes regarding padding.
-
-Some notes:
+**Some notes:**
 
 To install the theme, copy it into `/usr/share/themes` (for all users)
 
