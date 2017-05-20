@@ -980,7 +980,7 @@ headerbar,
   .default-decoration.titlebar:backdrop:not(headerbar),
   .csd .default-decoration.titlebar:backdrop:not(headerbar) {
     min-height: 28px;
-    padding: 0 3px;
+    padding: 0 7px;
     background-color: #e7e8eb;
     border-bottom-width: 0; }
     .maximized headerbar.default-decoration, .maximized
