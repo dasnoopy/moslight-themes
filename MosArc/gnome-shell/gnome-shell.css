@@ -630,7 +630,7 @@ StScrollBar {
     border-bottom-width: 1px;
     border-color: transparent; }
     #panel .panel-button .app-menu-icon {
-      -st-icon-style: symbolic;
+      -st-icon-style: regular;
       margin-left: 4px;
       margin-right: 4px; }
     #panel .panel-button:hover {

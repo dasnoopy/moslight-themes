@@ -20,7 +20,7 @@ Stable versions are available on my deviantart page (http://dasnoopy.deviantart.
 **Just for fun:**
 
 * **MosArc** is a GTK2/3 and gnome shell theme based on ARC theme (https://github.com/horst3180/Arc-theme) and it works for Gnome 3.24 (I don't know if it works also for previous gnome versions). GTK2 v2.24.x 
-  and GTK3 v3.22.x libs are required. Noticeable changes are OSX like windows with reduced padding and few other minor changes 
+  and GTK3 v3.22.x libs are required. Noticeable changes are OSX like windows contros with reduced padding and few other minor changes.
 
 **Some notes:**
 
