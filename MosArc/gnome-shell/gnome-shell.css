@@ -17,7 +17,7 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 stage {
-  font-family: SFNS Display, Helvetica, Cantarell, Sans-Serif;
+  font-family: Product Sans, Roboto Condensed, Cantarell, Sans-Serif;
   font-size: 10pt;
   color: #D3DAE3; }
 
@@ -1208,9 +1208,9 @@ StScrollBar {
 
 .dash-label {
   border-radius: 2px;
-  padding: 4px 12px;
-  color: #ffffff;
-  background-color: rgba(53, 57, 69, 0.7);
+  padding: 2px 10px;
+  color: #5c616c;
+  background-color: rgba(245, 246, 247, 1.0);
   text-align: center;
   -x-offset: 3px; }
   .bottom .dash-label, .top .dash-label {

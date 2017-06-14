@@ -52,6 +52,6 @@ Search for the engines in your distribution's repository or install the engines 
 **How they looks like :**
 ![MosSky GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MosSky.png)
 
-- MosaArc
+- MosArc
 ![MosArc GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MosArc.png)
 
