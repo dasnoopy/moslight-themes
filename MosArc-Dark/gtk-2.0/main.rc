@@ -61,7 +61,7 @@ style "default" {
   GtkTreeView::horizontal-separator = 4
   GtkTreeView::allow-rules = 1
   GtkTreeView::odd_row_color = shade(0.98, @base_color)
-  
+
   GtkExpander::expander-size = 11
 
   GnomeHRef::link_color = @link_color
