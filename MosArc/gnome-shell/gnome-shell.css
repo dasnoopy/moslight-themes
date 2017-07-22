@@ -1171,7 +1171,7 @@ StScrollBar {
 .search-entry {
   width: 320px;
   padding: 7px 9px;
-  border-radius: 20px;
+  border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   background-color: rgba(64, 69, 82, 0.9); }
   .search-entry:focus {
@@ -1286,6 +1286,11 @@ StScrollBar {
   height: 2px;
   margin-bottom: 2px;
   background-color: #5294e2; }
+
+
+#dashtopanelMainPanel .show-apps {
+    padding: 2px;
+}
 
 #dashtodockContainer .app-well-app-running-dot {
   background: none;

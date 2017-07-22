@@ -121,6 +121,51 @@ spinner {
     spinner:checked:disabled {
       opacity: 0.5; }
 
+
+.entry-tag { 
+	padding: 4px; 
+	margin-top: 2px; 
+	margin-bottom: 2px;
+	border-style: none;
+	border-radius: 2px;
+	color: #ffffff;
+	background-color: #5294e2;
+}
+
+:dir(ltr) .entry-tag { 
+	margin-left: 8px;
+	margin-right: -4px;
+}
+
+:dir(rtl) .entry-tag {
+	margin-left: -4px;
+	margin-right: 8px;
+ }
+
+.entry-tag:hover {
+	background-color: #5294e2;
+}
+
+:backdrop .entry-tag {
+	color: #F7F7F7;
+	background-color: #5294e2;
+}
+
+.entry-tag.button {
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+:not(:backdrop) .entry-tag.button:hover {
+	border: 1px solid #5294e2;
+	color: #ffffff;
+}
+
+:not(:backdrop) .entry-tag.button:active {
+	background-color: #5294e2;
+	color: rgba(255, 255, 255, 0.7);
+}
+
 entry {
   min-height: 22px;
   border: 1px solid;
