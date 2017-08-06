@@ -1787,6 +1787,7 @@ notebook {
         background-color: rgba(64, 69, 82, 0.5);
         border-color: #2b2e39; }
       notebook > header > tabs > tab:checked {
+		font-weight: bold;
         color: #D3DAE3;
         background-color: #404552;
         border-color: #2b2e39; }
