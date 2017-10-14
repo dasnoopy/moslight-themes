@@ -4233,7 +4233,7 @@ filechooser actionbar {
   background-color: #ffffff; }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, #353945, #353945); }
+  background-image: linear-gradient(to bottom, #d4d5db, #d4d5db); }
 
 .gedit-bottom-panel-paned > separator {
   background-image: linear-gradient(to bottom, #dcdfe3, #dcdfe3); }
