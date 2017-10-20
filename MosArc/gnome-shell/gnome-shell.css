@@ -646,14 +646,17 @@ StScrollBar {
   .tile-preview-left.tile-preview-right.on-primary {
     border-radius: 0px 0px 0 0; }
 
+/* TOP BAR */
+
 #panel {
   font-weight: normal;
   height: 2.1em;
-  min-height: 27px;
+  min-height: 24px;
   background-gradient-direction: none;
-  background-color: transparent;
-  border-bottom-width: 0;
-  border-image: url("common-assets/panel/panel.svg") 1 1 1 1; }
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.35); }
+  
+  
   #panel.dynamic-top-bar-white-btn {
     border-image: none; }
   #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
@@ -678,17 +681,18 @@ StScrollBar {
     -natural-hpadding: 10px;
     -minimum-hpadding: 6px;
     font-weight: normal;
-    color: white;
+    color: #ffffff;
     transition-duration: 100ms;
     border-bottom-width: 1px;
     border-color: transparent; }
     #panel .panel-button .app-menu-icon {
-      -st-icon-style: symbolic;
-      margin-left: 4px;
-      margin-right: 4px; }
+      width: 0;
+      height: 0;
+      margin-left: 0px;
+      margin-right: 0px; }
     #panel .panel-button:hover {
-      color: white;
-      background-color: rgba(0, 0, 0, 0.17);
+      color:#ffffff;
+      background-color: #5294e2;
       border-bottom-width: 1px;
       border-color: transparent; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
@@ -696,7 +700,7 @@ StScrollBar {
       background-color: #5294e2;
       box-shadow: none;
       border-bottom-width: 1px;
-      border-color: black; }
+      border-color: transparent; }
       #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
         icon-shadow: none; }
     #panel .panel-button .system-status-icon {
@@ -729,9 +733,9 @@ StScrollBar {
   #panel .popup-menu-arrow {
     width: 0; }
 
-/* disable activities icon and leave the default */
 #panel #panelActivities.panel-button > * {
   background-image: url("common-assets/panel/activities.svg");
+  background-position: center top;
   width: 24px;
   height: 24px;
   background-color: transparent !important;
@@ -749,6 +753,7 @@ StScrollBar {
   border-color: transparent; }
   #panel #panelActivities.panel-button:active > *, #panel #panelActivities.panel-button:overview > *, #panel #panelActivities.panel-button:focus > *, #panel #panelActivities.panel-button:checked > * {
     background-image: url("common-assets/panel/activities-active.svg"); }
+
 
 .system-switch-user-submenu-icon {
   icon-size: 20px;

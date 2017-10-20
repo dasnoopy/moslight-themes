@@ -1091,9 +1091,9 @@ window.csd > .titlebar:not(headerbar):backdrop {
   .primary-toolbar entry:backdrop, headerbar entry:backdrop {
     opacity: 0.85; }
   .primary-toolbar entry:focus, headerbar entry:focus {
-    color: #ffffff;
+    color: rgba(82, 93, 118, 0.8);
     border-color: #5294e2;
-    background-color: #5294e2;
+    background-color: rgba(255, 255, 255, 0.9);
     background-clip: border-box; }
     .primary-toolbar entry:focus image, headerbar entry:focus image {
       color: #ffffff; }
@@ -1102,8 +1102,8 @@ window.csd > .titlebar:not(headerbar):backdrop {
     border-color: rgba(82, 93, 118, 0.1);
     background-color: rgba(255, 255, 255, 0.75); }
   .primary-toolbar entry selection:focus, headerbar entry selection:focus {
-    background-color: #ffffff;
-    color: #5294e2; }
+    background-color: #5294e2;
+    color: #ffffff; }
   .primary-toolbar entry progress, headerbar entry progress {
     border-color: #5294e2;
     background-image: none;
