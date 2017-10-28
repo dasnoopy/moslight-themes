@@ -653,7 +653,7 @@ StScrollBar {
   height: 2.1em;
   min-height: 24px;
   background-gradient-direction: none;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(19, 29, 39, 0.65);
   box-shadow: none; }
   
   
@@ -663,6 +663,8 @@ StScrollBar {
     background-color: transparent;
     border-image: none; }
   #panel:overview {
+	background-color: rgba(19, 29, 39, 0.9);
+    box-shadow: none; 
     border-image: none;  }
   #panel #panelLeft, #panel #panelCenter {
     spacing: 8px; }
@@ -1238,7 +1240,7 @@ StScrollBar {
 #dash {
   font-size: 1em;
   color: #BAC3CF;
-  background-color: rgba(53, 57, 69, 0.95);
+  background-color: rgba(53, 57, 69, 0.65);
   border-color: rgba(0, 0, 0, 0.4);
   padding: 4px 0;
   border-radius: 0 3px 3px 0; }
