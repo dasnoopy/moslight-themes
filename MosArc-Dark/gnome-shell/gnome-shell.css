@@ -915,11 +915,11 @@ StScrollBar {
 .calendar-day-base {
   font-size: 80%;
   text-align: center;
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 21px;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 2px; }
+  border-radius: 24px; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: rgba(255, 255, 255, 0.15); }
   .calendar-day-base:active {
