@@ -1889,7 +1889,7 @@ headerbar switch {
   border: 4px solid transparent;}
 
 switch:disabled {
-  background-color: #5d656d; }
+  background-color: #2e3436; }
 
 switch:checked {
   background-color: #5294e2;  }

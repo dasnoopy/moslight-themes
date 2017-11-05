@@ -1891,7 +1891,7 @@ headerbar switch {
   border: 4px solid transparent;}
 
 switch:disabled {
-  color: alpha(currentColor, 0.6); }
+  color: alpha(currentColor, 0.4); }
 
 switch:checked {
   background-color: #5294e2; }
