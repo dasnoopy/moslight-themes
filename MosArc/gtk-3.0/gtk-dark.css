@@ -1869,69 +1869,63 @@ scrollbar {
   scrollbar.vertical slider {
     min-height: 40px; }
 
+
+/***************************************************************************************************************/
+/*-------------- SWITCH ---------------------------------------------------------------------------------------*/
+/***************************************************************************************************************/
 switch {
-  font-size: 1px;
-  min-width: 52px;
-  min-height: 24px;
-  background-size: 52px 24px;
-  background-repeat: no-repeat;
-  background-position: center center; }
-  switch slider {
-    min-width: 1px;
-    min-height: 1px; }
-  switch, switch slider {
-    outline-color: transparent;
-    color: transparent;
-    border: none;
-    box-shadow: none; }
+  min-width: 16px;
+  min-height: 16px;
+  border-radius:100px;
+  background-color: #5d656d;
+  /*background-color: rgba(134, 144, 165, 0.37);*/
+  border-color: #2b2e39;
+  /*border: 1.2px solid #2b2e39;*/
+  background-clip: padding-box;
+  font-size: 0; }
 
-switch {
-  background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
-
-menuitem:hover switch,
-row:selected switch,
-infobar switch {
-  background-image: -gtk-scaled(url("assets/switch-selected.png"), url("assets/switch-selected@2.png")); }
-
-headerbar switch,
-.primary-toolbar switch {
-  background-image: -gtk-scaled(url("assets/switch-header-dark.png"), url("assets/switch-header-dark@2.png")); }
-
-switch:checked {
-  background-image: -gtk-scaled(url("assets/switch-active-dark.png"), url("assets/switch-active-dark@2.png")); }
-
-menuitem:hover switch:checked,
-row:selected switch:checked,
-infobar switch:checked {
-  background-image: -gtk-scaled(url("assets/switch-active-selected.png"), url("assets/switch-active-selected@2.png")); }
-
-headerbar switch:checked,
-.primary-toolbar switch:checked {
-  background-image: -gtk-scaled(url("assets/switch-active-header-dark.png"), url("assets/switch-active-header-dark@2.png")); }
+headerbar switch {
+  margin: 5px 0;
+  border: 4px solid transparent;}
 
 switch:disabled {
-  background-image: -gtk-scaled(url("assets/switch-insensitive-dark.png"), url("assets/switch-insensitive-dark@2.png")); }
+  background-color: #5d656d; }
 
-menuitem:hover switch:disabled,
-row:selected switch:disabled,
-infobar switch:disabled {
-  background-image: -gtk-scaled(url("assets/switch-insensitive-selected.png"), url("assets/switch-insensitive-selected@2.png")); }
-
-headerbar switch:disabled,
-.primary-toolbar switch:disabled {
-  background-image: -gtk-scaled(url("assets/switch-insensitive-header-dark.png"), url("assets/switch-insensitive-header-dark@2.png")); }
+switch:checked {
+  background-color: #5294e2;  }
 
 switch:checked:disabled {
-  background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"), url("assets/switch-active-insensitive-dark@2.png")); }
+  background-color: rgba(12, 170, 240, 0.2);
+  color: rgba(0, 0, 0, 0.32); }
 
-menuitem:hover switch:checked:disabled,
-row:selected switch:checked:disabled,
-infobar switch:checked:disabled {
-  background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected.png"), url("assets/switch-active-insensitive-selected@2.png")); }
+switch slider {
+  border-image: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #383C4A;
+  color: rgba(0, 0, 0, 0.1);
+  min-width: 16px;
+  min-height: 16px;
+  margin: 2px 0 2px 3px;
+  border-radius: 100px;
+  border: 1.2px solid #2b2e39;
+   }
 
-headerbar switch:checked:disabled,
-.primary-toolbar switch:checked:disabled {
-  background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
+switch:hover slider {
+  border-image: none;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23); 
+ }
+
+switch:checked slider {
+  margin: 2px 3px 2px 0;
+  background-color: #383C4A;
+  color: #71c837;}
+
+switch:disabled slider {
+  background-color: #383C4A;}
+  switch:checked:disabled slider {
+  animation: none; }
+
+
 
 .check,
 check,
