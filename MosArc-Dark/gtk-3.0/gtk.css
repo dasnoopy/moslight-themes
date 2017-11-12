@@ -176,7 +176,7 @@ entry {
   border-color: #2b2e39;
   background-color: #404552; }
   entry.search {
-    border-radius: 20px; }
+    border-radius: 4px; }
   entry image {
     color: #b6bcc6; }
     entry image.left {
@@ -1558,7 +1558,7 @@ menu,
   .csd
   .menu separator {
     margin: 2px 0;
-    background-color: #383C4A; }
+    background-color: #555753; }
   menu .separator:not(label),
   .csd menu .separator:not(label),
   .menu .separator:not(label),

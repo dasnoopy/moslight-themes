@@ -177,7 +177,7 @@ entry {
   border-color: #cfd6e6;
   background-color: #ffffff; }
   entry.search {
-    border-radius: 20px; }
+    border-radius: 4px; }
   entry image {
     color: #7d8189; }
     entry image.left {
@@ -1562,7 +1562,7 @@ menu,
   .csd
   .menu separator {
     margin: 2px 0;
-    background-color: #ffffff; }
+    background-color: @borders; }
   menu .separator:not(label),
   .csd menu .separator:not(label),
   .menu .separator:not(label),
@@ -1646,7 +1646,7 @@ popover.background {
     border: 1px solid #cdd2d7; }
   popover separator,
   popover.background separator {
-    background-color: #ffffff; }
+   background-color: #ffffff; }
   popover > list,
   popover > .view,
   popover > iconview,
@@ -2609,6 +2609,8 @@ filechooserbutton:drop(active) {
     background-color: transparent; }
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
     border-style: none; }
+
+
 
 stacksidebar row {
   padding: 10px 4px; }
@@ -4302,6 +4304,7 @@ filechooser placessidebar.sidebar scrollbar,
   filechooser placessidebar.sidebar scrollbar trough,
   .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
     background-color: #2a2d37; }
+
 
 @define-color theme_fg_color #5c616c;
 @define-color theme_text_color #5c616c;
