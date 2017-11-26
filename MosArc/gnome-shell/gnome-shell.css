@@ -737,7 +737,7 @@ StScrollBar {
 
 #panel #panelActivities.panel-button > * {
   background-image: url("common-assets/panel/activities.svg");
-  background-position: center top;
+  /*background-position: center top;*/
   width: 24px;
   height: 24px;
   background-color: transparent !important;
@@ -1237,7 +1237,6 @@ StScrollBar {
   height: 16px;
   background-image: url("common-assets/misc/more-results.svg"); }
 
-/* DASHBOARD */
 #dash {
   font-size: 1em;
   color: #BAC3CF;

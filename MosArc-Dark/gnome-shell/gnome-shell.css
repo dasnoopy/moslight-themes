@@ -737,7 +737,7 @@ StScrollBar {
 
 #panel #panelActivities.panel-button > * {
   background-image: url("common-assets/panel/activities.svg");
-  background-position: center top;
+  /*background-position: center top;*/
   width: 24px;
   height: 24px;
   background-color: transparent !important;

@@ -708,7 +708,7 @@ style "menu_framed_box" {
 style "menu_item"
 {
   xthickness = 2
-  ythickness = 5
+  ythickness = 3
 
   # HACK: Gtk doesn't actually read this value
   # while rendering the menu items, but Libreoffice
@@ -1950,15 +1950,16 @@ style "progressbar" {
 
 style "separator_menu_item" {
 
-  engine "pixmap" {
+  xthickness = 0
+  ythickness = 0
 
+  engine "pixmap" {
     image {
       function = BOX
-      file = "assets/null.png"
-      border = { 0, 0, 1, 0 }
-      stretch = TRUE
+      file     = "assets/line.png"
     }
   }
+
 }
 
 style "treeview_header" {
