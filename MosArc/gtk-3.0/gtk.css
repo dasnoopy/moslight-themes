@@ -1887,8 +1887,8 @@ switch {
   font-size: 0; }
 
 headerbar switch {
-  margin: 9px 0;
-  border: 4px solid transparent;}
+  margin: 5px 0;
+  border: 5px solid transparent;}
 
 switch:disabled {
   color: alpha(currentColor, 0.4); }
@@ -4304,6 +4304,10 @@ filechooser placessidebar.sidebar scrollbar,
   filechooser placessidebar.sidebar scrollbar trough,
   .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
     background-color: #2a2d37; }
+
+.titlebar.tweak-titlebar-right {
+  min-height: 34px;
+}
 
 
 @define-color theme_fg_color #5c616c;
