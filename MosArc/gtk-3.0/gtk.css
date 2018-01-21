@@ -15,7 +15,7 @@
   -gtk-outline-radius: 2px; }
 
 .background {
-  color: #494d56;
+  color: #3b3e45;
   background-color: #F5F6F7; }
 
 *:disabled {
@@ -23,13 +23,13 @@
 
 .gtkstyle-fallback {
   background-color: #F5F6F7;
-  color: #494d56; }
+  color: #3b3e45; }
   .gtkstyle-fallback:hover {
     background-color: white;
-    color: #494d56; }
+    color: #3b3e45; }
   .gtkstyle-fallback:active {
     background-color: #d9dde0;
-    color: #494d56; }
+    color: #3b3e45; }
   .gtkstyle-fallback:disabled {
     background-color: #fbfbfc;
     color: rgba(92, 97, 108, 0.55); }
@@ -41,7 +41,7 @@
 .view text,
 iconview text,
 textview text {
-  color: #494d56;
+  color: #3b3e45;
   background-color: #ffffff; }
   .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
@@ -68,7 +68,7 @@ flowbox flowboxchild {
 
 label.separator, popover label.separator,
 popover.background label.separator {
-  color: #494d56; }
+  color: #3b3e45; }
 
 label selection {
   color: #ffffff;
@@ -173,7 +173,7 @@ entry {
   caret-color: currentColor;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  color: #494d56;
+  color: #3b3e45;
   border-color: #cfd6e6;
   background-color: #ffffff; }
   entry.search {
@@ -194,7 +194,7 @@ entry {
     border-radius: 0; }
   entry:focus {
     background-clip: border-box;
-    color: #494d56;
+    color: #3b3e45;
     border-color: #5294e2;
     background-color: #ffffff; }
   entry:disabled {
@@ -289,7 +289,7 @@ button {
   border: 1px solid;
   border-radius: 3px;
   padding: 2px 6px;
-  color: #494d56;
+  color: #3b3e45;
   border-color: #cfd6e6;
   background-color: #fbfbfc; }
   button separator {
@@ -305,7 +305,7 @@ button {
       button.flat:hover:active, button.sidebar-button:hover:active {
         transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   button:hover {
-    color: #494d56;
+    color: #3b3e45;
     border-color: #cfd6e6;
     background-color: white;
     -gtk-icon-effect: highlight; }
@@ -319,7 +319,7 @@ button {
       color: inherit;
       opacity: 0.6; }
   button:active {
-    color: #494d56; }
+    color: #3b3e45; }
   button:active:hover, button:checked {
     color: #ffffff; }
   button.flat:disabled, button.sidebar-button:disabled {
@@ -513,11 +513,11 @@ button {
     border-width: 1px; }
 
 .inline-toolbar toolbutton > button {
-  color: #494d56;
+  color: #3b3e45;
   border-color: #cfd6e6;
   background-color: #fbfbfc; }
   .inline-toolbar toolbutton > button:hover {
-    color: #494d56;
+    color: #3b3e45;
     border-color: #cfd6e6;
     background-color: white; }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
@@ -772,7 +772,7 @@ modelbutton.flat {
     background-color: #edeff0; }
   menuitem.button.flat:checked,
   modelbutton.flat:checked {
-    color: #494d56; }
+    color: #3b3e45; }
   menuitem.button.flat check:last-child,
   menuitem.button.flat radio:last-child,
   modelbutton.flat check:last-child,
@@ -1459,7 +1459,7 @@ treeview.view {
     treeview.view.expander:dir(rtl) {
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
     treeview.view.expander:hover {
-      color: #494d56; }
+      color: #3b3e45; }
     treeview.view.expander:selected {
       color: #cbdff6; }
       treeview.view.expander:selected:hover {
@@ -1475,7 +1475,7 @@ treeview.view {
       box-shadow: none;
       background-color: #ffffff; }
   treeview.view.trough {
-    color: #494d56;
+    color: #3b3e45;
     background-color: #cfd6e6;
     border-radius: 3px;
     border-width: 0; }
@@ -1498,11 +1498,11 @@ treeview.view {
     treeview.view header button:hover {
       color: #5294e2; }
     treeview.view header button:active {
-      color: #494d56; }
+      color: #3b3e45; }
     treeview.view header button:active, treeview.view header button:hover {
       background-color: #ffffff; }
     treeview.view header button:active:hover {
-      color: #494d56; }
+      color: #3b3e45; }
     treeview.view header button:disabled {
       border-color: #F5F6F7;
       background-image: none; }
@@ -1772,7 +1772,7 @@ notebook {
       notebook > header > tabs > arrow:hover {
         color: rgba(92, 97, 108, 0.775); }
       notebook > header > tabs > arrow:active {
-        color: #494d56; }
+        color: #3b3e45; }
       notebook > header > tabs > arrow:disabled {
         color: rgba(92, 97, 108, 0.25); }
     notebook > header.top > tabs > tab:hover:not(:checked) {
@@ -1792,7 +1792,7 @@ notebook {
         border-color: #dcdfe3; }
       notebook > header > tabs > tab:checked {
 	    font-weight: bold;
-        color: #494d56;
+        color: #3b3e45;
         background-color: #ffffff;
         border-color: #dcdfe3; }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
@@ -2476,7 +2476,7 @@ row.activatable.has-open-popup, row.activatable:hover {
   background-color: rgba(0, 0, 0, 0.05); }
 
 row.activatable:active {
-  color: #494d56; }
+  color: #3b3e45; }
 
 row.activatable:disabled {
   color: rgba(92, 97, 108, 0.55); }
@@ -2520,37 +2520,33 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
       border-color: rgba(26, 28, 34, 0.4);
       background-color: rgba(102, 109, 132, 0.25); }
 
-expander arrow {
-  min-width: 16px;
-  min-height: 16px;
-  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
-  expander arrow:dir(rtl) {
-    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
-  expander arrow:hover {
-    color: #aaaeb7; }
-  expander arrow:checked {
-    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+ /************* Expanders * */
+expander title > arrow { min-width: 16px; min-height: 16px; -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+expander title > arrow:dir(rtl) { -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
+expander title > arrow:hover { color: #aaaeb7; }
+expander title > arrow:checked { -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+
 
 calendar {
-  color: #494d56;
+  color: #3b3e45;
   border: 1px solid #dcdfe3;
   border-radius: 3px;
   padding: 2px; }
   calendar:selected {
     border-radius: 1.5px; }
   calendar.header {
-    color: #494d56;
+    color: #3b3e45;
     border: none; }
   calendar.button {
     color: rgba(92, 97, 108, 0.45); }
     calendar.button:hover {
-      color: #494d56; }
+      color: #3b3e45; }
     calendar.button:disabled {
       color: rgba(92, 97, 108, 0.55); }
   calendar:indeterminate {
     color: alpha(currentColor,0.55); }
   calendar.highlight {
-    color: #494d56; }
+    color: #3b3e45; }
 
 messagedialog .titlebar {
   min-height: 20px;
@@ -2830,11 +2826,11 @@ colorswatch:disabled {
 colorswatch#add-color-button {
   border-style: solid;
   border-width: 1px;
-  color: #494d56;
+  color: #3b3e45;
   border-color: #cfd6e6;
   background-color: #fbfbfc; }
   colorswatch#add-color-button:hover {
-    color: #494d56;
+    color: #3b3e45;
     border-color: #cfd6e6;
     background-color: white; }
   colorswatch#add-color-button overlay {
@@ -2857,7 +2853,7 @@ colorchooser .popover.osd {
     -gtk-icon-effect: highlight; }
 
 .scale-popup button:hover {
-  color: #494d56;
+  color: #3b3e45;
   border-color: #cfd6e6;
   background-color: white; }
 
@@ -2884,7 +2880,7 @@ button.circular-button {
   min-width: 16px;
   min-height: 20px;
   padding: 3px 6px 4px 6px;
-  color: #494d56;
+  color: #3b3e45;
   background-color: #ffffff;
   border: 1px solid #dcdfe3;
   border-radius: 2.5px;
@@ -3070,7 +3066,7 @@ terminal-window notebook > header.top,
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }
   .nautilus-desktop.nautilus-canvas-item:active, .nemo-desktop.nemo-canvas-item:active, .caja-desktop:active {
-    color: #494d56; }
+    color: #3b3e45; }
   .nautilus-desktop.nautilus-canvas-item:selected, .nemo-desktop.nemo-canvas-item:selected, .caja-desktop:selected {
     color: #ffffff;
     text-shadow: none; }
@@ -3144,7 +3140,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
 .nemo-window .nemo-window-pane widget.entry {
   border: 1px solid;
   border-radius: 3px;
-  color: #494d56;
+  color: #3b3e45;
   border-color: #5294e2;
   background-color: #ffffff; }
 
@@ -3194,7 +3190,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
       background-color: #5294e2; }
 
 .open-document-selector-name-label {
-  color: #494d56; }
+  color: #3b3e45; }
 
 .open-document-selector-path-label {
   color: #aeb0b6;
@@ -3218,7 +3214,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
   .gedit-document-panel row:hover:not(:selected) button:hover {
     color: #ff4d4d; }
   .gedit-document-panel row:hover:not(:selected) button:active {
-    color: #494d56; }
+    color: #3b3e45; }
 
 .gedit-document-panel row:hover:selected button:hover {
   color: #ff6666;
@@ -3231,7 +3227,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
 .gedit-document-panel-dragged-row {
   border: 1px solid #dcdfe3;
   background-color: #d9dde0;
-  color: #494d56; }
+  color: #3b3e45; }
 
 .gedit-side-panel-paned statusbar {
   border-top: 1px solid #dcdfe3;
@@ -3383,7 +3379,7 @@ gstyleslidein #scale_box button.toggle:checked,
 gstyleslidein #strings_controls button.toggle:checked,
 gstyleslidein #palette_controls button.toggle:checked,
 gstyleslidein #components_controls button.toggle:checked {
-  color: #494d56; }
+  color: #3b3e45; }
 
 configurationview entry.flat {
   background: none; }
@@ -3636,7 +3632,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   background-image: linear-gradient(to bottom, white, white);
   background-color: transparent; }
   .gala-notification .title, .gala-notification .label {
-    color: #494d56; }
+    color: #3b3e45; }
 
 .panel {
   background-color: transparent;
@@ -3860,7 +3856,7 @@ toolbar.bottom-toolbar, .bottom-toolbar.inline-toolbar {
 .source-list.view,
 iconview.source-list {
   background-color: #F5F6F7;
-  color: #494d56;
+  color: #3b3e45;
   -gtk-icon-style: regular; }
 
 .source-list.category-expander {
@@ -3905,7 +3901,7 @@ iconview.source-list:selected:focus,
   color: #5294e2; }
 
 .source-list.category-expander {
-  color: #494d56;
+  color: #3b3e45;
   -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
   -GtkTreeView-expander-size: 16; }
 
@@ -3997,7 +3993,7 @@ GtkListBox .h4 {
   font-weight: normal;
   border-style: none;
   background-color: transparent;
-  color: #494d56; }
+  color: #3b3e45; }
 
 #content_frame {
   padding-bottom: 14px;
@@ -4008,11 +4004,11 @@ GtkListBox .h4 {
   border-width: 1px 1px 0 1px; }
 
 #content_frame button {
-  color: #494d56;
+  color: #3b3e45;
   border-color: #cfd6e6;
   background-color: #fbfbfc; }
   #content_frame button:hover {
-    color: #494d56;
+    color: #3b3e45;
     border-color: #cfd6e6;
     background-color: white; }
   #content_frame button:active, #content_frame button:checked {
@@ -4054,7 +4050,7 @@ GtkListBox .h4 {
     background-color: rgba(102, 109, 132, 0.25); }
 
 #login_window #user_combobox {
-  color: #494d56;
+  color: #3b3e45;
   font-size: 13px; }
   #login_window #user_combobox menu {
     font-weight: normal; }
@@ -4305,23 +4301,23 @@ filechooser placessidebar.sidebar scrollbar,
   .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
     background-color: #2a2d37; }
 
-@define-color theme_fg_color #494d56;
-@define-color theme_text_color #494d56;
+@define-color theme_fg_color #3b3e45;
+@define-color theme_text_color #3b3e45;
 @define-color theme_bg_color #F5F6F7;
 @define-color theme_base_color #ffffff;
 @define-color theme_selected_bg_color #5294e2;
 @define-color theme_selected_fg_color #ffffff;
-@define-color fg_color #494d56;
-@define-color text_color #494d56;
+@define-color fg_color #3b3e45;
+@define-color text_color #3b3e45;
 @define-color bg_color #F5F6F7;
 @define-color base_color #ffffff;
 @define-color selected_bg_color #5294e2;
 @define-color selected_fg_color #ffffff;
 @define-color insensitive_bg_color #fbfbfc;
-@define-color insensitive_fg_color alpha(#494d56, 0.5);
+@define-color insensitive_fg_color alpha(#3b3e45, 0.5);
 @define-color insensitive_base_color #ffffff;
-@define-color theme_unfocused_fg_color #494d56;
-@define-color theme_unfocused_text_color #494d56;
+@define-color theme_unfocused_fg_color #3b3e45;
+@define-color theme_unfocused_text_color #3b3e45;
 @define-color theme_unfocused_bg_color #F5F6F7;
 @define-color theme_unfocused_base_color #ffffff;
 @define-color borders #dcdfe3;
