@@ -1,0 +1,261 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"w",
+				"white"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"border-le",
+				"border-left-color"
+			],
+			[
+				"bo",
+				"border-left-width"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"border-t",
+				"border-top-color"
+			],
+			[
+				"font-s",
+				"font-style"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "sa",
+		"selected_items":
+		[
+			[
+				"sa",
+				"File: Save All"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Color",
+				"Colorsublime: Install Theme"
+			]
+		],
+		"width": 459.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"Colors"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/andrea/Documents/WebProjects/Nuovo sito/include/footer.js",
+		"/home/andrea/Documents/WebProjects/Nuovo sito/include/header.js",
+		"/home/andrea/Documents/WebProjects/Nuovo sito/css/main.css",
+		"/home/andrea/Documents/WebProjects/Nuovo sito/bookmarks.html",
+		"/home/andrea/Documents/WebProjects/Nuovo sito/linux.html",
+		"/home/andrea/Documents/WebProjects/Nuovo sito/bici.html",
+		"/home/andrea/Documents/WebProjects/Nuovo sito/index.html",
+		"/home/andrea/Documents/WebProjects/untitled.html",
+		"/home/andrea/.config/sublime-text-3/Packages/User/ColorPicker.sublime-settings",
+		"/home/andrea/.config/sublime-text-3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/home/andrea/Documents/WebProjects/Nuovo sito/images/header.jpg",
+		"/home/andrea/Documents/Website_New/css/main.css",
+		"/home/andrea/Documents/Website_New/include/header.js",
+		"/home/andrea/Documents/Website_New/include/footer.js",
+		"/home/andrea/Documents/Website_New/bookmarks.html",
+		"/home/andrea/Documents/Website_New/linux.html",
+		"/home/andrea/Documents/Website_New/bici.html",
+		"/home/andrea/Documents/Website_New/index.html",
+		"/home/andrea/Documents/Website_New/lessonsinhtml.html",
+		"/home/andrea/.config/sublime-text-3/Packages/User/Side Bar.sublime-settings",
+		"/home/andrea/.config/sublime-text-3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/home/andrea/.config/sublime-text-3/Packages/Colorsublime/Colorsublime.sublime-settings"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Arimo",
+			"Roboto",
+			"Simonetta",
+			"Gruppo",
+			"Coda",
+			"3D4852",
+			"font",
+			"A5F1FF",
+			", \"Helvetica Neue\",",
+			"#;",
+			"ffffff",
+			"d0d0d0",
+			"454955",
+			"h3",
+			"\">\n",
+			";\n",
+			"\n<",
+			"”"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Raleway",
+			"Arimo",
+			"Roboto",
+			"Simonetta",
+			"Gruppo",
+			"caption",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gnome-shell.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
