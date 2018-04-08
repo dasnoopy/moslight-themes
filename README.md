@@ -3,7 +3,7 @@
 
 Simple GTK2/GTK3 and Gnome shell themes
 
-**MosArc is the current theme and it works for Gnome 3.28.x (should work also withGnome 3.24.x and 3.26.x)**
+**MosArc is the current theme and it works for Gnome 3.28.x (should work also with Gnome 3.24.x and 3.26.x)**
 
 **MosArc** is a GTK2/3 and gnome shell theme based on ARC theme (https://github.com/horst3180/Arc-theme). GTK2 v2.24.x 
   and GTK3 v3.22.x libs are required. Noticeable changes are:
@@ -11,6 +11,7 @@ Simple GTK2/GTK3 and Gnome shell themes
   * OSX like windows controls
   * reduced widget padding
   * darker text color
+  * different switch widget
   * a bunch of other minor changes.
 
 
@@ -37,14 +38,14 @@ You can find these old themes also on deviantart page (http://dasnoopy.deviantar
 
 **Some notes:**
 
-* To install the theme, copy it into `/usr/share/themes` (for all users)
+* To install the theme, copy theme folder into `/usr/share/themes` (for all users)
 
 * If you copy theme in your `~/.local/share/themes`, create also a symbolic links in your home dir to
 that folder
 
     `$ ln -s ~/.local/share/themes .themes`
 
-* use Gnome-Tweak to choose the theme.
+* then, use Gnome-Tweak to choose the theme.
 
 **GTK2 ENGINES REQUIREMENT**
 
@@ -58,6 +59,6 @@ that folder
 
 **How to install required gtk2/3 engines:**
 
-*ArchLinux*:  $pacman -S gtk-engine-murrine gtk-engines gnome-themes-standard
+*ArchLinux*:  `$pacman -S gtk-engine-murrine gtk-engines gnome-themes-standard`
 
 *Other distro*: Search for the engines in your distribution's repository or install the engines from source.
