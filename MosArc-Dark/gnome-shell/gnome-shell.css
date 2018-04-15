@@ -1164,15 +1164,15 @@ StScrollBar {
     padding: 32px; }
 
 .window-clone-border {
-  border: 3px solid rgba(82, 148, 226, 0.8);
-  border-radius: 4px;
+  border: 3px solid rgba(82, 148, 226, 1.0);
+  border-radius: 3px;
   box-shadow: inset 0px 0px 0px 1px rgba(82, 148, 226, 0); }
 
 .window-caption, .window-caption:hover {
   spacing: 25px;
-  color: #BAC3CF;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 2px;
+  color: #fffff;
+  background-color: rgba(82, 148, 226, 1.0);
+  border-radius: 3px;
   padding: 4px 12px;
   -shell-caption-spacing: 12px; }
 
