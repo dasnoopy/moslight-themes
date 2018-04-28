@@ -2759,7 +2759,7 @@ tooltip {
     background-color: #4b5162;
     background-clip: padding-box; }
     tooltip.background label {
-      padding: 4px; }
+      padding: 0; }
   tooltip decoration {
     background-color: transparent; }
   tooltip * {
