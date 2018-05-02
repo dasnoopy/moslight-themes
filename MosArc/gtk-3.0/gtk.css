@@ -1527,7 +1527,8 @@ menubar,
   -GtkWidget-window-dragging: true;
   padding: 0px;
   background-color: #e7e8eb;
-  color: rgba(58, 66, 84, 0.8); }
+  color: rgba(58, 66, 84, 0.8);
+  border-bottom: 1px solid #cdd2d7; }
   menubar:backdrop,
   .menubar:backdrop {
     color: rgba(58, 66, 84, 0.5); }
@@ -2762,7 +2763,7 @@ tooltip {
   border-radius: 2px;
   box-shadow: none; }
   tooltip.background {
-  background-color: rgba(232, 232, 232, 0.95);
+  background-color: rgba(16, 16, 24, 0.75);
   background-clip: padding-box; }
     tooltip.background label {
       padding: 0; }
@@ -2770,7 +2771,7 @@ tooltip {
     background-color: transparent; }
   tooltip * {
     background-color: transparent;
-    color: #32343d; }
+    color: #ffffff; }
 
 colorswatch, colorswatch:drop(active) {
   border-style: none; }

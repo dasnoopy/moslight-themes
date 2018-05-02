@@ -1523,7 +1523,8 @@ menubar,
   -GtkWidget-window-dragging: true;
   padding: 0px;
   background-color: #2f343f;
-  color: rgba(207, 218, 231, 0.8); }
+  color: rgba(207, 218, 231, 0.8);
+  border-bottom: 1px solid #2b2e39;  }
   menubar:backdrop,
   .menubar:backdrop {
     color: rgba(207, 218, 231, 0.5); }
@@ -2762,7 +2763,7 @@ tooltip {
     background-color: #4b5162;
     background-clip: padding-box; }
     tooltip.background label {
-      padding: 4px; }
+      padding: 0; }
   tooltip decoration {
     background-color: transparent; }
   tooltip * {
@@ -4165,7 +4166,6 @@ filechooser placessidebar.sidebar,
         color: #ffffff;
         border-color: #2b2e39;
         background-color: #5294e2; }
-
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
         opacity: 0.5; }
