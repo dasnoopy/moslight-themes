@@ -962,8 +962,7 @@ headerbar,
   border-color: #d4d5db;
   color: rgba(58, 66, 84, 0.8);
   background-color: #e7e8eb;
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.12), 5px 0 5px -5px rgba(0, 0, 0, 0.08), inset 0 1px rgba(255, 255, 255, 0.4);
-/*  box-shadow: inset 0 1px transparent;*/ }
+  box-shadow: inset 0 1px transparent; }
   .csd headerbar,
   .csd .titlebar:not(headerbar) {
     background-color: #e7e8eb;
@@ -1041,7 +1040,9 @@ headerbar,
       background-color: #e7e8eb; }
 
 .titlebar {
-  border-radius: 4px 4px 0 0; }
+  border-radius: 4px 4px 0 0; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
 
 headerbar entry, headerbar button, headerbar separator {
   margin-top: 6px;

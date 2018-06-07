@@ -1,6 +1,5 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-
   /* The button box must appear on top of the navigator-toolbox in order for
    * click and hover mouse events to work properly for the button in the restored
    * window state. Otherwise, elements in the navigator-toolbox, like the menubar,
@@ -15,12 +14,11 @@
  */
 #TabsToolbar {
   margin-top: 0px !important;
-  padding-top: 0px !important;
+  padding-top: 3px !important;
   background-color: #E7E8EB !important;
 }
 
 /* tabs margins in normal view*/
-
 .tabbrowser-tab {
     margin: 3px -28px 0 0 !important;
 }
@@ -57,11 +55,12 @@
 
 /* FIREFOX 59+ TABS come GOOGLE CHROME */
 
-/* disabilta bordo tondo attorno al pulsante back */
+/* rounded back button */
 :root:not([uidensity=compact]) #back-button>.toolbarbutton-icon {
-    background-color: initial !important;
-    border: 2px dotted #888888 !important;
+    background-color: white !important;
+    border: 1px solid #a0a0a0 !important;
 	box-shadow: none !important;
+    transform: scale(.85, .85) !important;
 }
 
 .tabbrowser-tab::after,
@@ -132,7 +131,7 @@
 
 .tab-text.tab-label {
     text-shadow: initial !important;
-    color: #888888 !important;
+    color: #999999 !important;
     padding: 2px 2px !important;
     font-style: unset;
     font-size: 14px !important;
