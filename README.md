@@ -3,7 +3,7 @@
 
 Simple GTK2/GTK3 and Gnome shell themes
 
-**MosArc is the current theme and it works for Gnome 3.28.x (should work also with Gnome 3.24.x and 3.26.x)**
+**MosArc is the current theme and it works for Gnome 3.28.x (should works also with Gnome 3.24.x and 3.26.x)**
 
 **MosArc** is a GTK2/3 and gnome shell theme based on ARC theme (https://github.com/horst3180/Arc-theme). GTK2 v2.24.x 
   and GTK3 v3.22.x libs are required. Noticeable changes are:
@@ -13,6 +13,7 @@ Simple GTK2/GTK3 and Gnome shell themes
   * darker text color
   * different switch widget
   * a bunch of other minor changes.
+  * reworked nautilus sidebar (stolen idea from other gtk3 theme see around)
 
 
 ![MosArc GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MosArc.png)
