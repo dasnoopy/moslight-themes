@@ -55,6 +55,15 @@
 
 /* FIREFOX 59+ TABS come GOOGLE CHROME */
 
+.tab-close-button:hover {
+	fill-opacity: 0 !important;
+    color: red !important;
+}
+
+.tab-loading-burst {
+display: none !important;
+}
+
 /* rounded back button */
 :root:not([uidensity=compact]) #back-button>.toolbarbutton-icon {
     background-color: white !important;

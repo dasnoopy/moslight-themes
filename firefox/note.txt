@@ -1,0 +1,10 @@
+userChrome.css
+
+copy the file in 
+/home/yourUser/.mozilla/firefox/xxyyzzyzx.default/chrome
+
+works with:
+
+firefox 60.x
+firefox 61.x
+
