@@ -1882,54 +1882,145 @@ scrollbar {
 /*              SWITCH                                                 */
 /***********************************************************************/
 
-switch {
-  min-width: 36px;
-  min-height: 20px;
-  background-size:36px 20px;
-  border-radius:100px;
-  background-color: alpha(currentColor, 0.3);
+row switch:not(:indeterminate), row switch:not(:indeterminate) slider:not(:indeterminate), .raven .raven-background switch:not(:indeterminate), .raven .raven-background switch:not(:indeterminate) slider:not(:indeterminate), row switch:disabled:not(:indeterminate), row switch:not(:indeterminate) slider:disabled:not(:indeterminate), .raven .raven-background switch:disabled:not(:indeterminate), .raven .raven-background switch:not(:indeterminate) slider:disabled:not(:indeterminate) {
+  padding: 0;
+  border: none;
+  color: transparent;
+  background: unset;
+  background-image: unset;
   background-repeat: no-repeat;
-  background-position: center center;
-  font-size: 1px; }
+  background-position: right center;
+  box-shadow: none;
+  animation: none;
+  font-size: 0;
+  outline-color: transparent;
+}
 
-headerbar switch {
-  margin: 5px 0;
-  border: 5px solid transparent;}
+row switch:dir(rtl):not(:indeterminate), row switch:not(:indeterminate) slider:dir(rtl):not(:indeterminate), .raven .raven-background switch:dir(rtl):not(:indeterminate), .raven .raven-background switch:not(:indeterminate) slider:dir(rtl):not(:indeterminate), row switch:disabled:dir(rtl):not(:indeterminate), row switch:not(:indeterminate) slider:disabled:dir(rtl):not(:indeterminate), .raven .raven-background switch:disabled:dir(rtl):not(:indeterminate), .raven .raven-background switch:not(:indeterminate) slider:disabled:dir(rtl):not(:indeterminate) {
+  background-position: left center;
+}
+
+row switch:not(:indeterminate) {
+  min-width: 40px;
+  min-height: 24px;
+  margin: 0;
+  background-size: 40px 24px;
+  transition: all 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png"));
+}
+
+row switch:not(:indeterminate) slider:not(:indeterminate) {
+  margin: 0;
+  background-size: 40px 24px;
+}
+
+row switch:not(:indeterminate):hover {
+  transition: all 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-image: -gtk-scaled(url("assets/switch-hover.png"), url("assets/switch-hover@2.png"));
+}
+
+row switch:not(:indeterminate):checked {
+  transition: all 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-image: -gtk-scaled(url("assets/switch-active.png"), url("assets/switch-active@2.png"));
+}
+
+row switch:not(:indeterminate):checked:hover {
+  background-image: -gtk-scaled(url("assets/switch-active-hover.png"), url("assets/switch-active-hover@2.png"));
+}
+
+row switch:not(:indeterminate):checked:disabled, row switch:not(:indeterminate):checked:disabled:hover {
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive.png"), url("assets/switch-active-insensitive@2.png"));
+}
+
+row switch:not(:indeterminate):disabled, row switch:not(:indeterminate):disabled:hover {
+  background-image: -gtk-scaled(url("assets/switch-insensitive.png"), url("assets/switch-insensitive@2.png"));
+}
+
+.raven .raven-background switch:not(:indeterminate) {
+  min-width: 50px;
+  min-height: 20px;
+  margin: 6px 2px;
+  background-size: 50px 20px;
+  transition: all 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-image: -gtk-scaled(url("assets/toggle-off.svg"));
+}
+
+.raven .raven-background switch:not(:indeterminate) slider:not(:indeterminate) {
+  margin: 0;
+  background-size: 50px 20px;
+}
+
+.raven .raven-background switch:not(:indeterminate):checked {
+  transition: all 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-image: -gtk-scaled(url("assets/toggle-on.svg"));
+}
+
+.raven .raven-background switch:not(:indeterminate):checked:disabled {
+  background-image: -gtk-scaled(url("assets/toggle-on-disabled.svg"));
+}
+
+.raven .raven-background switch:not(:indeterminate):disabled {
+  background-image: -gtk-scaled(url("assets/toggle-off-disabled.svg"));
+}
+
+
+switch {
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1);
+  margin: 6px 0;
+  border-radius: 50px;
+  background-color: alpha(currentColor,0.3);
+  background-clip: padding-box;
+  font-size: 0;
+}
+
 
 switch:disabled {
-  color: alpha(currentColor, 0.4); }
+  color: alpha(currentColor,0.4);
+}
+
 
 switch:checked {
-  background-color: #5294e2; }
+  animation: switch_ripple_effect 0.3s cubic-bezier(0, 0, 0.2, 1);
+  background-color: #71c837;
+}
+
 
 switch:checked:disabled {
-  background-color: rgba(12, 170, 240, 0.2);
-  color: rgba(0, 0, 0, 0.32); }
+  background-color: alpha(#71c837,0.5);
+  color: rgba(36, 36, 36, 0.55);
+}
+
 
 switch slider {
-  border-image: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background-color: #fcfcfc;
-  color: rgba(0, 0, 0, 0.1);
-  min-width: 16px;
-  min-height: 16px;
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), margin 0;
+  min-width: 18px;
+  min-height: 18px;
   margin: 2px 0 2px 2px;
-  border-radius: 100px;
-   }
+  border-radius: 50px;
+  -gtk-outline-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px rgba(16, 16, 16, 0.15), 0px 2px 3px 0px rgba(16, 16, 16, 0.1);
+}
+
 
 switch:hover slider {
-  border-image: none;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23); 
- }
+  box-shadow: 0px 2px 3px 0px rgba(16, 16, 16, 0.2), 0px 3px 5px 0px rgba(16, 16, 16, 0.15);
+}
+
 
 switch:checked slider {
   margin: 2px 2px 2px 0;
   background-color: #ffffff;
-  color: #71c837;}
+}
 
-switch:disabled slider {
-  background-color: #ffffff;}
-  switch:checked:disabled slider { }
+
+switch:checked:disabled slider {
+  animation: none;
+}
+
+/***********************************************************************/
+/*                  CHECK                                              */
+/***********************************************************************/
 
 .check,
 check,
@@ -3451,6 +3542,11 @@ button.documents-favorite:active:hover {
 .tweak-categories,
 .tweak-category:not(:selected):not(:hover) {
   background-image: linear-gradient(to bottom, #ffffff, #ffffff); }
+
+.tweak-titlebar-right > switch,
+dialog.csd > headerbar.titlebar > switch {
+  margin: 10px 0;
+}
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
