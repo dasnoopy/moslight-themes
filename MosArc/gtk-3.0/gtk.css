@@ -1883,12 +1883,14 @@ scrollbar {
 /***********************************************************************/
 
 switch {
-  min-width: 16px;
-  min-height: 16px;
+  min-width: 36px;
+  min-height: 20px;
+  background-size:36px 20px;
   border-radius:100px;
   background-color: alpha(currentColor, 0.3);
-  background-clip: padding-box;
-  font-size: 0; }
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 1px; }
 
 headerbar switch {
   margin: 5px 0;
@@ -1928,9 +1930,6 @@ switch:checked slider {
 switch:disabled slider {
   background-color: #ffffff;}
   switch:checked:disabled slider { }
-
-
-
 
 .check,
 check,
