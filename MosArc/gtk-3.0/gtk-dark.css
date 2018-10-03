@@ -3146,6 +3146,38 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
   background-color: rgba(169, 202, 241, 0.6); }
 
+/* Nautilus > 3.30 new path bar ----------------------------------------------*/
+
+.nautilus-window .path-bar button { /* undecorate the buttons */ 
+    color:@theme_fg_color;
+	border-color: transparent; 
+	background-color: transparent; 
+	background-image: none; 
+	box-shadow: none; 
+	border-radius: 0; 
+	text-shadow: none; 
+	-gtk-icon-shadow: none; 
+	padding: 2px; 
+	border-width: 0px; 
+	margin: 0px; }
+
+.nautilus-window .path-bar button:not(:checked) image { opacity: 0.8; } /* dim the icon when not checked */
+
+.nautilus-window .path-bar button:not(:backdrop):hover {box-shadow: inset 0 -2px @theme_selected_bg_color; }
+
+.nautilus-window .path-bar-box { transition: border 200ms; transition: background-color 200ms; }
+
+.nautilus-window .path-bar-box.width-maximized { border: 0px #5294e2 solid; border-radius: 3px; }
+
+.nautilus-window .path-bar-box.width-maximized:not(:backdrop) { background-color: @theme_bg_color; }
+
+/* Make the tags fit into the box */
+.nautilus-window entry.search > * {margin: 2px; }
+
+/*----------------------------------------------------------------------------*/
+
+
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #2b2e39; }
