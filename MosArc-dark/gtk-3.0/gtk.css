@@ -1169,8 +1169,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
   margin-right: 1px; }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button, headerbar .linked:not(.vertical):not(.path-bar) > button, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:hover, headerbar .linked:not(.vertical):not(.path-bar) > button:hover, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:active, headerbar .linked:not(.vertical):not(.path-bar) > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:checked, headerbar .linked:not(.vertical):not(.path-bar) > button:checked, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:disabled, headerbar .linked:not(.vertical):not(.path-bar) > button:disabled {
-  border-radius: 3px;
-  border-style: solid; }
+ border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-right-style: solid; }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child), headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child), .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action), headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action), .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled:not(:only-child), headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled:not(:only-child), .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):not(:hover), headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):not(:hover) {
   box-shadow: none; }
@@ -2455,7 +2454,7 @@ frame > border,
 .frame {
   margin: 0;
   padding: 0;
-  border-radius: 0;
+  border-radius: 3px;
   border: 1px solid #2b2e39; }
 
 frame.flat > border,
@@ -3165,14 +3164,14 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 
 .nautilus-window .path-bar button:not(:backdrop):hover {box-shadow: inset 0 -2px @theme_selected_bg_color; }
 
-.nautilus-window .path-bar-box { transition: border 200ms; transition: background-color 200ms; }
+.nautilus-window .path-bar-box {   background-color: transparent;  border-color: transparent;  color: #D3DAE3; }
 
-.nautilus-window .path-bar-box.width-maximized { border: 0px #5294e2 solid; border-radius: 3px; }
+.nautilus-window .path-bar-box.width-maximized { border: 1px #202020 solid; border-radius: 3px; }
 
 .nautilus-window .path-bar-box.width-maximized:not(:backdrop) { background-color: @theme_bg_color; }
 
 /* Make the tags fit into the box */
-.nautilus-window entry.search > * {margin: 4px; }
+.nautilus-window entry.search > * {margin: 2px; }
 
 /************ Pathbars padding* */
 
@@ -3191,7 +3190,23 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 .path-bar button.slider-button { padding-left: 0; padding-right: 0; }
 
 /*----------------------------------------------------------------------------*/
+/* View */
+.nautilus-list-view .view, .nautilus-list-view iconview { border-bottom: 1px solid; border-bottom-color: #292d2f; }
 
+.nautilus-list-view .view:selected, .nautilus-list-view iconview:selected { border-bottom-color: #3c6687; }
+
+.nautilus-list-view .view:selected:backdrop, .nautilus-list-view iconview:selected:backdrop { border-bottom-color: #375a74; }
+
+.search-information { background-color: #3c6687; color: white; padding: 2px; }
+
+/* Hide superfluous treeview drop target indication */
+.nautilus-list-view .view.dnd, .nautilus-list-view iconview.dnd { border-style: none; }
+
+.conflict-row { background: #fef6b6; color: black; }
+
+.conflict-row:hover { background-color: shade(#fef6b6, 0.9); }
+
+.conflict-row:selected { background: #3c6687; color: #d2d2d2; }
 
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
