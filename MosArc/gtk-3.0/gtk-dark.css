@@ -3604,7 +3604,7 @@ button.documents-favorite:active:hover {
 
 .tweak-titlebar-right > switch,
 dialog.csd > headerbar.titlebar > switch {
-  margin: 10px 0;
+  margin: 9px 0;
 }
 
 .tr-workarea undershoot,

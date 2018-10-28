@@ -1951,7 +1951,6 @@ switch {
   font-size: 0;
 }
 
-
 switch:disabled {
   color: alpha(currentColor,0.4);
 }
@@ -3593,7 +3592,7 @@ button.documents-favorite:active:hover {
 
 .tweak-titlebar-right > switch,
 dialog.csd > headerbar.titlebar > switch {
-  margin: 10px 0;
+  margin: 9px 0;
 }
 
 .tr-workarea undershoot,
