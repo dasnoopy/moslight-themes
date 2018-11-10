@@ -3152,7 +3152,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 .nautilus-window .path-bar-box.width-maximized:not(:backdrop) { background-color: @theme_bg_color; }
 
 /* Make the tags fit into the box */
-.nautilus-window entry.search > * {margin: 2px; }
+.nautilus-window entry.search > * {margin: 4px; }
 
 /************ Pathbars padding* */
 
