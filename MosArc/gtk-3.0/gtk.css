@@ -1620,7 +1620,7 @@ popover.background {
   padding: 2px;
   border-radius: 3px;
   background-clip: border-box;
-  background-color: #ffffff;
+  background-color: #f7f8f9;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.07); }
   .csd popover, popover, .csd
   popover.background,
@@ -1628,7 +1628,7 @@ popover.background {
     border: 1px solid #cdd2d7; }
   popover separator,
   popover.background separator {
-   background-color: #ffffff; }
+   background-color: #f7f8f9; }
   popover > list,
   popover > .view,
   popover > iconview,
@@ -3234,9 +3234,11 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
 
+.nautilus-window,
 .nautilus-window notebook,
 .nautilus-window notebook > stack:not(:only-child) searchbar {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+}
 
 .disk-space-display {
   border-style: solid;

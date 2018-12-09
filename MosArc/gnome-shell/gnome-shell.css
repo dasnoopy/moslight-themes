@@ -606,16 +606,15 @@ StScrollBar {
 .workspace-switcher {
   background: transparent;
   border: 0px;
-  border-radius: 0px;
+  border-radius: 4px;
   padding: 0px;
   spacing: 8px; }
   .workspace-switcher-group {
-    padding: 12px; }
+    padding: 6px; }
   .workspace-switcher-container {
-    border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
-    border-radius: 3px;
-    padding: 20px;
-    padding-bottom: 24px; }
+    border-radius: 4px;
+    padding: 10px;
+}
 
 .ws-switcher-active-up, .ws-switcher-active-down {
   height: 30px;
@@ -624,17 +623,11 @@ StScrollBar {
   border-radius: 2px;
   border: 1px solid #5294e2; }
 
-.ws-switcher-active-up {
-  background-image: url("common-assets/misc/ws-switch-arrow-up.png"); }
-
-.ws-switcher-active-down {
-  background-image: url("common-assets/misc/ws-switch-arrow-down.png"); }
-
 .ws-switcher-box {
   height: 96px;
   background-color: rgba(0, 0, 0, 0.33);
   border-color: rgba(0, 0, 0, 0.33);
-  border-radius: 2px; }
+  border-radius: 4px; }
 
 .tile-preview {
   background-color: rgba(82, 148, 226, 0.35);
