@@ -16,8 +16,8 @@ root {
 }
 
 :-moz-any(.tabs-newtab-button,#new-tab-button,#alltabs-button) .toolbarbutton-icon{
-    transform: scale(0.8, 0.8) !important;
-    margin-top:2px !important;
+    transform: scale(0.5, 0.5) !important;
+    margin-top:1px !important;
 }
 
 :root:-moz-lwtheme {
@@ -30,16 +30,12 @@ root {
     padding:0px 8px !important;
 }
 
-/* custom icon for bookmarks button */
-#bookmarks-menu-button { /* 'Show your bookmarks' toolbar button */
-    list-style-image: url('bookmarks.svg') !important;
-}
 
 /* rimuovi spazio vuoto a sx in FF60 con CSD attivo */
 .titlebar-placeholder[type="pre-tabs"], .titlebar-placeholder[type="post-tabs"] 
 {  display:none !important; }
 
-/* remove separator near system menu */
+/* remove border near system menu */
 #PanelUI-button{border-left:none !important;}
 
 /* small round back button */
@@ -61,30 +57,19 @@ root {
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.33);
 }
 
-/* no colored line aboce active tab */
-.tab-line { display: none !important; }
+.tab-line {
+    display: none !important;
+}
 
-/* no loading effect on tab */
-.tab-loading-burst { display: none !important; }
+.tab-loading-burst {
+display: none !important;
+}
 
-/* Tabs with no icons  */
+/* Tabs with no icons */
 .tabbrowser-tab:not([busy="true"]):not([pinned]) .tab-icon-image
 { display: none !important; }
 
-
-/* Tabs with desaturated icons
-.tabbrowser-tab:not([busy="true"]):not([pinned]) .tab-icon-image
-{ filter: grayscale(100%); }
- */
-
-/* hide back and forwared button 
-#back-button,
-#forward-button {
-    display: none !important;
-}*/
-
-
-/* URL bar */
+/* URL Bar */
 #urlbar[focused="true"],
 #urlbar:hover, .searchbar-textbox:hover {
     background: transparent !important;
@@ -99,51 +84,27 @@ root {
 .searchbar-textbox:hover {
     background: transparent !important;
     height: 32px !important;
-    padding: 0px !important;
-    font-size: 1em !important;
+    padding: 0 10px !important;
+    font-size: 1.1em !important;
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
     -moz-appearance: none;
-    margin: 0px 0px !important;
+    margin: 4px 0px !important;
     min-height: 24px !important;
     cursor: default;
 }
 
-/* URL bar only bottom border */
-#urlbar,
-.searchbar-textbox,
-#urlbar:hover,
-.searchbar-textbox:hover {
-    border-radius: 0px !important;
-    border-bottom: 1px solid #d0d1d2 !important;
-}
-
-/* monochrome icons on URL bar */
-#pageActionSeparator {
- display: none !important; }
-
-#pageActionButton,
-#pocket-button-box,
-ar-button,
-/* .autocomplete-history-dropmarker, */
-#identity-box,
-.urlbar-history-dropmarker.urlbar-icon.chromeclass-toolbar-additional,
-#page-action-buttons,
-#PanelUI-menu-button,
-#identity-icon-labels {
- filter: grayscale(100%); 
-}
-
 
 #TabsToolbar .titlebar-placeholder[type="pre-tabs"] {
-    width:1em !important;
+    width:1.22em !important;
     border-right: none !important;
 }
 
 .titlebar-placeholder[type="post-tabs"] {
     width: 8px !important;
 }
+
 
 
 #PersonalToolbar {

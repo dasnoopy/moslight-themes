@@ -1,10 +1,8 @@
-userChrome.css
+some userChrome.css
 
 copy the file in 
 /home/yourUser/.mozilla/firefox/xxyyzzyzx.default/chrome
 
-works with:
+only on archlinux gnome 3.30 and mosarc theme
 
-firefox 60.x
-firefox 61.x
 

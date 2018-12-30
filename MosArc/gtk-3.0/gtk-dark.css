@@ -3250,9 +3250,11 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
 
+.nautilus-window,
 .nautilus-window notebook,
 .nautilus-window notebook > stack:not(:only-child) searchbar {
-  background-color: #404552; }
+  background-color: #2B2E38;
+ }
 
 .disk-space-display {
   border-style: solid;

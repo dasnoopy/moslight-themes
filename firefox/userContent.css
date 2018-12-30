@@ -1,0 +1,13 @@
+/* these styles will apply to all pages on the w3.org website */
+@-moz-document domain(leosub.it) {
+    *{
+        background: #263238 !important;
+        color: #f3f3f3 !important;
+		font-family: "Fantasque Sans Mono", monospaced;
+    }
+
+    a{
+        text-decoration: underline !important;
+    }
+
+}

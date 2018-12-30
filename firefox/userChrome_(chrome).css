@@ -1,0 +1,192 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+  /* The button box must appear on top of the navigator-toolbox in order for
+   * click and hover mouse events to work properly for the button in the restored
+   * window state. Otherwise, elements in the navigator-toolbox, like the menubar,
+   * can swallow those events.
+   */
+#titlebar-buttonbox {
+    margin-top: -1px !important;
+}
+
+/*
+ * Adds 1px padding above the tabs. That way you can easily grab and drag the browser window.
+ */
+#TabsToolbar {
+  margin-top: 0px !important;
+  padding-top: 3px !important;
+  background-color: #E7E8EB !important;
+}
+
+/* tabs margins in normal view*/
+.tabbrowser-tab {
+    margin: 3px -28px 0 0 !important;
+}
+
+/* rimuovi spazio vuoto a sx in FF60 con CSD attivo */
+.titlebar-placeholder[type="pre-tabs"], .titlebar-placeholder[type="post-tabs"] 
+{  display:none !important; }
+
+/* flat urlbar  */
+#urlbar,
+.searchbar-textbox {
+  border: none !important;
+  border: 1px solid #e0e0e2 !important;
+  border-radius: 100px !important;
+  box-shadow: none !important;
+  background-color: white !important;
+} 
+
+#urlbar:hover,
+.searchbar-textbox { color: DodgerBlue !important; }
+
+
+#urlbar[focused=true] { 
+  border-color: #5299df !important;
+  box-shadow: inset 0 0 0 1px rgba(82, 153, 223, 0.1) !important;
+}
+
+
+/* Tabs with no icons */
+.tabbrowser-tab:not([busy="true"]):not([pinned]) .tab-icon-image
+{ display: none !important; }
+
+/* Bookmarks Toolbar: no icons */
+#personal-bookmarks .toolbarbutton-icon { display: none !important; }
+
+/* remove border near system menu */
+#PanelUI-button{border-left:none !important;}
+
+/* botton toolbar border-radius */
+:root {  --toolbarbutton-border-radius: 3px !important; }
+
+/* FIREFOX 59+ TABS come GOOGLE CHROME */
+.tab-close-button:hover {
+	fill-opacity: 0 !important;
+    color: red !important;
+}
+
+.tab-loading-burst {
+display: none !important;
+}
+
+/* rounded back button */
+:root:not([uidensity=compact]) #back-button>.toolbarbutton-icon {
+    background-color: white !important;
+    border: 1px solid #a0a0a0 !important;
+	box-shadow: none !important;
+    transform: scale(.85, .85) !important;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+    display: none !important;
+}
+
+#navigator-toolbox>toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
+    padding: 0px 4px 4px !important;
+}
+
+.tab-background {
+    background: #dadadc !important;
+    border-top: 1px solid #c0c1c2 !important;
+    border-left: 1px solid #c0c1c2 !important;
+    border-right: 1px solid #c0c1c2 !important;
+    border-bottom:  none !important;
+    margin: -2px 12px !important;
+    -webkit-transform: perspective(100px) rotateX(21deg) !important;
+    -moz-transform: perspective(100px) rotateX(21deg) !important;
+    
+}
+
+.tabbrowser-tab[selected="true"] .tab-background {
+    background: #F6F7F8 !important;
+    border-top: 1px solid #888888 !important;
+    border-left: 1px solid #888888 !important;
+    border-right: 1px solid #888888 !important;
+    border-bottom: none !important;
+    
+    /* shadow under active tab */
+    box-shadow: 0px 2px 6px 0px #999;
+}
+
+.tabbrowser-tab[selected="true"] .tab-text.tab-label {
+    padding: 2px 2px !important;
+    color: #555657 !important;
+}
+
+/* no blue line on tab topborder */
+.tab-line {
+    display: none !important;
+} 
+
+.tab-content {
+    padding: 0 24px !important;
+}
+
+.tabs-newtab-button.toolbarbutton-1 {
+    margin-left: 14px !important;
+}
+
+.titlebar-placeholder[type="pre-tabs"] {
+    border-inline-end: initial !important;
+}
+
+#tabbrowser-tabs:not([movingtab])>.tabbrowser-tab[beforeselected-visible]::after,
+#tabbrowser-tabs[movingtab]>.tabbrowser-tab[visuallyselected]::before,
+.tabbrowser-tab[visuallyselected]::after {
+ 	border-color: var(--tabs-border-color);
+    margin-top: 0;
+    margin-bottom: 1px;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+[tabsintitlebar]:root:not([extradragspace]) .tabbrowser-tab::after,
+.tabbrowser-tab:hover::after,
+#tabbrowser-tabs:not([movingtab])>.tabbrowser-tab[beforehovered]::after {
+    border: none !important;
+}
+
+.tab-text.tab-label {
+    text-shadow: initial !important;
+    color: #a1a2a3 !important;
+    padding: 2px 2px !important;
+    font-style: unset;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+ /* Centered Bookmarks */
+ .bookmarks-toolbar-items>.scrollbox-innerbox {
+-moz-box-pack: center!important;
+}
+ 
+#personal-bookmarks, #PlacesToolbarItems {
+-moz-box-pack: center!important;
+}
+ 
+.bookmark-item > .toolbarbutton-text {
+margin-top: -1px !important;
+}
+ 
+.bookmark-item .toolbarbutton-icon {
+display: none !important;
+}
+ 
+#PlacesToolbar .bookmark-item:hover { /* Hide Mouse-over Effect */
+background: transparent !important;
+   color: DodgerBlue !important;
+}
+
+/* Tabs hover effect */
+#TabsToolbar .tabs-newtab-button:hover {
+    background-color: transparent !important;
+    color: DodgerBlue !important;
+}
+
+.tabs-newtab-button:hover .toolbarbutton-icon {
+   background-color: transparent !important;
+}

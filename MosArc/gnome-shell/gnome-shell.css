@@ -824,6 +824,7 @@ StScrollBar {
 .world-clocks-button,
 .weather-button,
 .message-list-section-title {
+  font-weight: normal;
   padding: 8px;
   border: 1px solid rgba(64, 69, 82, 0); }
   .datemenu-today-button:hover, .datemenu-today-button:focus,
@@ -923,6 +924,7 @@ StScrollBar {
     background-color: rgba(255, 255, 255, 0.25);
     border-width: 0; }
   .calendar-day-base.calendar-day-heading {
+    font-weight:bold;
     color: rgba(211, 218, 227, 0.85);
     margin-top: 1em;
     font-size: 70%; }
