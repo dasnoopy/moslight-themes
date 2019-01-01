@@ -1,8 +1,0 @@
-some userChrome.css
-
-copy the file in 
-/home/yourUser/.mozilla/firefox/xxyyzzyzx.default/chrome
-
-only on archlinux gnome 3.30 and mosarc theme
-
-

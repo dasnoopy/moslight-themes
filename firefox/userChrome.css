@@ -35,10 +35,6 @@ root {
     list-style-image: url('bookmarks.svg') !important;
 }
 
-/* rimuovi spazio vuoto a sx in FF60 con CSD attivo */
-.titlebar-placeholder[type="pre-tabs"], .titlebar-placeholder[type="post-tabs"] 
-{  display:none !important; }
-
 /* remove separator near system menu */
 #PanelUI-button{border-left:none !important;}
 
@@ -89,7 +85,7 @@ root {
 #urlbar:hover, .searchbar-textbox:hover {
     background: transparent !important;
     box-shadow: none !important;
-    border: none !important;
+    border-bottom: 1px solid #d0d1d2 !important;
     outline: none !important;
 }
 
@@ -135,16 +131,7 @@ ar-button,
  filter: grayscale(100%); 
 }
 
-
-#TabsToolbar .titlebar-placeholder[type="pre-tabs"] {
-    width:1em !important;
-    border-right: none !important;
-}
-
-.titlebar-placeholder[type="post-tabs"] {
-    width: 8px !important;
-}
-
+/* bookmarks toolbar */
 
 #PersonalToolbar {
 	max-height: none !important; /* Otherwise it's limited to 4em */
@@ -153,7 +140,7 @@ ar-button,
     background: #f6f7f8 !important;
 }
 
-
+/* link barra preferiti al centro e niente icone */
 #personal-bookmarks, #PlacesToolbarItems {
 -moz-box-pack: center!important;
 }
@@ -166,3 +153,33 @@ ar-button,
     background: transparent !important;
    color: black !important;
 }
+
+/* MIN MAX CLOSE on the left */
+
+
+
+/* rimuovi spazio vuoto a sx in FF60 con CSD attivo  */
+.titlebar-placeholder[type="pre-tabs"], .titlebar-placeholder[type="post-tabs"] 
+{  display:none !important; } 
+
+#titlebar-max {
+  -moz-box-ordinal-group: 0;
+}
+
+#titlebar-content {
+  direction: rtl;
+}
+
+#TabsToolbar {
+  direction: rtl;
+}
+
+#tabbrowser-tabs {
+  direction: ltr;
+}
+
+#titlebar-min{margin-left: 6px !important; }
+#titlebar-max{margin-left: 0px !important; }
+#titlebar-close{margin-left: -2px !important;  }
+
+
