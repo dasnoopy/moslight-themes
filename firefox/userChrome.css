@@ -48,7 +48,7 @@ root {
 
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
-    border: none !important;
+    border: 0 0 1px 0 solid !important;
     color: grey !important;
     opacity: .2 !important;
 }
@@ -85,7 +85,7 @@ root {
 #urlbar:hover, .searchbar-textbox:hover {
     background: transparent !important;
     box-shadow: none !important;
-    border-bottom: 1px solid #d0d1d2 !important;
+    border-bottom: 1px dotted #d0d0d0 !important;
     outline: none !important;
 }
 
@@ -112,7 +112,7 @@ root {
 #urlbar:hover,
 .searchbar-textbox:hover {
     border-radius: 0px !important;
-    border-bottom: 1px solid #d0d1d2 !important;
+    border-bottom: 1px dotted #d0d0d0 !important;
 }
 
 /* monochrome icons on URL bar */
@@ -156,8 +156,6 @@ ar-button,
 
 /* MIN MAX CLOSE on the left */
 
-
-
 /* rimuovi spazio vuoto a sx in FF60 con CSD attivo  */
 .titlebar-placeholder[type="pre-tabs"], .titlebar-placeholder[type="post-tabs"] 
 {  display:none !important; } 
@@ -179,7 +177,7 @@ ar-button,
 }
 
 #titlebar-min{margin-left: 6px !important; }
-#titlebar-max{margin-left: 0px !important; }
+#titlebar-max{margin-left: 1px !important; }
 #titlebar-close{margin-left: -2px !important;  }
 
 
