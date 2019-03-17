@@ -1076,6 +1076,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
 .titlebar:not(headerbar) > separator {
   background-image: linear-gradient(to bottom, #d4d5db, #d4d5db); }
 
+
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton, .titlebar:not(headerbar) separator.titlebutton {
   min-width: 1px;
   min-height: 1px;
@@ -1859,7 +1860,6 @@ scrollbar {
 /***********************************************************************/
 /*              SWITCH                                                 */
 /***********************************************************************/
-
 row switch:not(:indeterminate), row switch:not(:indeterminate) slider:not(:indeterminate), .raven .raven-background switch:not(:indeterminate), .raven .raven-background switch:not(:indeterminate) slider:not(:indeterminate), row switch:disabled:not(:indeterminate), row switch:not(:indeterminate) slider:disabled:not(:indeterminate), .raven .raven-background switch:disabled:not(:indeterminate), .raven .raven-background switch:not(:indeterminate) slider:disabled:not(:indeterminate) {
   padding: 0;
   border: none;
@@ -1943,33 +1943,37 @@ row switch:not(:indeterminate):disabled, row switch:not(:indeterminate):disabled
 
 
 switch {
-  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1);
   margin: 6px 0;
   border-radius: 50px;
-  background-color: alpha(currentColor,0.3);
+  background-color: rgba(36, 36, 36, 0.3);
   background-clip: padding-box;
+  color: rgba(36, 36, 36, 0.3);
   font-size: 0;
 }
 
+
 switch:disabled {
-  color: alpha(currentColor,0.4);
+  color: rgba(36, 36, 36, 0.15);
+  background-color: rgba(36, 36, 36, 0.15);
 }
 
 
 switch:checked {
   animation: switch_ripple_effect 0.3s cubic-bezier(0, 0, 0.2, 1);
   background-color: #71c837;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 
 switch:checked:disabled {
-  background-color: alpha(#71c837,0.5);
-  color: rgba(36, 36, 36, 0.55);
+  background-color: rgba(113, 200, 55, 0.5);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 
 switch slider {
-  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), margin 0;
+  transition: all 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), margin 0;
   min-width: 18px;
   min-height: 18px;
   margin: 2px 0 2px 2px;
@@ -4473,6 +4477,51 @@ filechooser placessidebar.sidebar scrollbar,
   filechooser placessidebar.sidebar scrollbar trough,
   .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
     background-color: #2a2d37; }
+
+/*********
+ * Emoji *
+*********/
+
+popover.emoji-picker {
+  padding: 0;
+  border-radius: 3px;
+}
+
+popover.emoji-picker entry {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: none;
+  border-width: 0 0 1px 0;
+  padding: 4px 8px;
+}
+
+popover.emoji-picker scrolledwindow {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+button.emoji-section {
+  margin: 2px 1px;
+  padding: 1px 8px;
+  border-radius: 3px;
+  border: none;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.emoji {
+  min-width: 3em;
+  min-height: 3em;
+  padding: 0;
+}
+
+.emoji widget {
+  transition: all 0.1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.emoji widget:hover {
+  font-size: larger;
+}
 
 @define-color theme_fg_color #3b3e45;
 @define-color theme_text_color #3b3e45;

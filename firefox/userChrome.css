@@ -50,7 +50,7 @@ root {
   color: #a0a0a0 !important;
 }
 
-/* text color */
+/* text color selected tab*/
 .tabbrowser-tab[selected] .tab-label {
   color: #232323 !important;
 }
@@ -84,6 +84,12 @@ root {
 /* Gray out the favicon icon on the inactive tab */
 .tabbrowser-tab .tab-icon-image:not([selected=true]):not([pinned]) {
  filter: grayscale(100%) !important;
+}
+
+/* hide reload/stop load page button 
+   F5 is the relative keyboard shortcut */
+#reload-button, #stop-button {
+  display: none !important;
 }
 
 /* hide back and forwared button 
@@ -132,7 +138,6 @@ root {
     border-bottom: 1px dotted #d0d0d0 !important;
 }
 
-/* monochrome icons on URL bar */
 #pageActionSeparator {
  display: none !important; }
 
@@ -147,14 +152,6 @@ ar-button,
 #identity-icon-labels {
  filter: grayscale(100%) !important; ; 
 }
-
-
-#_86dc314e-dbca-4ec1-872a-efa111437974_-browser-action {
-filter: grayscale(100%); !important;}
-
-#_28688efa-6480-41da-858e-7435743ad14f_-browser-action {
-filter: grayscale(100%); !important;}
-
 
 /* bookmarks toolbar */
 #PersonalToolbar {
@@ -203,4 +200,18 @@ filter: grayscale(100%); !important;}
 .titlebar-min {margin-left: 6px !important; }
 .titlebar-max {margin-left: 0px !important; }
 
+/* show/hide bookmark toolbar */
+#PersonalToolbar{
+    transition: margin 250ms linear !important;
+    position: relative;
+    z-index: 0;
+    margin-top: -36px;
+    -moz-window-dragging: no-drag;
+}
 
+#nav-bar{ z-index: 1; }
+#nav-bar:hover + #PersonalToolbar,
+#PersonalToolbar:hover{
+    margin-top: 0px;
+    margin-bottom: -36px
+}
