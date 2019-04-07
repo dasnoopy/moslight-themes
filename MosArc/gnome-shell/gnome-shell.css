@@ -1083,20 +1083,26 @@ StScrollBar {
 
 .window-close {
   background-image: url("common-assets/misc/close.svg");
-  background-size: 32px;
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: transparent;
+  background-size: 26px;
   height: 26px;
   width: 26px;
-  -shell-close-overlap: 12px;  }
+  background-color: transparent;
+  border: 0 none transparent;
+  box-shadow: none;
+  color: transparent;
+  -shell-close-overlap: 14px;  }
 
   .window-close:hover {
-    background-image: url("common-assets/misc/close-hover.svg"); }
+    background-image: url("common-assets/misc/close-hover.svg");
+	background-size: 26px;
+	height: 26px;
+	width: 26px; }
 
   .window-close:active {
-    background-image: url("common-assets/misc/close-active.svg"); }
+    background-image: url("common-assets/misc/close-active.svg");
+  	background-size: 26px;
+	height: 26px;
+	width: 26px; }
 
 
 .nm-dialog {
