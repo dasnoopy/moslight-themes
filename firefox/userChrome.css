@@ -37,15 +37,34 @@ root {
 /* remove separator near system menu */
 #PanelUI-button{border-left:none !important;}
 
-/* small round back button */
+/* small round back button 
 :root:not([uidensity=compact]) #back-button>.toolbarbutton-icon {
     background-color: white !important;
     border: 1px solid #a0a0a0 !important;
 	box-shadow: none !important;
     transform: scale(.85, .85) !important;
+} */
+
+
+/* Custom  back button */
+#back-button>.toolbarbutton-icon {
+  transform: scale(.85, .85) !important;
+  animation: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* text color */
+#back-button:not(:hover),
+#back-button:not(:hover) > .toolbarbutton-icon {
+  background: none !important;
+}
+
+#back-button:hover,
+#back-button:hover > .toolbarbutton-icon {
+  border-radius: 2px !important;
+}
+
+/* TABS text color */
 .tabbrowser-tab .tab-label {
   color: #a0a0a0 !important;
 }
@@ -62,8 +81,9 @@ root {
     opacity: .2 !important;
 }
 
+/* ombreggiatura ai lati del tab attivo */
 .tabbrowser-tab[visuallyselected="true"] {
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 12px  rgba(0, 0, 0, 0.3);
 }
 
 /* no colored line above active tab */
@@ -108,7 +128,8 @@ root {
 #urlbar:hover, .searchbar-textbox:hover {
     background: transparent !important;
     box-shadow: none !important;
-    border-bottom: 1px dotted #d0d0d0 !important;
+    border-left: 1px dotted #d0d0d0 !important;
+    border-right: 1px dotted #d0d0d0 !important;
     outline: none !important;
 }
 
@@ -135,7 +156,8 @@ root {
 #urlbar:hover,
 .searchbar-textbox:hover {
     border-radius: 0px !important;
-    border-bottom: 1px dotted #d0d0d0 !important;
+    border-left: 1px dotted #d0d0d0 !important;
+    border-right: 1px dotted #d0d0d0 !important;
 }
 
 #pageActionSeparator {
@@ -175,32 +197,13 @@ ar-button,
    color: black !important;
 }
 
-/* MIN MAX CLOSE on the left */
 /* rimuovi spazio vuoto a sx in FF60 con CSD attivo  */
 .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] 
 {  display:none !important; } 
+.titlebar-max {margin-right: 8px !important; }
 
-.titlebar-max {
-  -moz-box-ordinal-group: 0;
-}
 
-#titlebar-content {
-  direction: rtl;
-}
-
-#TabsToolbar {
-  direction: rtl;
-}
-
-#tabbrowser-tabs {
-  direction: ltr;
-}
-
-.titlebar-close {margin-left: 4px !important;  }
-.titlebar-min {margin-left: 6px !important; }
-.titlebar-max {margin-left: 0px !important; }
-
-/* show/hide bookmark toolbar */
+/* show/hide bookmark toolbar
 #PersonalToolbar{
     transition: margin 250ms linear !important;
     position: relative;
@@ -214,4 +217,13 @@ ar-button,
 #PersonalToolbar:hover{
     margin-top: 0px;
     margin-bottom: -36px
+}*/
+
+/* Custom separator on bookmark toolbar */
+#PlacesToolbarItems > toolbarseparator {
+  -moz-appearance: none !important;
+  width: 1px !important;
+  border-left: 1px dotted rgba(0,0,0,0.4) !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
 }

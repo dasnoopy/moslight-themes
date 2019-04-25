@@ -1481,20 +1481,20 @@ StScrollBar {
 .workspace-thumbnails-left:rtl {
   visible-width: 40px;
   spacing: 11px;
-  padding: 12px; }
+  padding: 8px; }
 
 .workspace-thumbnails,
 .workspace-thumbnails-left:rtl {
-  padding-right: 7px;
+  padding-right: 6px;
   border-image: url("common-assets/dash/dash-right.svg") 9 9 9 9; }
 
 .workspace-thumbnails:rtl,
 .workspace-thumbnails-left {
-  padding-left: 7px;
+  padding-left: 6px;
   border-image: url("common-assets/dash/dash-left.svg") 9 9 9 9; }
 
 .workspace-thumbnail-indicator {
-  border: 4px solid rgba(82, 148, 226, 0.8);
+  border: 3px solid rgba(82, 148, 226, 0.8);
   border-radius: 1px;
   padding: 1px; }
 
