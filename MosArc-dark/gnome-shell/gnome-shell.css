@@ -254,7 +254,7 @@ StScrollBar {
       text-align: right; }
   .end-session-dialog-logout-icon {
     border: 0px solid transparent;
-    border-radius: 2px;
+    border-radius: 99px;
     width: 48px;
     height: 48px;
     background-size: contain; }
@@ -387,7 +387,7 @@ StScrollBar {
   color: #F27835; }
 
 .polkit-dialog-user-user-icon {
-  border-radius: 2px;
+  border-radius: 99px;
   background-size: contain;
   width: 48px;
   height: 48px; }
@@ -1174,7 +1174,7 @@ StScrollBar {
   spacing: 24px;
   color: #fffff;
   background-color: rgba(82, 148, 226, 1.0);
-  border-radius: 3px;
+  border-radius: 0;
   padding: 4px 12px;
   text-align: center;
   -shell-caption-spacing: 12px; }
@@ -1245,11 +1245,11 @@ StScrollBar {
   font-size: 1em;
   color: #BAC3CF;
   background-color: rgba(53, 57, 69, 0.65);
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(16, 16, 16, 0.3);
   padding: 4px 0;
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 2px 2px 0; }
   #dash:rtl {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 2px 0 0 2px; }
   .right #dash, #dash:rtl {
     padding: 4px 0; }
   .top #dash, .bottom #dash {
@@ -1269,7 +1269,7 @@ StScrollBar {
   padding: 6px; }
 
 .dash-label {
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 4px 12px;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1283,12 +1283,14 @@ StScrollBar {
 .right #dash .app-well-app:hover .overview-icon,
 .bottom #dash .app-well-app:hover .overview-icon,
 .top #dash .app-well-app:hover .overview-icon {
+  border-radius: 0;
   background-color: #5294e2; }
 
 #dash .app-well-app:active .overview-icon,
 .right #dash .app-well-app:active .overview-icon,
 .bottom #dash .app-well-app:active .overview-icon,
 .top #dash .app-well-app:active .overview-icon {
+  border-radius: 0;
   box-shadow: none;
   background-color: #2679db; }
 
@@ -1494,8 +1496,8 @@ StScrollBar {
   border-image: url("common-assets/dash/dash-left.svg") 9 9 9 9; }
 
 .workspace-thumbnail-indicator {
-  border: 3px solid rgba(82, 148, 226, 0.8);
-  border-radius: 1px;
+  border: 2px solid orange;
+  border-radius: 0px;
   padding: 1px; }
 
 .search-display > StBoxLayout,
@@ -1516,12 +1518,12 @@ StScrollBar {
 .notification-banner:focus {
   font-size: 1em;
   width: 34em;
-  margin: 5px;
-  padding: 10px;
+  margin: 4px;
+  border-radius: 2px;
   color: #D3DAE3;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9; }
+  border: none;
+  background-color: rgba(19, 29, 39, 0.65); }
+
   .notification-banner .notification-icon,
   .notification-banner:hover .notification-icon,
   .notification-banner:focus .notification-icon {
