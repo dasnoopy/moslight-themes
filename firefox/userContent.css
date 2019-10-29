@@ -26,3 +26,16 @@
 
 }
 
+
+/* custom about:addons */
+#header-inner {margin: 2px 0px -40px 4px !important}
+#heading {margin: 1px 0px 1px -4px !important}
+#main {margin-top: 5px}
+.addon-name {font-weight: 400 !important}
+.addon.card {margin-bottom: 5px !important}
+.card-contents {flex-direction: row !important}
+.list-section-heading {margin-bottom: 9px !important}
+.more-options-button {top: 8px}
+.prefs-button, .addon-description, .addon-badge, .help-button, #search-label, #category-discover, #heading-name, .list-section-heading, recommended-extensions-section {display:none}
+.sidebar-footer-button {margin-bottom: 36px}
+:root {--addon-icon-size: 26px !important; --card-padding: 14px !i
