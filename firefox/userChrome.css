@@ -14,14 +14,15 @@ root {
     --chrome-nav-bar-controls-border-color: transparent !important;
     /* border around url bar */
 }
+
 /* custom ADD new tab */ 
-:-moz-any(.tabs-newtab-button,#new-tab-button,#alltabs-button) .toolbarbutton-icon{
-    transform: scale(0.8, 0.8) !important;
-    margin-top:2px !important;
-    color: grey !important;
+:-moz-any(#tabs-newtab-button,#new-tab-button,#alltabs-button) .toolbarbutton-icon{
+    transform: scale(0.9, 0.9) !important;
+    margin-top:1px !important;
+    color: darkgray !important;
 }
 
-#tabbrowser-tabs .tabs-newtab-button:hover > .toolbarbutton-icon {
+#tabbrowser-tabs #tabs-newtab-button:hover > .toolbarbutton-icon {
     color: black !important;
     background-color: transparent !important; }
 
