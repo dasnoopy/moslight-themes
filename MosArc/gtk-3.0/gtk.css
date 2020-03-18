@@ -1951,6 +1951,9 @@ switch {
   font-size: 0;
 }
 
+headerbar switch {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 switch:disabled {
   color: rgba(36, 36, 36, 0.15);
