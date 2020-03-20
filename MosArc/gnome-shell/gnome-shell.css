@@ -1132,7 +1132,7 @@ StScrollBar {
   height: 50px;
   background-size: 32px;
   border: 1px solid rgba(238, 238, 236, 0.1);
-  border-radius: 8px; }
+  border-radius: 4px; }
 
 .ws-switcher-active-up,
 .ws-switcher-active-down,
@@ -1693,7 +1693,7 @@ StScrollBar {
   min-width: 1.2em;
   border-width: 1px;
   border-style: solid;
-  border-radius: 8px; }
+  border-radius: 4px; }
   .keyboard-key:focus {
     color: #eeeeec;
     text-shadow: 0 1px rgba(0, 0, 0, 0.2);
