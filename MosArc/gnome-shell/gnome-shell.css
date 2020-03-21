@@ -20,7 +20,7 @@
 /* Global Values */
 stage {
   font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif;
-  font-size: 11pt;
+  font-size: 10pt;
   color: #eeeeec; }
 
 /* Common Stylings */
@@ -1320,9 +1320,9 @@ StScrollBar {
     background-color: transparent; }
 
 .search-section-content {
-  background-color: rgba(45, 45, 45, 0.76);
+  background-color: rgba(19, 29, 39, 0.76);
   border-radius: 7px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
   color: #eeeeec;
@@ -1719,7 +1719,7 @@ StScrollBar {
     border-color: rgba(0, 0, 0, 0.7); }
   .keyboard-key.default-key {
     color: #eeeeec;
-    background-color: rgba(45, 45, 45, 0.96);
+    background-color: rgba(19, 29, 39, 0.96);
     border-color: rgba(27, 27, 27, 0.96);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
     text-shadow: 0 1px rgba(0, 0, 0, 0.2);
@@ -1851,7 +1851,7 @@ StScrollBar {
     spacing: 6px; }
 
 .lg-dialog StEntry {
-  background-color: rgba(45, 45, 45, 0.56);
+  background-color: rgba(19, 29, 39, 0.56);
   color: #eeeeec;
   border-color: rgba(238, 238, 236, 0.2);
   min-height: 22px;
@@ -1888,7 +1888,7 @@ StScrollBar {
 
 .lg-extension {
   border: 1px solid rgba(13, 13, 13, 0.7);
-  background-color: rgba(45, 45, 45, 0.96);
+  background-color: rgba(19, 29, 39, 0.96);
   border-radius: 7px;
   padding: 4px; }
 

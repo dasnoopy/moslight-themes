@@ -1894,13 +1894,13 @@ switch:disabled {
 
 switch:checked {
   animation: switch_ripple_effect 0.3s cubic-bezier(0, 0, 0.2, 1);
-  background-color: #71c837;
+  background-color: #5294E2;
   color: transparent;
 }
 
 
 switch:checked:disabled {
-  background-color: rgba(113, 200, 55, 0.5);
+  background-color: rgba(114, 159, 207, 0.5);
   color: transparent;
 }
 
