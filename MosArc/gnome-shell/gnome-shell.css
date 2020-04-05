@@ -862,7 +862,7 @@ StScrollBar {
   font-size: 12pt; }
 
 .modal-dialog {
-  border-radius: 10px; }
+  border-radius: 7px; }
   .modal-dialog .modal-dialog-content-box {
     margin: 32px 40px;
     spacing: 32px;
@@ -1168,8 +1168,8 @@ StScrollBar {
       -panel-corner-border-color: #1f76e1; }
   #panel .panel-button {
     font-weight: normal;
-    color: #ffffff;
-    -natural-hpadding: 12px;
+    color: #e9eaeb;
+    -natural-hpadding: 8px;
     -minimum-hpadding: 6px; }
     #panel .panel-button:hover {
       color: white; }
@@ -1261,7 +1261,7 @@ StScrollBar {
   color: #fff;
   background-color: #1b6acb;
   border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 7px;
+  border-radius: 3px;
   padding: 3px 6px;
   font-weight: normal;
   font-size: 10pt; }
@@ -1277,9 +1277,9 @@ StScrollBar {
   box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
   -shell-close-overlap: 12px; }
   .window-close:hover {
-    background-color: #1f76e1; }
+    background-color: #cc0000; }
   .window-close:active {
-    background-color: #185fb4; }
+    background-color: #a40000; }
 
 
 .search-entry {
@@ -1455,7 +1455,7 @@ StScrollBar {
   .page-indicator .page-indicator-icon {
     width: 10px;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: white; }
 
 .all-apps,
@@ -1574,7 +1574,7 @@ StScrollBar {
   visible-width: 32px;
   spacing: 6px;
   padding: 6px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 7px 0 0 10px;
   border-right-width: 0; }
   .workspace-thumbnails:rtl {
     border-radius: 0 10px 10px 0;
@@ -1766,7 +1766,7 @@ StScrollBar {
 
 .keyboard-subkeys {
   color: #eeeeec;
-  -arrow-border-radius: 10px;
+  -arrow-border-radius: 7px;
   -arrow-background-color: rgba(32, 32, 32, 0.96);
   -arrow-border-width: 1px;
   -arrow-border-color: rgba(55, 55, 55, 0.96);
@@ -1817,7 +1817,7 @@ StScrollBar {
 
 /* Looking Glass */
 #LookingGlassDialog {
-  background-color: rgba(32, 32, 32, 0.96);
+  background-color: rgba(19, 29, 39, 0.90);
   spacing: 6px;
   padding: 4px;
   border: 1px solid rgba(238, 238, 236, 0.2);
@@ -1826,7 +1826,7 @@ StScrollBar {
   #LookingGlassDialog > #Toolbar {
     border: none;
     border-radius: 7px;
-    background-color: rgba(32, 32, 32, 0.96); }
+    background-color: rgba(19, 29, 39, 1.0); }
   #LookingGlassDialog .labels {
     spacing: 6px; }
   #LookingGlassDialog .notebook-tab {
@@ -1851,7 +1851,7 @@ StScrollBar {
     spacing: 6px; }
 
 .lg-dialog StEntry {
-  background-color: rgba(19, 29, 39, 0.56);
+  background-color: rgba(19, 29, 39, 1.0);
   color: #eeeeec;
   border-color: rgba(238, 238, 236, 0.2);
   min-height: 22px;
@@ -2120,7 +2120,7 @@ StScrollBar {
     border: none;
     background-color: rgba(32, 32, 32, 0.26);
     color: #eeeeec;
-    border-radius: 10px; }
+    border-radius: 7px; }
     .unlock-dialog-notifications-container .notification.critical,
     .unlock-dialog-notifications-container .unlock-dialog-notification-source.critical {
       background-color: rgba(32, 32, 32, 0.86); }
