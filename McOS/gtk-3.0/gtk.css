@@ -8238,7 +8238,7 @@ button.color colorswatch:first-child:last-child overlay {
 /*             BUTTON CIRCULAR                                       */
 /*********************************************************************/
 
-button.circular { border-radius: 9999px; -gtk-outline-radius: 9999px; background-origin: padding-box, border-box; background-clip: padding-box, border-box; }
+button.circular { border-radius: 9999px; -gtk-outline-radius: 9999px; background-origin: padding-box, border-box; background-clip: padding-box, border-box; min-width: 16px; min-height:24px; }
 
 button.circular label { padding: 0; }
 

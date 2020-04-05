@@ -2862,33 +2862,25 @@ popover.background.touch-selection, .csd popover.background.touch-selection {
 .monospace {
   font-family: Monospace; }
 
-button.circular, button.nautilus-circular-button.image-button,
-button.circular-button {
-  padding: 0;
-  min-width: 16px;
-  min-height: 24px;
-  padding: 2px 6px;
-  border-radius: 50%;
-  -gtk-outline-radius: 50%; }
-  button.circular label, button.nautilus-circular-button.image-button label,
-  button.circular-button label {
-    padding: 0; }
+/*********************************************************************/
+/*             BUTTON CIRCULAR                                       */
+/*********************************************************************/
 
-.keycap {
-  min-width: 16px;
-  min-height: 20px;
-  padding: 3px 6px 4px 6px;
-  color: #D3DAE3;
-  background-color: #404552;
-  border: 1px solid #2b2e39;
-  border-radius: 2.5px;
-  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.15); }
+button.circular { border-radius: 9999px; -gtk-outline-radius: 9999px; background-origin: padding-box, border-box; background-clip: padding-box, border-box; min-width: 24px; min-height:24px; }
+
+button.circular label { padding: 0; }
+
+button.circular:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) { color: #363636; outline-color: rgba(46, 52, 54, 0.3); border-color: #cdcdcd; border-bottom-color: #bfbfbf; background-image: linear-gradient(to top, #edebe9 2px, #f6f6f6); text-shadow: 0 1px rgba(255, 255, 255, 0.769231); -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.769231); box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07); background-image: linear-gradient(to top, #edebe9 2px, #f6f6f6), linear-gradient(to top, #bfbfbf 25%, #cdcdcd 50%); border-color: transparent; }
+
+button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) { color: #363636; outline-color: rgba(46, 52, 54, 0.3); border-color: #cdcdcd; border-bottom-color: #bfbfbf; text-shadow: 0 1px rgba(255, 255, 255, 0.769231); -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.769231); box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07); background-image: linear-gradient(to top, #f6f6f6, #f8f8f7 1px); background-image: linear-gradient(to top, #f6f6f6, #f8f8f7 1px), linear-gradient(to top, #bfbfbf 25%, #cdcdcd 50%); border-color: transparent; }
+
 
 stackswitcher button.text-button {
   min-width: 80px; }
 
-stackswitcher button.circular, stackswitcher button.nautilus-circular-button.image-button {
-  min-width: 0; }
+stackswitcher button.circular, stackswitcher button.text-button.circular { min-width: 24px; min-height: 24px; padding: 0; }
+
+stackswitcher button.nautilus-circular-button.image-button { min-width: 24px; min-height: 24px; padding: 0; }
 
 *:drop(active):focus,
 *:drop(active) {
