@@ -5742,7 +5742,7 @@ notebook > header button.flat.toggle.popup:active, notebook > header .raven .rav
 }
 
 notebook > header.top {
-  padding: 0px;
+  padding: 0;
 }
 
 notebook > header.top tab {
@@ -5858,7 +5858,7 @@ notebook > header.top tabs > tab:first-child, notebook > header.bottom tabs > ta
 }
 
 notebook > header.top tabs > tab:last-child, notebook > header.bottom tabs > tab:last-child {
-  border-right-style: none;
+  border-right-style: solid;
 }
 
 notebook > header.left tabs > tab:first-child, notebook > header.right tabs > tab:first-child {
@@ -5866,7 +5866,7 @@ notebook > header.left tabs > tab:first-child, notebook > header.right tabs > ta
 }
 
 notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab:last-child {
-  border-bottom-style: none;
+  border-bottom-style: solid;
 }
 
 notebook > header tabs > tab {
