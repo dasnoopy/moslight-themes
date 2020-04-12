@@ -1895,7 +1895,7 @@ toolbar{
 
   -GtkWidget-window-dragging: true;
   padding: 2px;
-  background-color: rgba(243,243,243,0.98); }
+  background-color: #f1f1f1;}
 
 toolbar separator{
 
@@ -6183,7 +6183,7 @@ menubar > menuitem{
   border-top-left-radius: 2px;
   color: rgba(0,0,0,0.94);
   text-shadow: 0 1px alpha(#ffffff, 0.35);
-  padding: 2px 8px;
+  padding: 4px 8px;
   border: solid transparent;
   border-width: 0; }
   
@@ -9736,6 +9736,9 @@ filechooserbutton:drop(active) {
 
   box-shadow: none;
   border-color: transparent; }
+  
+ 
+  
 
 /***********************************************************************/
 /*-------------------------- HEADERBAR---------------------------------*/
@@ -10680,6 +10683,28 @@ headerbar button.titlebutton.restore:active,
 .nautilus-window placessidebar.sidebar scrollbar trough {
 
   background-color: rgba(222, 227, 240, 0.85); }
+  
+/********************************************************************/
+/*-------------NAUTILUS LISTVIEW BOTTOM BORDER--------------------  */
+/********************************************************************/
+.nautilus-list-view .view, .nautilus-list-view iconview { border-bottom: 1px solid; border-bottom-color: #e6e6e6; }
+
+.nautilus-list-view .view:selected, .nautilus-list-view iconview:selected { border-bottom-color: #d1e3f1; }
+
+.nautilus-list-view .view:selected:backdrop, .nautilus-list-view iconview:selected:backdrop { border-bottom-color: #dae9f4; }
+
+.search-information { background-color: #548ebb; color: white; padding: 2px; }
+
+/* Hide superfluous treeview drop target indication */
+.nautilus-list-view .view.dnd, .nautilus-list-view iconview.dnd { border-style: none; }
+
+.conflict-row { background: #fef6b6; color: black; }
+
+.conflict-row:hover { background-color: shade(#fef6b6, 0.9); }
+
+.conflict-row:selected { background: #548ebb; color: #ffffff; }
+
+/*----------------------------------------------------------------------------*/
 
 /********************************************************************/
 /*--------------DECORATION ---------------------------------------  */

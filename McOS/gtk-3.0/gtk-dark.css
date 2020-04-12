@@ -6457,7 +6457,7 @@ menubar > menuitem{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  padding: 2px 8px;
+  padding: 4px 8px;
   border: solid transparent;
   border-width: 0; }
   
@@ -11015,6 +11015,28 @@ headerbar button.titlebutton.restore:active,
 .nautilus-window placessidebar.sidebar scrollbar trough {
 
   background-color: transparent; }
+
+
+/*----------------------------------------------------------------------------*/
+/* custom List view */
+/*----------------------------------------------------------------------------*/
+.nautilus-list-view .view, .nautilus-list-view iconview { border-bottom: 1px solid; border-bottom-color: #292d2f; }
+
+.nautilus-list-view .view:selected, .nautilus-list-view iconview:selected { border-bottom-color: #3c6687; }
+
+.nautilus-list-view .view:selected:backdrop, .nautilus-list-view iconview:selected:backdrop { border-bottom-color: #375a74; }
+
+.search-information { background-color: #3c6687; color: white; padding: 2px; }
+
+/* Hide superfluous treeview drop target indication */
+.nautilus-list-view .view.dnd, .nautilus-list-view iconview.dnd { border-style: none; }
+
+.conflict-row { background: #fef6b6; color: black; }
+
+.conflict-row:hover { background-color: shade(#fef6b6, 0.9); }
+
+.conflict-row:selected { background: #3c6687; color: #d2d2d2; }
+
 
 /********************************************************************/
 /*--------------DECORATION ---------------------------------------  */

@@ -26,6 +26,14 @@
 
 }
 
+/* Custom new firefox search page */
+@-moz-document url("about:newtab"), url("about:home") {
+
+  .search-wrapper .logo-and-wordmark .wordmark {
+    fill: #f57900 !important;
+  }
+}
+
 
 /* custom about:addons */
 #header-inner {margin: 2px 0px -40px 4px !important}
@@ -38,4 +46,5 @@
 .more-options-button {top: 8px}
 .prefs-button, .addon-description, .addon-badge, .help-button, #search-label, #category-discover, #heading-name, .list-section-heading, recommended-extensions-section {display:none}
 .sidebar-footer-button {margin-bottom: 36px}
-:root {--addon-icon-size: 26px !important; --card-padding: 14px !i
+:root {--addon-icon-size: 26px !important; --card-padding: 14px !important
+
