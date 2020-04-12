@@ -6024,7 +6024,7 @@ notebook > header.top {
 }
 
 notebook > header.top tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -6040,7 +6040,7 @@ notebook > header.bottom {
 }
 
 notebook > header.bottom tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -6056,7 +6056,7 @@ notebook > header.right {
 }
 
 notebook > header.right tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -6072,7 +6072,7 @@ notebook > header.left {
 }
 
 notebook > header.left tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -6155,7 +6155,7 @@ notebook > header tabs > tab {
 }
 
 notebook > header tabs > tab:hover:not(:checked) {
-  color: #f0f0f0;
+  color: #303030;
   background-color: rgba(232, 232, 232, 0.725);
   border-color: #2a2a2a;
 }
@@ -6173,16 +6173,16 @@ notebook > header tabs > tab button.flat, notebook > header tabs > tab .raven .r
   padding: 0;
   margin-top: 2px;
   margin-bottom: 2px;
-  color: #6d6d6d;
+  color: #9d9d9d;
 }
 
 notebook > header tabs > tab button.flat:hover, notebook > header tabs > tab .raven .raven-header:not(.top) button:hover, .raven .raven-header:not(.top) notebook > header tabs > tab button:hover {
-  color: #c0c0c0;
+  color: #303030;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 notebook > header tabs > tab button.flat:active, notebook > header tabs > tab .raven .raven-header:not(.top) button:active, .raven .raven-header:not(.top) notebook > header tabs > tab button:active, notebook > header tabs > tab button.flat:active:hover {
-  color: #f0f0f0;
+  color: #a0a0a0;
   background-color: rgba(0, 0, 0, 0.2);
 }
 

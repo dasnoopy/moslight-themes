@@ -5742,11 +5742,11 @@ notebook > header button.flat.toggle.popup:active, notebook > header .raven .rav
 }
 
 notebook > header.top {
-  padding: 0;
+  padding: 0px;
 }
 
 notebook > header.top tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -5762,7 +5762,7 @@ notebook > header.bottom {
 }
 
 notebook > header.bottom tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -5778,7 +5778,7 @@ notebook > header.right {
 }
 
 notebook > header.right tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -5794,7 +5794,7 @@ notebook > header.left {
 }
 
 notebook > header.left tab {
-  padding: 2px 10px;
+  padding: 4px 10px;
   min-width: 20px;
   min-height: 20px;
   border-radius: 0;
@@ -5871,14 +5871,14 @@ notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab
 
 notebook > header tabs > tab {
   color: rgba(36, 36, 36, 0.725);
-  background-color: #d8d8d8;
+  background-color: #e9e9ea;
   border: 1px solid #cfcfcf;
   transition: all 150ms ease-out;
 }
 
 notebook > header tabs > tab:hover:not(:checked) {
   color: #242424;
-  background-color: rgba(232, 232, 232, 0.725);
+  background-color: rgba(172, 173, 174, 0.725);
   border-color: #cfcfcf;
 }
 
@@ -10669,13 +10669,11 @@ popup decoration {
 .ssd decoration {
 
   border-radius: 6px 6px 0 0;
-  box-shadow: none;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);}
   
 .ssd decoration:backdrop {
 
  border-radius: 6px 6px 0 0;
- box-shadow: none;
  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);}
   
 .csd.popup decoration {
