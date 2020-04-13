@@ -673,7 +673,7 @@ opacity: 0.55; }
 popover.background,
 popover{
   
-  border-radius: 5px;
+  border-radius: 4px;
   border: none;
    background-color: rgba(255,255,255,0.92);
   background-image:url("objects/other/blurred6.png");
@@ -833,7 +833,7 @@ entry {
   background-image: image(rgba(255,255,255,1)); }
   
 entry.search {
-  border-radius: 5px; }
+  border-radius: 4px; }
 
 entry image {
 
@@ -856,7 +856,7 @@ entry.flat:focus{
   /*padding: 2px;*/
   background-image: none;
   border-color: transparent;
-  border-radius: 5px; }
+  border-radius: 4px; }
 
 entry:focus {
 
@@ -1045,12 +1045,12 @@ button {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: normal;
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 1px 4px 1px 4px;
   color: #202020;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   background-color: transparent;
-  background-image: image(#ffffff)}
+  background-image: image(#ffffff);}
   
 button.flat:hover,
 button.sidebar-button:hover,
@@ -1847,7 +1847,7 @@ stackswitcher button.text-button {
 /*(((((((((((((((( COMBOBOX )))))))))))))))))))*/
 
 combobox button.combo {
-border-radius: 5px;
+  border-radius: 4px;
   min-height:16px;
   min-width: 0px;
   padding-left:12px;
@@ -1860,9 +1860,9 @@ border-radius: 5px;
   min-height: 16px;
   min-width: 16px;
   padding-left: 1px;
-  padding-right:1px;
-  margin:-2px -13px -2px 0px;
-  border-radius: 0 4.3px 4.3px 0;
+  padding-right: 1px;
+  margin:-2px -13px -2px -1px;
+  border-radius: 0 4px 4px 0;
  
   color: #ffffff;
   background-color:transparent;
@@ -1877,7 +1877,7 @@ border-radius: 5px;
 
   -gtk-icon-source: -gtk-scaled(url("objects/arrows/combo-box-arrow-disabled.svg"), url("objects/arrow/combo-box-arrow-disabled@2.svg"));
   border-color: transparent;
-  background-color: transparent;
+  background-color: #cfcfcf;
   background-image: none;
   opacity: 0.6;}
 
@@ -2073,7 +2073,7 @@ background-image: linear-gradient(180deg,rgba(255,255,255,1),
 
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child {
   
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child {
@@ -2167,7 +2167,7 @@ background-image: linear-gradient(180deg,rgba(255,255,255,1),
 
   border: 1px solid;
   color: #202020;
-  border-radius: 5px;
+  border-radius: 4px;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   padding: 2px 4px 2px 4px;
   background-color: transparent;
@@ -2214,7 +2214,7 @@ background-image: linear-gradient(180deg,rgba(255,255,255,1),
 
 .primary-toolbar .linked:not(.vertical):not(path-bar) > button:only-child {
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 .primary-toolbar .linked:not(.vertical):not(path-bar) > button:last-child {
@@ -2282,7 +2282,7 @@ background-image: linear-gradient(180deg,rgba(255,255,255,1),
   
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child{
 
-  border-radius: 5px; }
+  border-radius: 4px; }
   
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child{
 
@@ -2581,7 +2581,7 @@ primary-toolbar spinbutton:not(.vertical) > button:not(:disabled):not(:active):n
 
 .primary-toolbar combobox > .linked > button.combo{
 
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 2px 4px 2px 4px;
   color: #202020; 
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
@@ -2590,7 +2590,7 @@ primary-toolbar spinbutton:not(.vertical) > button:not(:disabled):not(:active):n
                                               rgba(251,251,251,1));}
 .primary-toolbar combobox > .linked > button.combo image{
   
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 2px 4px 2px 4px;
   color: #202020; 
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
@@ -2922,7 +2922,7 @@ inline-toolbar {
 
 .inline-toolbar button:only-child{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 .inline-toolbar:not(.inline-toolbar) switch{
@@ -3149,7 +3149,7 @@ inline-toolbar {
 
 .inline-toolbar toolbutton:only-child > button.sidebar-button{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 /******TOOLBAR INLINE-TOOLBAR ***/
@@ -3222,17 +3222,17 @@ toolbar.inline-toolbar toolbutton:backdrop:last-child > button.flat{
 
 toolbar.inline-toolbar toolbutton:only-child > button.flat{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 toolbar.inline-toolbar toolbutton:only-child > button.sidebar-button{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 
@@ -3469,7 +3469,7 @@ popover .linked:not(.vertical) > button:last-child{
 
 popover.linked:not(.vertical) > button:only-child{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;} 
 .linked:not(.vertical) > button{
   
@@ -3507,7 +3507,7 @@ popover.linked:not(.vertical) > button:only-child{
 
 .linked:not(.vertical) > button:only-child{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 .linked:not(.vertical) > spinbutton:first-child:not(.vertical){
@@ -3530,7 +3530,7 @@ popover.linked:not(.vertical) > button:only-child{
 .linked:not(.vertical):not(.path-bar) > button + button {
  
   margin-left: -1px;
-  margin-right:0px;
+  margin-right: 0px;
   border-left-color: rgba(0, 0, 0, 0.12);
   border-left-style: solid;}
  
@@ -3856,7 +3856,7 @@ popover.linked:not(.vertical) > button:only-child{
 
 .linked.vertical > button:only-child{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked.vertical > button:active + entry{
@@ -3955,7 +3955,7 @@ popover.linked:not(.vertical) > button:only-child{
 
 .linked.vertical > combobox:only-child > box > button.combo {
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid; }
 
 
@@ -3995,7 +3995,7 @@ spinbutton:not(.vertical) entry:last-child{
 
 spinbutton:not(.vertical) entry:only-child{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 spinbutton:not(.vertical):dir(ltr) entry{
@@ -4017,7 +4017,7 @@ spinbutton:not(.vertical) > entry:drop(active) + button {
 
 spinbutton button:active {
 
-  border-radius: 5px;
+  border-radius: 4px;
   color: #ffffff;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -4045,7 +4045,7 @@ spinbutton:not(.vertical) button:last-child{
 
 spinbutton:not(.vertical) button:only-child{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 spinbutton:not(.vertical) button:first-child{
@@ -4117,7 +4117,7 @@ spinbutton.vertical button.down {
 
 spinbutton.vertical entry:only-child {
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid; }
 
 spinbutton.vertical > entry:focus + button {
@@ -4155,7 +4155,7 @@ spinbutton.vertical button:last-child {
 
 spinbutton.vertical button:only-child {
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid; }
 
 
@@ -4169,7 +4169,7 @@ headerbar entry {
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
   border: 1px solid;
   border-color: #d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
-  border-radius: 5px;
+  border-radius: 4px;
   min-height: 20px;
   min-width: 16px;
  padding: 2px 4px 2px 4px;
@@ -4379,7 +4379,7 @@ headerbar button.text-button {
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
   border: 1px solid;
   border-color: #d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
-  border-radius: 5px;
+  border-radius: 4px;
   min-height: 20px;
   min-width: 16px;
   padding: 2px 12px 2px 12px;
@@ -4420,7 +4420,7 @@ headerbar button.text-button.image-button{
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
   border: 1px solid;
   border-color: #d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
-  border-radius: 5px;
+  border-radius: 4px;
   min-height: 20px;
   min-width: 16px;
   padding: 2px 8px 2px 8px;
@@ -4462,7 +4462,7 @@ headerbar button.image-button{
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
   border: 1px solid;
   border-color: #d9d9d9 #cdcdcd #bdbdbd #cdcdcd; 
-  border-radius: 5px;
+  border-radius: 4px;
   min-height: 20px;
   min-width: 16px;
   padding: 2px 8px 2px 8px;
@@ -4663,7 +4663,7 @@ headerbar .linked:not(.vertical).path-bar > button:last-child{
 
 headerbar .linked:not(.vertical).path-bar > button:only-child {
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 headerbar .linked:not(.vertical).path-bar > button:hover:not(:checked):not(:active):not(:only-child):hover {
@@ -4870,7 +4870,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:last-child{
 
 headerbar .linked:not(.vertical):not(.path-bar) > button:only-child {
 
-  border-radius: 5px;}
+  border-radius: 4px;}
 
 headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child){
 
@@ -4954,7 +4954,7 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-ch
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child{
@@ -6165,7 +6165,7 @@ context-menu,
   
   padding-top: 4px;
   padding-bottom: 4px;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #202020;
   text-shadow: 0 1px alpha(#ffffff, 0.35);
    background-color: rgba(255,255,255,0.92);
@@ -7245,7 +7245,7 @@ row:selected progressbar trough{
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
   padding: 1px 8px 1px 8px;
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: normal;
   color: #ffffff;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
@@ -7421,7 +7421,7 @@ messagedialog.csd .dialog-action-area button {
   background-color: transparent;
   background-image: linear-gradient(to bottom,rgba(255,255,255,1),rgba(253,253,253,1));
   margin:10px;
-  border-radius: 5px; }
+  border-radius: 4px; }
 
 messagedialog.csd .dialog-action-area button:active{
 
@@ -7429,7 +7429,7 @@ messagedialog.csd .dialog-action-area button:active{
   border-color: #acacac;
   background-color: transparent;
   background-image: image(#ffffff);
-  border-radius: 5px;}
+  border-radius: 4px;}
   
 messagedialog.csd .dialog-action-area button:focus,  
 messagedialog.csd .dialog-action-area button:not(.suggested-action):not(.destructive-action):hover {
@@ -7443,7 +7443,7 @@ messagedialog.csd .dialog-action-area button:not(.suggested-action):not(.destruc
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border-radius: 5px;}
+  border-radius: 4px;}
 
 messagedialog.csd .dialog-action-area button:not(.suggested-action):not(.destructive-action):active,
 messagedialog.csd .dialog-action-area button:not(.suggested-action):not(.destructive-action):checked {
@@ -7456,7 +7456,7 @@ messagedialog.csd .dialog-action-area button:not(.suggested-action):not(.destruc
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border-radius: 5px;}
+  border-radius: 4px;}
 
 messagedialog.csd .dialog-action-area button:last-child {
 
@@ -7470,7 +7470,7 @@ messagedialog.csd .dialog-action-area button:first-child {
   padding-left:6px;
   padding-right: 6px;
   margin: 10px;
-  border-radius: 5px;}
+  border-radius: 4px;}
 
 messagedialog.csd .dialog-action-area button:only-child {
 
@@ -11163,11 +11163,11 @@ headerbar:only-child{
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
   border: 1px solid;
   border-color: #d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 headerbar .linked:not(.vertical):not(.path-bar) > button{
 
-  border-radius: 5px;
+  border-radius: 4px;
  color:#575757;
   background-color: transparent;
   background-image: linear-gradient(180deg,#fdfdfd,#f1f1f1);
@@ -11181,18 +11181,18 @@ headerbar .linked:not(.vertical):not(.path-bar) > button{
   
 headerbar .linked:not(.vertical):not(.path-bar) > button:first-child{
  
-  border-radius: 5px;
+  border-radius: 4px;
   padding-left: 6px;
   padding-right: 6px;} 
 
 headerbar .linked:not(.vertical):not(.path-bar) > button:last-child{
-  border-radius: 5px;
+  border-radius: 4px;
   padding-left: 6px;
   padding-right: 6px;}
 
 headerbar .linked:not(.vertical):not(.path-bar) > button:only-child {
 
-  border-radius: 5px;}
+  border-radius: 4px;}
   
   
 headerbar:only-child { 
@@ -11222,7 +11222,7 @@ window.background.csd > box.horizontal > box.vertical > scrolledwindow.view > vi
 headerbar .linked.raised:not(.vertical):not(.path-bar) > button.image-button, headerbar .linked.raised:not(.vertical):not(.path-bar) > button.image-button:hover, headerbar .linked.raised:not(.vertical):not(.path-bar) > button.image-button:active, headerbar .linked.raised:not(.vertical):not(.path-bar) > button.image-button:checked, headerbar .linked.raised:not(.vertical):not(.path-bar) > button.image-button:disabled {
   padding-left:7px;
   padding-right:7px;
-  border-radius: 5px;
+  border-radius: 4px;
   margin-right: 1px;}
 
 
