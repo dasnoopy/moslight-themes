@@ -1,25 +1,29 @@
-## Mos*-themes
+## My GTK3 and Gnome Shell themes 
+
+A collection of simple GTK2/GTK3 and Gnome shell themes made in the sparetime.
+
+**McOS** is the current maintained theme and it works **only** for Gnome 3.36.x
+GTK3 3.24.18 is required for gtk3 theme..
 
 
-Simple GTK2/GTK3 and Gnome shell themes
+![MosArc GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/McOS.png)
 
-**MosArc is the current theme and it works for Gnome 3.28.x (should works also with Gnome 3.24.x and 3.26.x)**
+McOS folder contain GTK2, GTK3 and Gnome Shell theme
 
-**MosArc** is a GTK2/3 and gnome shell theme based on ARC theme (https://github.com/horst3180/Arc-theme). GTK2 v2.24.x 
-  and GTK3 v3.22.x libs are required. Noticeable changes are:
-  
-  * OSX like windows controls
-  * reduced widget padding
-  * darker text color
-  * different switch widget
-  * a bunch of other minor changes.
-  * reworked nautilus sidebar (stolen idea from other gtk3 theme see around)
+All the thaks to these themes and their maintainer: McoS is 
 
+- https://github.com/vinceliuice/Mojave-gtk-theme (made by https://github.com/vinceliuice)
+- https://github.com/paullinuxthemer/Prof-Gnome (made by https://github.com/paullinuxthemer)
+-https://github.com/paullinuxthemer/Mc-OS-themes (made by https://github.com/paullinuxthemer)
 
-![MosArc GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MosArc.png)
+So many thanks to creators and maintainer of these themes
+
 
 
 **Old and unsupported themes:**
+
+**MosArc** is a theme designed **only** for gnome 3.34and it was based on ARC theme (https://github.com/horst3180/Arc-theme). 
+	GTK2 v2.24.x and GTK3 v3.22.x libs are required. 
 
 * **MosLight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
   GTK3 v3.12.x libs.
@@ -54,8 +58,6 @@ that folder
 * GTK2 pixbuf engine or the gtk(2)-engines package.
 
 **GTK3 ENGINES REQUIREMENTS**
-
-* GTK3 engine Adwaita 3.12 (only for Moslight)
 * Since GTK+ 3.14, the Adwaita theme is shipped by GTK+ itself and it does not use any engine
 
 **How to install required gtk2/3 engines:**
