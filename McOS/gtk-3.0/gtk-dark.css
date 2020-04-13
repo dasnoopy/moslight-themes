@@ -843,8 +843,8 @@ entry:focus {
   font-weight: normal;
   border: 0.8px solid;
   
-  border-radius: 5px;
-  padding: 1px 4px 1px 4px;
+  border-radius 5px;
+  padding: 1px 8px 1px 8px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -1034,7 +1034,7 @@ button {
   border: 0.8px solid;
   
   border-radius: 5px;
-  padding: 2px 4px 2px 4px;
+  padding: 1px 4px 1px 4px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),

@@ -824,7 +824,7 @@ entry {
 
   min-height: 22px;
   min-width: 16px;
-  padding: 1px 4px 1px 4px;
+  padding: 1px 8px 1px 8px;
   border-radius: 4px;
   color: #202020;
   border: 1px solid;
@@ -1046,7 +1046,7 @@ button {
   font-weight: normal;
   border: 1px solid;
   border-radius: 3px;
-  padding: 2px 4px 2px 4px;
+  padding: 1px 4px 1px 4px;
   color: #202020;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   background-color: transparent;
@@ -5289,17 +5289,14 @@ infobar.error,
 infobar.question,
 infobar.warning{
   padding: 2px;
-  border: 1px solid;
-  border-color: rgba(105,105,105,0.3);
+  border: none;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(105,105,105,0.3);
   border-radius: 0px;
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
+  color: #242424;
+  text-shadow: none;
   background-color: transparent;			  
-  background-image: image(rgba(0,0,0,0.5)); } 
+  background-image: image(rgba(236,242,245,1.0)); } 
 
 infobar.error button,
 infobar.warning button,
@@ -5311,17 +5308,13 @@ infobar.info button{
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
   padding: 1px 8px 1px 8px;
-  border-radius: 5px;
+  border-radius: 3px;
   font-weight: normal;
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
+  color: #242424;
+  text-shadow:  none;
   background-color: transparent;
   background-image:linear-gradient(to bottom,rgba(0,0,0,0.07),rgba(0,0,0,0.12));
-  border-color: rgba(0,0,0,0.2);}
+  border-color: rgba(0,0,0,0.325);}
   
 infobar.error button.flat,
 infobar.warning button.flat,
@@ -5691,7 +5684,7 @@ notebook.frame > header.left tabs > tab:first-child, notebook.frame > header.rig
 notebook.frame > header.left tabs > tab:last-child, notebook.frame > header.right tabs > tab:last-child {
   border-bottom-style: solid;
 }
-
+/* sfondo scheda notebook */
 notebook > stack:not(:only-child) {
   background-color: #ffffff;
 }
@@ -5867,6 +5860,8 @@ notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab
   border-bottom-style: solid;
 }
 
+/* tabs non attivi e non selezionati  */
+
 notebook > header tabs > tab {
   color: rgba(36, 36, 36, 0.725);
   background-color: #e9e9ea;
@@ -5874,12 +5869,15 @@ notebook > header tabs > tab {
   transition: all 150ms ease-out;
 }
 
+/* tab hover durante la selezione di un altro tab */
+
 notebook > header tabs > tab:hover:not(:checked) {
   color: #242424;
   background-color: rgba(172, 173, 174, 0.725);
   border-color: #cfcfcf;
 }
 
+/* tab attivo e selezionato */
 notebook > header tabs > tab:checked {
   color: #202020;
   background-color: #ffffff;
@@ -6523,7 +6521,6 @@ color: transparent;
 
 switch:checked:disabled {
 
- 
   background-color: rgba(12, 170, 240, 0.2);
   color: transparent; }
 
@@ -6725,7 +6722,7 @@ progressbar trough {
 
   border: none;
   border-radius: 3px;
-  background-color: #ffffff; }
+  background-color: #e6e6e7; }
 
 /******************************************************************/
 /*                  LEVELBAR                                      */
@@ -6746,7 +6743,7 @@ levelbar trough {
   border: none;
   padding: 3px;
   border-radius: 3px;
-  background-color: #ffffff; }
+  background-color: #e6e6e7; }
 
 levelbar.horizontal.discrete block {
 
@@ -7038,7 +7035,7 @@ row.activatable:hover{
 
 row:selected button{
 
-  color: #ffffff;
+  color: #242424;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
 				  1px  0px alpha(#202020, 0.05),
@@ -7052,7 +7049,7 @@ row:selected button.flat{
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #ffffff;
+  color: #242424;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
 				  1px  0px alpha(#202020, 0.05),
@@ -7064,7 +7061,7 @@ row:selected button.sidebar-button{
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #ffffff;
+  color: #242424;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
 				  1px  0px alpha(#202020, 0.05),
