@@ -15,7 +15,7 @@ McOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
 
 - https://github.com/vinceliuice/Mojave-gtk-theme (made by https://github.com/vinceliuice)
 - https://github.com/paullinuxthemer/Prof-Gnome (made by https://github.com/paullinuxthemer)
--https://github.com/paullinuxthemer/Mc-OS-themes (made by https://github.com/paullinuxthemer)
+- https://github.com/paullinuxthemer/Mc-OS-themes (made by https://github.com/paullinuxthemer)
 
 So many thanks to their creators and maintainers!
 
@@ -35,8 +35,6 @@ So many thanks to their creators and maintainers!
 
 * **MosCloud** is a theme designed **only** for Gnome 3.18: it works only with GTK2 v2.24.x 
   and GTK3 v3.18.x libs
-
-![MosSky GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MosSky.png)
 
 You can find these old themes also on deviantart page (http://dasnoopy.deviantart.com/)
 
