@@ -4016,8 +4016,6 @@ popover.linked:not(.vertical) > button:only-child{
 
 /*((((((((((((( SPINBUTTON )))))))))))))))))*/
 
-
-
 spinbutton:drop(active) {
 
   box-shadow: none; }
@@ -4151,28 +4149,26 @@ spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active) {
 /**(((((((((((( SPINBUTTON VERTICAL entry ))))))))))*/
 
 spinbutton.vertical entry {
-
+  
+  min-height: 2.2rem; /*32px;*/ 
+  min-width: 2.2rem; /*32px;*/  
   border-radius: 0;
   border-bottom-style: none;
-  padding-left: 4px;
-  padding-right: 4px;
-  min-width: 0; }
+  padding-left: 0;
+  padding-right: 0; }
 
-spinbutton.vertical entry:first-child {
+spinbutton.vertical button { 
 
-  border-bottom-right-radius:0px;
-  border-bottom-left-radius:0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  min-height:2.2rem; /*32px;*/ 
+  min-width: 2.2rem; /*32px;*/ padding: 0; }
 
-spinbutton.vertical entry:last-child {
+spinbutton.vertical button.up { 
+  border-radius: 5px 5px 0 0; }
 
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-style: solid; }
 
+spinbutton.vertical button.down { 
+  border-radius: 0 0 5px 5px; }
+  
 spinbutton.vertical entry:only-child {
 
   border-radius: 5px;
@@ -4215,6 +4211,9 @@ spinbutton.vertical button:only-child {
 
   border-radius: 5px;
   border-style: solid; }
+
+
+
 
 /*((((((((((((( headerbar entry related ))))))))))))))))*/
 
@@ -6784,7 +6783,7 @@ switch:disabled {
 switch:checked {
 
   color: transparent;
-  background-color: #71c837; }
+  background-color: #4095ff; }
 
 switch:checked:disabled {
 
