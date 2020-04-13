@@ -4,7 +4,7 @@ A collection of simple GTK2/GTK3 and Gnome shell themes made in the sparetime.
 
 **McOS** is the current maintained theme and it works **only** for Gnome 3.36.x.
 
-- GTK3 3.24.18 is required for gtk3 theme.
+- GTK3 3.24.16 or above is required for gtk3 theme. For GTK2 and other requirements check the end of this readme..
 
 
 ![MosArc GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/McOS.png)
@@ -54,8 +54,6 @@ that folder
 * GTK2 engine Murrine 0.98.1.1 or later.
 * GTK2 pixbuf engine or the gtk(2)-engines package.
 
-**GTK3 ENGINES REQUIREMENTS**
-* Since GTK+ 3.14, the Adwaita theme is shipped by GTK+ itself and it does not use any engine
 
 **How to install required gtk2/3 engines:**
 
