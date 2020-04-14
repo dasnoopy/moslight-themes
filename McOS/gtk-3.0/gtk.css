@@ -1843,7 +1843,6 @@ stackswitcher button.text-button {
 
   min-width: 80px; }
 
-
 /*(((((((((((((((( COMBOBOX )))))))))))))))))))*/
 
 combobox button.combo {
@@ -1867,8 +1866,8 @@ combobox button.combo {
   color: #ffffff;
   background-color:transparent;
   border-color: #487afa;
-  border-top-color: #6290f7;
-  border-bottom-color: #3767fc;
+  border-top: 1px solid #4095ff;
+  border-bottom: 1px solid #4095ff;
   background-image: linear-gradient(#54a0ff, #0077da);
   box-shadow: none;
 }
@@ -1876,7 +1875,17 @@ combobox button.combo {
 .background combobox button.combo arrow:disabled {
 
   -gtk-icon-source: -gtk-scaled(url("objects/arrows/combo-box-arrow-disabled.svg"), url("objects/arrow/combo-box-arrow-disabled@2.svg"));
-  border-color: transparent;
+  
+  min-height: 16px;
+  min-width: 16px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin:-2px -13px -2px -1px;
+  border-radius: 0 4px 4px 0;
+  
+  border-color: #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #bdbdbd;
   background-color: #cfcfcf;
   background-image: none;
   opacity: 0.6;}
@@ -1884,7 +1893,7 @@ combobox button.combo {
 combobox arrow {
  
 -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); 
- min-height: 16px;
+  min-height: 16px;
   min-width: 16px; }
 
 
@@ -2068,7 +2077,6 @@ background-image: linear-gradient(180deg,rgba(255,255,255,1),
   border-bottom-right-radius:0px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  
   border-style: solid;}
 
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child {
@@ -2223,7 +2231,6 @@ background-image: linear-gradient(180deg,rgba(255,255,255,1),
   border-bottom-left-radius: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  
   border-style: solid;}
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child){
@@ -3295,8 +3302,8 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
   border-bottom-right-radius:0px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  
-  border-style: solid;}
+  border-style: solid;
+  border-right-style: none;}
 
 .linked:not(.vertical) > entry:last-child{
 
@@ -3305,7 +3312,8 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-style: solid;
-  }
+  border-left-style:none;}
+  
 .linked:not(.vertical) > entry + button.combo {
   padding-left: 0;
 }

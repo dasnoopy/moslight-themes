@@ -1909,13 +1909,20 @@ combobox button.combo {
   color: #ffffff;
   background-color: transparent;
   /*border-color:  #6290f7 #2e69eb #295ed8 #2e69eb;*/
-  background-image: linear-gradient(#6290f7, #6290f7 0.6px, #2e69eb 0.6px,#295ed8);
+  background-image: linear-gradient(#6290f7, #6290f7 1px, #2e69eb 1px,#295ed8);
   box-shadow: none;
 }
 
 .background combobox button.combo arrow:disabled {
 
  -gtk-icon-source: -gtk-scaled(url("objects-dark/arrows/combo-box-arrow-disabled.svg"), url("objects-dark/arrows/combo-box-arrow-disabled@2.svg"));
+  min-height: 16px;
+  min-width: 16px;
+  padding-left: 1px;
+  padding-right:1px;
+  margin: -1px -13px -1px -1px;
+  border-radius: 0 4px 4px 0;
+  
   opacity: 0.6;
   background-color: #404040;
   background-image: none;}
@@ -3350,8 +3357,8 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
   border-bottom-right-radius:0px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  
-  border-style: solid;}
+  border-style: solid;
+  border-right-style: none;}
 
 .linked:not(.vertical) > entry:last-child{
 
@@ -3360,7 +3367,7 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-style: solid;
-  }
+  border-left-style:none;}
 
 .linked:not(.vertical) > entry:only-child{
 
