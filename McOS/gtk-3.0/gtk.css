@@ -1842,6 +1842,12 @@ stacksidebar button row.needs-attention > label:dir(rtl) {
 stackswitcher button.text-button {
 
   min-width: 80px; }
+  
+stackswitcher button.circular, 
+stackswitcher button.text-button.circular { 
+
+  min-width: 32px; min-height: 32px; padding: 0; }
+
 
 /*(((((((((((((((( COMBOBOX )))))))))))))))))))*/
 
@@ -3619,57 +3625,55 @@ popover.linked:not(.vertical) > button:only-child{
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(ltr):disabled{
 
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-  border-left: solid;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;}
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-left: 1px solid #cfcfcf;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;}
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(ltr){
 
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-  border-left: solid;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;}
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-left: 1px solid #cfcfcf;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;}
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(rtl):disabled{
 
-  border-bottom-left-radius:0px;
-  border-top-left-radius: 0px;
-  border-right-style: solid;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;}
+  border-bottom-left-radius:4px;
+  border-top-left-radius: 4px;
+  border-left: 1px solid #cfcfcf;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;}
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
   
-  border-bottom-left-radius:0px;
-  border-top-left-radius: 0px;
-  border-right-style: solid;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;}
+  border-bottom-left-radius:4px;
+  border-top-left-radius: 4px;
+  border-left: 1px solid #cfcfcf;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;}
 
 .linked:not(.vertical) > combobox:first-child > box > button.combo{
 
-  border-top-right-radius:0px;
-  border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin-left: 0px;
-  border-style: solid;}
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #cfcfcf;}
 
 .linked:not(.vertical) > combobox:last-child > box > button.combo{
 
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-style: solid;
-  margin-left:-1px;}/*-1px*/
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid #cfcfcf;}
 
 .linked:not(.vertical) > combobox:only-child > box > button.combo{
 
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;}
 
 /******************************************************/
@@ -3965,7 +3969,6 @@ popover.linked:not(.vertical) > button:only-child{
 
   border-radius: 4px;
   border-style: solid; }
-
 
 /*((((((((((((( SPINBUTTON )))))))))))))))))*/
 
@@ -5298,13 +5301,11 @@ infobar.question,
 infobar.warning{
   padding: 2px;
   border: none;
-  border-bottom: 1px solid;
-  border-bottom-color: rgba(105,105,105,0.3);
+  border-bottom: 1px solid #cfcfcf;
   border-radius: 0px;
-  color: #242424;
+  color: #f3f3f3;
   text-shadow: none;
-  background-color: transparent;			  
-  background-image: image(rgba(236,242,245,1.0)); } 
+  background-color: #7d7f89; } 
 
 infobar.error button,
 infobar.warning button,
@@ -5318,11 +5319,11 @@ infobar.info button{
   padding: 1px 8px 1px 8px;
   border-radius: 3px;
   font-weight: normal;
-  color: #242424;
+  color: #f3f3f3;
   text-shadow:  none;
   background-color: transparent;
   background-image:linear-gradient(to bottom,rgba(0,0,0,0.07),rgba(0,0,0,0.12));
-  border-color: rgba(0,0,0,0.325);}
+  border-color: rgba(0,0,0,0.275);}
   
 infobar.error button.flat,
 infobar.warning button.flat,
@@ -5330,7 +5331,7 @@ infobar.question button.flat,
 infobar.info button.flat{
 
   text-shadow: none;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 1px 3px 1px 3px;
   color: #ffffff;
   background-color: transparent;
@@ -8173,24 +8174,42 @@ button.color colorswatch:first-child:last-child overlay {
 /*             BUTTON CIRCULAR                                       */
 /*********************************************************************/
 
-.raven box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable button.image-button, .raven button.image-button, button.nautilus-circular-button.image-button, stackswitcher button.circular,
-stackswitcher button.text-button.circular, button.close, searchbar button.flat, searchbar .raven .raven-header:not(.top) button, .raven .raven-header:not(.top) searchbar button, row button.circular, .app-notification button:not(.text-button).image-button,
-button.circular {
-  border-radius: 100px;
-  -gtk-outline-radius: 100px;
-  padding: 0 0 0 0;
-  min-height: 28px;
-  min-width: 28px;
-}
+button.circular { 
 
-.raven box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable button.image-button:active, .raven button.image-button:active, button.nautilus-circular-button.image-button:active, button.close:active, searchbar button.flat:active, searchbar .raven .raven-header:not(.top) button:active, .raven .raven-header:not(.top) searchbar button:active, .app-notification button.image-button:active:not(.text-button), .raven box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable button.image-button:checked, .raven button.image-button:checked, button.nautilus-circular-button.image-button:checked, button.close:checked, searchbar button.flat:checked, searchbar .raven .raven-header:not(.top) button:checked, .raven .raven-header:not(.top) searchbar button:checked, .app-notification button.image-button:checked:not(.text-button),
-button.circular:active,
-button.circular:checked {
-  background-image: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.2);
-}
+  border-radius: 9999px; 
+  -gtk-outline-radius: 9999px; 
+  background-origin: padding-box, border-box; 
+  background-clip: padding-box, border-box;
+   min-width: 32px; min-height: 32px; padding: 0; }
+
+button.circular label { 
+
+  padding: 0; }
+
+button.circular:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) { 
+
+  color: #363636; 
+  outline-color: rgba(46, 52, 54, 0.3); 
+  border-color: #cdcdcd; 
+  border-bottom-color: #bfbfbf; 
+  background-image: linear-gradient(to top, #edebe9 2px, #f6f6f6); 
+  text-shadow: 0 1px rgba(255, 255, 255, 0.769231); 
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.769231); 
+  box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07); 
+  background-image: linear-gradient(to top, #edebe9 2px, #f6f6f6), linear-gradient(to top, #bfbfbf 25%, #cdcdcd 50%); 
+  border-color: transparent; }
+
+button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) { 
+
+  color: #363636; 
+  outline-color: rgba(46, 52, 54, 0.3); 
+  border-color: #cdcdcd; 
+  border-bottom-color: #bfbfbf; 
+  text-shadow: 0 1px rgba(255, 255, 255, 0.769231); 
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.769231); 
+  box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #f6f6f6, #f8f8f7 1px), linear-gradient(to top, #bfbfbf 25%, #cdcdcd 50%); 
+  border-color: transparent; }
 
 /*********************************************************************/
 /*            GEDIT TWEAKS                                           */
@@ -9560,7 +9579,7 @@ iconview.source-list:selected:focus{
 
 filechooser placessidebar.sidebar separator{
 
-  background-color: transparent; }
+  background-color: #cfcfcf; }
 
 filechooser.maximized placessidebar.sidebar{
 
