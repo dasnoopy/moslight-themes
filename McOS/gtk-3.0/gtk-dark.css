@@ -1034,7 +1034,7 @@ button {
   border: 0.8px solid;
   
   border-radius: 4px;
-  padding: 1px 4px 1px 4px;
+  padding: 2px 4px 2px 4px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -3678,58 +3678,56 @@ popover.linked:not(.vertical) > button:only-child{
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(ltr):disabled{
 
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
   border-left: solid;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;}
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;}
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(ltr){
 
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
   border-left: solid;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;}
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;}
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(rtl):disabled{
 
-  border-bottom-left-radius:0px;
-  border-top-left-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
   border-right-style: solid;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;}
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;}
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
   
-  border-bottom-left-radius:0px;
-  border-top-left-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
   border-right-style: solid;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;}
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;}
 
 .linked:not(.vertical) > combobox:first-child > box > button.combo{
 
-  border-top-right-radius:0px;
-  border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin-left: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   border-style: solid;}
 
 .linked:not(.vertical) > combobox:last-child > box > button.combo{
 
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-style: solid;
-  margin-left:-1px;}/*-1px*/
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-style: solid; }
 
 .linked:not(.vertical) > combobox:only-child > box > button.combo{
 
   border-radius: 4px;
-  border-style: solid;}
+  border-style: solid; }
 
 /******************************************************/
 /* LINKED.VERTICAL                                    */
