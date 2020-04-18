@@ -81,11 +81,12 @@
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 0;
    outline-color: alpha(currentColor,0.3);
-   outline-style: dotted;
-   outline-offset: -5px;
-   outline-width: 0px;
- -gtk-outline-radius: 3px;
- -gtk-secondary-caret-color: #3584e4;}
+   outline-style: dashed;
+   outline-offset: -3px;
+   outline-width: 1px;
+   -gtk-outline-radius: 3px;
+   -gtk-secondary-caret-color: #3584e4;}
+
 *:disabled {
   -gtk-icon-effect: dim; }
 
@@ -674,10 +675,10 @@ popover.background,
 popover{
   
   border-radius: 4px;
-  border: none;
-   background-color: rgba(255,255,255,0.92);
-  background-image:url("objects/other/blurred6.png");
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.26);
+  border: 1px solid #cdcdcf;
+  background-color: rgba(242,242,244,1.00);
+  background-image:none;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   background-size: cover;}
 
 popover > list,
@@ -727,7 +728,7 @@ popover.osd{
 
   color: #202020;
   border: none;
-  background-color: rgba(240, 242, 248, 0.85);
+  background-color: rgba(242, 242, 244, 0.85);
   background-clip: padding-box;
   box-shadow: none; }
 
@@ -1846,7 +1847,7 @@ stackswitcher button.text-button {
 stackswitcher button.circular, 
 stackswitcher button.text-button.circular { 
 
-  min-width: 32px; min-height: 32px; padding: 0; }
+  min-width: 30px; min-height: 30px; padding: 0; }
 
 
 /*(((((((((((((((( COMBOBOX )))))))))))))))))))*/
@@ -1855,7 +1856,7 @@ combobox button.combo {
   border-radius: 4px;
   min-height:16px;
   min-width: 0px;
-  padding-left:12px;
+  padding-left: 6px;
   padding-right: 12px;}
 
 .background combobox button.combo arrow {
@@ -4316,7 +4317,7 @@ headerbar button {
   font-weight: normal;
   min-height: 20px;
   min-width: 16px;
-  padding: 2px 4px 2px 4px;
+  padding: 1px 4px 1px 4px;
   margin-top: 6px;
   margin-bottom: 4px;}
 
@@ -5301,11 +5302,11 @@ infobar.question,
 infobar.warning{
   padding: 2px;
   border: none;
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid #7eb6f5;
   border-radius: 0px;
-  color: #f3f3f3;
+  color: #2e3436;
   text-shadow: none;
-  background-color: #7d7f89; } 
+  background-color: #c5defb; } 
 
 infobar.error button,
 infobar.warning button,
@@ -6143,7 +6144,7 @@ menubar > menuitem:disabled{
   
 menubar > menuitem menu,
 .menubar > menuitem menu {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 4px 4px;
 }
 
 menubar > menuitem menu menu,
@@ -6188,27 +6189,26 @@ popover.background.touch-selection, .csd popover.background.touch-selection,
 menu,
 .menu {
 
-  border-radius: 6px;
-  background-image: none;
+  border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
-  background-color: transparent; 
-  background-color: rgba(255,255,255,0.92);
-  background-image:url("objects/other/blurred6.png");
+  border: 1px solid #cdcdcf;
+  background-color: rgba(242,242,244,1.00);
+  background-image: none;
   background-size: cover;}
-  
+    
 csd >.context-menu,
 .csd >.context-menu,
 context-menu,
 .context-menu {
 
-  background-image: none;
+  border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
-  border-radius:6px;
+  border: 1px solid #cdcdcf;
   font: initial; 
-  background-color: rgba(255,255,255,0.92);
-  background-image:url("objects/other/blurred6.png");
+  background-color: rgba(242,242,244,1.00);
+  background-image: none;
   background-size: cover;}
   
 .context-menu separator,
@@ -6238,10 +6238,10 @@ menu menuitem{
   text-shadow: 0 1px alpha(#ffffff, 0.35);
   min-height: 16px;
   min-width: 42px;
-  padding-top: 2px;
-padding-left: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
   padding-right: 3px;
-  padding-bottom: 2px; }
+  padding-bottom: 3px; }
 
 .menu menuitem:hover,
 menu menuitem:hover{
@@ -6369,11 +6369,11 @@ menu > arrow:disabled{
  
   /*padding: 4px 0px;*/
   font: initial; }
-.context-menu separator {
-
+ 
+ .context-menu separator {
   padding: 0;
   min-height: 1px;
- background-color: rgba(37,37,37,0.1);}
+  background-color: rgba(37,37,37,0.1);}
 
 .context-menu > menuitem{
 
@@ -7348,7 +7348,7 @@ expander arrow:checked {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 /*********************************************************************/
-/*             CALENDER                                              */
+/*             CALENDAR                                              */
 /*********************************************************************/
 
 calendar {
@@ -8180,7 +8180,7 @@ button.circular {
   -gtk-outline-radius: 9999px; 
   background-origin: padding-box, border-box; 
   background-clip: padding-box, border-box;
-   min-width: 32px; min-height: 32px; padding: 0; }
+   min-width: 30px; min-height: 30px; padding: 0; }
 
 button.circular label { 
 
@@ -10570,7 +10570,7 @@ headerbar button.titlebutton.restore:active,
 
   background-color: rgba(255,255,255,0.983); }
 
-/**********NAUTILUS MISSELANEOUS *****************/
+/**********NAUTILUS MISCELLANEOUS *****************/
 
 .nautilus-operations-button-needs-attention {
 
@@ -10978,7 +10978,7 @@ scale.vertical indicator{
   min-width: 3px;}
 
 /*********************************************************************/
-/*            MICHELLANEOUS not sorted                               */
+/*            MISCELLANEOUS not sorted                               */
 /*********************************************************************/
 
 editortweak .linked > entry.search:focus + .gb-linked-scroller {

@@ -11,7 +11,7 @@ A collection of simple GTK2/GTK3 and Gnome shell themes made in the sparetime.
 
 McOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
 
-**McoS** is deeply inspired by these themes:
+**McoS** is deeply based on these themes' css code:
 
 - https://github.com/vinceliuice/Mojave-gtk-theme (made by https://github.com/vinceliuice)
 - https://github.com/paullinuxthemer/Prof-Gnome (made by https://github.com/paullinuxthemer)
