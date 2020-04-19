@@ -6446,7 +6446,6 @@ menu,
 .menu {
 
   border-radius: 4px;
-  background-image: none;
   padding-top: 6px;
   padding-bottom: 6px;
   color: #dddddd;
@@ -6455,8 +6454,8 @@ menu,
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-   background-color: rgba(64,64,64,0.92);
-  background-image:url("objects-dark/other/blurredT.png");
+  background-color: rgba(64,64,64,0.92);
+  background-image: none;
   background-size: cover;}
 
 csd >.context-menu,
@@ -6464,14 +6463,13 @@ csd >.context-menu,
 context-menu,
 .context-menu {
 
-  background-image: none;
+  border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
-  border-radius: 4px;
   font: initial; 
   text-shadow: 0 1px alpha(#ffffff, 0.35);
   background-color: rgba(64,64,64,0.92);
-  background-image:url("objects-dark/other/blurredT.png");
+  background-image:none;
   background-size: cover;}
 
 .context-menu separator,
@@ -6505,10 +6503,10 @@ menu menuitem{
 				  0px  2px alpha(#202020, 0.05);
   min-height: 16px;
   min-width: 42px;
-  padding-top: 2px;
+  padding-top: 3px;
 padding-left: 3px;
   padding-right: 3px;
-  padding-bottom: 2px; }
+  padding-bottom: 3px; }
 
 .menu menuitem:hover,
 menu menuitem:hover{
