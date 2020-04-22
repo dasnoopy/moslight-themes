@@ -7667,6 +7667,7 @@ placessidebar.sidebar row.sidebar-row{
 
   border: none;
   color: black;
+  /*font-weight: bold;*/
   text-shadow: 0px 1px alpha(#ffffff, 0.25); 
 -gtk-icon-shadow: 0px 1px alpha(#ffffff, 0.75);}
 
@@ -7677,7 +7678,7 @@ placessidebar.sidebar row.sidebar-row.has-open-popup:selected{
 placessidebar.sidebar row.sidebar-row:selected{
 
   color: #ffffff;
-  font-weight: normal;
+  font-weight: bold;
   text-shadow:  0px -1px alpha(#202020, 0.02),
 				 -1px  0px alpha(#202020, 0.05),
 				  1px  0px alpha(#202020, 0.05),
@@ -7690,14 +7691,14 @@ placessidebar.sidebar row.sidebar-row:selected{
 placessidebar.sidebar row.sidebar-row:selected:hover{
 
   color: #ffffff;
-  font-weight: normal;
+  font-weight: bold;
   text-shadow: 0px 1px alpha(#202020, 0.2);
   -gtk-icon-shadow: 0px 1px alpha(#202020, 0.2);
   background-color: rgba(0, 0, 0, 0.65); }
 
 placessidebar.sidebar row.sidebar-row:active:hover{
 
-  font-weight: normal;
+  font-weight: bold;
   color: #ffffff; }
 
 placessidebar.sidebar row.sidebar-row .sidebar-icon{
