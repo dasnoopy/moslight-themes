@@ -5135,9 +5135,9 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button{
   min-width: 16px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: normal;
-  border: 0.8px solid;
+  border: 1px solid;
   border-radius: 4px;
-  padding: 2px 4px 2px 4px;
+  padding: 2px 6px 2px 6px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -5198,7 +5198,7 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button + button{
 
-  border-left-style: none; }
+  border-left: 1px solid @borders; }
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover:not(:checked):not(:active):not(:only-child):hover{
 
@@ -5217,8 +5217,8 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-ch
  
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;}
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;}
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child{
 
@@ -5229,8 +5229,8 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-chi
   
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;}
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;}
   
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:not(:last-child):not(:only-child):not(:first-child) {
  
@@ -8956,71 +8956,6 @@ button.documents-favorite:active:hover {
 
   opacity: 0.0;
   transition: opacity 0.2s ease-out; }
-
-/*********************************************************************/
-/*            TWEAK TOOL                                             */
-/*********************************************************************/
-
-.tweak-titlebar-right{
-  
-  border: none;
-   margin-left: -1px;
-  /*font-size: larger;*/
-  background-color: transparent;
-  background-image:linear-gradient(to right,#505050 1px, rgba(64,65,67,0.99) 1px, rgba(64,65,67,0.99) 100%);}
- 
-.tweak-titlebar-left{
- font-size: 0;
- 
- border: none;
-  background-image:/*url("objects-dark/other/blurredT.png"),*/linear-gradient(to right,#30302e,#373737,#3c3d3d,#3c3d3d);
-  /*background-size: stretch;*/}
-  
-.tweak.title:dir(ltr){
-
-  font-style: normal;
- /* font-size: larger;*/
-  color: #cacaca;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.6),
-				  0px  2px alpha(#202020, 0.05);}
- 
-.tweak-categories{
- 
-  background-color: rgba(64,64,64,0.96);
-  background-image:url("objects-dark/other/blurredT.png");
-  background-size: cover;
-  color: #cacaca;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.6),
-				  0px  2px alpha(#202020, 0.05);}
-
-.tweak-category:not(:selected):not(:hover) {
-
-  background-color: transparent;
-  background-image: none; }
-  
-.tweak-category:hover{
-
-  background-image:linear-gradient(to right,rgba(255,255,255,0.03),rgba(255,255,255,0.08),
-  rgba(255,255,255,0.03),rgba(255,255,255,0.08));
-  color:#ffffff ;}
-
-.tweak-categories separator {
-
-    min-width: 0px;
-    min-height: 0px;
-    background: rgba(0,0,0,0); }
-
-.tweak-titlebar-left:dir(ltr){
- }
-
-.tweak-titlebar-left:dir(ltr){
- }
 
 /*********************************************************************/
 /*            GF                                                     */

@@ -4921,13 +4921,13 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:acti
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button{
 
-  border-radius:5px;
+  border-radius:4px;
   color: #202020;
   background-color: transparent;
   background-image: linear-gradient(180deg,#ffffff,#e4e9ef);
   min-height: 20px;
   min-width: 16px;
-  padding: 2px 4px 2px 4px;
+  padding: 2px 6px 2px 6px;
   margin-top: 6px;
   margin-bottom: 4px;
   border: 1px solid;
@@ -4961,7 +4961,7 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button + button{
 
-  border-left-style: none; }
+  border-left: 1px solid @borders; }
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover:not(:checked):not(:active):not(:only-child):hover{
 
@@ -4980,8 +4980,8 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-ch
  
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;}
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;}
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child{
 
@@ -4992,8 +4992,8 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-chi
  /* margin-left:-1px;*/
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;}
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;}
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:not(:last-child):not(:only-child):not(:first-child) {
 margin-left:-1px;
 border-radius: 0px;}
@@ -6832,10 +6832,10 @@ frame > border.flat{
   border-style: none; }
 
 actionbar > revealer > box {
-  padding: 6px;
-  border-top: 1px solid rgba(105, 105, 105, 0.3); }
+  padding: 0px;
+  border:none; }
   actionbar > revealer > box:backdrop {
-    border-color:rgba(105, 105, 105, 0.3); }
+  border-color:rgba(105, 105, 105, 0.3); }
 
 
 /******************************************************************/
@@ -8660,56 +8660,6 @@ button.documents-favorite:active:hover {
 
   opacity: 0.0;
   transition: opacity 0.2s ease-out; }
-
-/*********************************************************************/
-/*            TWEAK TOOL                                             */
-/*********************************************************************/
-
-.tweak-titlebar-right{
- 
-  border: none;
-  /*margin-left: -1px;*/
-  background-image:image(rgba(243,243,243,0.99));}
- 
-.tweak-titlebar-left{
- font-size: 0;
- border: none;
-  background-image:/*url("objects/other/background.png"),*/linear-gradient(to right,rgba(198,200,203,1),rgba(213,216,217,1));}
-  
-.tweak.title:dir(ltr){
- 
-  color: #000000;
-  text-shadow: none;}
- 
-.tweak-categories{
-  
-  background-color: rgba(255,255,255,0.92);
-  background-image:url("objects/other/blurred6.png"),linear-gradient(to bottom left,rgba(216,216,216,1),rgba(181,182,186,1));
-  background-size: cover;
-  color: black;
-  text-shadow: 0px 1px alpha(#ffffff, 0.25);}
-
-.tweak-category:not(:selected):not(:hover) {
-  
-  background-color: transparent;
-  background-image: none; }
-  
-.tweak-category:hover{
-
-  background-image:linear-gradient(to right,rgba(0,0,0,0.03),rgba(0,0,0,0.08),rgba(0,0,0,0.03),rgba(0,0,0,0.08));
-  color: black;}
-
-.tweak-categories separator {
-
-    min-width: 0px;
-    min-height: 0px;
-    background: rgba(37,37,37,0.0); }
-
-.tweak-titlebar-left:dir(ltr){
- }
-
-.tweak-titlebar-left:dir(ltr){
- }
 
 /*********************************************************************/
 /*            GF                                                     */
