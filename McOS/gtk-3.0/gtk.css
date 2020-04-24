@@ -4193,19 +4193,23 @@ spinbutton.vertical button:only-child {
 
 /*((((((((((((( headerbar entry related ))))))))))))))))*/
 
-headerbar entry:focus,
 headerbar entry {
 
   color:#252525;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
-  border: 2px solid #4091f9;
+  border: 1px solid #cfcfcf;
   border-radius: 4px;
   min-height: 20px;
   min-width: 16px;
  padding: 2px 4px 2px 4px;
   margin-top: 6px;
   margin-bottom: 4px; }
+
+headerbar entry:focus {
+  border: 1px solid #4095ff;
+ }
+
 
 headerbar entry:disabled {
 
@@ -4927,7 +4931,7 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button{
   background-image: linear-gradient(180deg,#ffffff,#e4e9ef);
   min-height: 20px;
   min-width: 16px;
-  padding: 2px 6px 2px 6px;
+  padding: 2px 12px 2px 12px;
   margin-top: 6px;
   margin-bottom: 4px;
   border: 1px solid;
@@ -4961,7 +4965,7 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button + button{
 
-  border-left: 1px solid @borders; }
+  border-left: 1px solid #cfcfcf; }
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover:not(:checked):not(:active):not(:only-child):hover{
 
