@@ -11150,8 +11150,8 @@ scale fill:disabled {
 
 scale slider {
 
-  background-color: #f6f8fa;
-  border: 1px solid #646772;
+  background-color: #3e3e3e;
+  border: 1px solid #202020;
   border-radius: 100%;}
  
 scale highlight {
@@ -11165,7 +11165,7 @@ scale highlight:disabled {
 
 scale slider:hover {
 
-  background-color: white; }
+  background-color: #729fcf; }
 
 scale slider:active {
 
