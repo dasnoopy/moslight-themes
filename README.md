@@ -11,7 +11,7 @@ A collection of simple GTK2/GTK3 and Gnome shell themes made in the sparetime.
 
 McOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
 
-**McoS** is deeply based on these themes' css code:
+**McoS** is yet another osx inspired theme and it is deeply based on these others:
 
 - https://github.com/vinceliuice/Mojave-gtk-theme (made by https://github.com/vinceliuice)
 - https://github.com/paullinuxthemer/Prof-Gnome (made by https://github.com/paullinuxthemer)
@@ -21,8 +21,8 @@ So many thanks to their creators / maintainers!
 
 **Old and unsupported themes:**
 
-* **MosArc** is a theme designed **only** for gnome 3.34and it was based on ARC theme (https://github.com/horst3180/Arc-theme). 
-	GTK2 v2.24.x and GTK3 v3.22.x libs are required. 
+* **MosArc** is a theme designed **only** for gnome 3.34 and it was based on ARC theme (https://github.com/horst3180/Arc-theme). 
+	GTK2 v2.24.x and GTK3 v3.22.x libs are required. (btw it could works also on gnome 3.36)
 
 * **MosLight** is a theme designed  **only** for Gnome 3.12: it works only with GTK2 v2.24.x and
   GTK3 v3.12.x libs.

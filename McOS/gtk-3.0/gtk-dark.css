@@ -1928,7 +1928,7 @@ combobox button.combo {
   margin: -1px -13px -1px -1px;
   border-radius: 0 4px 4px 0;
   
-  opacity: 0.6;
+  opacity: 0.5;
   background-color: #404040;
   background-image: none;}
 
@@ -1937,6 +1937,19 @@ combobox arrow {
 -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); 
  min-height: 16px;
   min-width: 16px; }
+
+combobox decoration,
+combobox button.combo:checked,
+.background combobox button.combo:checked {
+  transition: none;
+}
+
+.linked:not(.vertical) > combobox > box > button.combo arrow {
+  border-radius: 0;
+}
+
+.linked:not(.vertical) > combobox:last-child > box > button.combo arrow {
+  border-radius: 0 4px 4px 0; }
 
 
 /*(((((((((((((((( TOOLBAR )))))))))))))))))))*/
@@ -3493,6 +3506,33 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
 .linked:not(.vertical):not(.path-bar) > entry.error:focus:not(:only-child) + combobox > box > button.combo {
 
   border-left-color: #FC4138; }
+  
+  
+.linked:not(.vertical) > entry,
+.linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button,
+.linked:not(.vertical) > button:hover,
+.linked:not(.vertical) > button:active,
+.linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat, toolbar.inline-toolbar toolbutton > button.budgie-menu-launcher, .inline-toolbar toolbutton > button.budgie-menu-launcher, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher, .budgie-panel .inline-toolbar toolbutton > button.flat.launcher, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
+  border-radius: 0;
+  border-right-style: none;
+}
+
+  
+.linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .linked:not(.vertical) > button:first-child, .inline-toolbar toolbutton > button.flat:first-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:first-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > combobox:first-child > box > button.combo {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, .inline-toolbar toolbutton > button.flat:last-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:last-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right-style: solid;
+}
+
+.linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked:not(.vertical) > button:only-child, .inline-toolbar toolbutton > button.flat:only-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:only-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo {
+  border-radius: 5px;
+  border-style: solid;
+}  
 
 /**** LINKED:NOT(.VERTICAL):NOT(PATH-BAR): BUTTON-RELATED ***/
 
