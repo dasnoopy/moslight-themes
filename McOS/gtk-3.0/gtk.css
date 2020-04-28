@@ -4963,8 +4963,8 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button{
 
   border-radius:4px;
   color: #202020;
-  background-color: transparent;
-  background-image: linear-gradient(180deg,#ffffff,#e4e9ef);
+  background-color: #fcfcfc;
+  background-image: none;
   min-height: 20px;
   min-width: 16px;
   padding: 2px 12px 2px 12px;
@@ -4975,14 +4975,15 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button{
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover{
 
-  background-color: transparent;
-  background-image: image(#feffff);}
+  color: #616264;
+  background-color: #fcfcfc;
+  background-image: none}
   
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked{
 
   color: #ffffff;
   text-shadow: 0px  1px alpha(#202020, 0.7);
-  background-image: image(#646772);}
+  background-image: image(#6c6c6c);}
   
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active{
 

@@ -5194,8 +5194,8 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button{
 				  0px  2px alpha(#202020, 0.05);
 				  
   border-color: rgba(0,0,0,0.6);
-  background-color: transparent;
-  background-image: linear-gradient(to bottom,#5c5d5d,#5c5d5d 1px,#7a7b7c 1px,#7a7b7c 2px, #67686a 2px, #67686a,#626366);
+  background-color: #67686A;
+  background-image: none;
   margin-top: 6px;
   margin-bottom: 4px;}
 
@@ -5207,21 +5207,18 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-   border-color: rgba(0,0,0,0.6);
-  background-color: transparent;
-  background-image: linear-gradient(to bottom,#5c5d5d,#5c5d5d 1px,#7a7b7c 1px,#7a7b7c 2px, #6d6d6f 2px, #6d6d6f,#6d6d6f);}
-  /*border-color: #7c7d80 #7c7d80 #3e3f41 #7c7d80;	*/		  
-  /*border-color:#7c7d80 #535457 #3e3f41 #535457;*/
-  /*background-color: transparent;
-  background-image: linear-gradient(to bottom,#797a7c,#797a7c);}*/
+  border-color: rgba(0,0,0,0.6);
+  background-color: #67686A;
+  background-image: none;}
+
   
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked{
 
   color: #000000;
   text-shadow: none;
    border-color: rgba(0,0,0,0.6);
-  background-image: linear-gradient(to bottom,#c7c8cb,#c0c1c4);
-  background-color: transparent; }
+  background-image: none;
+  background-color: #d2d3d6 ; }
   
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active{
 
