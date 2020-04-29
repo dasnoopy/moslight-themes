@@ -6257,7 +6257,7 @@ csd >.context-menu,
 context-menu,
 .context-menu {
 
-  border-radius: 3px;
+  border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
   border: 1px solid #cdcdcf;
@@ -10671,13 +10671,14 @@ popup decoration {
   border-radius: 6px 6px 0 0;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);}
   
+/*shadow border under menus and floating menus */
 .csd.popup decoration {
   border-radius: 4px;
-  box-shadow: -1px 4px 4px 1px rgba(0, 0, 0, 0.28);}
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);}
 
 tooltip.csd decoration {
 
- box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.26),0 0 0 1px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);;
   border-radius: 4px;} 
 
 messagedialog.csd decoration {
