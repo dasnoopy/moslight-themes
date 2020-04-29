@@ -6516,7 +6516,7 @@ menu,
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  background-color: rgba(64,64,64,0.92);
+  background-color: rgba(64,64,64,1.0);
   background-image: none;
   background-size: cover;}
 
@@ -11013,7 +11013,7 @@ popup decoration {
   
 .csd.popup decoration {
   border-radius: 4px;
-  box-shadow: -1px 4px 4px 1px rgba(0, 0, 0, 0.28);}
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);}
 
  
 /*.csd.popup decoration:backdrop {
@@ -11022,7 +11022,7 @@ popup decoration {
 
 tooltip.csd decoration {
 
-  box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.26),0 0 0 1px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 4px;} 
 
 messagedialog.csd decoration {
