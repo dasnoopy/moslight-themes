@@ -1866,8 +1866,8 @@ combobox button.combo {
   
   min-height: 16px;
   min-width: 16px;
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
   margin:-2px -13px -2px -1px;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
@@ -1885,8 +1885,8 @@ combobox button.combo {
   
   min-height: 16px;
   min-width: 16px;
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
   margin:-1px -13px -1px -1px;
   border-radius: 0 4px 4px 0;
   border-color: #d9d9d9;
@@ -1915,7 +1915,11 @@ combobox button.combo:checked,
 .linked:not(.vertical) > combobox:last-child > box > button.combo arrow {
   border-radius: 0 4px 4px 0; }
 
+.linked:not(.vertical) > entry + button.combo {
 
+  min-height: 22px;
+  padding-left: 0;}
+  
 /*(((((((((((((((( TOOLBAR )))))))))))))))))))*/
 
 toolbar{
@@ -3661,78 +3665,47 @@ popover.linked:not(.vertical) > button:only-child{
 
 /*******LINKED:NOT(VERTICAL)>COMBOBOX *******/
 
-.linked:not(.vertical) > combobox > box > button.combo:dir(ltr):disabled{
+.linked:not(.vertical) > spinbutton:first-child:not(.vertical), 
+.linked:not(.vertical) > entry:first-child, 
+.inline-toolbar button:first-child, 
+.linked > button:first-child, 
+toolbar.inline-toolbar toolbutton:first-child > button.flat, 
+combobox.linked button:nth-child(2):dir(rtl), 
+.linked:not(.vertical) > combobox:first-child > box > button.combo, 
+filechooser .path-bar.linked > button:dir(ltr):first-child, 
+filechooser .path-bar.linked > button:dir(rtl):last-child { 
 
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-  border-left: 1px solid #cfcfcf;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;}
-
-.linked:not(.vertical) > combobox > box > button.combo:dir(ltr){
-
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-  border-left: 1px solid #cfcfcf;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;}
-
-.linked:not(.vertical) > combobox > box > button.combo:dir(rtl):disabled{
-
-  border-bottom-left-radius:0px;
-  border-top-left-radius: 0px;
-  border-left: 1px solid #cfcfcf;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;}
-
-.linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
-  
-  border-bottom-left-radius:0px;
-  border-top-left-radius: 0px;
-  border-left: 1px solid #cfcfcf;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;}
-
-.linked:not(.vertical) > combobox:first-child > box > button.combo{
-
-  border-top-right-radius:0px;
-  border-bottom-right-radius:0px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  border: 1px solid #cfcfcf;}
+  border-top-right-radius: 0; 
+  border-bottom-right-radius: 0; 
+  border-right-style: none; }
 
-.linked:not(.vertical) > combobox:last-child > box > button.combo{
+.linked:not(.vertical) > spinbutton:last-child:not(.vertical), 
+.linked:not(.vertical) > entry:last-child, 
+.inline-toolbar button:last-child, 
+.linked > button:last-child, 
+toolbar.inline-toolbar toolbutton:last-child > button.flat, 
+combobox.linked button:nth-child(2):dir(ltr), 
+.linked:not(.vertical) > combobox:last-child > box > button.combo, 
+filechooser .path-bar.linked > button:dir(ltr):last-child, 
+filechooser .path-bar.linked > button:dir(rtl):first-child { 
 
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0; 
+  border-bottom-left-radius: 0; 
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  border: 1px solid #cfcfcf; }
+  border-right-style: solid; }
 
-.linked:not(.vertical) > combobox:only-child > box > button.combo{
+.linked:not(.vertical) > spinbutton:only-child:not(.vertical), 
+.linked:not(.vertical) > entry:only-child, 
+.inline-toolbar button:only-child, 
+.linked > button:only-child, 
+toolbar.inline-toolbar toolbutton:only-child > button.flat, 
+.linked:not(.vertical) > combobox:only-child > box > button.combo { 
 
   border-radius: 4px;
   border-style: solid; }
-
-.linked:not(.vertical) > combobox:not(:first-child) > box > button.combo {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.linked:not(.vertical) > combobox:not(:last-child) > box > button.combo {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.linked.vertical > combobox:not(:first-child) > box > button.combo {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.linked.vertical > combobox:not(:last-child) > box > button.combo {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
 
 /******************************************************/
 /* LINKED.VERTICAL                                    */
