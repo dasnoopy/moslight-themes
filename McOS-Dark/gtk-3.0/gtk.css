@@ -6925,6 +6925,63 @@ check:checked:disabled {
 
   -gtk-icon-source: -gtk-scaled(url("objects-dark/checkbox-objects/checkbox-checked-insensitive.svg"), url("objects-dark/checkbox-objects/checkbox-checked-insensitive@2.svg")); }
 
+/* only menu and popover menu */
+
+popover check,
+popover check:hover,
+popover check:checked:hover,
+popover check:disabled,
+menu menuitem check:checked:hover,
+menu menuitem check, 
+menu menuitem check:hover, 
+menu menuitem check:disabled {
+
+ -gtk-icon-source: image(-gtk-recolor(url("objects-dark/other/Null.svg")));
+ -gtk-icon-transform: scale(1.1,1.1);
+ color:transparent;
+ background-image: none;
+ box-shadow: none;
+ background-color: transparent;
+ border-color: transparent;
+ -gtk-icon-shadow: none;
+  min-height:14px;
+  min-width: 14px;}
+  
+popover check:hover:checked,  
+popover check:checked,
+popover check:active,
+menu menuitem check:checked, 
+menu menuitem check:active {
+ 
+ color: #b0b0b0;
+ background-image: none;
+ box-shadow: none;
+ background-color: transparent;
+ border-color: transparent;
+ -gtk-icon-transform: scale(1,1);
+ -gtk-icon-shadow: none;
+ -gtk-icon-source: image(-gtk-recolor(url("objects-dark/other/object-select-symbolic.svg")));}
+ 
+menu menuitem check:hover:checked,
+popover check:hover:checked{
+
+  color: #ffffff;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  -gtk-icon-transform: scale(1,1);
+  -gtk-icon-shadow:/* -0.5px  0px alpha(#ffffff, 0.2),
+				  0.5px  0px alpha(#ffffff, 0.2),
+				  0px  0.5px alpha(#ffffff, 0.4),
+				  0px -0.5px alpha(#ffffff, 0.4),*/
+				  0px -1px alpha(#ffffff, 0.10),
+				  0px  1px alpha(#ffffff, 0.10),
+				  1px  0px alpha(#ffffff, 0.10),
+				 -1px  0px alpha(#ffffff, 0.10); 
+  -gtk-icon-source: image(-gtk-recolor(url("objects-dark/other/object-select-symbolic.svg")));}
+
+
 /*******************RADIO ***************************************/
 
 radio {
@@ -6996,7 +7053,60 @@ radiobutton label:not(:only-child):last-child {
 
   margin-right: 4px; }
 
+/* only menu and popover menu */
 
+popover radio,
+popover radio:hover,
+popover radio checked:hover,
+popover radio:disabled,
+menu menuitem radio checked:hover,
+menu menuitem radio, 
+menu menuitem radio:hover, 
+menu menuitem radio:disabled {
+-gtk-icon-source: image(-gtk-recolor(url("objects-dark/other/Null.svg")));
+color:transparent;
+background-image: none;
+box-shadow: none;
+background-color: transparent;
+border-color: transparent;
+-gtk-icon-shadow: none;
+  min-height:14px;
+  min-width: 14px;}
+  
+popover radio:hover:checked,  
+popover radio:checked,
+popover radio:active,
+menu menuitem radio:checked, 
+menu menuitem radio:active {
+ 
+ color: #b0b0b0;
+ background-image: none;
+ box-shadow: none;
+ background-color: transparent;
+ border-color: transparent;
+ -gtk-icon-transform: scale(1,1);
+ -gtk-icon-shadow: none;
+ -gtk-icon-source: image(-gtk-recolor(url("objects-dark/other/object-select-symbolic.svg")));}
+ 
+menu menuitem radio:hover:checked,
+popover radio:hover:checked{
+
+  color: #ffffff;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  -gtk-icon-transform: scale(1,1);
+  -gtk-icon-shadow:/* -0.5px  0px alpha(#ffffff, 0.2),
+				  0.5px  0px alpha(#ffffff, 0.2),
+				  0px  0.5px alpha(#ffffff, 0.4),
+				  0px -0.5px alpha(#ffffff, 0.4),*/
+				  0px -1px alpha(#ffffff, 0.10),
+				  0px  1px alpha(#ffffff, 0.10),
+				  1px  0px alpha(#ffffff, 0.10),
+				 -1px  0px alpha(#ffffff, 0.10); 
+  -gtk-icon-source: image(-gtk-recolor(url("objects-dark/other/object-select-symbolic.svg")));}
+  
 /*******************************************************************/
 /*                   PROGRESSBAR                                   */
 /*******************************************************************/
@@ -7250,21 +7360,14 @@ list row {
 row:selected{
 
   color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
+  font-weight: bold;
+  text-shadow:  0 -1px alpha(#ffffff, 0.25);
   background-color: #2357d6; }
 
 row:selected label{
 
   color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05); }
+  text-shadow:  0 -1px alpha(#ffffff, 0.25); }
 
 row:selected label:disabled{
 
@@ -7952,11 +8055,7 @@ placessidebar.sidebar row.sidebar-row{
  border: none;
   color: #dddddd;
   /*font-weight: bold;*/
-  	text-shadow:  0px -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.7),
-				  0px  2px alpha(#202020, 0.05);
+  	text-shadow:  0px -1px alpha(#ffffff, 0.25);
 -gtk-icon-shadow: 0px 1px alpha(#202020, 0.2);}
 
 placessidebar.sidebar row.sidebar-row.has-open-popup:selected{
@@ -7967,11 +8066,7 @@ placessidebar.sidebar row.sidebar-row:selected{
 
   color: #ffffff;
   font-weight: bold;
-  text-shadow:  0px -1px alpha(#202020, 0.02),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.15),
-				  0px  2px alpha(#202020, 0.05);
+  text-shadow:  0px -1px alpha(#202020, 0.02);
 -gtk-icon-shadow: 0px 1px alpha(#202020, 0.2);
   background-color: transparent;
   background-image:linear-gradient(to right,rgba(255,255,255,0.05),rgba(255,255,255,0.1),rgba(255,255,255,0.08),rgba(255,255,255,0.1)); }
@@ -7980,11 +8075,7 @@ placessidebar.sidebar row.sidebar-row:selected:hover{
 
   color: #ffffff;
   font-weight: bold;
-  text-shadow:  0px -1px alpha(#202020, 0.02),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.15),
-				  0px  2px alpha(#202020, 0.05);
+  text-shadow:  0px -1px alpha(#202020, 0.02);
 -gtk-icon-shadow: 0px 1px alpha(#202020, 0.2);
   background-color: transparent;
   background-image:linear-gradient(to right,rgba(255,255,255,0.09),

@@ -6655,6 +6655,62 @@ check:checked:disabled {
 
   -gtk-icon-source: -gtk-scaled(url("objects/checkbox-objects/checkbox-checked-insensitive.svg"), url("objects/checkbox-objects/checkbox-checked-insensitive@2.svg")); }
 
+/* only menu and popover menu */
+
+popover check,
+popover check:hover,
+popover check:checked:hover,
+popover check:disabled,
+menu menuitem check:checked:hover,
+menu menuitem check, 
+menu menuitem check:hover, 
+menu menuitem check:disabled {
+
+ -gtk-icon-source: image(-gtk-recolor(url("objects/other/Null.svg")));
+ -gtk-icon-transform: scale(1.1,1.1);
+ color:transparent;
+ background-image: none;
+ box-shadow: none;
+ background-color: transparent;
+ border-color: transparent;
+ -gtk-icon-shadow: none;
+  min-height:14px;
+  min-width: 14px;}
+  
+popover check:hover:checked,  
+popover check:checked,
+popover check:active,
+menu menuitem check:checked, 
+menu menuitem check:active {
+ 
+ color: #404040;
+ background-image: none;
+ box-shadow: none;
+ background-color: transparent;
+ border-color: transparent;
+ -gtk-icon-transform: scale(1,1);
+ -gtk-icon-shadow: none;
+ -gtk-icon-source: image(-gtk-recolor(url("objects/other/object-select-symbolic.svg")));}
+ 
+menu menuitem check:hover:checked,
+popover check:hover:checked{
+
+  color: #ffffff;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  -gtk-icon-transform: scale(1,1);
+  -gtk-icon-shadow:/* -0.5px  0px alpha(#ffffff, 0.2),
+				  0.5px  0px alpha(#ffffff, 0.2),
+				  0px  0.5px alpha(#ffffff, 0.4),
+				  0px -0.5px alpha(#ffffff, 0.4),*/
+				  0px -1px alpha(#000000, 0.10),
+				  0px  1px alpha(#000000, 0.10),
+				  1px  0px alpha(#000000, 0.10),
+				 -1px  0px alpha(#000000, 0.10); 
+  -gtk-icon-source: image(-gtk-recolor(url("objects/other/object-select-symbolic.svg")));}
+
 /*******************RADIO ***************************************/
 
 radio {
@@ -6726,6 +6782,59 @@ radiobutton label:not(:only-child):last-child {
 
   margin-right: 4px; }
 
+/* only menu and popover menu */
+
+popover radio,
+popover radio:hover,
+popover radio checked:hover,
+popover radio:disabled,
+menu menuitem radio checked:hover,
+menu menuitem radio, 
+menu menuitem radio:hover, 
+menu menuitem radio:disabled {
+-gtk-icon-source: image(-gtk-recolor(url("objects/other/Null.svg")));
+color:transparent;
+background-image: none;
+box-shadow: none;
+background-color: transparent;
+border-color: transparent;
+-gtk-icon-shadow: none;
+  min-height:14px;
+  min-width: 14px;}
+  
+popover radio:hover:checked,  
+popover radio:checked,
+popover radio:active,
+menu menuitem radio:checked, 
+menu menuitem radio:active {
+ 
+ color: #404040;
+ background-image: none;
+ box-shadow: none;
+ background-color: transparent;
+ border-color: transparent;
+ -gtk-icon-transform: scale(1,1);
+ -gtk-icon-shadow: none;
+ -gtk-icon-source: image(-gtk-recolor(url("objects/other/object-select-symbolic.svg")));}
+ 
+menu menuitem radio:hover:checked,
+popover radio:hover:checked{
+
+  color: #ffffff;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  -gtk-icon-transform: scale(1,1);
+  -gtk-icon-shadow:/* -0.5px  0px alpha(#ffffff, 0.2),
+				  0.5px  0px alpha(#ffffff, 0.2),
+				  0px  0.5px alpha(#ffffff, 0.4),
+				  0px -0.5px alpha(#ffffff, 0.4),*/
+				  0px -1px alpha(#000000, 0.10),
+				  0px  1px alpha(#000000, 0.10),
+				  1px  0px alpha(#000000, 0.10),
+				 -1px  0px alpha(#000000, 0.10); 
+  -gtk-icon-source: image(-gtk-recolor(url("objects/other/object-select-symbolic.svg")));}
 
 /*******************************************************************/
 /*                   PROGRESSBAR                                   */
@@ -6988,22 +7097,15 @@ row:selected{
 border-radius: 0px;
 
   color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
+  font-weight: bold;
+  text-shadow:  0 -1px alpha(#ffffff, 0.25);
 background-image:linear-gradient(to right, #8a8e96,#7e808a,#8a8d95);
 box-shadow: 0 1px 1px rgba(0,0,0,0.04), 0 1px 8px rgba(0,0,0,0.12);}
 
 row:selected label{
 
   color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05); 
+  text-shadow:  0 -1px alpha(#ffffff, 0.25);
 				  box-shadow: none;}
 
 row:selected label:disabled{
@@ -7687,11 +7789,7 @@ placessidebar.sidebar row.sidebar-row:selected{
 
   color: #ffffff;
   font-weight: bold;
-  text-shadow:  0px -1px alpha(#202020, 0.02),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.15),
-				  0px  2px alpha(#202020, 0.05);
+  text-shadow:  0px -1px alpha(#202020, 0.02);
 -gtk-icon-shadow: 0px 1px alpha(#202020, 0.2);
   background-color: transparent;
   background-image:linear-gradient(to right,rgba(100,103,114,0.7),rgba(100,103,114,0.8),rgba(100,103,114,0.8),rgba(100,103,114,0.7)); }
@@ -7834,106 +7932,6 @@ placessidebar row:drop(active):not(:disabled):selected {
 placessidebar row:drop(active):not(:disabled):selected image {
 
   color: #ffffff; }
-
-
-
-/*
-placessidebar > viewport.frame {
-
-  border-style: none; }
-
-placessidebar row {
-
-  min-height: 30px;
-  padding: 0px; }
-
-placessidebar row > revealer {
-
-  padding: 0 10px; }
-
-placessidebar row image.sidebar-icon:dir(ltr) {
-
-  padding-right: 8px; }
-
-placessidebar row image.sidebar-icon:dir(rtl) {
-
-  padding-left: 8px; }
-
-placessidebar row label.sidebar-label:dir(ltr) {
-
-  padding-right: 2px; }
-
-placessidebar row label.sidebar-label:dir(rtl) {
-
-  padding-left: 2px; }
-
-button.sidebar-button {
-
-  min-width: 22px;
-  min-height: 22px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  padding: 0;
-  border-radius: 100%;
-   }
-
-button.sidebar-button:not(:hover):not(:active) > image {
-
-  opacity: 0.5; }
-
-placessidebar row.sidebar-placeholder-row {
-
-  padding: 0 8px;
-  min-height: 2px;
-  background-image: linear-gradient(to bottom, #F08437, #F08437);
-  background-clip: content-box; }
-
-placessidebar row.sidebar-new-bookmark-row {
-
-  color: #4095ff; }
-
-placessidebar row:drop(active):not(:disabled) {
-
-  box-shadow: inset 0 1px #F08437, inset 0 -1px #F08437; }
-
-placessidebar row:drop(active):not(:disabled){
-
-  color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled) label{
-
-
-  color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled) image {
-
-  color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled):selected {
-
-  background-color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled):selected{
-
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05); }
-
-placessidebar row:drop(active):not(:disabled):selected label{
-
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05); }
-
-placessidebar row:drop(active):not(:disabled):selected image {
-
-  color: #ffffff; }*/
 
 /**********PLACESVIEW ******************/
 
