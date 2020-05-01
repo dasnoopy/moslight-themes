@@ -1789,7 +1789,8 @@ modelbutton.flat arrow.left {
 modelbutton.flat arrow.right {
 
   -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
-
+  
+  
 /*(((((((((((((((((( STACK-SWITCHER  ))))))))))))))))))))*/
 
 .stack-switcher > button > label {
@@ -7396,15 +7397,15 @@ expander arrow:checked {
 calendar {
 
   color: #202020;
-  border: 1px solid rgba(105, 105, 105, 0.3);
+  border: 1px solid #cfcfcf;
   border-radius: 4px;
-  padding: 2px; }
+  padding: 0px 1px 0px 1px;}
 
 calendar:selected {
 
   color: #ffffff;
-  background-color: #4095ff;
-  border-radius: 1.4px; }
+  border-radius: 4px;
+  background-color: #4095ff; }
 
 calendar.header {
 
@@ -11034,9 +11035,6 @@ colorchooser .popover.osd {
 .dim-label {
 
   opacity: 0.55; }
-
-
-
 
 checkbutton.text-button{
 

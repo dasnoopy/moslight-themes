@@ -7648,22 +7648,22 @@ expander arrow:checked {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 /*********************************************************************/
-/*             CALENDER                                              */
+/*             CALENDAR                                              */
 /*********************************************************************/
 
 calendar {
 
   color: #ffffff;
-  border: 1px solid black;
+  border: 1px solid #303030;
   border-radius: 4px;
-  padding: 2px; }
+  padding: 0px 1px 0px 1px;}
 
 calendar:selected {
 
   color: #ffffff;
   background-color: #3273c4;
-  border-radius: 1.4px; }
-
+  border-radius: 4px; }
+  
 calendar.header {
 
   color: #ffffff;
