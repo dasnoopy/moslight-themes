@@ -973,6 +973,43 @@ entry selection:disabled{
   background-color: #2357d6;
   text-shadow: none;
   color: #90b5ec; }
+  
+entry-tag {
+  margin: 8px;
+  border-radius: 50px;
+  box-shadow: none;
+  background-color: #f8464c;
+  color: #ffffff;
+  border: none;
+}
+
+.entry-tag:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+:dir(ltr) .entry-tag {
+  margin-left: 8px;
+  margin-right: 0px;
+  padding-left: 8px;
+  padding-right: 4px;
+}
+
+:dir(rtl) .entry-tag {
+  margin-left: 0px;
+  margin-right: 8px;
+  padding-left: 4px;
+  padding-right: 8px;
+}
+
+.entry-tag.button {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
+.entry-tag.button:not(:hover):not(:active) {
+  color: rgba(36, 36, 36, 0.55);
+}
 
 /*(((((((((((((( OSD-ENTRY ))))))))))))))))))*/
 
@@ -8679,8 +8716,10 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
 
 .gedit-search-entry-occurrences-tag {
 
-  all: unset;}
-  padding: 0 2px; }
+  color: rgba(237, 237, 237, 0.6);
+  border: none;
+  margin: 2px;
+  padding: 2px; }
 
 .gedit-map-frame border {
 
@@ -11074,7 +11113,7 @@ popup decoration {
   
 .csd.popup decoration {
   border-radius: 4px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);}
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.28);}
 
  
 /*.csd.popup decoration:backdrop {
