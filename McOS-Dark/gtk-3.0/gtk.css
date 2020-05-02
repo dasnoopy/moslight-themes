@@ -908,7 +908,7 @@ entry.warning:focus {
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border-color: #303030;
+  border-color: #f14736;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#f12712,#f14736); }
 
@@ -936,7 +936,7 @@ entry.error selection{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border-color: #303030;
+  border-color: #f14736;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#f12712,#f14736); }
 
@@ -973,43 +973,6 @@ entry selection:disabled{
   background-color: #2357d6;
   text-shadow: none;
   color: #90b5ec; }
-  
-entry-tag {
-  margin: 8px;
-  border-radius: 50px;
-  box-shadow: none;
-  background-color: #f8464c;
-  color: #ffffff;
-  border: none;
-}
-
-.entry-tag:hover {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
-}
-
-:dir(ltr) .entry-tag {
-  margin-left: 8px;
-  margin-right: 0px;
-  padding-left: 8px;
-  padding-right: 4px;
-}
-
-:dir(rtl) .entry-tag {
-  margin-left: 0px;
-  margin-right: 8px;
-  padding-left: 4px;
-  padding-right: 8px;
-}
-
-.entry-tag.button {
-  box-shadow: none;
-  border: none;
-  background-color: transparent;
-}
-
-.entry-tag.button:not(:hover):not(:active) {
-  color: rgba(36, 36, 36, 0.55);
-}
 
 /*(((((((((((((( OSD-ENTRY ))))))))))))))))))*/
 
@@ -4296,6 +4259,7 @@ spinbutton.vertical button:only-child {
 
 /*((((((((((((( headerbar entry related ))))))))))))))))*/
 
+headerbar entry:focus,
 headerbar entry {
 
   margin-top: 6px;
@@ -4304,7 +4268,7 @@ headerbar entry {
   min-width: 16px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: normal;
-  border: 1px solid transparent;
+  border: 0.8px solid ;
   border-radius: 4px;
   padding: 2px 4px 2px 4px;
   color: #dddddd;
@@ -4313,18 +4277,11 @@ headerbar entry {
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
+				  
+  border-color: rgba(0,0,0,0.7);
   background-color: transparent;
   background-image: linear-gradient(to bottom,#5c5d5d,#5c5d5d 1px,#7a7b7c 1px,#7a7b7c 2px, #67686a 2px, #67686a,#626366);}
 
-headerbar entry:focus { 
-  margin-top: 6px;
-  margin-bottom: 4px; 
-  min-height: 20px;
-  min-width: 16px;
-    padding: 2px 4px 2px 4px;
-  border: 1px solid #4095ff; }
-    
-  
 headerbar entry:disabled {
 
  color: #939498;

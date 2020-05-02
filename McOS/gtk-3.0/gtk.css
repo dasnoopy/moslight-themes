@@ -4203,23 +4203,20 @@ spinbutton.vertical button:only-child {
 
 /*((((((((((((( headerbar entry related ))))))))))))))))*/
 
+headerbar entry:focus,
 headerbar entry {
 
   color:#252525;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
-  border: 1px solid #cfcfcf;
+  border: 0.8px solid; 
   border-radius: 4px;
+  border-color: #d9d9d9 #c0c0c0 #babdb6 #babdb6;
   min-height: 20px;
   min-width: 16px;
- padding: 2px 4px 2px 4px;
+  padding: 2px 4px 2px 4px;
   margin-top: 6px;
   margin-bottom: 4px; }
-
-headerbar entry:focus {
-  border: 1px solid #4095ff;
- }
-
 
 headerbar entry:disabled {
 
