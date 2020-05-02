@@ -115,7 +115,7 @@
 .background {
 
   color: #dddddd;
-  background-color: rgba(64,65,67,0.99);}
+  background-color: rgba(64,65,67,1.0);}
   
 .popup.background {
 
@@ -973,6 +973,43 @@ entry selection:disabled{
   background-color: #2357d6;
   text-shadow: none;
   color: #90b5ec; }
+  
+entry-tag {
+  margin: 8px;
+  border-radius: 50px;
+  box-shadow: none;
+  background-color: #f8464c;
+  color: #ffffff;
+  border: none;
+}
+
+.entry-tag:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+:dir(ltr) .entry-tag {
+  margin-left: 8px;
+  margin-right: 0px;
+  padding-left: 8px;
+  padding-right: 4px;
+}
+
+:dir(rtl) .entry-tag {
+  margin-left: 0px;
+  margin-right: 8px;
+  padding-left: 4px;
+  padding-right: 8px;
+}
+
+.entry-tag.button {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
+.entry-tag.button:not(:hover):not(:active) {
+  color: rgba(36, 36, 36, 0.55);
+}
 
 /*(((((((((((((( OSD-ENTRY ))))))))))))))))))*/
 
@@ -5598,7 +5635,7 @@ infobar.warning{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  background-color: transparent;			  
+  background-color: #000000;			  
   background-image:url("objects-dark/other/blurredT.png");
   background-size: cover; } 
 
@@ -5612,7 +5649,7 @@ infobar.info button{
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
   padding: 1px 8px 1px 8px;
-  border-radius: 4px;
+  border-radius: 3px;
   font-weight: normal;
   color: #ffffff;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
@@ -5693,7 +5730,6 @@ infobar.error button.sidebar-button:disabled label{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border-radius: 0px;
   border-color:#7c7d80 #535457 #3e3f41 #535457;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#67686a,#626366);}
@@ -5726,7 +5762,7 @@ infobar.info button:hover{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border-color: #5592dc #5592dc #3375c6 #5592dc;
+  border-color: #969797;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#3273c4,#3273c4);}
 
@@ -5749,7 +5785,7 @@ infobar.info button:disabled{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border-radius: 0px;
+  border-radius: 3px;
   border-color:#7c7d80 #535457 #3e3f41 #535457;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#67686a,#626366);}
@@ -6192,20 +6228,20 @@ notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab
 
 notebook > header tabs > tab {
   color: rgba(236, 236, 236, 0.325);
-  background-color: #353b47;
+  background-color: #2b2b2c;
   border: 1px solid #2a2a2a;
   transition: all 150ms ease-out;
 }
 
 notebook > header tabs > tab:hover:not(:checked) {
   color: #f2f4f5;
-   background-color: #353b47;
+   background-color: #2b2b2c;
   border-color: #2a2a2a;
 }
 
 notebook > header tabs > tab:checked {
   color: #ffffff;
-  background-color: #2b2b2c;
+  background-color: #404143;
   border-color: #2a2a2a;
 }
 
@@ -8679,8 +8715,10 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
 
 .gedit-search-entry-occurrences-tag {
 
-  all: unset;}
-  padding: 0 2px; }
+  color: rgba(237, 237, 237, 0.6);
+  border: none;
+  margin: 2px;
+  padding: 2px; }
 
 .gedit-map-frame border {
 
@@ -11074,7 +11112,7 @@ popup decoration {
   
 .csd.popup decoration {
   border-radius: 4px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);}
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.28);}
 
  
 /*.csd.popup decoration:backdrop {

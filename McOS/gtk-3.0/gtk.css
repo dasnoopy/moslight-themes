@@ -115,7 +115,7 @@
 
 .background {
 
-  background-color: rgba(243,243,243,0.99);
+  background-color: rgba(243,243,243,1.0);
   color: #202020;}
   
 .popup.background {
@@ -5366,7 +5366,7 @@ infobar.question button.flat,
 infobar.info button.flat{
 
   text-shadow: none;
-  border-radius: 4px;
+  border-radius: 3px;
   padding: 1px 3px 1px 3px;
   color: #ffffff;
   background-color: transparent;
