@@ -7581,10 +7581,10 @@ row:selected progressbar trough{
 /*********************************************************************/
 .app-notification {
   padding: 10px;
-  margin: 0 8px 8px 8px;
+  margin: 12px;
   color: #f3f3f3;
   background-color: rgba(85, 85, 85, 0.95);
-  border-radius: 0 0 2px 2px;
+  border-radius: 7px;
   border: none;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.15);
 }
@@ -7598,31 +7598,29 @@ row:selected progressbar trough{
   min-height: 20px;
   min-width: 16px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: 1px solid;
+  border: 1px solid transparent;
   padding: 2px 8px 2px 8px;
-  border-radius: 3px;
+  border-radius: 4px;
   font-weight: normal;
   color: #ffffff;
   text-shadow:  none;
-  border-color: #699bcc #4179c6 #1f5bbd #4179c6;
-  background-color: transparent;
-  background-image:linear-gradient(to bottom,#6ab4fd,#0a7fff);
-  border-color: #699bcc #4179c6 #1f5bbd #4179c6;}
+  background-color: #808080;
+  background-image: none;}
   
 .app-notification button:active,
 .app-notification button:hover {
 
   font-weight: normal;
+  border: 1px solid transparent;
   color: #ffffff;
   text-shadow: none;
-  border-color: #477bc7 #2e5eb2 #163e9d #2e5eb2;
-  background-color: transparent;
-  background-image:linear-gradient(to bottom,#4d98fe,#0765e3);}
-    
+  background-color: #a0a0a0;
+  background-image: none;}
+     
 .app-notification button.flat{
 
   text-shadow: none;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 2px 4px 2px 4px;
   color: #f3f3f3;
   background-color: transparent;
@@ -7632,7 +7630,7 @@ row:selected progressbar trough{
   
 .app-notification button.flat:hover{
 
-  border-radius: 3px;
+  border-radius: 9999px;
   background-color: transparent;
   background-image: image(#ed1010);
   box-shadow: none;
