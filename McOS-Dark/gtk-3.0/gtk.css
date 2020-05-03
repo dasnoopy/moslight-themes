@@ -80,11 +80,11 @@
   -GtkWidget-text-handle-height: 20;
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 0;
-   outline-color: alpha(currentColor,0.3);
-   outline-style: dashed;
-   outline-offset: -5px;
+   outline-color: transparent;
+   outline-style: solid;
+   outline-offset: 5px;
    outline-width: 0px;
- -gtk-outline-radius: 3px;
+   -gtk-outline-radius: 3px;
  -gtk-secondary-caret-color: #3584e4;}
 *:disabled {
   -gtk-icon-effect: dim; }

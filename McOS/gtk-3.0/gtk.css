@@ -82,8 +82,8 @@
   -GtkDialog-action-area-border: 0;
    outline-color: transparent;
    outline-style: solid;
-   outline-offset: -4px;
-   outline-width: 2px;
+   outline-offset: 5px;
+   outline-width: 0px;
    -gtk-outline-radius: 3px;
    -gtk-secondary-caret-color: #3584e4;}
 
@@ -1179,7 +1179,7 @@ combobox:drop(active) button.combo {
 
 button.image-button {
 
-  min-width: 24px;
+  min-width: 22px;
   padding-left: 6px;
   padding-right: 6px; }
 
