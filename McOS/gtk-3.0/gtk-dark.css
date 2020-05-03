@@ -115,7 +115,7 @@
 .background {
 
   color: #dddddd;
-  background-color: rgba(64,65,67,1.0);}
+  background-color: rgba(64,65,67,0.99);}
   
 .popup.background {
 
@@ -4325,7 +4325,7 @@ headerbar entry image:focus {
 
 headerbar entry progress {
 
-   margin: 0 -6px;
+  margin: 0 -6px;
   border-radius: 0;
   border-width: 0 0 2px;
   border-color: #505050;
@@ -4401,9 +4401,7 @@ headerbar button {
   min-width: 16px;
   font-weight: normal;
   border: 0.8px solid;
-  
-  /*border-radius: 4px;*/
-   padding: 2px 4px 2px 4px;
+  padding: 2px 4px 2px 4px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -7581,20 +7579,15 @@ row:selected progressbar trough{
 /*********************************************************************/
 /*            .APP NOTIFICATION                                      */
 /*********************************************************************/
-
 .app-notification {
- 
   padding: 10px;
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
-  background-color: rgba(64,64,64,0.92);
-  background-image:url("objects-dark/other/blurredT.png");
-  border: 1px solid black;
-  border-radius: 0 0 5px 5px;}
+  margin: 0 8px 8px 8px;
+  color: #f3f3f3;
+  background-color: rgba(85, 85, 85, 0.95);
+  border-radius: 0 0 2px 2px;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
 
 .app-notification border {
  
@@ -7606,50 +7599,32 @@ row:selected progressbar trough{
   min-width: 16px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
-  padding: 1px 8px 1px 8px;
-  border-radius: 4px;
+  padding: 2px 8px 2px 8px;
+  border-radius: 3px;
   font-weight: normal;
-  color: #cacaca;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
-  border-color:#7c7d80 #535457 #3e3f41 #535457;
-  background-color: transparent;
-  background-image: linear-gradient(to bottom,#67686a,#626366);}
-  
-.app-notification button:active{
-
   color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
-  border-color: #5592dc #5592dc #3375c6 #5592dc;
+  text-shadow:  none;
+  border-color: #699bcc #4179c6 #1f5bbd #4179c6;
   background-color: transparent;
-  background-image: linear-gradient(to bottom,#3273c4,#3273c4);}
+  background-image:linear-gradient(to bottom,#6ab4fd,#0a7fff);
+  border-color: #699bcc #4179c6 #1f5bbd #4179c6;}
   
+.app-notification button:active,
 .app-notification button:hover {
 
   font-weight: normal;
   color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
-  border-color:#7c7d80 #535457 #3e3f41 #535457;
+  text-shadow: none;
+  border-color: #477bc7 #2e5eb2 #163e9d #2e5eb2;
   background-color: transparent;
-  background-image: image(#797a7c);}
+  background-image:linear-gradient(to bottom,#4d98fe,#0765e3);}
     
 .app-notification button.flat{
 
   text-shadow: none;
   border-radius: 3px;
-  padding: 1px 3px 1px 3px;
-  color: #ffffff;
+  padding: 2px 4px 2px 4px;
+  color: #f3f3f3;
   background-color: transparent;
   background-image: none;
   box-shadow: none; 
@@ -7657,36 +7632,26 @@ row:selected progressbar trough{
   
 .app-notification button.flat:hover{
 
-  border-radius: 100px;
+  border-radius: 3px;
   background-color: transparent;
   background-image: image(#ed1010);
   box-shadow: none;
   border-color: #ed1010;
   color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);}
+  text-shadow:  none;}
 
 .app-notification button:disabled {
  
-  color: #555555;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
-  border-radius: 0px;
-  border-color:#7c7d80 #535457 #3e3f41 #535457;
+  color: rgba(37,37,37, 0.55);
+  text-shadow: none;
   background-color: transparent;
-  background-image: linear-gradient(to bottom,#67686a,#626366);}
+  background-image: image(#ececec);}
                                               
 .app-notification button.sidebar-button:disabled,                                              
 .app-notification button.sidebar-button,
 .app-notification button.flat:disabled{
   
-  color: #505050;
+  color: rgba(37,37,37, 0.55);
   text-shadow: none;
   border-color: transparent;
   background-color: transparent;
