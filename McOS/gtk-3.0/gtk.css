@@ -416,7 +416,7 @@ treeview entry.flat:focus {
 treeview.view {
 
   border-left-color: rgba(37, 37, 37, 0.15);
-  border-top-color: rgba(0, 0, 0, 0.1); }
+  border-top-color: rgba(37, 37, 37, 0.15); }
   * {
     -GtkTreeView-horizontal-separator: 4;
     -GtkTreeView-grid-line-width: 1;
@@ -487,12 +487,7 @@ treeview.view.expander:selected {
 
 treeview.view.expander:selected:hover {
 
-  color: #ffffff;
-text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05); }
+  color: #ffffff; }
 
 treeview.view.expander:checked {
 
@@ -538,7 +533,7 @@ treeview.view header button {
   min-height: 0;
   min-width: 0;
   padding: 3px 6px;
-  font-weight: normal;
+  font-weight: bold;
   color: #202020;
   background-color: #ffffff;
   background-image: none;
