@@ -3721,15 +3721,15 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat,
 
   border-bottom-left-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 
 .linked.vertical > entry:last-child{
 
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 
 .linked.vertical > entry:only-child{
@@ -3880,15 +3880,15 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat,
 
   border-bottom-right-radius:0px;
   border-bottom-left-radius:0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 
 .linked.vertical > button:last-child{
 
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 
 .linked.vertical > button:only-child{
@@ -3979,15 +3979,15 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat,
 
   border-bottom-right-radius:0px;
   border-bottom-left-radius:0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 
 .linked.vertical > combobox:last-child > box > button.combo {
 
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 
 .linked.vertical > combobox:only-child > box > button.combo {
@@ -4015,8 +4015,8 @@ spinbutton:not(.vertical) entry:first-child{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   margin-left: 0px;
   border-style: solid;}
 
@@ -4024,8 +4024,8 @@ spinbutton:not(.vertical) entry:last-child{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;
   margin-left:-1px;}
 
@@ -4036,7 +4036,7 @@ spinbutton:not(.vertical) entry:only-child{
 
 spinbutton:not(.vertical):dir(ltr) entry{
 
-  border-radius: 5px 0 0 5px; }
+  border-radius: 4px 0 0 4px; }
 
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
 
@@ -4074,8 +4074,8 @@ spinbutton:not(.vertical) button:last-child{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;
   margin-left:-1px;}
 
@@ -4088,14 +4088,14 @@ spinbutton:not(.vertical) button:first-child{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   margin-left: 0px;
   border-style: solid;}
 
 spinbutton:not(.vertical):dir(rtl) button.up {
 
-  border-radius: 5px 0 0 5px; }
+  border-radius: 4px 0 0 4px; }
 
 spinbutton:not(.vertical) > button + button {
 
@@ -4131,8 +4131,8 @@ spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active) {
 
 spinbutton.vertical entry {
   
-  min-height: 2.2rem; /*32px;*/ 
-  min-width: 2.2rem; /*32px;*/  
+  min-height: 24px;
+  min-width: 24px;
   border-radius: 0;
   border-bottom-style: none;
   padding-left: 0;
@@ -4140,15 +4140,16 @@ spinbutton.vertical entry {
 
 spinbutton.vertical button { 
 
-  min-height:2.2rem; /*32px;*/ 
-  min-width: 2.2rem; /*32px;*/ padding: 0; }
+  min-height: 24px;
+  min-width: 24px;
+  padding: 0; }
 
 spinbutton.vertical button.up { 
-  border-radius: 5px 5px 0 0; }
+  border-radius: 4px 4px 0 0; }
 
 
 spinbutton.vertical button.down { 
-  border-radius: 0 0 5px 5px; }
+  border-radius: 0 0 4px 4px; }
 
 
 spinbutton.vertical entry:only-child {
@@ -4178,15 +4179,15 @@ spinbutton.vertical button:first-child{
 
   border-bottom-right-radius:0px;
   border-bottom-left-radius:0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 
 spinbutton.vertical button:last-child {
 
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 
 spinbutton.vertical button:only-child {
