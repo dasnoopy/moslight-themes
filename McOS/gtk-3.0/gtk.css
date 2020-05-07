@@ -833,7 +833,7 @@ entry.search {
 
 entry image {
 
-  color: #515151; }
+  color: #505050; }
 
 entry image.left {
 
@@ -857,7 +857,7 @@ entry.flat:focus{
 entry:focus {
 
   color: #202020;
-  border-color:#4095ff;
+  border: 1px solid #4095ff;
   background-color: transparent;
   background-image: image(rgba(255,255,255,1));}
   
@@ -2055,7 +2055,7 @@ toolbar.bottom-toolbar button{
   border-radius: 0px;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   background-color: transparent;
-background-image: linear-gradient(180deg,rgba(255,255,255,1),
+  background-image: linear-gradient(180deg,rgba(255,255,255,1),
                                               rgba(251,251,251,1));}
                                               
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover {
@@ -3467,7 +3467,7 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
   border-bottom-left-radius: 5px;
 }
 
-.linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, .inline-toolbar toolbutton > button.flat:last-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:last-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo {
+.linked:not(.vertical) > entry:last-child, z.inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, .inline-toolbar toolbutton > button.flat:last-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:last-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-right-style: solid;
@@ -10743,8 +10743,8 @@ scale fill:disabled {
 
 scale slider {
 
-  background-color: #f6f8fa;
-  border: 1px solid #646772;
+  background-color: #ffffff;
+  border: 1px solid #c8c9cc;
   border-radius: 100%;}
  
 scale highlight {
@@ -10763,8 +10763,8 @@ scale slider:hover {
 scale slider:active {
 
   background-clip: border-box;
-  background-color: #4095ff;
-  border-color: #646772; }
+  background-color: #f0f0f0;
+  border-color: #c8c9cc; }
 
 scale.marks-after slider,
 scale.marks-after slider:focus,

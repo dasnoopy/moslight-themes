@@ -15,8 +15,8 @@
    height="22"
    width="22"
    version="1.1"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="after-horizontal-active.svg">
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="vertical.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -26,15 +26,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1014"
+     inkscape:window-width="1366"
+     inkscape:window-height="724"
      id="namedview13"
      showgrid="false"
-     inkscape:zoom="22.627418"
-     inkscape:cx="10.279392"
-     inkscape:cy="11.634056"
+     inkscape:zoom="1"
+     inkscape:cx="-24.950781"
+     inkscape:cy="-26.352474"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="22"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5435"
      showguides="true"
@@ -66,7 +66,7 @@
          id="stop1206" />
       <stop
          id="stop1208"
-         offset="0.06250018"
+         offset="0.0714287"
          style="stop-color:#ffffff;stop-opacity:1" />
       <stop
          id="stop1210"
@@ -895,12 +895,12 @@
        inkscape:collect="always"
        xlink:href="#linearGradient1216"
        id="linearGradient1198"
-       x1="11"
-       y1="2.9999969"
-       x2="11"
-       y2="19"
+       x1="18.000002"
+       y1="10.999999"
+       x2="4"
+       y2="10.999999"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(0,1.5554793e-4)" />
+       gradientTransform="rotate(-90,11,11)" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath1222">
@@ -925,28 +925,24 @@
   </metadata>
   <path
      inkscape:connector-curvature="0"
-     style="opacity:0.06;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 5.5,4.0001555 a 1.5,1.5 0 0 0 -1.5,1.5 v 6.5000005 l 7,8 7,-8 V 5.5001555 a 1.5,1.5 0 0 0 -1.5,-1.5 z"
+     style="opacity:0.06000001;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 3,17.5 A 1.5,1.5 0 0 0 4.5,19 H 11 L 19,12 11,4.9999999 H 4.5 a 1.5,1.5 0 0 0 -1.5,1.5 z"
      id="path1228" />
   <path
      id="path377"
-     d="m 5.5,3.0001555 a 1.5,1.5 0 0 0 -1.5,1.5 v 6.5000005 l 7,8 7,-8 V 4.5001555 a 1.5,1.5 0 0 0 -1.5,-1.5 z"
-     style="opacity:1;fill:#c00000;fill-opacity:0;stroke:#cdcdcd;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 3,16.5 A 1.5,1.5 0 0 0 4.5,18 H 11 L 19,11 11,4 H 4.5 A 1.5,1.5 0 0 0 3,5.5 Z"
+     style="opacity:0.33999999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      inkscape:connector-curvature="0" />
   <path
      style="opacity:1;fill:url(#linearGradient1198);fill-opacity:1;stroke:none;stroke-width:2.29189038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 5.5,3.0001555 a 1.5,1.5 0 0 0 -1.5,1.5 v 6.5000005 l 7,8 7,-8 V 4.5001555 a 1.5,1.5 0 0 0 -1.5,-1.5 z"
+     d="M 3,16.5 A 1.5,1.5 0 0 0 4.5,18 H 11 L 19,11 11,4 H 4.5 A 1.5,1.5 0 0 0 3,5.5 Z"
      id="rect33"
      inkscape:connector-curvature="0" />
   <path
      inkscape:connector-curvature="0"
      id="path1218"
      d="m 5.5,3.0001555 a 1.5,1.5 0 0 0 -1.5,1.5 v 6.5000005 l 7,8 7,-8 V 4.5001555 a 1.5,1.5 0 0 0 -1.5,-1.5 z"
-     style="opacity:0.38;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     clip-path="url(#clipPath1222)" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path976"
-     d="m 5.5,3.0001555 a 1.5,1.5 0 0 0 -1.5,1.5 v 6.5000005 l 7,8 7,-8 V 4.5001555 a 1.5,1.5 0 0 0 -1.5,-1.5 z"
-     style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:2.29189038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:0.37999998;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     clip-path="url(#clipPath1222)"
+     transform="rotate(-90,10.999922,11.000078)" />
 </svg>
