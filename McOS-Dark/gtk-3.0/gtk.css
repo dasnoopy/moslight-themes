@@ -4026,7 +4026,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat,
 .linked.vertical > combobox > box > button.combo {
 
   border-radius: 0px;
-  border-bottom-style: none; }
+  border-bottom-style: solid; }
 
 .linked.vertical > combobox:first-child > box > button.combo {
 
