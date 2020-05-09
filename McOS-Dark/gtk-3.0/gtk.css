@@ -1957,7 +1957,7 @@ toolbar{
   -GtkWidget-window-dragging: true;
  padding: 2px;
   background-color: #515151;
-  border-bottom: 1px solid rgba(0,0,0,1)}
+  border-bottom: 1px solid transparent;}
 
 toolbar separator{
 
@@ -5855,12 +5855,10 @@ actionbar {
 
 statusbar{
 
-  border-top: 1px solid black;
-  background-color: transparent;
-  background-image: image(#2c2d2f);
+
   min-height: 24px;
   padding: 0 8px;
- color: #ffffff;
+  color: #f3f3f3;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
 				  1px  0px alpha(#202020, 0.05),
@@ -6410,12 +6408,10 @@ menubar{
   padding: 0px;
   padding-left:4px;
   background-color: transparent;
-  background-image: linear-gradient(to top, #000000 1px, #343437 1px, #3a3b3e);}
+  background-image: linear-gradient(to top, #161618 1px, #343437 1px, #3a3b3e);}
   
 .menubar > menuitem,
 menubar > menuitem{
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -6521,7 +6517,7 @@ menu menuitem{
   min-height: 16px;
   min-width: 42px;
   padding-top: 3px;
-padding-left: 3px;
+  padding-left: 3px;
   padding-right: 3px;
   padding-bottom: 3px; }
 

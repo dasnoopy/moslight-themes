@@ -6130,13 +6130,11 @@ menubar{
   padding: 0px;
   padding-left:4px;
   background-color: transparent;
-  background-image: linear-gradient(to top, #b3b3b3 1px, #d8d7d8 1px, #deddde);}
+  background-image: linear-gradient(to top, #b9b9b9 1px, #d8d7d8 1px, #deddde);}
   
 .menubar > menuitem,
 menubar > menuitem{
   
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
   color: rgba(0,0,0,0.94);
   text-shadow: 0 1px alpha(#ffffff, 0.35);
   padding: 4px 8px;
