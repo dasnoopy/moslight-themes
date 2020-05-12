@@ -6408,7 +6408,7 @@ menubar{
   padding: 0px;
   padding-left:4px;
   background-color: transparent;
-  background-image: linear-gradient(to top, #161618 1px, #343437 1px, #3a3b3e);}
+  background-image: linear-gradient(to top, #616161 1px, #343437 1px, #3a3b3e);}
   
 .menubar > menuitem,
 menubar > menuitem{
@@ -9981,10 +9981,10 @@ headerbar{
   
   min-height: 34px;
   padding: 1px 8px 2px 10px;
-  border-width: 0px 0px 0.5px;
+  border-width: 0px 0px 1px;
   border-style: solid;
-  border-color: black;
-  color: rgba(188,188,188, 0.8);
+  border-color: #252525;
+  color: rgba(232,232,232, 0.8);
   background-color: transparent;
   background-image:  linear-gradient(to top, #343437, #3f4043);}
 
@@ -10560,12 +10560,12 @@ window.csd > .titlebar:not(headerbar):backdrop {
 .csd headerbar{
 
   background-color: transparent;
-  border-color: black; }
+  border-color: #252525; }
 
 .csd.titlebar:not(headerbar) {
 
   background-color: transparent;
-  border-color: black; }
+  border-color: #252525; }
 
 /*********************************************************************/
 /*            TITLE-BUTTONS HEADERBAR AND TITLEBAR UNSORTED          */

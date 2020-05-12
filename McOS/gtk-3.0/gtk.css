@@ -10161,12 +10161,12 @@ window.csd > .titlebar:not(headerbar):backdrop {
 .csd headerbar{
 
   background-color: transparent;
-  border-color: #8c8c8c; }
+  border-color: #828285; }
 
 .csd.titlebar:not(headerbar) {
 
   background-color: transparent;
-  border-color: #8c8c8c; }
+  border-color: #888a85; }
 
 /*********************************************************************/
 /*            TITLE-BUTTONS HEADERBAR AND TITLEBAR UNSORTED          */
