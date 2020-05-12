@@ -10865,9 +10865,7 @@ scale marks{
 
   color: #929292;}
 
-scale value{
-
-  padding-bottom: 12px;}
+scale value  { margin-bottom: 0px; margin-top: 12px; }
 
 scale marks.top{
 
@@ -10877,7 +10875,6 @@ scale marks.top{
   margin-left: 0px;}
 
 scale marks.bottom{
-
   margin-top: 6px;
   margin-bottom: 0px;
   margin-left: 0px;
