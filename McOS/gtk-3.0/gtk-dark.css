@@ -7094,7 +7094,7 @@ progressbar {
 
   padding: 0;
   font-size: smaller;
-  color: rgba(92, 97, 108, 0.7); }
+  color: #929292; }
 
 progressbar progress {
   background-color: #3273c4;
@@ -11141,7 +11141,7 @@ scale trough {
 
 scale trough:disabled {
 
-  background-color: rgba(100,103,114,0.1); }
+  background-color: #3e3e3e; }
 
 scale fill {
 
@@ -11165,7 +11165,7 @@ scale highlight {
 
 scale highlight:disabled {
 
-  background-color: rgba(82, 148, 226, 0.55); }
+  background-color: #555753; }
 
 scale slider:hover {
 
