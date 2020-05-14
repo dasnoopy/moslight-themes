@@ -671,7 +671,7 @@ popover{
   
   border-radius: 4px;
   border: 1px solid #cdcdcf;
-  background-color: rgba(242,242,244,1.00);
+  background-color: rgba(248,248,248,1.00);
   background-image:none;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   background-size: cover;}
@@ -6537,7 +6537,7 @@ switch {
 headerbar switch {
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px solid #cfcfcf;}
+  border: 1px solid #becedd;}
 
 switch:checked {
   background-color: #c5defb;
