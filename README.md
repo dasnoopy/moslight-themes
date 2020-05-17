@@ -19,6 +19,24 @@ MecOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
 
 So many thanks to respective creators!
 
+**Installation:**
+
+- Download the zip file..
+
+Installation for all users:
+
+1) as root, copy MecOS and MecOS-Dark folders into `/usr/share/themes`;
+2) open Gnome-Tweak and choose the theme.
+
+Installation for your account only
+
+1) copy MecOS and MecOS-Dark folders into `~/.local/share/themes`;
+2) if doesn't exist, create also a symbolic links in your home dir to that folder (this is needed for the gtk2 theme);
+
+    `$ ln -s ~/.local/share/themes .themes`
+
+3) open Gnome-Tweak and choose the theme.
+
 **Old and unsupported themes:**
 
 * **MosArc** is a theme designed **only** for gnome 3.34 and it was based on ARC theme (https://github.com/horst3180/Arc-theme). 
@@ -38,16 +56,6 @@ So many thanks to respective creators!
 
 You can find these old themes also on deviantart page (http://dasnoopy.deviantart.com/)
 
-**Some notes:**
-
-* To install the theme, copy theme folder into `/usr/share/themes` (for all users)
-
-* If you copy theme in your `~/.local/share/themes`, create also a symbolic links in your home dir to
-that folder
-
-    `$ ln -s ~/.local/share/themes .themes`
-
-* then, use Gnome-Tweak to choose the theme.
 
 **GTK2 ENGINES REQUIREMENT**
 
