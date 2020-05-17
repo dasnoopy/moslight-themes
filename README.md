@@ -2,22 +2,22 @@
 
 A collection of simple GTK2/GTK3 and Gnome shell themes made in the sparetime.
 
-**McOS** is the current maintained theme and it works **only** for Gnome 3.36.x.
+**MecOS** is the current maintained theme and it works **only** for Gnome 3.36.x.
 
 - GTK3 3.24.16 or above is required for gtk3 theme. For GTK2 and other requirements check the end of this readme..
 
 
 ![MosArc GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/McOS.png)
 
-McOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
+MecOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
 
-**McoS** is yet another osx inspired theme and it is deeply based on these others:
+**MecoS** is yet another osx inspired theme and it is deeply based on these others:
 
 - https://github.com/vinceliuice/Mojave-gtk-theme (made by https://github.com/vinceliuice)
 - https://github.com/paullinuxthemer/Prof-Gnome (made by https://github.com/paullinuxthemer)
 - https://github.com/paullinuxthemer/Mc-OS-themes (made by https://github.com/paullinuxthemer)
 
-So many thanks to their creators / maintainers!
+So many thanks to respective creators!
 
 **Old and unsupported themes:**
 
