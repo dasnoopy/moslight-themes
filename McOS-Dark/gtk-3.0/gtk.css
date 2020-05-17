@@ -1,24 +1,6 @@
 
 /*This is a gnome-theme that contains a modified GTKRC and GTK.CSS.  As such it licence is GPLv2, of which the downloaded file contains a copy.
 
-
- GRAND GTK.CSS FILE is a modified GTK.CSS with each element its own settings  
- Created by PAULXFCE (2017)                              
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along
-    with this program; if not, write to the Free Software Foundation, Inc.,
-    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.*/
-
 /*((((((((( DARK MODE VERSION )))))))))))))))))))*/
 
 /*(((((((((((((((  COLOR DEFINITION ))))))))))))))))))))*/                        
@@ -868,6 +850,22 @@ entry image.right {
 
   padding-right: 0;
   padding-left: 4px; }
+
+.entry-tag {
+  margin-top: 5px ;
+  border-radius: 16px; /*50px*/
+  border: 1px solid none;
+  box-shadow: none;
+  background-color: #cc0000;
+  color: #eeeeec;
+
+}
+
+.entry-tag:hover {
+  box-shadow: none;
+  color: #ffffff;
+}
+
 
 entry.flat,
 entry.flat:focus{
@@ -8619,7 +8617,7 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
   background-color: rgba(64,65,67,0.99);
   padding: 6px;
   border-color: #505050;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 5px 5px;
   border-width: 0 1px 1px 1px;
   border-style: solid; }
 
@@ -9237,7 +9235,7 @@ MsdOsdWindow.background.osd .trough {
 
   padding: 2px 6px; }
 
-.lightdm-combo.combobox-entry .button{
+.lightdm-combo.combobox-.button{
 
   background-image: none;
   background-color: rgba(0, 0, 0, 0.3);

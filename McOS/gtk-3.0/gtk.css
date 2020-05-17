@@ -1,26 +1,6 @@
 
 /*This is a gnome-theme that contains a modified GTKRC and GTK.CSS.  As such it licence is GPLv2, of which the downloaded file contains a copy.
 
-
- GRAND GTK.CSS FILE is a modified GTK.CSS with each element its own settings  
- Created by PAULXFCE (2017)                              
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along
-    with this program; if not, write to the Free Software Foundation, Inc.,
-    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.*/
-
-
-
 /*(((((((((((((((  COLOR DEFINITION ))))))))))))))))))))*/                        
 
 
@@ -845,6 +825,22 @@ entry image.right {
   padding-right: 0;
   padding-left: 4px; }
 
+.entry-tag {
+  margin-top: 5px ;
+  border-radius: 16px; /*50px*/
+  border: 1px solid none;
+  box-shadow: none;
+  background-color: #cc0000;
+  color: #494a4c;
+
+}
+
+.entry-tag:hover {
+  box-shadow: none;
+  color: #2d2c2d;
+}
+
+
 entry.flat,
 entry.flat:focus{
 
@@ -949,18 +945,6 @@ entry selection:disabled{
 
   color: #90b5ec; }
   
-entry-tag {
-  margin: 8px;
-  border-radius: 50px;
-  box-shadow: none;
-  background-color: #f8464c;
-  color: #ffffff;
-  border: none;
-}
-
-.entry-tag:hover {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
-}
 
 :dir(ltr) .entry-tag {
   margin-left: 8px;
