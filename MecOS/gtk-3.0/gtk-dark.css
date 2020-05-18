@@ -6157,20 +6157,20 @@ notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab
 
 notebook > header tabs > tab {
   color: rgba(236, 236, 236, 0.325);
-  background-color: #2b2b2c;
+  background-color: #404143;
   border: 1px solid #2a2a2a;
   transition: all 150ms ease-out;
 }
 
 notebook > header tabs > tab:hover:not(:checked) {
   color: #f2f4f5;
-   background-color: #2b2b2c;
+   background-color: #404143;
   border-color: #2a2a2a;
 }
 
 notebook > header tabs > tab:checked {
   color: #ffffff;
-  background-color: #404143;
+  background-color: #2a2a2b;
   border-color: #2a2a2a;
 }
 

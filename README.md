@@ -19,23 +19,23 @@ MecOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
 
 So many thanks to respective creators!
 
-**Installation:**
+**Installation notes:**
 
-- Download the zip file..
+- Download the zip file then...
 
-Installation for all users:
+*... for all users:*
 
-1) as root, copy MecOS and MecOS-Dark folders into `/usr/share/themes`;
-2) open Gnome-Tweak and choose the theme.
+- as root, copy MecOS and MecOS-Dark folders into `/usr/share/themes`;
+- open Gnome-Tweak and choose the theme.
 
-Installation for your account only
+*... for your account only:*
 
-1) copy MecOS and MecOS-Dark folders into `~/.local/share/themes`;
-2) if doesn't exist, create also a symbolic links in your home dir to that folder (this is needed for the gtk2 theme);
+- copy MecOS and MecOS-Dark folders into `~/.local/share/themes`;
+- if doesn't exist, create also a symbolic links in your home dir to that folder (this is needed for the gtk2 theme);
 
     `$ ln -s ~/.local/share/themes .themes`
 
-3) open Gnome-Tweak and choose the theme.
+- open Gnome-Tweak and choose the theme.
 
 **Old and unsupported themes:**
 
