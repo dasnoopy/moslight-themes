@@ -1,5 +1,5 @@
 
-/*This is a gnome-theme that contains a modified GTKRC and GTK.CSS.  As such it licence is GPLv2, of which the downloaded file contains a copy.
+/*This is a gnome-theme that contains a modified GTKRC and GTK.CSS.  As such it licence is GPLv2, of which the downloaded file contains a copy. */
 
 /*(((((((((((((((  COLOR DEFINITION ))))))))))))))))))))*/                        
 
@@ -828,7 +828,7 @@ entry image.right {
 .entry-tag {
   margin-top: 5px ;
   border-radius: 16px; /*50px*/
-  border: 1px solid none;
+  border: 1px solid transparent;
   box-shadow: none;
   background-color: #cc0000;
   color: #494a4c;
