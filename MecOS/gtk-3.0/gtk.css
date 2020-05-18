@@ -830,7 +830,7 @@ entry image.right {
   border-radius: 16px; /*50px*/
   border: 1px solid transparent;
   box-shadow: none;
-  background-color: #cc0000;
+  background-color: #f6f6f6;
   color: #494a4c;
 
 }

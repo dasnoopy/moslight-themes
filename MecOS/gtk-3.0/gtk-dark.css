@@ -856,7 +856,7 @@ entry image.right {
   border-radius: 16px; /*50px*/
   border: 1px solid transparent;
   box-shadow: none;
-  background-color: #cc0000;
+  background-color: #67686a;
   color: #eeeeec;
 
 }
@@ -9235,7 +9235,7 @@ MsdOsdWindow.background.osd .trough {
 
   padding: 2px 6px; }
 
-.lightdm-combo.combobox-.button{
+.lightdm-combo.combobox-entry.button{
 
   background-image: none;
   background-color: rgba(0, 0, 0, 0.3);
