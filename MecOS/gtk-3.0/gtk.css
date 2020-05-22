@@ -4190,9 +4190,9 @@ headerbar entry {
   color:#252525;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#fdfdfd,#f1f1f1);
-  border: 0.8px solid; 
+  border: 1px solid; 
   border-radius: 4px;
-  border-color: #d9d9d9 #c0c0c0 #babdb6 #babdb6;
+  border-color: #c0c0c0 #c0c0c0 #babdb6 #babdb6; /* sopra destra sotto sinistra */
   min-height: 20px;
   min-width: 16px;
   padding: 2px 4px 2px 4px;
@@ -4826,7 +4826,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > button{
 
   color:#575757;
   background-color: transparent;
-  background-image: linear-gradient(180deg,#fdfdfd,#f1f1f1);
+  background-image: linear-gradient(180deg,#fcfcfc,#f0f0f0);
   border: 1px solid;
   border-color: #d9d9d9 #cdcdcd #babdb6 #cdcdcd;
   border-radius: 0px;
@@ -4836,13 +4836,12 @@ headerbar .linked:not(.vertical):not(.path-bar) > button{
   
 headerbar .linked:not(.vertical):not(.path-bar) > button:hover{
 
-  color: #404040;
+  color: #f3f3f3;
   background-color: transparent;
-  background-image: image(#feffff);
+  background-image: image(#555753);
   border-color: #d9d9d9 #cdcdcd #babdb6 #cdcdcd;}
   
 headerbar .linked:not(.vertical):not(.path-bar) > button:checked{
-
 
   color: #ffffff;
   text-shadow: 0  1px alpha(#202020,0.5);
@@ -4853,10 +4852,10 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked{
 headerbar .linked:not(.vertical):not(.path-bar) > button:active{
 
   text-shadow: none;
-  color: #000000; 
+  color: #f3f3f3; 
   border-color: #d9d9d9 #cdcdcd #babdb6 #cdcdcd;
   background-color: transparent;
-  background-image:image(#dcdddf);}
+  background-image:image(#2e3436);}
   
 headerbar .linked:not(.vertical):not(.path-bar) > button:disabled {
 
@@ -4884,6 +4883,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:first-child{
   } 
 
 headerbar .linked:not(.vertical):not(.path-bar) > button:last-child{
+ 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 4px;
@@ -4927,23 +4927,23 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button{
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover{
 
-  color: #616264;
-  background-color: #fcfcfc;
+  color: #f3f3f3;
+  background-color: #555753;
   background-image: none}
   
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked{
 
   color: #ffffff;
   text-shadow: 0px  1px alpha(#202020, 0.7);
-  background-image: image(#6c6c6c);}
+  background-image: image(#555753);}
   
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active{
 
   text-shadow: none;
-  color: #000000; 
+  color: #f3f3f3; 
   border-color: #d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   background-color: transparent;
-  background-image:image(#dcdddf);} 
+  background-image:image(#2e3436);} 
 
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled{
