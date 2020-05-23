@@ -477,7 +477,7 @@ treeview.view.progressbar:focus,
 treeview.view.progressbar{
 
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: #4095ff; }
 
 treeview.view.progressbar:focus:selected:focus,
@@ -487,6 +487,7 @@ treeview.view.progressbar:selected{
 
   color: #4095ff;
   box-shadow: none;
+  border: 1px solid #ffffff;
   background-color: #ffffff; }
   
   
@@ -494,16 +495,16 @@ treeview.view.trough:selected,
 treeview.view.trough {
 
   color: #202020;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  background-color: #d7d7d7;
+  border-radius: 2px;
   border-width: 0; }
   
 treeview.view.trough:selected,
 treeview.view.trough:selected:focus {
 
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  background-color: red;
+  border-radius: 2px;
   border-width: 0; }
 
 /*((((((((((((((((TREEVIEW HEADERBUTTON )))))))))))))))))))))*/

@@ -494,15 +494,15 @@ treeview.view.progressbar:focus,
 treeview.view.progressbar{
 
   color: #ffffff;
-  border-radius: 4px;
-  background-color: rgba(56,60,57,1);}
+  border-radius: 2px;
+  background-color: #4095ff; }
 
 treeview.view.progressbar:focus:selected:focus,
 treeview.view.progressbar:focus:selected,
 treeview.view.progressbar:selected:focus,
 treeview.view.progressbar:selected{
 
-  color: rgba(56,60,57,1);
+  color: #4095ff;
   box-shadow: none;
   background-color: #ffffff; }
   
@@ -511,8 +511,8 @@ treeview.view.trough:selected,
 treeview.view.trough {
 
   color: #ffffff;
-  background-color: #2b2e39;
-  border-radius: 4px;
+  background-color: #555753;
+  border-radius: 2px;
   border-width: 0; }
   
 treeview.view.trough:selected,
@@ -520,7 +520,7 @@ treeview.view.trough:selected:focus {
 
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 2px;
   border-width: 0; }
 
 /*((((((((((((((((TREEVIEW HEADERBUTTON )))))))))))))))))))))*/
@@ -9235,7 +9235,7 @@ MsdOsdWindow.background.osd .trough {
 
   padding: 2px 6px; }
 
-.lightdm-combo.combobox-.button{
+.lightdm-combo.combobox-entry.button{
 
   background-image: none;
   background-color: rgba(0, 0, 0, 0.3);
