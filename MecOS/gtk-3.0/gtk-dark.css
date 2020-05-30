@@ -511,7 +511,7 @@ treeview.view.trough:selected,
 treeview.view.trough {
 
   color: #ffffff;
-  background-color: #2b2e39;
+  background-color: #555753;
   border-radius: 2px;
   border-width: 0; }
   
@@ -5846,7 +5846,7 @@ searchbar {
 actionbar {
 
   padding: 6px;
-  border-top: 1px solid black;
+  border-top: 1px solid #202020;
   background-image: image(#2c2d2f); }
 
 /******************STATUSBAR *******************************/
@@ -6174,20 +6174,20 @@ notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab
 notebook > header tabs > tab {
   color: rgba(236, 236, 236, 0.325);
   background-color: #404143;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #2b2b2c;
   transition: all 150ms ease-out;
 }
 
 notebook > header tabs > tab:hover:not(:checked) {
   color: #f2f4f5;
    background-color: #404143;
-  border-color: #2a2a2a;
+  border-color: #2b2b2c;
 }
 
 notebook > header tabs > tab:checked {
   color: #ffffff;
-  background-color: #2a2a2b;
-  border-color: #2a2a2a;
+  background-color: #2b2b2c;
+  border-color: #2b2b2c;
 }
 
 notebook > header tabs > tab button.flat, notebook > header tabs > tab .raven .raven-header:not(.top) button, .raven .raven-header:not(.top) notebook > header tabs > tab button {
