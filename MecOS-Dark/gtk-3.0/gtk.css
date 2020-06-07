@@ -8623,7 +8623,7 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
 
 .gedit-search-entry-occurrences-tag {
 
-  color: rgba(237, 237, 237, 0.6);
+  color: white;
   border: none;
   margin: 2px;
   padding: 2px; }

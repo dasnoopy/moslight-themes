@@ -2150,3 +2150,12 @@ StScrollBar {
     background-color: rgba(53, 53, 53, 0.5); }
   #unlockDialogNotifications StButton#vhandle:active, #unlockDialogNotifications StButton#hhandle:active {
     background-color: rgba(27, 106, 203, 0.5); }
+    
+.openweather-current-summarybox,
+.openweather-forecast-icon,
+.openweather-current-databox-captions,
+.openweather-current-databox-values,
+.openweather-current-icon,
+.openweather-forecast-summary,
+.openweather-forecast-temperature {
+  color: #f0f0f0; }

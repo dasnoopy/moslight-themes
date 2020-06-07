@@ -6796,7 +6796,7 @@ headerbar switch {
   border: 4px solid transparent;}
 
 switch:checked {
-  background-color: #c5defb;
+  background-color: #9CC8FF;
 }
 
 switch:disabled {

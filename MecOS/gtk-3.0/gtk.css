@@ -494,7 +494,7 @@ treeview.view.progressbar:selected{
 treeview.view.trough:selected,
 treeview.view.trough {
 
-  color: #202020;
+  color: #303030;
   background-color: #d7d7d7;
   border-radius: 2px;
   border-width: 0; }
@@ -503,7 +503,7 @@ treeview.view.trough:selected,
 treeview.view.trough:selected:focus {
 
   color: #ffffff;
-  background-color: red;
+  background-color: #cfcfcf;
   border-radius: 2px;
   border-width: 0; }
 
@@ -6522,10 +6522,10 @@ switch {
 headerbar switch {
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px solid #becedd;}
+  border: 0px solid @borders;}
 
 switch:checked {
-  background-color: #c5defb;
+  background-color: #9CC8FF;
 }
 
 switch:disabled {
