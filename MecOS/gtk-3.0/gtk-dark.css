@@ -33,23 +33,6 @@
 @define-color placeholder_text_color #A8A8A8;
 @define-color link_color #1954ad;
 @define-color content_view_bg #ffffff;
-@define-color wm_title alpha(#292121, 0.8);
-@define-color wm_unfocused_title alpha(#292121, 0.5);
-@define-color wm_bg #dedcdf;
-@define-color wm_bg_unfocused #eff0f2;
-@define-color wm_highlight #eff0f2;
-@define-color wm_shadow alpha(black, 0.35);
-@define-color wm_button_close_bg #f46067;
-@define-color wm_button_close_hover_bg #f68086;
-@define-color wm_button_close_active_bg #f13039;
-@define-color wm_icon_close_bg #F8F8F9;
-@define-color wm_button_hover_bg #fdfdfd;
-@define-color wm_button_active_bg #2357d6;
-@define-color wm_button_hover_border #D1D3DA;
-@define-color wm_icon_bg #90949E;
-@define-color wm_icon_unfocused_bg #B6B8C0;
-@define-color wm_icon_hover_bg #7A7F8B;
-@define-color wm_icon_active_bg #ffffff;
 
 
 * {
@@ -2945,20 +2928,17 @@ primary-toolbar spinbutton:not(.vertical) > button:not(:disabled):not(:active):n
 
 /************* INLINE-TOOLBAR ***************************/
 
-inline-toolbar {
-
-  background-color: #484848;
-  border-style: solid;
-  border-color: #505050;
-  border-width: 0 1px 1px;
-  padding: 3px;
-  border-radius: 0px;  }
-
 .inline-toolbar {
 
   -GtkWidget-window-dragging: true;
-  padding: 4px;
-  background-color: #484848; }
+
+  background-color: #202020;
+  border-style: solid;
+  border-color: #303030;
+  padding: 3px;
+  border-width: 0 1px 1px;
+  border-radius: 0  0 4px 4px; }
+
 
 .inline-toolbar separator {
 
@@ -2988,8 +2968,8 @@ inline-toolbar {
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   
   border-style: solid;}
 
@@ -2997,8 +2977,8 @@ inline-toolbar {
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;
   /*margin-left:-1px;*/}
 
@@ -3249,8 +3229,8 @@ toolbar.inline-toolbar toolbutton:first-child > button.flat{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   
   border-style: solid;}
 
@@ -3258,8 +3238,8 @@ toolbar.inline-toolbar toolbutton:backdrop:first-child > button.flat{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   
   border-style: solid;}
 
@@ -3267,8 +3247,8 @@ toolbar.inline-toolbar toolbutton:first-child > button.sidebar-button{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   
   border-style: solid;}
 
@@ -3276,24 +3256,24 @@ toolbar.inline-toolbar toolbutton:last-child > button.flat{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;}
 
 toolbar.inline-toolbar toolbutton:last-child > button.sidebar-button{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius:5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;}
 
 toolbar.inline-toolbar toolbutton:backdrop:last-child > button.flat{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;}
 
 toolbar.inline-toolbar toolbutton:only-child > button.flat{
@@ -3369,8 +3349,8 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   border-style: solid;
   border-right-style: none;}
 
@@ -3378,8 +3358,8 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;
   border-left-style:none;}
 
@@ -3515,18 +3495,18 @@ toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat{
 
   
 .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .linked:not(.vertical) > button:first-child, .inline-toolbar toolbutton > button.flat:first-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:first-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > combobox:first-child > box > button.combo {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, .inline-toolbar toolbutton > button.flat:last-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:last-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid;
 }
 
 .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked:not(.vertical) > button:only-child, .inline-toolbar toolbutton > button.flat:only-child, .inline-toolbar toolbutton > button.budgie-menu-launcher:only-child, .inline-toolbar .budgie-panel toolbutton > button.flat.launcher:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo {
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
 }  
 
@@ -3558,16 +3538,16 @@ popover .linked:not(.vertical) > button:first-child{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   border-style: solid;}
  
 popover .linked:not(.vertical) > button:last-child{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;}
 
 popover.linked:not(.vertical) > button:only-child{
@@ -3596,16 +3576,16 @@ popover.linked:not(.vertical) > button:only-child{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   border-style: solid;}
  
 .linked:not(.vertical) > button:last-child{
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-style: solid;}
 
 .linked:not(.vertical) > button:only-child{
@@ -3617,8 +3597,8 @@ popover.linked:not(.vertical) > button:only-child{
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
  
   border-style: solid;}
 
