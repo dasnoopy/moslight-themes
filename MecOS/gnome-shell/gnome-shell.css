@@ -1211,15 +1211,13 @@ StScrollBar {
     
  #panel #panelActivities.panel-button > * {
   background-image: url("assets/activities.svg");
-  background-position: center top;
   width: 24px;
   height: 24px;
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
+  background-color: transparent;
+  background-gradient-direction: none;
   border: none;
   color: transparent;
 }
-
 #appMenu {
   spacing: 6px; }
   #appMenu .label-shadow {
