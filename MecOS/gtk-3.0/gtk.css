@@ -5546,11 +5546,11 @@ infobar progressbar trough {
 
 searchbar {
 
-  padding: 3px; }
+  padding: 6px; }
 
 /******************ACTIONBAR ********************************/
 
-actionbar {
+actionbar > revealer >  box  {
 
   padding: 6px;
   border-top: 1px solid rgba(105, 105, 105, 0.3);
@@ -5558,7 +5558,7 @@ actionbar {
 
 /******************STATUSBAR *******************************/
 
-statusbar{
+statusbar {
 
   min-height: 24px;
   padding: 0 8px;
@@ -6913,9 +6913,11 @@ frame > border.flat{
   border-style: none; }
 
 actionbar > revealer > box {
-  padding: 0px;
-  border:none; }
-  actionbar > revealer > box:backdrop {
+  padding: 4px;
+  border-top:1px solid; 
+  border-color:rgba(105, 105, 105, 0.3); }
+
+actionbar > revealer > box:backdrop {
   border-color:rgba(105, 105, 105, 0.3); }
 
 

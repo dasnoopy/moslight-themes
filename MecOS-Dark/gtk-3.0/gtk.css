@@ -5819,15 +5819,19 @@ infobar progressbar trough {
 
 searchbar {
 
-  padding: 3px; }
+  padding: 6px; }
 
 /******************ACTIONBAR ********************************/
 
-actionbar {
+actionbar > revealer >  box  {
 
-  padding: 6px;
-  border-top: 1px solid #202020;
+  padding: 4px;
+  border-top: 1px solid;
+  border-color: rgba(105, 105, 105, 0.3);
   background-image: image(#2c2d2f); }
+
+actionbar > revealer > box:backdrop {
+  border-color:rgba(105, 105, 105, 0.3); }
 
 /******************STATUSBAR *******************************/
 

@@ -11,13 +11,13 @@ A collection of simple GTK2/GTK3 and Gnome shell themes made in the sparetime.
 
 MecOS folder contain **only** GTK2, GTK3 and Gnome Shell theme
 
-**MecOS** is yet another osx inspired theme and it is deeply based on these others:
+**MecOS** is yet another osx inspired theme and it is deeply based on these others works:
 
 - https://github.com/vinceliuice/Mojave-gtk-theme (made by https://github.com/vinceliuice)
 - https://github.com/paullinuxthemer/Prof-Gnome (made by https://github.com/paullinuxthemer)
 - https://github.com/paullinuxthemer/Mc-OS-themes (made by https://github.com/paullinuxthemer)
 
-So many thanks to respective creators!
+So many thanks to developers!
 
 **Installation notes:**
 
