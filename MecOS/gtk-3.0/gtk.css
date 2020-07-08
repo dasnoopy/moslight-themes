@@ -5552,9 +5552,12 @@ searchbar {
 
 actionbar > revealer >  box  {
 
-  padding: 6px;
+  padding: 4px;
   border-top: 1px solid rgba(105, 105, 105, 0.3);
   background-image: linear-gradient(to top, #d8d7d8, #e6e5e6); }
+
+actionbar > revealer > box:backdrop {
+  border-color:rgba(105, 105, 105, 0.3); }
 
 /******************STATUSBAR *******************************/
 
@@ -6911,14 +6914,6 @@ frame > border.flat{
 .frame.flat {
 
   border-style: none; }
-
-actionbar > revealer > box {
-  padding: 4px;
-  border-top:1px solid; 
-  border-color:rgba(105, 105, 105, 0.3); }
-
-actionbar > revealer > box:backdrop {
-  border-color:rgba(105, 105, 105, 0.3); }
 
 
 /******************************************************************/
