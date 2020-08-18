@@ -19,7 +19,7 @@
  */
 /* Global Values */
 stage {
-/*  font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif;*/
+  font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif;
   font-size: 10pt;
   color: #eeeeec; }
 
@@ -588,7 +588,7 @@ StScrollBar {
   .world-clocks-button .world-clocks-time {
     font-weight: normal;
     color: #eeeeec;
-    font-feature-settings: "lnum";
+    font-feature-settings: "tnum";
     font-size: 11pt;
     text-align: right; }
   .world-clocks-button .world-clocks-timezone {
@@ -1147,7 +1147,7 @@ StScrollBar {
 
 /* Top Bar */
 #panel {
-  background-color: rgba(19, 29, 39, 0.90);
+  background-color: rgba(19, 29, 39, 0.20);
   box-shadow: none; 
   font-weight: normal;
   height: 2.24em;
@@ -1357,9 +1357,9 @@ StScrollBar {
 
 /* App Grid */
 .icon-grid {
-  -shell-grid-horizontal-item-size: 144px;
-  -shell-grid-vertical-item-size: 144px;
-  spacing: 36px; }
+  -shell-grid-horizontal-item-size: 136px;
+  -shell-grid-vertical-item-size: 136px;
+  spacing: 20px; }
   .icon-grid .overview-icon {
     icon-size: 96px; }
 
@@ -2149,7 +2149,7 @@ StScrollBar {
     background-color: rgba(53, 53, 53, 0.5); }
   #unlockDialogNotifications StButton#vhandle:active, #unlockDialogNotifications StButton#hhandle:active {
     background-color: rgba(27, 106, 203, 0.5); }
-    
+
 .openweather-current-summarybox,
 .openweather-forecast-icon,
 .openweather-current-databox-captions,
