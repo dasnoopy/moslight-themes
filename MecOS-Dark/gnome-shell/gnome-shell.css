@@ -19,7 +19,7 @@
  */
 /* Global Values */
 stage {
-  font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif;
+/* font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif; */
   font-size: 10pt;
   color: #eeeeec; }
 
@@ -283,7 +283,7 @@ StScrollBar {
     padding-right: 0;
     padding-left: 1.75em; }
   .popup-menu-item:checked {
-    background-color: #3a3a3a;
+    background-color: #101213;
     box-shadow: none; }
   .popup-menu-item.selected {
     background-color: rgba(255, 255, 255, 0.1);
@@ -1147,7 +1147,7 @@ StScrollBar {
 
 /* Top Bar */
 #panel {
-  background-color: rgba(19, 29, 39, 0.20);
+  background-color: rgba(19, 29, 39, 0.50);
   box-shadow: none; 
   font-weight: normal;
   height: 2.24em;
