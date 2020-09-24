@@ -6506,7 +6506,7 @@ switch {
 headerbar switch {
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 0px solid @borders;}
+  border: 1px solid @borders;}
 
 switch:checked {
   background-color: #9CC8FF;
