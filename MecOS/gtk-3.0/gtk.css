@@ -43,12 +43,11 @@
   -GtkWidget-text-handle-height: 20;
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 0;
-   outline-color: transparent;
-   outline-style: solid;
-   outline-offset: 5px;
-   outline-width: 0px;
-   -gtk-outline-radius: 3px;
-   -gtk-secondary-caret-color: #3584e4;}
+  outline-color: alpha(currentColor,0.3);
+  outline-style: dashed;
+  outline-offset: -3px;
+  outline-width: 1px;
+  -gtk-outline-radius: 2px; }
 
 *:disabled {
   -gtk-icon-effect: dim; }
@@ -7548,7 +7547,7 @@ messagedialog.csd .dialog-action-area button:disabled{
  min-width: 0;
   /*min-width: 150px;*/
   border-style: none;
-  background-color: #f6f8fa; }
+  background-color: #ffffff; }
 
 .sidebar:dir(ltr){
    
@@ -9581,7 +9580,7 @@ headerbar:only-child,
 headerbar{
   
   min-height: 34px;
-  padding: 1px 8px 2px 10px;
+  padding: 0px 8px 0px 10px;
   border:none;
   color: rgba(41, 33, 33, 0.8);
   background-color: transparent;
@@ -11019,6 +11018,112 @@ headerbar .linked.raised:not(.vertical):not(.path-bar) > button.image-button, he
   border-radius: 4px;
   margin-right: 1px;}
 
+/* Based on _Adwaita-base.scss from libhandy */
+popover.combo {
+  padding: 0; }
+  popover.combo list {
+    background-color: transparent; }
+    popover.combo list > row {
+      padding: 0 10px;
+      min-height: 48px; }
+  popover.combo scrollbar.vertical {
+    background-color: #ffffff; }
 
+row.expander {
+  padding: 0px; }
+  row.expander:checked image.expander-row-arrow:not(:disabled) {
+    color: #4095ff; }
+  row.expander image.expander-row-arrow:disabled {
+    color: rgba(92, 97, 108, 0.55); }
+
+keypad .digit {
+  font-size: 200%;
+  font-weight: bold; }
+
+keypad .letters {
+  font-size: 70%; }
+
+keypad .symbol {
+  font-size: 160%; }
+
+viewswitcher, viewswitcher button {
+  margin: 0;
+  padding: 0; }
+
+viewswitcher button {
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0; }
+  viewswitcher button:not(:checked):not(:hover) {
+    background: transparent;
+    border-color: transparent; }
+  viewswitcher button:checked, viewswitcher button:active {
+    border-color: transparent; }
+  viewswitcher button > stack > box.narrow {
+    font-size: 0.75rem;
+    padding-top: 6px;
+    padding-bottom: 5px; }
+    viewswitcher button > stack > box.narrow image,
+    viewswitcher button > stack > box.narrow label {
+      padding-left: 8px;
+      padding-right: 8px; }
+  viewswitcher button > stack > box.wide {
+    padding: 8px 10px; }
+    viewswitcher button > stack > box.wide label:dir(ltr) {
+      padding-right: 7px; }
+    viewswitcher button > stack > box.wide label:dir(rtl) {
+      padding-left: 7px; }
+  viewswitcher button.needs-attention > stack > box label {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#4095ff), to(transparent));
+    background-size: 6px 6px;
+    background-repeat: no-repeat;
+    background-position: right 0px; }
+    viewswitcher button.needs-attention > stack > box label:dir(rtl) {
+      background-position: left 0px; }
+  viewswitcher button.needs-attention:active > stack > box label {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#ffffff), to(transparent)); }
+
+viewswitcherbar actionbar > revealer > box {
+  padding: 0; }
+
+list.content,
+list.content list {
+  background-color: transparent; }
+
+list.content list.nested > row:not(:active):not(:hover):not(:selected), list.content list.nested > row:not(:active):hover:not(.activatable):not(:selected) {
+  background-color: #fafbfb; }
+
+list.content list.nested > row.activatable:not(:active):hover:not(:selected) {
+  background-color: #f2f2f2; }
+
+list.content > row:not(.expander):not(:active):not(:hover):not(:selected), list.content > row:not(.expander):not(:active):hover:not(.activatable):not(:selected), list.content > row.expander row.header:not(:active):not(:hover):not(:selected), list.content > row.expander row.header:not(:active):hover:not(.activatable):not(:selected) {
+  background-color: #ffffff; }
+
+list.content > row.activatable:not(.expander):not(:active):hover:not(:selected), list.content > row.expander row.header.activatable:not(:active):hover:not(:selected) {
+  background-color: #f2f2f2; }
+
+list.content > row,
+list.content > row list > row {
+  border-color: #dcdfe3;
+  border-style: solid;
+  transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+list.content > row:not(:last-child) {
+  border-width: 1px 1px 0px 1px; }
+
+list.content > row:last-child, list.content > row.checked-expander-row-previous-sibling, list.content > row.expander:checked {
+  border-width: 1px; }
+
+list.content > row.expander:checked:not(:first-child), list.content > row.expander:checked + row {
+  margin-top: 5px; }
+
+window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized),
+window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration,
+window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
+  border-radius: 4px; }
+
+.windowhandle separator.sidebar:dir(ltr), .windowhandle separator.sidebar.left, .windowhandle separator.sidebar.left:dir(rtl), .windowhandle separator.sidebar:dir(rtl), .windowhandle separator.sidebar.right {
+  background-color: #d4d5db;
+  margin: 0; }
 
 

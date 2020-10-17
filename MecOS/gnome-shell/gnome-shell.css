@@ -19,12 +19,12 @@
  */
 /* Global Values */
 stage {
-/* font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif; */
+  font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif; 
   font-size: 10pt;
   color: #eeeeec; }
 
 /* Common Stylings */
-.search-statustext, .no-frequent-applications-label {
+.search-statustext {
   font-size: 2em;
   font-weight: normal;
   color: #eeeeec; }
@@ -543,11 +543,58 @@ StScrollBar {
     background-color: transparent;
     color: #729fcf; }
 
+/* Events */
+.events-button {
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 4px;
+  margin: 4px;
+  color: #f3f3f3;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  padding: 12px; }
+  .events-button:focus {
+    color: #f3f3f3;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: none; }
+  .events-button:hover {
+    color: #f3f3f3;
+    background-color: rgba(19, 29, 39, 0.90);
+    border-color: #2b2b2b;
+    box-shadow: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    icon-shadow: 0 1px rgba(0, 0, 0, 0.2); }
+  .events-button:active {
+    color: #f3f3f3;
+    background-color: rgba(19, 29, 39, 0.90);
+    border-color: #191919;
+    text-shadow: none;
+    icon-shadow: none;
+    box-shadow: none; }
+  .events-button .events-box {
+    spacing: 6px; }
+  .events-button .events-list {
+    spacing: 12px; }
+  .events-button .events-title {
+    color: #878787;
+    font-weight: bold;
+    margin-bottom: 4px; }
+  .events-button .event-time {
+    color: #bebeb6;
+    font-feature-settings: "tnum";
+    font-size: 10pt; }
+
+
+
 /* World clocks */
 .world-clocks-button {
   border-width: 0px;
   border-style: solid;
-  border-radius: 7px;
+  border-radius: 4px;
   margin: 4px;
   color: #f3f3f3;
   background-color: transparent;
@@ -1182,7 +1229,7 @@ StScrollBar {
     #panel .panel-button .app-menu-icon {
       margin-left: 4px;
       margin-right: 4px;
-      -st-icon-style: symbolic; }
+      -st-icon-style: regular; }
     .unlock-screen #panel .panel-button,
     .login-screen #panel .panel-button {
       color: white; }
@@ -1244,8 +1291,7 @@ StScrollBar {
 
 /* Window Picker */
 .window-picker {
-  -horizontal-spacing: 12px;
-  -vertical-spacing: 12px;
+  spacing: 6px;
   padding: 12px; }
   .window-picker.external-monitor {
     padding: 12px; }
@@ -1274,8 +1320,7 @@ StScrollBar {
   padding: 3px;
   height: 24px;
   width: 24px;
-  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-  -shell-close-overlap: 12px; }
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5); }
   .window-close:hover {
     background-color: #cc0000; }
   .window-close:active {
@@ -1355,13 +1400,13 @@ StScrollBar {
 .list-search-result .list-search-result-description {
   color: #a6a69b; }
 
-/* App Grid */
+/* App Vault/Grid */
 .icon-grid {
-  -shell-grid-horizontal-item-size: 136px;
-  -shell-grid-vertical-item-size: 136px;
-  spacing: 20px; }
-  .icon-grid .overview-icon {
-    icon-size: 96px; }
+  row-spacing: 32px;
+  column-spacing: 32px;
+  max-row-spacing: 64px;
+  max-column-spacing: 64px;
+}
 
 /* App Icons */
 .app-well-app .overview-icon,
@@ -1397,8 +1442,8 @@ StScrollBar {
 .app-folder-dialog {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  spacing: 12px;
-  background-color: rgba(7, 7, 7, 0.91); }
+  background-color: rgba(7, 7, 7, 0.91);
+  padding: 12px; }
   .app-folder-dialog .folder-name-container {
     padding: 24px 36px 0;
     spacing: 12px;
@@ -1406,7 +1451,7 @@ StScrollBar {
     .app-folder-dialog .folder-name-container .folder-name-label,
     .app-folder-dialog .folder-name-container .folder-name-entry {
       font-size: 18pt;
-      font-weight: normal; }
+      font-weight: 800; }
     .app-folder-dialog .folder-name-container .folder-name-entry {
       width: 300px; }
     .app-folder-dialog .folder-name-container .folder-name-label {
@@ -1426,8 +1471,8 @@ StScrollBar {
 
 .app-folder-dialog-container {
   padding: 12px;
-  width: 800px;
-  height: 600px; }
+  width: 620px;
+  height: 620px; }
 
 .app-folder-icon {
   padding: 6px;
@@ -1458,8 +1503,7 @@ StScrollBar {
     border-radius: 7px;
     background-color: white; }
 
-.all-apps,
-.frequent-apps > StBoxLayout {
+.all-apps  {
   padding: 0px 88px 10px 88px; }
 
 .system-action-icon {
@@ -1467,35 +1511,6 @@ StScrollBar {
   color: #fff;
   border-radius: 99px;
   icon-size: 48px; }
-
-/* Frequent | All toggle */
-.app-view-controls {
-  padding-bottom: 32px; }
-
-.app-view-control {
-  padding: 4px 32px;
-  margin: 0 4px; }
-  .app-view-control, .app-view-control:hover, .app-view-control:checked {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(238, 238, 236, 0);
-    text-shadow: none;
-    icon-shadow: none;
-    color: #b2b2a9; }
-  .app-view-control:hover {
-    color: #eeeeec;
-    box-shadow: inset 0 -2px #b2b2a9; }
-  .app-view-control:active {
-    box-shadow: inset 0 -2px #eeeeec; }
-  .app-view-control:checked {
-    color: #eeeeec;
-    box-shadow: inset 0 -2px #1b6acb; }
-  .app-view-control:first-child {
-    border-right-width: 0;
-    border-radius: 0; }
-  .app-view-control:last-child {
-    border-radius: 0; }
 
 /* Dash */
 #dash {
@@ -1615,12 +1630,12 @@ StScrollBar {
 .user-icon {
   background-size: contain;
   color: #eeeeec;
-  border-radius: 99px; }
+  border-radius: 9px; }
   .user-icon:hover {
     color: white; }
   .user-icon StIcon {
     background-color: rgba(238, 238, 236, 0.05);
-    border-radius: 99px; }
+    border-radius: 9px; }
 
 .user-widget.vertical .user-icon {
   icon-size: 6.54em; }
