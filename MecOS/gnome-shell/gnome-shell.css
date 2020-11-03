@@ -1630,12 +1630,14 @@ StScrollBar {
 .user-icon {
   background-size: contain;
   color: #eeeeec;
-  border-radius: 9px; }
+  border-radius: 99px; 
+  border: 0;}
   .user-icon:hover {
     color: white; }
   .user-icon StIcon {
-    background-color: rgba(238, 238, 236, 0.05);
-    border-radius: 9px; }
+    background-color:transparent;
+    border-radius: 99px;
+    border: 0; }
 
 .user-widget.vertical .user-icon {
   icon-size: 6.54em; }
