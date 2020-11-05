@@ -7660,10 +7660,15 @@ placessidebar row.sidebar-placeholder-row {
 placessidebar.sidebar row.sidebar-row{
 
   border: none;
+  
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 5px;
+ 
   color: black;
   /*font-weight: bold;*/
   text-shadow: 0px 1px alpha(#ffffff, 0.25); 
--gtk-icon-shadow: 0px 1px alpha(#ffffff, 0.75);}
+  -gtk-icon-shadow: 0px 1px alpha(#ffffff, 0.75);}
 
 placessidebar.sidebar row.sidebar-row.has-open-popup:selected{
 
