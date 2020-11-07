@@ -7663,12 +7663,13 @@ placessidebar.sidebar row.sidebar-row{
   
   margin-left: 4px;
   margin-right: 4px;
-  border-radius: 5px;
+  border-radius: 3px;
  
   color: black;
   /*font-weight: bold;*/
-  text-shadow: 0px 1px alpha(#ffffff, 0.25); 
-  -gtk-icon-shadow: 0px 1px alpha(#ffffff, 0.75);}
+  text-shadow: 0px 1px alpha(#e0e0e0, 0.25); 
+  -gtk-icon-shadow: 0px 1px alpha(#e0e0e0, 0.75);
+  }
 
 placessidebar.sidebar row.sidebar-row.has-open-popup:selected{
 
@@ -7683,8 +7684,8 @@ placessidebar.sidebar row.sidebar-row:selected{
   background-color: transparent;
   background-image:linear-gradient(to right,rgba(100,103,114,0.7),rgba(100,103,114,0.8),rgba(100,103,114,0.8),rgba(100,103,114,0.7)); }
 
-placessidebar.sidebar row.sidebar-row:selected:hover{
 
+placessidebar.sidebar row.sidebar-row:selected:hover{
   color: #ffffff;
   font-weight: bold;
   text-shadow: 0px 1px alpha(#202020, 0.2);
