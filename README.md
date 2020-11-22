@@ -2,9 +2,9 @@
 
 A collection of simple GTK2/GTK3 and Gnome shell themes made in the sparetime.
 
-**MecOS** is the current maintained theme and it works **only** for Gnome 3.36.x.
+**MecOS** is the current maintained theme and it works **only** for latest gnome version (current is vers. 3.38.x).
 
-- GTK3 3.24.16 or above is required for gtk3 theme. For GTK2 and other requirements check the end of this readme..
+- GTK3 3.24.23 or above is required for gtk3 theme. For GTK2 and other requirements check the end of this readme..
 
 
 ![MosArc GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MecOS.png)
