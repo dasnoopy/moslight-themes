@@ -11084,3 +11084,55 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   margin: 0; }
 
 
+/* ((((((( Changes for gnome 3.38 )))))))*/  
+
+.nautilus-window .titlebar .path-bar-box{
+ 
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  border: 1px solid;
+  border-color: #cdcdcd; 
+  border-bottom-color: #bfbfbf; 
+  background-image: linear-gradient(to top, #f0f0f0 1px, #ffffff); 
+  text-shadow: 0 1px rgba(255, 255, 255, 0.769231);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.769231); 
+  padding-left:0px; 
+  box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07); }
+   
+.nautilus-window .titlebar .path-bar-box:backdrop{
+ background-image:none;
+ box-shadow:none;}
+ 
+.nautilus-window .titlebar .path-bar-box widget > .text-button{
+  border-width:0 1px 0 0;
+  border-color:#cdcdcd;
+  box-shadow:none;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin:0px;}
+  
+.nautilus-window .titlebar .path-bar-box widget > .text-button:not(:first-child):not(:last-child),
+.nautilus-window .titlebar .path-bar-box widget > .text-button:first-child{
+
+  margin-left: 0px;
+  border: 1px solid #cdcdcd;
+  border-style: none solid none none;}
+  
+.nautilus-window .titlebar .path-bar-box widget > .text-button:last-child,
+.nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:active,
+.nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:checked{ 
+ 
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;}
+ 
+.nautilus-window .titlebar .path-bar-box widget > .text-button:only-child,
+.nautilus-window .titlebar .path-bar-box widget > .text-button:first-child{
+
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;}
+  
+/***** End of changes for nautilus pathbar box ******/
+
+
+

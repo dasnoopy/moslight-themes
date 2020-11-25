@@ -31,9 +31,9 @@ stage {
 
 .osd-window, .resize-popup, .switcher-list, .workspace-switcher-container {
   color: #eeeeec;
-  background-color: rgba(32, 32, 32, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 5px;
+  background-color: rgba(32, 32, 32, 0.76);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 7px;
   padding: 12px; }
 
 #dash, .workspace-thumbnails {
@@ -838,7 +838,7 @@ StScrollBar {
   padding: 4px; }
 
 .candidate-page-button-previous {
-  border-radius: 7px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
   border-right-width: 0; }
 
 .candidate-page-button-next {
