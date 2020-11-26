@@ -10693,113 +10693,31 @@ headerbar button.titlebutton.restore:active,
 /*********************************************************************/
 
 .nautilus-window .floating-bar {
-
-  padding: 1px;
-  background-color: #2357d6;
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
-  border-radius: 2px 2px 0 0; }
-
-.nautilus-window .floating-bar button {
-
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0);
-  border-color: rgba(255, 255, 255, 0.5); }
-
-.nautilus-window .floating-bar button.flat{
-
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0); }
-
-.nautilus-window .floating-bar button.sidebar-button {
-
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0); }
-
-
-
-.nautilus-window .floating-bar button.flat:disabled{
-
-  color: rgba(255, 255, 255, 0.4); }
-
-.nautilus-window .floating-bar button.sidebar-button:disabled{
-
-  color: rgba(255, 255, 255, 0.4); }
-
-.nautilus-window .floating-bar button.flat:disabled label{
-
-  color: rgba(255, 255, 255, 0.4); }
-
-.nautilus-window .floating-bar button.sidebar-button:disabled label {
-
-  color: rgba(255, 255, 255, 0.4); }
-
-.nautilus-window .floating-bar button:hover {
-
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.8); }
-
-.nautilus-window .floating-bar button:active{
-
-  color: #3273c4;
-  background-color: #ffffff;
-  border-color: #ffffff; }
-
-.nautilus-window .floating-bar button:active:hover{
-
-  color: #3273c4;
-  background-color: #ffffff;
-  border-color: #ffffff; }
-
-.nautilus-window .floating-bar button:checked {
-
-  color: #3273c4;
-  background-color: #ffffff;
-  border-color: #ffffff; }
-
-.nautilus-window .floating-bar button:disabled {
-
-  background-color: rgba(255, 255, 255, 0);
-  border-color: rgba(255, 255, 255, 0.4); }
-
-.nautilus-window .floating-bar button:disabled{
-
-  color: rgba(255, 255, 255, 0.5); }
-
-.nautilus-window .floating-bar button:disabled label {
-
-  color: rgba(255, 255, 255, 0.5); }
-
-.nautilus-window .floating-bar button:disabled:active{
-
-  color: #3273c4;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.4); }
-
-.nautilus-window .floating-bar button:disabled:checked {
-
-  color: #3273c4;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.4); }
+color: white;
+padding: 0px;
+background-color: #555753;
+border-width: 1px;
+border-style: solid solid none;
+border-color: #252525;
+border-radius: 3px 3px 0 0;
+}
 
 .nautilus-window .floating-bar.bottom.left {
-
-  border-top-left-radius: 0; }
+/* axes left border and border radius */
+border-left-style: none;
+border-top-left-radius: 0;
+}
 
 .nautilus-window .floating-bar.bottom.right {
+/* axes right border and border radius */
+border-right-style: none;
+border-top-right-radius: 0;
+}
 
-  border-top-right-radius: 0; }
+.nautilus-window .floating-bar button {
+padding: 0px;
+}
+
 
 /********NAUTILUS LIST DIM ********************************/
 
