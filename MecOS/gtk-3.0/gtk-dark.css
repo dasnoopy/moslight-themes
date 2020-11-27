@@ -805,7 +805,7 @@ entry:focus {
   
   border-radius: 4px;
   padding: 1px 6px 1px 6px;
-  color: #dddddd;
+  color: #ffffff;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
 				  1px  0px alpha(#202020, 0.05),
@@ -814,7 +814,7 @@ entry:focus {
 				  
   border-color: rgba(0,0,0,0.6);
   background-color: transparent;
-  background-image: linear-gradient(to bottom,#5c5d5d,#5c5d5d 1px,#7a7b7c 1px,#7a7b7c 2px, #67686a 2px, #67686a,#626366);}
+  background-image:  image(rgba(103,104,106,1)); }
   
 entry.search {
 
@@ -833,22 +833,6 @@ entry image.right {
 
   padding-right: 0;
   padding-left: 4px; }
-
-.entry-tag {
-  margin-top: 5px ;
-  border-radius: 16px; /*50px*/
-  border: 1px solid transparent;
-  box-shadow: none;
-  background-color: #67686a;
-  color: #eeeeec;
-
-}
-
-.entry-tag:hover {
-  box-shadow: none;
-  color: #ffffff;
-}
-
 
 entry.flat,
 entry.flat:focus{
@@ -949,6 +933,22 @@ entry selection:disabled{
   background-color: #2357d6;
   text-shadow: none;
   color: #90b5ec; }
+  
+.entry-tag {
+  margin-top: 5px ;
+  border-radius: 16px; /*50px*/
+  border: 1px solid red;
+  box-shadow: none;
+  background-color: #67686a;
+  color: #eeeeec;
+
+}
+
+.entry-tag:hover {
+  box-shadow: none;
+  color: #ffffff;
+}
+
 
 /*(((((((((((((( OSD-ENTRY ))))))))))))))))))*/
 
@@ -6181,12 +6181,6 @@ menuitem radio:checked:hover{
 menuitem radio:checked:disabled:hover{
 
   -gtk-icon-source: -gtk-scaled(url("objects-dark/radio-objects/radio-checked-insensitive-selected.svg"), url("objects-dark/radio-objects/radio-checked-insensitive-selected@2.svg")); }
-
-
-
-
-
-
 
 /***********MENU ITEM buttons *****************/
 

@@ -808,22 +808,6 @@ entry image.right {
   padding-right: 0;
   padding-left: 4px; }
 
-.entry-tag {
-  margin-top: 5px ;
-  border-radius: 16px; /*50px*/
-  border: 1px solid transparent;
-  box-shadow: none;
-  background-color: #f6f6f6;
-  color: #494a4c;
-
-}
-
-.entry-tag:hover {
-  box-shadow: none;
-  color: #2d2c2d;
-}
-
-
 entry.flat,
 entry.flat:focus{
 
@@ -928,6 +912,20 @@ entry selection:disabled{
 
   color: #90b5ec; }
   
+.entry-tag {
+  margin-top: 5px ;
+  border-radius: 16px; /*50px*/
+  border: 1px solid transparent;
+  box-shadow: none;
+  background-color: #f6f6f6;
+  color: #494a4c;
+}
+
+.entry-tag:hover {
+  box-shadow: none;
+  color: #2d2c2d;
+}
+
 
 :dir(ltr) .entry-tag {
   margin-left: 8px;
@@ -6090,36 +6088,6 @@ menubar > menuitem menu menu,
 }
 
 /********************* MENU ****************************/
-/*.menu:not(.context-menu):not(context-menu),
-menu:not(.context-menu):not(context-menu){
-  
-  background-image: none;
-  padding-top: 3px;
-  padding-bottom: 4px;
-  border-radius: 3px 3px 5px 5px;
-  color: #202020;
-  text-shadow: 0 1px alpha(#ffffff, 0.35);
-   background-color: rgba(255,255,255,0.92);
-  background-image:url("objects/other/blurred6.png");
-  background-size: cover;}*/
-
-/*menu.context-menu:not(.menu):not(menu),
-.menu.context-menu:not(.menu):not(menu),
-csd >.context-menu,
-.csd >.context-menu,
-context-menu,
-.context-menu{
-  
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-radius: 4px;
-  color: #202020;
-  text-shadow: 0 1px alpha(#ffffff, 0.35);
-   background-color: rgba(255,255,255,0.92);
-  background-image:url("objects/other/blurred6.png");
-  font: initial;
-  background-size: cover;}*/
-
 
 .context-menu, popover.touch-selection, .csd popover.touch-selection,
 popover.background.touch-selection, .csd popover.background.touch-selection,
