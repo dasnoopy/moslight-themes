@@ -31,9 +31,9 @@ stage {
 
 .osd-window, .resize-popup, .switcher-list, .workspace-switcher-container {
   color: #eeeeec;
-  background-color: rgba(32, 32, 32, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 5px;
+  background-color: rgba(32, 32, 32, 0.76);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 7px;
   padding: 12px; }
 
 #dash, .workspace-thumbnails {
@@ -838,7 +838,7 @@ StScrollBar {
   padding: 4px; }
 
 .candidate-page-button-previous {
-  border-radius: 7px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
   border-right-width: 0; }
 
 .candidate-page-button-next {
@@ -1194,7 +1194,7 @@ StScrollBar {
 
 /* Top Bar */
 #panel {
-  background-color: rgba(19, 29, 39, 0.50);
+  background-color: rgba(19, 29, 39, 0.90);
   box-shadow: none; 
   font-weight: normal;
   height: 2.24em;
@@ -1589,18 +1589,20 @@ StScrollBar {
   visible-width: 32px;
   spacing: 6px;
   padding: 6px;
-  border-radius: 7px 0 0 10px;
-  border-right-width: 0; }
+  border-radius: 7px 0 0 7px;
+  background-color: rgba(19, 29, 39, 0.90);
+  border-right-width: 0; 
+  border-color: #202020}
   .workspace-thumbnails:rtl {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 7px 7px 0;
     border-left-width: 0; }
   .workspace-thumbnails .placeholder {
-    background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
+    background-color: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
     background-size: contain;
     height: 24px; }
 
 .workspace-thumbnail-indicator {
-  border: 3px solid #1b6acb;
+  border: 2px solid #5294e2;
   border-radius: 3px;
   padding: 0px; }
 

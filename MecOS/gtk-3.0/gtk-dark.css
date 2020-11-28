@@ -813,8 +813,7 @@ entry:focus {
 				  0px  2px alpha(#202020, 0.05);
 				  
   border-color: rgba(0,0,0,0.6);
-  background-color: transparent;
-  background-image:  image(rgba(103,104,106,1)); }
+  background-color: #67686a; }
   
 entry.search {
 
@@ -937,7 +936,7 @@ entry selection:disabled{
 .entry-tag {
   margin-top: 5px ;
   border-radius: 16px; /*50px*/
-  border: 1px solid red;
+  border: 1px solid transparent;
   box-shadow: none;
   background-color: #67686a;
   color: #eeeeec;
