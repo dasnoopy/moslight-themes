@@ -6098,7 +6098,7 @@ menu,
   padding-top: 6px;
   padding-bottom: 6px;
   border: 1px solid #cdcdcf;
-  background-color: rgba(242,242,244,1.00);
+  background-color: rgba(248,248,250,1.0);
   background-image: none;
   background-size: cover;
   }
@@ -6147,7 +6147,9 @@ menu menuitem{
   padding-top: 3px;
   padding-left: 3px;
   padding-right: 3px;
-  padding-bottom: 3px; }
+  padding-bottom: 3px; 
+  margin: 0 4px;
+  border-radius: 3px;}
 
 
 .menu menuitem:hover,
@@ -9504,8 +9506,8 @@ filechooserbutton:drop(active) {
 headerbar:only-child,
 headerbar{
   
-  min-height: 34px;
-  padding: 0px 8px 0px 10px;
+  min-height: 36px;
+  padding: 0px 10px 0px 10px;
   border:none;
   color: rgba(41, 33, 33, 0.8);
   background-color: transparent;
@@ -11019,5 +11021,10 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   
 /***** End of changes for nautilus pathbar box ******/
 
+.tweak-categories separator {
+  min-width: 0px;
+  min-height: 0px;
+  background: none;
+}
 
 

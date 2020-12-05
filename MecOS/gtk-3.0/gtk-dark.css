@@ -6453,8 +6453,10 @@ menu menuitem{
   padding-top: 3px;
   padding-left: 3px;
   padding-right: 3px;
-  padding-bottom: 3px; }
-
+  padding-bottom: 3px;   
+  margin: 0 4px;
+  border-radius: 3px;}
+  
 .menu menuitem:hover,
 menu menuitem:hover{
 
@@ -9920,8 +9922,8 @@ filechooserbutton:drop(active) {
 headerbar:only-child,
 headerbar{
   
-  min-height: 34px;
-  padding: 1px 8px 2px 10px;
+  min-height: 36px;
+  padding: 1px 10px 2px 10px;
   border-width: 0px 0px 1px;
   border-style: solid;
   border-color: #252525;
@@ -11491,7 +11493,11 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   
 /***** End of changes for nautilus pathbar box ******/
 
-
+.tweak-categories separator {
+  min-width: 0px;
+  min-height: 0px;
+  background: none;
+}
 
 
 
