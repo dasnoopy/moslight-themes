@@ -7266,6 +7266,8 @@ list {
 list row {
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   border-radius: 3px;
   padding: 0px; }
 
