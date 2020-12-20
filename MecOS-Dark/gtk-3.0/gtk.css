@@ -7264,11 +7264,6 @@ list {
   border-color: #505050; }
 
 list row {
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  border-radius: 3px;
   padding: 0px; }
 
 
@@ -7277,7 +7272,6 @@ list row {
 /*********************************************************************/
 
 row:selected{
-  border-radius: 3px;
   color: #ffffff;
   font-weight: bold;
   text-shadow:  0 -1px alpha(#ffffff, 0.25);
@@ -7939,12 +7933,10 @@ placessidebar row.sidebar-placeholder-row {
 placessidebar.sidebar row.sidebar-row{
 
  border: none;
- 
  margin-left: 4px;
  margin-right: 4px;
  border-radius: 3px;
- 
- color: #eeeeec;
+ color: @theme_fg_color;
   /*font-weight: bold;*/
   text-shadow:  0px -1px alpha(#ffffff, 0.25);
 -gtk-icon-shadow: 0px 1px alpha(#202020, 0.2);}
