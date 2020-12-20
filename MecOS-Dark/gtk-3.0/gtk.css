@@ -7264,10 +7264,10 @@ list {
   border-color: #505050; }
 
 list row {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   border-radius: 3px;
   padding: 0px; }
 
