@@ -7264,8 +7264,10 @@ list {
   border-color: #505050; }
 
 list row {
-    
-    padding: 2px; }
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  padding: 0px; }
 
 
 /*********************************************************************/
@@ -7273,7 +7275,7 @@ list row {
 /*********************************************************************/
 
 row:selected{
-
+  border-radius: 3px;
   color: #ffffff;
   font-weight: bold;
   text-shadow:  0 -1px alpha(#ffffff, 0.25);

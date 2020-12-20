@@ -6958,22 +6958,23 @@ list {
   border: none;}
 
 list row {
-
-color:#202020; 
-padding: 2px;}
+  color:#202020; 
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  padding: 0px; }
  
 /*********************************************************************/
 /*            ROW                                                    */
 /*********************************************************************/
 
 row:selected{
-border-radius: 0px;
-
+  border-radius: 3px;
   color: #ffffff;
   font-weight: bold;
   text-shadow:  0 -1px alpha(#ffffff, 0.25);
-background-image:linear-gradient(to right, #8a8e96,#7e808a,#8a8d95);
-box-shadow: 0 1px 1px rgba(0,0,0,0.04), 0 1px 8px rgba(0,0,0,0.12);}
+  background-image:linear-gradient(to right, #8a8e96,#7e808a,#8a8d95);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.04), 0 1px 8px rgba(0,0,0,0.12);}
 
 row:selected label{
 
@@ -7925,8 +7926,8 @@ colorswatch, colorswatch:drop(active) {
 
 colorswatch.top {
 
-  border-top-left-radius: 2.4px;
-  border-top-right-radius: 2.4px; }
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
 
 colorswatch.top overlay {
 
@@ -7935,41 +7936,41 @@ colorswatch.top overlay {
 
 colorswatch.bottom {
 
-  border-bottom-left-radius: 2.4px;
-  border-bottom-right-radius: 2.4px; }
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 colorswatch.bottom overlay {
 
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px; }
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 colorswatch.left, colorswatch:first-child:not(.top) {
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 2.4px;
-  border-bottom-left-radius: 2.4px; }
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
 
 colorswatch.left overlay, colorswatch:first-child:not(.top) overlay {
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px; }
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
 
 colorswatch.right, colorswatch:last-child:not(.bottom) {
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 2.4px;
-  border-bottom-right-radius: 2.4px; }
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 colorswatch.right overlay, colorswatch:last-child:not(.bottom) overlay {
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px; }
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 colorswatch.dark overlay {
 

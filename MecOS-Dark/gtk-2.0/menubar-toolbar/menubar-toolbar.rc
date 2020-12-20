@@ -1,11 +1,11 @@
 style "menubar" {
-  bg[INSENSITIVE] ="#dbdadd"
-  bg[NORMAL] = "#c8c8c8"
-  fg[NORMAL] = "#202020"
-  fg[PRELIGHT] = "#202020"
-  fg[ACTIVE] = "#202020"
+  bg[INSENSITIVE] ="#303030"
+  bg[NORMAL] = "#505050"
+  fg[NORMAL] = "#bcbcbc"
+  fg[PRELIGHT] = "#ffffff"
+  fg[ACTIVE] = "#bcbcbc"
   fg[SELECTED] = @selected_fg_color
-  fg[INSENSITIVE] = shade(1.3, "#202020")
+  fg[INSENSITIVE] = "#000000"
 
   xthickness = 0
   ythickness = 0
@@ -24,9 +24,9 @@ style "menubar" {
 style "menubar-borderless" {
 
   bg[NORMAL] = "#dadbdd"
-  fg[NORMAL] = "#202020"
+  fg[NORMAL] = "#bcbcbc"
   fg[SELECTED] = @fg_color
-  fg[INSENSITIVE] = shade(1.3, "#70788d")
+  fg[INSENSITIVE] = "#000000"
 
   xthickness = 0
   ythickness = 0
@@ -72,7 +72,7 @@ style "menubar-text" {
 
 style "toolbar_entry" {
 
-  text[NORMAL] = "#202020"
+  text[NORMAL] = "#bcbcbc"
 
   engine "pixmap" {
 
