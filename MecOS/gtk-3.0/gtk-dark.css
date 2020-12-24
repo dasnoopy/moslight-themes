@@ -10685,24 +10685,23 @@ headerbar button.titlebutton.restore:active,
 
 .nautilus-window .floating-bar {
 color: white;
-padding: 0px;
+padding: 0;
+margin: 7px;
 background-color: #555753;
-border-width: 1px;
-border-style: solid solid none;
-border-color: #252525;
-border-radius: 3px 3px 0 0;
+border: 1px solid #252525;
+border-radius: 3px;
 }
 
 .nautilus-window .floating-bar.bottom.left {
 /* axes left border and border radius */
-border-left-style: none;
-border-top-left-radius: 0;
+/*border-left-style: none;*/
+/*border-top-left-radius: 0;*/
 }
 
 .nautilus-window .floating-bar.bottom.right {
 /* axes right border and border radius */
-border-right-style: none;
-border-top-right-radius: 0;
+/*border-right-style: none;*/
+/*border-top-right-radius: 0;*/
 }
 
 .nautilus-window .floating-bar button {
