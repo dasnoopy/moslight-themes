@@ -10230,11 +10230,11 @@ headerbar button.titlebutton.restore:active,
 /*********************************************************************/
 
 .nautilus-window .floating-bar {
-color: black;
-padding: 0;
-margin: 7px;
-background-color: #f3f3f3;
-border: 1px solid #babdb6;
+color: white;
+padding: 1px;
+margin: 9px;
+background-color: #404040;
+border: 0px solid #babdb6;
 border-radius: 3px;
 }
 

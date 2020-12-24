@@ -10684,11 +10684,11 @@ headerbar button.titlebutton.restore:active,
 /*********************************************************************/
 
 .nautilus-window .floating-bar {
-color: white;
-padding: 0;
-margin: 7px;
-background-color: #555753;
-border: 1px solid #252525;
+color: black;
+padding: 1px;
+margin: 9px;
+background-color: #f3f3f3;
+border: 0px solid #252525;
 border-radius: 3px;
 }
 
@@ -11446,8 +11446,8 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   margin-top: 5px;
   margin-bottom: 3px;
   border: 1px solid;
-  border-color: #1b1b1b; 
-  border-bottom-color: #070707;
+  border-color: #323232; 
+  border-bottom-color: #303030;
   background-image: linear-gradient(to top, #404040 1px, #404040); 
   text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
@@ -11460,7 +11460,7 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .nautilus-window .titlebar .path-bar-box widget > .text-button{
  
   border-width:0 1px 0 0;
-  border-color:#1b1b1b;
+  border-color:#323232;
   box-shadow:none;
   padding-left: 8px;
   padding-right: 8px;
@@ -11470,7 +11470,7 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .nautilus-window .titlebar .path-bar-box widget > .text-button:first-child{
 
   margin-left: 0px;
-  border: 1px solid #1b1b1b;
+  border: 1px solid #323232;
   border-style: none solid none none;}
   
 .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child,
