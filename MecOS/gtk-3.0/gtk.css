@@ -7753,7 +7753,7 @@ placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon{
   
 placessidebar row:drop(active):not(:disabled) {
 
-  box-shadow: inset 0 1px #F08437, inset 0 -1px #F08437; }
+   color: #F08437; }
 
 placessidebar row:drop(active):not(:disabled) image,
 placessidebar row:drop(active):not(:disabled) label,
@@ -10763,7 +10763,7 @@ colorchooser .popover.osd {
 *:drop(active):focus,
 *:drop(active) {
 
-  box-shadow: inset 0 0 0 1px #F08437; }
+  box-shadow: none; }
 
 .help_button {
 
