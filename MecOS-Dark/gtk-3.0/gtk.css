@@ -11242,9 +11242,6 @@ colorchooser .popover.osd {
 
   opacity: 0.55; }
 
-
-
-
 checkbutton.text-button{
 
   padding: 2px 0;}
@@ -11493,14 +11490,5 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   min-height: 0px;
   background: none;
 }
-
-
-
-
-
-
-
-
-
 
 

@@ -9502,7 +9502,7 @@ headerbar:only-child,
 headerbar{
   
   min-height: 36px;
-  padding: 0px 10px 0px 10px;
+  padding: 1px 10px 2px 10px;
   border:none;
   color: rgba(41, 33, 33, 0.8);
   background-color: transparent;
@@ -11020,5 +11020,4 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   min-height: 0px;
   background: none;
 }
-
 
