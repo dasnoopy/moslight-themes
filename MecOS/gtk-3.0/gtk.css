@@ -1010,8 +1010,8 @@ button {
   padding: 1px 4px 1px 4px;
   color: #202020;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
-  background-color: transparent;
-  background-image: image(#ffffff);}
+  background-color: white;
+  background-image: linear-gradient(to bottom, transparent,alpha(black,0.09));}
   
 button.flat:hover,
 button.sidebar-button:hover,
@@ -1021,7 +1021,7 @@ button:hover {
   text-shadow: none;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   background-color: transparent;
-  background-image: image(#ffffff);}
+  background-image: linear-gradient(to bottom, transparent,alpha(black,0.09));}
   
 button:checked,  
 button:active{
@@ -1049,7 +1049,7 @@ button:disabled {
   color: #b4b2b7;
   border-color:#d9d9d9 #d6d6d6 #cdcdcd #d6d6d6;
   background-color: transparent;
-  background-image: image(#f6f6f6);}
+  background-image: linear-gradient(to bottom, transparent,alpha(black,0.01));}
 
 button.sidebar-button:hover:active,
 button:disabled:checked,
