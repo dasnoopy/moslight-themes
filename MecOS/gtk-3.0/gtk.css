@@ -1011,7 +1011,7 @@ button {
   color: #202020;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   background-color: white;
-  background-image: linear-gradient(to bottom, transparent,alpha(black,0.09));}
+  background-image: linear-gradient(to bottom, transparent,alpha(black,0.09)); }
   
 button.flat:hover,
 button.sidebar-button:hover,

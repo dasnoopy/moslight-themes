@@ -1019,7 +1019,7 @@ button {
 				  
   border-color: rgba(0,0,0,0.6);
   background-color: transparent;
-  background-image: linear-gradient(to bottom,#5c5d5d,#5c5d5d 1px,#7a7b7c 1px,#7a7b7c 2px, #67686a 2px, #67686a,#626366);}
+  background-image: linear-gradient(to bottom,#5c5d5d,#5c5d5d 1px,#7a7b7c 1px,#7a7b7c 2px, #67686a 2px, #67686a,#5e5c64);}
   
 button.flat:hover,
 button.sidebar-button:hover,
@@ -11242,9 +11242,6 @@ colorchooser .popover.osd {
 
   opacity: 0.55; }
 
-
-
-
 checkbutton.text-button{
 
   padding: 2px 0;}
@@ -11493,14 +11490,5 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   min-height: 0px;
   background: none;
 }
-
-
-
-
-
-
-
-
-
 
 
