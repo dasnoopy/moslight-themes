@@ -6379,7 +6379,7 @@ menubar > menuitem:disabled{
 menubar > menuitem menu,
 .menubar > menuitem menu {
 
-  border-radius: 0 0 6px 6px;}
+  border-radius: 0 0 4px 4px;}
 
 menubar > menuitem menu menu,
 .menubar > menuitem menu menu {
@@ -6479,7 +6479,8 @@ menu menuitem radio {
   text-shadow: none;
   margin: 0; }
 
-menu menuitem:disabled{
+menu menuitem:disabled,
+.menu menuitem:disabled {
 
   text-shadow: none;
   color: #939498; }
@@ -6583,11 +6584,11 @@ menu > arrow:disabled{
  
   /*padding: 4px 0px;*/
   font: initial; }
+  
 .context-menu separator {
-
   padding: 0;
   min-height: 1px;
- background-color: #505050;}
+  background-color: #505050;}
 
 .context-menu > menuitem{
 
@@ -7264,7 +7265,7 @@ list {
   border-color: #505050; }
 
 list row {
-  padding: 0px; }
+  padding: 2px; }
 
 
 /*********************************************************************/
@@ -7871,7 +7872,7 @@ placessidebar.sidebar{
 
  /* min-width: 166px;*/
   min-width: 0;
-  box-shadow: inset 34px 0 0 0 #2d2c2d;
+  box-shadow: inset 38px 0 0 0 #2d2c2d;
   background-color: rgba(64,64,64,0.97);
   background-image:url("objects-dark/other/blurredT.png");
   background-size: cover;}

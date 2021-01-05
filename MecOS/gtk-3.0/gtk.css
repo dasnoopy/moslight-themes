@@ -6094,7 +6094,7 @@ popover.background.touch-selection, .csd popover.background.touch-selection,
 menu,
 .menu {
 
-  border-radius: 3px;
+  border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
   border: 1px solid #cdcdcf;
@@ -6113,7 +6113,7 @@ context-menu,
   padding-bottom: 6px;
   border: 1px solid #cdcdcf;
   font: initial; 
-  background-color: rgba(242,242,244,1.00);
+  background-color: rgba(248,248,250,1.0);
   background-image: none;
   background-size: cover;}
   
@@ -6138,7 +6138,7 @@ menu .separator:not(label){
 /**MENU MENUITEM ***/
 
 .menu menuitem,
-menu menuitem{
+menu menuitem {
 
   color: #202020;
   text-shadow: 0 1px alpha(#ffffff, 0.35);
@@ -6151,9 +6151,8 @@ menu menuitem{
   margin: 0 4px;
   border-radius: 3px;}
 
-
-.menu menuitem:hover,
-menu menuitem:hover{
+menu menuitem:hover,
+.menu menuitem:hover {
 
   color: #ffffff;
   text-shadow:    0 -1px alpha(#ffffff, 0.3),
@@ -6163,6 +6162,13 @@ menu menuitem:hover{
 				  0px  2px alpha(#0b2e5a, 0.06);
   background-color: transparent;
   background-image:linear-gradient(to bottom,#4095ff,#4091f9);}
+  
+menu menuitem:disabled,   
+.menu menuitem:disabled {
+
+  text-shadow: none;
+  color: rgba(0,0,0,0.65); }
+  
 
 menu menuitem check{
 
@@ -6174,10 +6180,7 @@ menu menuitem radio {
   text-shadow: none;
   margin: 0; }
 
-menu menuitem:disabled{
 
-  text-shadow: none;
-  color: rgba(0,0,0,0.65); }
 
 .menu menuitem arrow,
 menu menuitem arrow{
@@ -6958,14 +6961,17 @@ list {
   border: none;}
 
 list row {
+
   color:#202020; 
-  padding: 0px; }
+  padding: 2px; }
  
 /*********************************************************************/
 /*            ROW                                                    */
 /*********************************************************************/
 
 row:selected{
+border-radius: 0px;
+
   color: #ffffff;
   font-weight: bold;
   text-shadow:  0 -1px alpha(#ffffff, 0.25);
@@ -7566,7 +7572,7 @@ stacksidebar row.needs-attention > label {
 
 placessidebar.sidebar{
   min-width: 0;
-  box-shadow: inset 34px 0 0 0 #f3f3f3;
+  box-shadow: inset 38px 0 0 0 #f3f3f3;
   background-color: rgba(248,248,248,0.96);
   background-image:url("objects/other/blurred6.png")/*,linear-gradient(to bottom left,rgba(238,238,238,0.92),rgba(192,194,196,0.92))*/;
   background-size: cover;}
@@ -7633,8 +7639,7 @@ placessidebar.sidebar row.sidebar-row{
   color: @theme_fg_color;
   /*font-weight: bold;*/
   text-shadow: 0px 1px alpha(#e0e0e0, 0.25); 
-  -gtk-icon-shadow: 0px 1px alpha(#e0e0e0, 0.75);
-  }
+  -gtk-icon-shadow: 0px 1px alpha(#e0e0e0, 0.75);}
 
 placessidebar.sidebar row.sidebar-row.has-open-popup:selected{
 
@@ -7649,8 +7654,8 @@ placessidebar.sidebar row.sidebar-row:selected{
   background-color: transparent;
   background-image:linear-gradient(to right,rgba(100,103,114,0.7),rgba(100,103,114,0.8),rgba(100,103,114,0.8),rgba(100,103,114,0.7)); }
 
-
 placessidebar.sidebar row.sidebar-row:selected:hover{
+
   color: #ffffff;
   font-weight: bold;
   text-shadow: 0px 1px alpha(#202020, 0.2);
