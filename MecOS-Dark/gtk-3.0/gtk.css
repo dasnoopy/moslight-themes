@@ -1626,9 +1626,9 @@ button.destructive-action {
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  background-color: #F04A50;
-  background-image: linear-gradient(to bottom, #F04A50,
-                                               #F04A50);
+  background-color: #c01c28;
+  background-image: linear-gradient(to bottom, #ff0000,
+                                               #c01c28);
   border-color: rgba(0,0,0,0.6); }
   
   
@@ -1642,9 +1642,9 @@ button.destructive-action:hover {
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  background-color: #f3313a;
-  background-image: linear-gradient(to bottom, #f3313a,
-                                               #f3313a);
+  background-color: #c01c28;
+  background-image: linear-gradient(to bottom, #ff0000,
+                                               #ff0000);
   border-color: rgba(0,0,0,0.6); }
   
 .primary-toolbar button.destructive-action:active,
@@ -1657,9 +1657,9 @@ button.destructive-action:active{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  background-color: #f3313a;
-  background-image: linear-gradient(to bottom, #f3313a,
-                                               #f3313a);
+  background-color: #c01c28;
+  background-image: linear-gradient(to bottom, #ff0000,
+                                               #c01c28);
   border-color: rgba(0,0,0,0.6); }
   
 .primary-toolbar button.destructive-action:checked,
@@ -1672,7 +1672,7 @@ button.destructive-action:checked {
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  background-color: #f3313a;
+  background-color: #c01c28;
   background-image: linear-gradient(to bottom, #f3313a,
                                                #f3313a);
   border-color: rgba(0,0,0,0.6); }
@@ -6428,7 +6428,7 @@ menu separator{
   padding: 0;
   margin: 0 4px;
   min-height: 1px;
-  background-color: rgba(237,237,237,0);}
+  background-color: rgba(237,237,237,0.1);}
 
 .csd menu separator:not(label),
 .menu separator:not(label),
