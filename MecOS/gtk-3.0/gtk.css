@@ -1084,17 +1084,7 @@ button.flat:disabled{
 button:checked:not(:disabled) label:disabled,
 button:active:not(:disabled) label:disabled{
 
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05);
-  border-color: #646772;
-  background-color: transparent;
-  background-image: image(#646772); 
-  background-clip: border-box;
-  transition-duration: 50ms; 
+  color: inherit;
   opacity: 0.6; }
 
 button:disabled:checked label,
@@ -6124,9 +6114,9 @@ context-menu,
 menu separator{
 
   padding: 0;
-  margin: 0;
+  margin: 0 4px;
   min-height: 1px;
-  background-color: rgba(37,37,37,0.1);}
+  background-color: rgba(37,37,37,0);}
 
 .csd menu separator:not(label),
 .menu separator:not(label),
@@ -6970,8 +6960,8 @@ list row {
 /*********************************************************************/
 
 row:selected{
-border-radius: 0px;
 
+  border-radius: 0px;
   color: #ffffff;
   font-weight: bold;
   text-shadow:  0 -1px alpha(#ffffff, 0.25);

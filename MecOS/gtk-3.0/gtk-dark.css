@@ -6426,9 +6426,9 @@ context-menu,
 menu separator{
 
   padding: 0;
-  margin: 0;
+  margin: 0 4px;
   min-height: 1px;
-  background-color: #505050;}
+  background-color: rgba(237,237,237,0);}
 
 .csd menu separator:not(label),
 .menu separator:not(label),
