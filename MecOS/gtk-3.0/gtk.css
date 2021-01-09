@@ -11017,9 +11017,50 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   
 /***** End of changes for nautilus pathbar box ******/
 
+/***** Tweak Tools start******/
+
+.tweak-categories {
+}
+
+.view row,
+.tweak-category {
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px;
+  padding: 0px;
+}
+
+.view row:hover,
+.tweak-category:hover {
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px;
+  padding: 0px;
+}
+
+.view row:selected,
+.tweak-category:selected {
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px;
+  padding: 0px;
+}
+
+.view row:hover:selected,
+.tweak-category:hover:selected {
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px;
+  padding: 0px;
+}
+
 .tweak-categories separator {
   min-width: 0px;
   min-height: 0px;
   background: none;
 }
-
+/***** Tweak Tools end ******/
