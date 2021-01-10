@@ -6142,8 +6142,8 @@ menu menuitem {
   min-height: 16px;
   min-width: 42px;
   padding-top: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
   padding-bottom: 3px; 
   margin: 0 4px;
   border-radius: 3px;}
@@ -7922,51 +7922,51 @@ colorswatch, colorswatch:drop(active) {
 
 colorswatch.top {
 
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
 
 colorswatch.top overlay {
 
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px; }
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
 
 colorswatch.bottom {
 
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
 
 colorswatch.bottom overlay {
 
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
 
 colorswatch.left, colorswatch:first-child:not(.top) {
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
 
 colorswatch.left overlay, colorswatch:first-child:not(.top) overlay {
 
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
 
 colorswatch.right, colorswatch:last-child:not(.bottom) {
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
 
 colorswatch.right overlay, colorswatch:last-child:not(.bottom) overlay {
 
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
 
 colorswatch.dark overlay {
 
@@ -10960,7 +10960,7 @@ list.content > row.expander:checked:not(:first-child), list.content > row.expand
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized),
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration,
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
-  border-radius: 4px; }
+  border-radius: 8px; }
 
 .windowhandle separator.sidebar:dir(ltr), .windowhandle separator.sidebar.left, .windowhandle separator.sidebar.left:dir(rtl), .windowhandle separator.sidebar:dir(rtl), .windowhandle separator.sidebar.right {
   background-color: #d4d5db;
