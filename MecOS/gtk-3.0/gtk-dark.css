@@ -1009,7 +1009,7 @@ button {
   border: 0.8px solid;
   
   border-radius: 4px;
-  padding: 1px 4px 1px 4px;
+  padding: 3px 4px 3px 4px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -1881,7 +1881,7 @@ combobox button.combo {
   min-width: 16px;
   padding-left: 2px;
   padding-right:2px;
-  margin: -1px -13px -1px -1px;
+  margin: -3px -13px -3px -1px;
   border-radius: 0 4px 4px 0;
 
   /*border-width: 0.8px;
@@ -1900,7 +1900,7 @@ combobox button.combo {
   min-width: 16px;
   padding-left: 2px;
   padding-right:2px;
-  margin: -1px -13px -1px -1px;
+  margin: -3px -13px -3px -1px;
   border-radius: 0 4px 4px 0;
   opacity: 0.6;
   background-color: #404040;
@@ -2936,7 +2936,7 @@ primary-toolbar spinbutton:not(.vertical) > button:not(:disabled):not(:active):n
   border-color: #303030;
   padding: 3px;
   border-width: 0 1px 1px;
-  border-radius: 0  0 4px 4px; }
+  border-radius: 0; }
 
 
 .inline-toolbar separator {

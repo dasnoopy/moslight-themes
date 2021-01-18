@@ -1007,7 +1007,7 @@ button {
   font-weight: normal;
   border: 1px solid;
   border-radius: 4px;
-  padding: 1px 4px 1px 4px;
+  padding: 2px 4px 2px 4px;
   color: #202020;
   border-color:#d9d9d9 #cdcdcd #bdbdbd #cdcdcd;
   background-color: white;
@@ -1816,7 +1816,7 @@ combobox button.combo {
   min-width: 16px;
   padding-left: 2px;
   padding-right: 2px;
-  margin:-2px -13px -2px -1px;
+  margin: -3px -13px -3px -1px;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
   background-color:transparent;
@@ -1835,7 +1835,7 @@ combobox button.combo {
   min-width: 16px;
   padding-left: 2px;
   padding-right: 2px;
-  margin:-1px -13px -1px -1px;
+  margin:-3px -13px -3px -1px;
   border-radius: 0 4px 4px 0;
   border-color: #d9d9d9;
   border-top: 1px solid #d9d9d9;
@@ -2850,7 +2850,7 @@ primary-toolbar spinbutton:not(.vertical) > button:not(:disabled):not(:active):n
   border-color: rgba(105, 105, 105, 0.3);
   padding: 3px;
   border-width: 0 1px 1px;
-  border-radius: 0  0 4px 4px; }
+  border-radius: 0; }
 
 .inline-toolbar separator {
 
@@ -11064,3 +11064,5 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   background: none;
 }
 /***** Tweak Tools end ******/
+
+
