@@ -5661,10 +5661,7 @@ notebook > header.bottom > tabs > tab:checked {	box-shadow: 0 -1px @base_color, 
 notebook > header.left > tabs > tab:checked {box-shadow: 1px 0 @base_color, 0 1px @borders, 0 -1px @borders; }
 notebook > header.right > tabs > tab:checked {box-shadow: -1px 0 @base_color, 0 1px @borders, 0 -1px @borders, 0 -1px @borders;}
 
-notebook tab label { padding: 3px 6px;}
-
-notebook .active-page,
-notebook tab .active-page label { color: inherit; font-weight: bold;}
+notebook tab label { padding: 2px 4px;}
 
 
 /*****************************************************************/
