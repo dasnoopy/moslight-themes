@@ -5939,7 +5939,7 @@ notebook tab{padding: 4px; color: @insensitive_fg_color;}
 
 notebook header button {min-width: 20px;}
 
-notebook tab:hover{color: @fg_color; background-color: #555555;}
+notebook tab:hover{color: @fg_color; }
 
 notebook tab:checked {
 	background-image: none;
