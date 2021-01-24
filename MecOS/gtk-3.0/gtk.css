@@ -6288,9 +6288,9 @@ checkbutton label:not(:only-child):last-child{
 
 check{
 
-  min-width: 16px;
-  min-height: 16px;
-  margin: 2px; 
+  min-width: 18px;
+  min-height: 18px;
+  margin: 0px; 
 
   -gtk-icon-source: -gtk-scaled(url("objects/checkbox-objects/checkbox-unchecked.svg"), url("objects/checkbox-objects/checkbox-unchecked@2.svg")); }
 
@@ -6363,8 +6363,8 @@ menu menuitem check:disabled {
  background-color: transparent;
  border-color: transparent;
  -gtk-icon-shadow: none;
-  min-height:14px;
-  min-width: 14px;}
+  min-height:16px;
+  min-width: 16px;}
   
 popover check:hover:checked,  
 popover check:checked,
@@ -6404,9 +6404,9 @@ popover check:hover:checked{
 
 radio {
 
-  min-width: 16px;
-  min-height: 16px;
-  margin: 2px;
+  min-width: 18px;
+  min-height: 18px;
+  margin: 0px;
 
   -gtk-icon-source: -gtk-scaled(url("objects/radio-objects/radio-unchecked.svg"), url("objects/radio-objects/radio-unchecked@2.svg")); }
 
@@ -6488,8 +6488,8 @@ box-shadow: none;
 background-color: transparent;
 border-color: transparent;
 -gtk-icon-shadow: none;
-  min-height:14px;
-  min-width: 14px;}
+  min-height:16px;
+  min-width: 16px;}
   
 popover radio:hover:checked,  
 popover radio:checked,

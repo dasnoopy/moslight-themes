@@ -25,8 +25,8 @@
 @define-color theme_unfocused_text_color #939498;
 @define-color theme_unfocused_bg_color rgba(94,94,94,0.96);
 @define-color theme_unfocused_base_color rgba(44,43,44,0.96);
-@define-color borders rgba(0,0,0,0.6);
-@define-color unfocused_borders rgba(0,0,0,0.6);
+@define-color borders rgba(0,0,0,0.3);
+@define-color unfocused_borders rgba(0,0,0,0.3);
 @define-color warning_color #F27835;
 @define-color error_color #FC4138;
 @define-color success_color #73d216;
@@ -6597,9 +6597,9 @@ checkbutton label:not(:only-child):last-child{
 
 check{
 
-  min-width: 16px;
-  min-height: 16px;
-  margin: 2px; 
+  min-width: 18px;
+  min-height: 18px;
+  margin: 0px; 
 
   -gtk-icon-source: -gtk-scaled(url("objects-dark/checkbox-objects/checkbox-unchecked.svg"), url("objects-dark/checkbox-objects/checkbox-unchecked@2.svg")); }
 
@@ -6672,8 +6672,8 @@ menu menuitem check:disabled {
  background-color: transparent;
  border-color: transparent;
  -gtk-icon-shadow: none;
-  min-height:14px;
-  min-width: 14px;}
+  min-height:16px;
+  min-width: 16px;}
   
 popover check:hover:checked,  
 popover check:checked,
@@ -6714,9 +6714,9 @@ popover check:hover:checked{
 
 radio {
 
-  min-width: 16px;
-  min-height: 16px;
-  margin: 2px;
+  min-width: 18px;
+  min-height: 18px;
+  margin: 0px;
 
   -gtk-icon-source: -gtk-scaled(url("objects-dark/radio-objects/radio-unchecked.svg"), url("objects-dark/radio-objects/radio-unchecked@2.svg")); }
 
@@ -6798,8 +6798,8 @@ box-shadow: none;
 background-color: transparent;
 border-color: transparent;
 -gtk-icon-shadow: none;
-  min-height:14px;
-  min-width: 14px;}
+  min-height: 16px;
+  min-width: 16px;}
   
 popover radio:hover:checked,  
 popover radio:checked,
