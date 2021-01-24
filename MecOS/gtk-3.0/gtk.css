@@ -16,15 +16,15 @@
 @define-color base_color #ffffff;
 @define-color selected_bg_color #4095ff;
 @define-color selected_fg_color #ffffff;
-@define-color insensitive_bg_color #f6f8fa;
+@define-color insensitive_bg_color #f0f0f0;
 @define-color insensitive_fg_color #B7BEC8;
 @define-color insensitive_base_color #ffffff;
 @define-color theme_unfocused_fg_color #202020;
 @define-color theme_unfocused_text_color #202020;
 @define-color theme_unfocused_bg_color #e9eaed;
 @define-color theme_unfocused_base_color #ffffff;
-@define-color borders rgba(105, 105, 105, 0.3);
-@define-color unfocused_borders rgba(105, 105, 105, 0.3);
+@define-color borders #cfcfcf;
+@define-color unfocused_borders #cfcfcf;
 @define-color warning_color #F27835;
 @define-color error_color #FC4138;
 @define-color success_color #73d216;
@@ -5601,258 +5601,71 @@ path-bar button.text-button{
   padding-left: 4px;
   padding-right: 4px; }
 
-/**********************************************************************/
-/*                 NOTEBOOK                                           */
-/**********************************************************************/
-calendar.raven-calendar.button, .nemo-window .floating-bar button,
-calendar.button, .app-notification button, notebook > header tabs > tab button.flat:active, notebook > header tabs > tab .raven .raven-header:not(.top) button:active, .raven .raven-header:not(.top) notebook > header tabs > tab button:active, notebook > header tabs > tab button.flat:active:hover, notebook > header tabs > tab button.flat:hover, notebook > header tabs > tab .raven .raven-header:not(.top) button:hover, .raven .raven-header:not(.top) notebook > header tabs > tab button:hover, button:link:hover, button:link:active, button:link:checked, button:visited:hover, button:visited:active, button:visited:checked, button:link, button:visited, menuitem.button.flat, .raven .raven-header:not(.top) button.button,
-modelbutton.flat {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none;
-}
 
-notebook {
-  padding: 0;
-}
+/*************
+ * Notebooks *
+ *************/
 
-notebook.frame {
-  border: 1px solid #cfcfcf;
-}
+notebook.frame{border: 1px solid @borders;}
 
-notebook.frame > header.top tabs > tab:first-child, notebook.frame > header.bottom tabs > tab:first-child {
-  border-left-style: none;
-}
+notebook tab button {padding: 0;}
 
-notebook.frame > header.top tabs > tab:last-child, notebook.frame > header.bottom tabs > tab:last-child {
-  border-right-style: solid;
-}
+notebook > stack:not(:only-child) {background-color: @base_color;}
 
-notebook.frame > header.left tabs > tab:first-child, notebook.frame > header.right tabs > tab:first-child {
-  border-top-style: none;
-}
+notebook header{background-color: @insensitive_bg_color;}
 
-notebook.frame > header.left tabs > tab:last-child, notebook.frame > header.right tabs > tab:last-child {
-  border-bottom-style: solid;
-}
-/* sfondo scheda notebook */
-notebook > stack:not(:only-child) {
-  background-color: #ffffff;
-}
-
-notebook > header {
-  padding: 0;
-  background-color: #f3f3f3;
-}
+notebook > header.top > tabs > tab:first-child,
+notebook > header.bottom > tabs > tab:first-child{ margin-left: 0px;}
+notebook > header.left > tabs > tab:first-child,
+notebook > header.right > tabs > tab:first-child{ margin-top: 0px;}
 
 notebook > header.top {
-  box-shadow: inset 0 1px #cfcfcf, inset 0 -1px rgba(0, 0, 0, 0.15);
-/*  box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15), 1px 0 rgba(0, 0, 0, 0.15), -1px 0 rgba(0, 0, 0, 0.15);*/
-  margin-top: -1px;
+	padding-bottom: 0;
+	border-bottom: 1px solid @borders;
 }
-
 notebook > header.bottom {
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px #cfcfcf;
-/*  box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15), 1px 0 rgba(0, 0, 0, 0.15), -1px 0 rgba(0, 0, 0, 0.15);*/
-  margin-bottom: -1px;
+	padding-bottom: 0;
+	border-top: 1px solid @borders;
 }
-
-notebook > header.right {
-  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.15), inset -1px 0 #cfcfcf;
-/*  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.15), inset -1px 0 rgba(0, 0, 0, 0.15), 0 1px rgba(0, 0, 0, 0.15), 0 -1px rgba(0, 0, 0, 0.15);*/
-  margin-right: -1px;
-}
-
 notebook > header.left {
-  box-shadow: inset 1px 0 #cfcfcf, inset -1px 0 rgba(0, 0, 0, 0.15);
-/*  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.15), inset -1px 0 rgba(0, 0, 0, 0.15), 0 1px rgba(0, 0, 0, 0.15), 0 -1px rgba(0, 0, 0, 0.15);*/
-  margin-left: -1px;
+	padding-bottom: 0;
+	border-right: 1px solid @borders;
 }
-
-notebook > header button.flat.toggle.popup, notebook > header .raven .raven-header:not(.top) button.toggle.popup, .raven .raven-header:not(.top) notebook > header button.toggle.popup {
-  min-width: 28px;
-  border-radius: 0;
-  padding: 0;
-  border: none;
-  box-shadow: none;
-  margin: 0;
-}
-
-notebook > header button.flat.toggle.popup:active, notebook > header .raven .raven-header:not(.top) button.toggle.popup:active, .raven .raven-header:not(.top) notebook > header button.toggle.popup:active, notebook > header button.flat.toggle.popup:checked, notebook > header .raven .raven-header:not(.top) button.toggle.popup:checked, .raven .raven-header:not(.top) notebook > header button.toggle.popup:checked {
-  color: #242424;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-notebook > header.top {
-  padding: 0;
-}
-
-notebook > header.top tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
-}
-
-notebook > header.top tab + tab {
-  margin-left: -1px;
-}
-
-notebook > header.bottom {
-  padding: 0;
-}
-
-notebook > header.bottom tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
-}
-
-notebook > header.bottom tab + tab {
-  margin-left: -1px;
-}
-
 notebook > header.right {
-  padding: 0;
+	padding-bottom: 0;
+	border-left: 1px solid @borders;
 }
 
-notebook > header.right tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
+notebook tab{padding: 4px; color: @insensitive_fg_color;}
+
+notebook header button {min-width: 20px;}
+
+notebook tab:hover{color: @fg_color; background-color: #cfcfcf;}
+
+notebook tab:checked {
+	background-image: none;
+	background-color: @base_color;
+	border-color: transparent;
+	border-image: none;
+	border-radius: 0;
+	border-style: none;
+	box-shadow: none;
+	color: @fg_color;
 }
 
-notebook > header.right tab + tab {
-  margin-top: -1px;
-}
+notebook > header.top > tabs > tab:not(:checked), notebook > header.bottom > tabs > tab:not(:checked){ box-shadow: 1px 0 @borders;}
+notebook > header.left > tabs > tab:not(:checked), notebook > header.right > tabs > tab:not(:checked){ box-shadow: 0 1px @borders;}
 
-notebook > header.left {
-  padding: 0;
-}
+notebook > header.top > tabs > tab:checked {box-shadow: 0 1px @base_color, 1px 0 @borders, -1px 0 @borders;}
+notebook > header.bottom > tabs > tab:checked {	box-shadow: 0 -1px @base_color, -1px 0 @borders, 1px 0 @borders;}
+notebook > header.left > tabs > tab:checked {box-shadow: 1px 0 @base_color, 0 1px @borders, 0 -1px @borders; }
+notebook > header.right > tabs > tab:checked {box-shadow: -1px 0 @base_color, 0 1px @borders, 0 -1px @borders, 0 -1px @borders;}
 
-notebook > header.left tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
-}
+notebook tab label { padding: 3px 6px;}
 
-notebook > header.left tab + tab {
-  margin-top: -1px;
-}
+notebook .active-page,
+notebook tab .active-page label { color: inherit; font-weight: bold;}
 
-notebook > header.top > tabs > arrow.up, notebook > header.bottom > tabs > arrow.up {
-  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-}
-
-notebook > header.top > tabs > arrow.up:last-child, notebook > header.bottom > tabs > arrow.up:last-child {
-  margin-left: 2px;
-}
-
-notebook > header.top > tabs > arrow.down, notebook > header.bottom > tabs > arrow.down {
-  -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
-}
-
-notebook > header.top > tabs > arrow.down:first-child, notebook > header.bottom > tabs > arrow.down:first-child {
-  margin-right: 2px;
-}
-
-notebook > header.left > tabs > arrow.up, notebook > header.right > tabs > arrow.up {
-  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-}
-
-notebook > header.left > tabs > arrow.up:last-child, notebook > header.right > tabs > arrow.up:last-child {
-  margin-top: 2px;
-}
-
-notebook > header.left > tabs > arrow.down, notebook > header.right > tabs > arrow.down {
-  -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-}
-
-notebook > header.left > tabs > arrow.down:first-child, notebook > header.right > tabs > arrow.down:first-child {
-  margin-bottom: 2px;
-}
-
-notebook > header > tabs > arrow {
-  color: rgba(36, 36, 36, 0.45);
-}
-
-notebook > header > tabs > arrow:hover {
-  color: rgba(36, 36, 36, 0.725);
-}
-
-notebook > header > tabs > arrow:active {
-  color: #242424;
-}
-
-notebook > header > tabs > arrow:disabled {
-  color: rgba(36, 36, 36, 0.15);
-}
-
-notebook > header.top tabs > tab:first-child, notebook > header.bottom tabs > tab:first-child {
-  border-left-style: none;
-}
-
-notebook > header.top tabs > tab:last-child, notebook > header.bottom tabs > tab:last-child {
-  border-right-style: solid;
-}
-
-notebook > header.left tabs > tab:first-child, notebook > header.right tabs > tab:first-child {
-  border-top-style: none;
-}
-
-notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab:last-child {
-  border-bottom-style: solid;
-}
-
-/* tabs non attivi e non selezionati  */
-
-notebook > header tabs > tab {
-  color: rgba(36, 36, 36, 0.725);
-  background-color: #e9e9ea;
-  border: 1px solid #cfcfcf;
-  transition: all 150ms ease-out;
-}
-
-/* tab hover durante la selezione di un altro tab */
-
-notebook > header tabs > tab:hover:not(:checked) {
-  color: #242424;
-  background-color: rgba(172, 173, 174, 0.725);
-  border-color: #cfcfcf;
-}
-
-/* tab attivo e selezionato */
-notebook > header tabs > tab:checked {
-  color: #202020;
-  background-color: #ffffff;
-  border-color: #cfcfcf;
-}
-
-notebook > header tabs > tab button.flat, notebook > header tabs > tab .raven .raven-header:not(.top) button, .raven .raven-header:not(.top) notebook > header tabs > tab button {
-  min-height: 16px;
-  min-width: 16px;
-  border-radius: 3px;
-  padding: 0;
-  color: #6d6d6d;
-}
-
-notebook > header tabs > tab button.flat:hover, notebook > header tabs > tab .raven .raven-header:not(.top) button:hover, .raven .raven-header:not(.top) notebook > header tabs > tab button:hover {
-  color: #242424;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-notebook > header tabs > tab button.flat:active, notebook > header tabs > tab .raven .raven-header:not(.top) button:active, .raven .raven-header:not(.top) notebook > header tabs > tab button:active, notebook > header tabs > tab button.flat:active:hover {
-  color: #0b0b0b;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
 /*****************************************************************/
 /*     MENU-related stuff                                        */
@@ -8209,28 +8022,8 @@ background-color: rgba(248,248,248,0.96);
 
   color: #202020; }
 
-.gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked{
+.gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked {  }
 
-  /*box-shadow: inset 0 -1px rgba(105, 105, 105, 0.3); */}
-
-/*********************************************************************/
-/*            TERMINAL                                               */
-/*********************************************************************/
-
-terminal-window notebook > header.top > tabs > tab:checked {
-
-  box-shadow: inset 0 -1px rgba(105, 105, 105, 0.3); }
-
-terminal-window notebook > header.top{
-
-  padding-top: 3px;
-  box-shadow: inset 0 1px #d4d5db, inset 0 -1px rgba(105, 105, 105, 0.3); }
-
-terminal-window notebook > header.top button{
-
-  padding: 0;
-  min-width: 24px;
-  min-height: 24px; }
 
 /*********************************************************************/
 /*            DISK-SPACE-DISPLAY                                     */
@@ -10305,11 +10098,12 @@ padding: 0px;
 
 .nautilus-window paned > separator {
 
-  background-image: linear-gradient(to bottom, rgba(240, 242, 248, 0.85), rgba(240, 242, 248, 0.85)); }
+/*set color border  between sidebar and listview */
+  background-image: image(#cfcfcf); }/*505050*/ 
 
 .nautilus-window paned > separator:dir(ltr) {
 
-  margin-left: -1px; }
+/*  margin-left: -1px; */ }
 
 .nautilus-window paned > separator:dir(rtl) {
 
@@ -10326,7 +10120,7 @@ padding: 0px;
 
 .nautilus-window placessidebar.sidebar scrollbar {
 
-   border-color: rgba(222, 227, 240, 0.85); }
+   border-color: @borders; }
 
 .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
 
@@ -10354,7 +10148,7 @@ padding: 0px;
 
 .nautilus-window placessidebar.sidebar scrollbar trough {
 
-  background-color: rgba(222, 227, 240, 0.85); }
+  background-color: transparent; }
   
 /********************************************************************/
 /*-------------NAUTILUS LISTVIEW BOTTOM BORDER--------------------  */

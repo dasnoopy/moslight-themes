@@ -25,8 +25,8 @@
 @define-color theme_unfocused_text_color #939498;
 @define-color theme_unfocused_bg_color rgba(94,94,94,0.96);
 @define-color theme_unfocused_base_color rgba(44,43,44,0.96);
-@define-color borders rgba(0,0,0,1);
-@define-color unfocused_borders rgba(0,0,0,1);
+@define-color borders rgba(0,0,0,0.6);
+@define-color unfocused_borders rgba(0,0,0,0.6);
 @define-color warning_color #F27835;
 @define-color error_color #FC4138;
 @define-color success_color #73d216;
@@ -1009,7 +1009,7 @@ button {
   border: 0.8px solid;
   
   border-radius: 4px;
-  padding: 3px 4px 3px 4px;
+  padding: 2px 4px 2px 4px;
   color: #dddddd;
   text-shadow:  0 -1px alpha(#ffffff, 0.04),
 				 -1px  0px alpha(#202020, 0.05),
@@ -1881,7 +1881,7 @@ combobox button.combo {
   min-width: 16px;
   padding-left: 2px;
   padding-right:2px;
-  margin: -3px -13px -3px -1px;
+  margin: -2px -13px -2px -1px;
   border-radius: 0 4px 4px 0;
 
   /*border-width: 0.8px;
@@ -1890,8 +1890,7 @@ combobox button.combo {
   background-color: transparent;
   /*border-color:  #6290f7 #2e69eb #295ed8 #2e69eb;*/
   background-image: linear-gradient(#6290f7, #6290f7 1px, #2e69eb 1px,#295ed8);
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 .background combobox button.combo arrow:disabled {
 
@@ -1900,7 +1899,7 @@ combobox button.combo {
   min-width: 16px;
   padding-left: 2px;
   padding-right:2px;
-  margin: -3px -13px -3px -1px;
+  margin: -2px -13px -2px -1px;
   border-radius: 0 4px 4px 0;
   opacity: 0.6;
   background-color: #404040;
@@ -5901,254 +5900,71 @@ path-bar button.text-button{
   padding-left: 4px;
   padding-right: 4px; }
 
-/**********************************************************************/
-/*                 NOTEBOOK                                           */
-/**********************************************************************/
 
-calendar.raven-calendar.button, .nemo-window .floating-bar button,
-calendar.button, .app-notification button, notebook > header tabs > tab button.flat:active, notebook > header tabs > tab .raven .raven-header:not(.top) button:active, .raven .raven-header:not(.top) notebook > header tabs > tab button:active, notebook > header tabs > tab button.flat:active:hover, notebook > header tabs > tab button.flat:hover, notebook > header tabs > tab .raven .raven-header:not(.top) button:hover, .raven .raven-header:not(.top) notebook > header tabs > tab button:hover, button:link:hover, button:link:active, button:link:checked, button:visited:hover, button:visited:active, button:visited:checked, button:link, button:visited, menuitem.button.flat, .raven .raven-header:not(.top) button.button,
-modelbutton.flat {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none;
-}
+/*************
+ * Notebooks *
+ *************/
 
-notebook {
-  padding: 0;
-}
+notebook.frame{border: 1px solid @borders;}
 
-notebook.frame {
-  border: 1px solid #2e3436;
-}
+notebook tab button {padding: 0;}
 
-notebook.frame > header.top tabs > tab:first-child, notebook.frame > header.bottom tabs > tab:first-child {
-  border-left-style: none;
-}
+notebook > stack:not(:only-child) {background-color: @base_color;}
 
-notebook.frame > header.top tabs > tab:last-child, notebook.frame > header.bottom tabs > tab:last-child {
-  border-right-style: solid;
-}
+notebook header{background-color: @insensitive_bg_color;}
 
-notebook.frame > header.left tabs > tab:first-child, notebook.frame > header.right tabs > tab:first-child {
-  border-top-style: none;
-}
-
-notebook.frame > header.left tabs > tab:last-child, notebook.frame > header.right tabs > tab:last-child {
-  border-bottom-style: solid;
-}
-
-notebook > stack:not(:only-child) {
-  background-color: #2b2b2c;
-}
-
-notebook > header {
-  padding: 0;
-  background-color: #323334;
-}
+notebook > header.top > tabs > tab:first-child,
+notebook > header.bottom > tabs > tab:first-child{ margin-left: 0px;}
+notebook > header.left > tabs > tab:first-child,
+notebook > header.right > tabs > tab:first-child{ margin-top: 0px;}
 
 notebook > header.top {
-  box-shadow: inset 0 1px #2a2a2a, inset 0 -1px rgba(0, 0, 0, 0.15);
-/*  box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15), 1px 0 rgba(0, 0, 0, 0.15), -1px 0 rgba(0, 0, 0, 0.15);*/
-  margin-top: -1px;
+	padding-bottom: 0;
+	border-bottom: 1px solid @borders;
 }
-
 notebook > header.bottom {
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px #2a2a2a;
-/*  box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15), 1px 0 rgba(0, 0, 0, 0.15), -1px 0 rgba(0, 0, 0, 0.15);*/
-  margin-bottom: -1px;
+	padding-bottom: 0;
+	border-top: 1px solid @borders;
 }
-
-notebook > header.right {
-  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.15), inset -1px 0 #2a2a2a;
-/*  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.15), inset -1px 0 rgba(0, 0, 0, 0.15), 0 1px rgba(0, 0, 0, 0.15), 0 -1px rgba(0, 0, 0, 0.15);*/
-  margin-right: -1px;
-}
-
 notebook > header.left {
-  box-shadow: inset 1px 0 #2a2a2a, inset -1px 0 rgba(0, 0, 0, 0.15);
-/*  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.15), inset -1px 0 rgba(0, 0, 0, 0.15), 0 1px rgba(0, 0, 0, 0.15), 0 -1px rgba(0, 0, 0, 0.15);*/
-  margin-left: -1px;
+	padding-bottom: 0;
+	border-right: 1px solid @borders;
 }
-
-notebook > header button.flat.toggle.popup, notebook > header .raven .raven-header:not(.top) button.toggle.popup, .raven .raven-header:not(.top) notebook > header button.toggle.popup {
-  min-width: 28px;
-  border-radius: 0;
-  padding: 0;
-  border: none;
-  box-shadow: none;
-  margin: 0;
-}
-
-notebook > header button.flat.toggle.popup:active, notebook > header .raven .raven-header:not(.top) button.toggle.popup:active, .raven .raven-header:not(.top) notebook > header button.toggle.popup:active, notebook > header button.flat.toggle.popup:checked, notebook > header .raven .raven-header:not(.top) button.toggle.popup:checked, .raven .raven-header:not(.top) notebook > header button.toggle.popup:checked {
-  color: #d4d4d4;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-notebook > header.top {
-  padding: 0;
-}
-
-notebook > header.top tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
-}
-
-notebook > header.top tab + tab {
-  margin-left: -1px;
-}
-
-notebook > header.bottom {
-  padding: 0;
-}
-
-notebook > header.bottom tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
-}
-
-notebook > header.bottom tab + tab {
-  margin-left: -1px;
-}
-
 notebook > header.right {
-  padding: 0;
+	padding-bottom: 0;
+	border-left: 1px solid @borders;
 }
 
-notebook > header.right tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
+notebook tab{padding: 4px; color: @insensitive_fg_color;}
+
+notebook header button {min-width: 20px;}
+
+notebook tab:hover{color: @fg_color; background-color: #555555;}
+
+notebook tab:checked {
+	background-image: none;
+	background-color: @base_color;
+	border-color: transparent;
+	border-image: none;
+	border-radius: 0;
+	border-style: none;
+	box-shadow: none;
+	color: @fg_color;
 }
 
-notebook > header.right tab + tab {
-  margin-top: -1px;
-}
+notebook > header.top > tabs > tab:not(:checked), notebook > header.bottom > tabs > tab:not(:checked){ box-shadow: 1px 0 @borders;}
+notebook > header.left > tabs > tab:not(:checked), notebook > header.right > tabs > tab:not(:checked){ box-shadow: 0 1px @borders;}
 
-notebook > header.left {
-  padding: 0;
-}
+notebook > header.top > tabs > tab:checked {box-shadow: 0 1px @base_color, 1px 0 @borders, -1px 0 @borders;}
+notebook > header.bottom > tabs > tab:checked {	box-shadow: 0 -1px @base_color, -1px 0 @borders, 1px 0 @borders;}
+notebook > header.left > tabs > tab:checked {box-shadow: 1px 0 @base_color, 0 1px @borders, 0 -1px @borders; }
+notebook > header.right > tabs > tab:checked {box-shadow: -1px 0 @base_color, 0 1px @borders, 0 -1px @borders, 0 -1px @borders;}
 
-notebook > header.left tab {
-  padding: 4px 10px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 0;
-  outline-offset: -4px;
-}
+notebook tab label { padding: 3px 6px;}
 
-notebook > header.left tab + tab {
-  margin-top: -1px;
-}
+notebook .active-page,
+notebook tab .active-page label { color: inherit; font-weight: bold;}
 
-notebook > header.top > tabs > arrow.up, notebook > header.bottom > tabs > arrow.up {
-  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-}
-
-notebook > header.top > tabs > arrow.up:last-child, notebook > header.bottom > tabs > arrow.up:last-child {
-  margin-left: 2px;
-}
-
-notebook > header.top > tabs > arrow.down, notebook > header.bottom > tabs > arrow.down {
-  -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
-}
-
-notebook > header.top > tabs > arrow.down:first-child, notebook > header.bottom > tabs > arrow.down:first-child {
-  margin-right: 2px;
-}
-
-notebook > header.left > tabs > arrow.up, notebook > header.right > tabs > arrow.up {
-  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-}
-
-notebook > header.left > tabs > arrow.up:last-child, notebook > header.right > tabs > arrow.up:last-child {
-  margin-top: 2px;
-}
-
-notebook > header.left > tabs > arrow.down, notebook > header.right > tabs > arrow.down {
-  -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-}
-
-notebook > header.left > tabs > arrow.down:first-child, notebook > header.right > tabs > arrow.down:first-child {
-  margin-bottom: 2px;
-}
-
-notebook > header > tabs > arrow {
-  color: rgba(236, 236, 236, 0.45);
-}
-
-notebook > header > tabs > arrow:hover {
-  color: rgba(236, 236, 236, 0.725);
-}
-
-notebook > header > tabs > arrow:active {
-  color: #d4d4d4;
-}
-
-notebook > header > tabs > arrow:disabled {
-  color: rgba(236, 236, 236, 0.15);
-}
-
-notebook > header.top tabs > tab:first-child, notebook > header.bottom tabs > tab:first-child {
-  border-left-style: none;
-}
-
-notebook > header.top tabs > tab:last-child, notebook > header.bottom tabs > tab:last-child {
-  border-right-style: solid;
-}
-
-notebook > header.left tabs > tab:first-child, notebook > header.right tabs > tab:first-child {
-  border-top-style: none;
-}
-
-notebook > header.left tabs > tab:last-child, notebook > header.right tabs > tab:last-child {
-  border-bottom-style: solid;
-}
-
-notebook > header tabs > tab {
-  color: rgba(236, 236, 236, 0.325);
-  background-color: #404143;
-  border: 1px solid #2b2b2c;
-  transition: all 150ms ease-out;
-}
-
-notebook > header tabs > tab:hover:not(:checked) {
-  color: #f2f4f5;
-   background-color: #404143;
-  border-color: #2b2b2c;
-}
-
-notebook > header tabs > tab:checked {
-  color: #ffffff;
-  background-color: #2b2b2c;
-  border-color: #2b2b2c;
-}
-
-notebook > header tabs > tab button.flat, notebook > header tabs > tab .raven .raven-header:not(.top) button, .raven .raven-header:not(.top) notebook > header tabs > tab button {
-  min-height: 16px;
-  min-width: 16px;
-  border-radius: 3px;
-  padding: 0;
-  color: #9d9d9d;
-}
-
-notebook > header tabs > tab button.flat:hover, notebook > header tabs > tab .raven .raven-header:not(.top) button:hover, .raven .raven-header:not(.top) notebook > header tabs > tab button:hover {
-  color: #303030;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-notebook > header tabs > tab button.flat:active, notebook > header tabs > tab .raven .raven-header:not(.top) button:active, .raven .raven-header:not(.top) notebook > header tabs > tab button:active, notebook > header tabs > tab button.flat:active:hover {
-  color: #a0a0a0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
 /*****************************************************************/
 /*     MENU-related stuff                                        */
@@ -7240,7 +7056,7 @@ scrolledwindow junction {
 
   border-color: transparent;
   border-image: linear-gradient(to bottom, rgba(105, 105, 105, 0.3) 1px, transparent 1px) 0 0 0 1/0 1px stretch;
-  background-color: #fcfcfc; }
+  background-color: #3b3b3b; }
 
 scrolledwindow junction:dir(rtl) {
     border-image-slice: 0 1 0 0; }
@@ -7873,7 +7689,7 @@ placessidebar.sidebar{
  /* min-width: 166px;*/
   min-width: 0;
   box-shadow: inset 38px 0 0 0 #2d2c2d;
-  background-color: rgba(64,64,64,0.97);
+  background-color: rgba(64,64,64,1);
   background-image:url("objects-dark/other/blurredT.png");
   background-size: cover;}
   
@@ -8102,105 +7918,6 @@ placessidebar row:drop(active):not(:disabled):selected image {
 
   color: #ffffff; }
 
-
-
-/*
-placessidebar > viewport.frame {
-
-  border-style: none; }
-
-placessidebar row {
-
-  min-height: 30px;
-  padding: 0px; }
-
-placessidebar row > revealer {
-
-  padding: 0 10px; }
-
-placessidebar row image.sidebar-icon:dir(ltr) {
-
-  padding-right: 8px; }
-
-placessidebar row image.sidebar-icon:dir(rtl) {
-
-  padding-left: 8px; }
-
-placessidebar row label.sidebar-label:dir(ltr) {
-
-  padding-right: 2px; }
-
-placessidebar row label.sidebar-label:dir(rtl) {
-
-  padding-left: 2px; }
-
-button.sidebar-button {
-
-  min-width: 22px;
-  min-height: 22px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  padding: 0;
-  border-radius: 100%;
-   }
-
-button.sidebar-button:not(:hover):not(:active) > image {
-
-  opacity: 0.5; }
-
-placessidebar row.sidebar-placeholder-row {
-
-  padding: 0 8px;
-  min-height: 2px;
-  background-image: linear-gradient(to bottom, #F08437, #F08437);
-  background-clip: content-box; }
-
-placessidebar row.sidebar-new-bookmark-row {
-
-  color: #3273c4; }
-
-placessidebar row:drop(active):not(:disabled) {
-
-  box-shadow: inset 0 1px #F08437, inset 0 -1px #F08437; }
-
-placessidebar row:drop(active):not(:disabled){
-
-  color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled) label{
-
-
-  color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled) image {
-
-  color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled):selected {
-
-  background-color: #F08437; }
-
-placessidebar row:drop(active):not(:disabled):selected{
-
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05); }
-
-placessidebar row:drop(active):not(:disabled):selected label{
-
-  color: #ffffff;
-  text-shadow:  0 -1px alpha(#ffffff, 0.04),
-				 -1px  0px alpha(#202020, 0.05),
-				  1px  0px alpha(#202020, 0.05),
-				  0px  1px alpha(#202020, 0.3),
-				  0px  2px alpha(#202020, 0.05); }
-
-placessidebar row:drop(active):not(:disabled):selected image {
-
-  color: #ffffff; }*/
 
 /**********PLACESVIEW ******************/
 
@@ -8628,28 +8345,8 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
 
   color: #ffffff; }
 
-.gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked{
+.gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked{ }
 
-  box-shadow: inset 0 -1px rgba(188,188,188, 0.3); }
-
-/*********************************************************************/
-/*            TERMINAL                                               */
-/*********************************************************************/
-
-terminal-window notebook > header.top > tabs > tab:checked {
-
-  box-shadow: inset 0 -1px #505050; }
-
-terminal-window notebook > header.top{
-
-  padding-top: 3px;
-  box-shadow: inset 0 1px #d4d5db, inset 0 -1px #505050; }
-
-terminal-window notebook > header.top button{
-
-  padding: 0;
-  min-width: 24px;
-  min-height: 24px; }
 
 /*********************************************************************/
 /*            DISK-SPACE-DISPLAY                                     */
@@ -10760,7 +10457,7 @@ padding: 0px;
 
 .nautilus-window paned > separator {
 
-  background-image: image(#000000); }/*505050*/
+  background-image: image(#202020); }/*505050*/
 
 .nautilus-window paned > separator:dir(ltr) {
 
