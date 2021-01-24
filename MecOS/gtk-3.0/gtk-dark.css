@@ -5960,7 +5960,7 @@ notebook > header.bottom > tabs > tab:checked {	box-shadow: 0 -1px @base_color, 
 notebook > header.left > tabs > tab:checked {box-shadow: 1px 0 @base_color, 0 1px @borders, 0 -1px @borders; }
 notebook > header.right > tabs > tab:checked {box-shadow: -1px 0 @base_color, 0 1px @borders, 0 -1px @borders, 0 -1px @borders;}
 
-notebook tab label { padding: 2px 4px;}
+notebook tab label { padding: 2px 6px;}
 
 /*****************************************************************/
 /*     MENU-related stuff                                        */
@@ -7063,7 +7063,7 @@ scrolledwindow junction:dir(rtl) {
 
 separator {
 
-  background-color:#505050;
+  background-color:@borders;
   min-width: 1px;
   min-height: 1px; }
 
@@ -7953,19 +7953,19 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #505050, #505050);
+  background-image: linear-gradient(to bottom, #333333, #333333);
   background-size: 1px 1px; }
 
 paned > separator:selected {
 
-  background-image: linear-gradient(to bottom, #3273c4, #3273c4); }
+  background-image: linear-gradient(to bottom, #333333, #333333); }
 
 paned > separator.wide {
 
   min-width: 4px;
   min-height: 4px;
   background-color: rgba(64,65,67,0.99);/*#f3f3f3;*/
-  background-image: linear-gradient(to bottom, #505050, #505050);
+  background-image: linear-gradient(to bottom, #333333, #333333);
   background-size: 1px 1px,1px 1px;}
 
 paned.horizontal > separator {
@@ -10432,11 +10432,11 @@ padding: 0px;
 
 .nautilus-window notebook{
 
-  background-color: #2d2c2d; }
+  background-color: @base_color; }
 
 .nautilus-window notebook > stack:not(:only-child) searchbar {
 
-  background-color: #2d2c2d; }
+  background-color: @base_color; }
 
 /**********NAUTILUS MISSELANEOUS *****************/
 
@@ -10453,7 +10453,7 @@ padding: 0px;
 
 .nautilus-window paned > separator {
 
-  background-image: image(#202020); }/*505050*/
+  background-image: image(#333333); }/*505050*/
 
 .nautilus-window paned > separator:dir(ltr) {
 
