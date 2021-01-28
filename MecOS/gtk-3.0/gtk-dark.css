@@ -3998,8 +3998,8 @@ spinbutton:not(.vertical) entry{
 
   min-width: 20px;
   border-radius: 0;
-  border-right-style: none;}
-
+  border-right-style: none; }
+  
 spinbutton:not(.vertical) entry:first-child{
 
   border-top-right-radius:0px;
@@ -4219,7 +4219,7 @@ headerbar entry:disabled {
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
-  border: 2px solid #888a85;
+  border: 1px solid @borders;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#5e5f60,#5e5f60 1px,#4f5052 1px,#4f5052 2px, #4f5052 2px, #4f5052,#4f5052);}
 

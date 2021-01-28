@@ -4129,7 +4129,7 @@ headerbar entry {
 headerbar entry:disabled {
 
   color: rgba(82, 93, 118, 0.35);
-  border: 1px solid #cfcfcf;
+  border: 1px solid @borders;
   background-image: image(rgba(255, 255, 255, 0.75)); }
 
 headerbar entry selection:focus {
