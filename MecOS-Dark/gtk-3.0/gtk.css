@@ -25,7 +25,7 @@
 @define-color theme_unfocused_text_color #939498;
 @define-color theme_unfocused_bg_color rgba(94,94,94,0.96);
 @define-color theme_unfocused_base_color rgba(44,43,44,0.96);
-@define-color borders rgba(0,0,0,0.3);
+@define-color borders rgba(0,0,0,0.5);
 @define-color unfocused_borders rgba(0,0,0,0.3);
 @define-color warning_color #F27835;
 @define-color error_color #FC4138;
@@ -801,7 +801,7 @@ entry:focus {
   min-width: 16px;
   /*transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);*/
   font-weight: normal;
-  border: 0.8px solid;
+  border: 1px solid;
   
   border-radius: 4px;
   padding: 1px 6px 1px 6px;
@@ -812,8 +812,8 @@ entry:focus {
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
 				  
-  border-color: rgba(0,0,0,0.6);
-  background-color: #67686a; }
+  border-color: @borders;
+  background-image: linear-gradient(to bottom,#797a7b,#797a7b 1px,#67686a 1px,#67686a 2px, #67686a 2px, #67686a,#67686a);}
   
 entry.search {
 
@@ -4147,7 +4147,7 @@ spinbutton.vertical entry:only-child {
 
 spinbutton.vertical > entry:focus + button {
 
-  border-top-color: #4095ff; }
+  border-top-color: @borders; }
 
 spinbutton.vertical > entry:drop(active) + button {
 
