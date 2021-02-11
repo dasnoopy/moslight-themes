@@ -1557,9 +1557,9 @@ StScrollBar {
 
 .dash-label {
   background-color: rgba(32, 32, 32, 0.90);
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16);
+  box-shadow: none;
   color: #f3f3f3;
   padding: 4px 8px;
   text-align: center;

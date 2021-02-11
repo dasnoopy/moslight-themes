@@ -8278,7 +8278,7 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
 
   color: rgba(237, 237, 237, 0.6);
   border: none;
-  margin: 2px;
+  margin: 0 2px;
   padding: 2px; }
 
 .gedit-map-frame border {

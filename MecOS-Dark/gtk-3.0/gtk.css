@@ -8278,7 +8278,7 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
 
   color: rgba(237, 237, 237, 0.6);
   border: none;
-  margin: 2px;
+  margin: 0 2px;
   padding: 2px; }
 
 .gedit-map-frame border {
@@ -11100,7 +11100,7 @@ list.content list.nested > row.activatable:not(:active):hover:not(:selected) {
   background-color: #f2f2f2; }
 
 list.content > row:not(.expander):not(:active):not(:hover):not(:selected), list.content > row:not(.expander):not(:active):hover:not(.activatable):not(:selected), list.content > row.expander row.header:not(:active):not(:hover):not(:selected), list.content > row.expander row.header:not(:active):hover:not(.activatable):not(:selected) {
-  background-color: #ffffff; }
+  background-color: #2c2c2d; }
 
 list.content > row.activatable:not(.expander):not(:active):hover:not(:selected), list.content > row.expander row.header.activatable:not(:active):hover:not(:selected) {
   background-color: #f2f2f2; }
