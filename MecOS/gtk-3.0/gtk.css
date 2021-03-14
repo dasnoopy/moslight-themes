@@ -5651,6 +5651,7 @@ notebook tab:checked {
 	border-style: none;
 	box-shadow: none;
 	color: @fg_color;
+/*	font-weight: bold;*/
 }
 
 notebook > header.top > tabs > tab:not(:checked), notebook > header.bottom > tabs > tab:not(:checked){ box-shadow: 1px 0 @borders;}
