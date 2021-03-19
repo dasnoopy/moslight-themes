@@ -303,17 +303,17 @@ StEntry {
 .slider {
   height: 15px;
   -barlevel-height: 3px;
-  -barlevel-background-color: #202020;
+  -barlevel-background-color: #3d3846;
   -barlevel-border-width: 1px;
-  -barlevel-border-color: #202020;
-  -barlevel-active-background-color: #1b6acb;
+  -barlevel-border-color: #241f31;
+  -barlevel-active-background-color: #4095ff;
   -barlevel-active-border-color: #1c6fd4;
   -barlevel-overdrive-color: #b2161d;
   -barlevel-overdrive-border-color: #bc171e;
   -barlevel-overdrive-separator-width: 1px;
-  -slider-handle-radius: 7.5px;
+  -slider-handle-radius: 8px;
   -slider-handle-border-width: 1px;
-  -slider-handle-border-color: #eeeeec;
+  -slider-handle-border-color: #241f31;
   color: #eeeeec; }
   .slider:hover {
     color: #2a3339; }
