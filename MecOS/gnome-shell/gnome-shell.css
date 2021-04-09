@@ -1296,13 +1296,13 @@ StScrollBar {
 
 /* Top Bar */
 #panel {
-  background-color: rgba(19, 29, 39, 0.90);
+  background-color: rgba(19, 29, 39, 0.72);
   font-weight: normal;
   height: 2.2em;
   font-feature-settings: "tnum";
   transition-duration: 250ms; }
   #panel.unlock-screen, #panel.login-screen, #panel:overview {
-    background-color: transparent; }
+  background-color: rgba(19, 29, 39, 0.36);}
     #panel.unlock-screen .panel-corner, #panel.login-screen .panel-corner, #panel:overview .panel-corner {
       -panel-corner-opacity: 0; }
   #panel #panelLeft, #panel #panelCenter {
@@ -1433,25 +1433,26 @@ StScrollBar {
 .search-entry {
   width: 320px;
   padding: 7px 9px;
-  border-radius: 18px;
-  color: rgba(238, 238, 236, 0.7);
-  background-color: rgba(19, 29, 39, 0.90);
-  border-color: #202020; 
+  border-radius: 5px;
+  color: #eeeeec;
+  background-color: #2e3440;
+  border-color: #2e3440; 
   margin-top: 12px;
   margin-bottom: 6px; }
 
   .search-entry:hover {
-    background-color: #2a3339;
-    border-color: #282828;
-    color: #fafaf9; }
+    background-color: #3b4252;
+    border-color: #3b4252;
+    color: #eeeeec; }
   
   .search-entry:focus {
-    padding: 6px 8px;
-    border-width: 2px;
+    padding: 7px 9px;
+    border-width: 1px;
     border-style: solid;
-    border-color: #5e5c64;
-    color: #eeeeec;
-    box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.2); }
+    border-color: #434c5e;
+    background-color: #434c5e;
+    color: #fff;
+    box-shadow: none; }
   
   .search-entry .search-entry-icon {
     icon-size: 1.09em;
@@ -1528,7 +1529,6 @@ StScrollBar {
   margin-bottom: 12px;
   padding: 10px;
   border-radius: 9px; 
-/*  border: 1px solid #2e3440;*/
 /*  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.20); */ }
 
 .dash-item-container .app-well-app, .show-apps {
