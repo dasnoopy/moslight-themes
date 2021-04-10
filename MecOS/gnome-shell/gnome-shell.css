@@ -1528,8 +1528,7 @@ StScrollBar {
   background-color: #2e3440;
   margin-bottom: 12px;
   padding: 10px;
-  border-radius: 9px; 
-/*  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.20); */ }
+  border-radius: 9px; }
 
 .dash-item-container .app-well-app, .show-apps {
   padding: 10px 1.5px 26px; }
