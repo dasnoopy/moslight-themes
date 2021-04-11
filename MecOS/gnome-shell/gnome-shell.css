@@ -29,6 +29,7 @@ stage {
   font-weight: normal;
   color: #eeeeec; }
 
+/* on hover setting selection dash and overview app icon */
 .workspace-switcher-container, .switcher-list, .resize-popup, .osd-window {
   color: #eeeeec;
   background-color: rgba(32, 32, 32, 0.76);
@@ -41,7 +42,7 @@ stage {
 	
 .app-well-app .overview-icon,
 .grid-search-result .overview-icon, .show-apps .overview-icon, .list-search-result, .search-provider-icon {
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 6px;
   border: 2px solid transparent;
   transition-duration: 100ms;
@@ -1099,9 +1100,6 @@ StScrollBar {
   text-align: center;
   spacing: 8px;
   margin-bottom: 6px; }
-  .polkit-dialog-user-layout .polkit-dialog-user-icon {
-    border-radius: 99px;
-    background-size: contain; }
   .polkit-dialog-user-layout .polkit-dialog-user-root-label {
     color: #f57900; }
 
@@ -1424,19 +1422,23 @@ StScrollBar {
   .window-close:active {
     background-color: #a40000; }
 
+
+
 .workspace-background {
+/*  keep in sync with BACKGROUND_CORNER_RADIUS_PIXELS in src/js/ui/workspace.js*/
   border-radius: 30px;
   background-color: rgba(32, 32, 32, 0.96);
-  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.20); }
+  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.26); }
 
 
 .search-entry {
   width: 320px;
   padding: 7px 9px;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #eeeeec;
   background-color: #2e3440;
-  border-color: #2e3440; 
+    border-color: transparent;
+  box-shadow: inset 0 -2px #4c566a;
   margin-top: 12px;
   margin-bottom: 6px; }
 
@@ -1447,12 +1449,10 @@ StScrollBar {
   
   .search-entry:focus {
     padding: 7px 9px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #434c5e;
+    border-color: transparent;
     background-color: #434c5e;
     color: #fff;
-    box-shadow: none; }
+    box-shadow: inset 0 -2px #4c566a; }
   
   .search-entry .search-entry-icon {
     icon-size: 1.09em;
@@ -1525,7 +1525,7 @@ StScrollBar {
     padding: 5px; }
 
 .dash-background {
-  background-color: #2e3440;
+  background-color: transparent;
   margin-bottom: 12px;
   padding: 10px;
   border-radius: 9px; }
@@ -1580,7 +1580,7 @@ StScrollBar {
 /* App Icons */
 .app-well-app .overview-icon,
 .grid-search-result .overview-icon {
-  color: #fff; }
+  color: #f3f3f3; }
 
 .app-well-app:hover .overview-icon, .app-well-app:selected .overview-icon,
 .grid-search-result:hover .overview-icon,
@@ -1610,20 +1610,19 @@ StScrollBar {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: #202020;
-  border-radius: 12px; }
+  background-color: #3b4252;
+/* keep in sync with border-radius value at line 45 */
+  border-radius: 5px; }
 
 .app-folder-dialog {
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background-color: rgba(7, 7, 7, 0.91);
-  padding: 12px; }
+  border-radius: 12px;
+  background-color: #3b4252;
+  padding: 12px 0px 12px 0px; }
   .app-folder-dialog .folder-name-container {
     padding: 24px 36px 0;
     spacing: 12px;
     /* FIXME: this is to keep the label in sync with the entry */ }
-    .app-folder-dialog .folder-name-container .folder-name-label,
-    .app-folder-dialog .folder-name-container .folder-name-entry {
+    .app-folder-dialog .folder-name-container .folder-name-label, .app-folder-dialog .folder-name-container .folder-name-entry {
       font-size: 18pt;
       font-weight: 800; }
     .app-folder-dialog .folder-name-container .folder-name-entry {
@@ -1638,21 +1637,27 @@ StScrollBar {
       border-radius: 18px; }
       .app-folder-dialog .folder-name-container .edit-folder-button > StIcon {
         icon-size: 16px; }
-  .app-folder-dialog StButton#vhandle,
-  .app-folder-dialog StButton#vhandle:hover,
-  .app-folder-dialog StButton#vhandle:active {
-    background-color: transparent; }
+  .app-folder-dialog .icon-grid {
+    row-spacing: 12px;
+    column-spacing: 30px;
+    page-padding-top: 0;
+    page-padding-bottom: 0;
+    page-padding-left: 0;
+    page-padding-right: 0; }
+  .app-folder-dialog .page-indicators {
+    margin-bottom: 18px; }
 
 .app-folder-dialog-container {
   padding: 12px;
   width: 620px;
   height: 620px; }
 
+/* indicatore applicazione aperta nella dash */
 .app-well-app-running-dot {
-  height: 5px;
-  width: 5px;
-  border-radius: 5px;
-  background-color: #eeeeec;
+  height: 3px;
+  width: 15px;
+  border-radius: 1px;
+  background-color: #4095ff;
   margin-bottom: 1px; }
 
 .rename-folder-popup .rename-folder-popup-item {
@@ -1707,9 +1712,9 @@ StScrollBar {
   spacing: 6px;
   padding: 6px; }
   .workspace-thumbnails .workspace-thumbnail {
-    border-radius: 1px; }
+    border-radius: 3px; }
   .workspace-thumbnails .placeholder {
-    background-color: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
+    background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
     background-size: contain;
     width: 18px; }
 
@@ -1733,7 +1738,7 @@ StScrollBar {
   -pie-background-color: rgba(188, 214, 246, 0.3); }
 
 .magnifier-zoom-region {
-  border: 2px solid #1b6acb; }
+  border: 2px solid #4c566a; }
   .magnifier-zoom-region.full-screen {
     border-width: 0; }
 
