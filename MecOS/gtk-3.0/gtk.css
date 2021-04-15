@@ -6,7 +6,7 @@
 
 @define-color theme_fg_color #202020;
 @define-color theme_text_color #202020;
-@define-color theme_bg_color rgba(243,243,243,0.96);
+@define-color theme_bg_color #f3f3f3;
 @define-color theme_base_color #ffffff;
 @define-color theme_selected_bg_color #4095ff;
 @define-color theme_selected_fg_color #ffffff;
@@ -117,7 +117,7 @@
 
 .background {
 
-  background-color: rgba(243,243,243,0.99);
+  background-color: #f3f3f3;
   color: #202020;}
   
 .popup.background {
