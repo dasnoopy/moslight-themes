@@ -91,7 +91,6 @@
   font-weight: 400;
   font-size: 9pt; }
 
-
 @keyframes needs_attention_keyframes {
 
   0% {
@@ -896,7 +895,6 @@ entry.warning image {
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05); }
 entry.error image {
-  
   color: white; }
 
 entry.search-missing selection:focus,  
@@ -917,7 +915,6 @@ entry.error selection{
   background-image: linear-gradient(to bottom,#f12712,#f14736); }
 
 entry.search-missing image {
-
   color: white; }
 
 entry:drop(active),
@@ -949,7 +946,8 @@ entry selection:focus{
   background-color: #4095ff; }
 
 entry selection:disabled{
-
+  background-color: #4095ff;
+  text-shadow: none;
   color: #90b5ec; }
   
 .entry-tag {

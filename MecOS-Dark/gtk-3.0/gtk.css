@@ -527,6 +527,7 @@ treeview.view.progressbar:selected{
 
   color: #4095ff;
   box-shadow: none;
+  border: 1px solid #ffffff;
   background-color: #ffffff; }
   
   
@@ -856,7 +857,6 @@ entry:focus {
   background-image: linear-gradient(to bottom,#797a7b,#797a7b 1px,#67686a 1px,#67686a 2px, #67686a 2px, #67686a,#67686a);}
   
 entry.search {
-
   border-radius: 4px; }
 
 entry image {
@@ -881,6 +881,13 @@ entry.flat:focus{
   background-image: none;
   border-color: transparent;
   border-radius: 4px; }
+
+entry:focus {
+
+  color: #202020;
+  border-color: #4095ff;
+  background-color: transparent;
+  background-image: image(rgba(0,0,0,1));}
   
 entry:disabled {
 
@@ -921,6 +928,8 @@ entry.warning image {
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05); }
+entry.error image {
+  color: white; }
 
 entry.search-missing selection:focus,  
 entry.search-missing selection, 
@@ -938,6 +947,9 @@ entry.error selection{
   border-color: #f14736;
   background-color: transparent;
   background-image: linear-gradient(to bottom,#f12712,#f14736); }
+
+entry.search-missing image {
+  color: white; }
 
 entry:drop(active),
 entry:drop(active):focus{
@@ -968,7 +980,6 @@ entry selection:focus{
   background-color: #2357d6; }
 
 entry selection:disabled{
-
   background-color: #2357d6;
   text-shadow: none;
   color: #90b5ec; }
@@ -980,7 +991,6 @@ entry selection:disabled{
   box-shadow: none;
   background-color: #67686a;
   color: #eeeeec;
-
 }
 
 .entry-tag:hover {
@@ -1085,9 +1095,7 @@ button:active{
 				  1px  0px alpha(#202020, 0.05),
 				  0px  1px alpha(#202020, 0.3),
 				  0px  2px alpha(#202020, 0.05);
- 
-  border-color: rgba(0,0,0,0.6);
-  background-color: transparent;
+   background-color: transparent;
   background-image: linear-gradient(to bottom,#4d6593,#4d6593 1px,#508eff 1px,#508eff 2px, #2e69eb 2px, #2e69eb,#285fd5);}
   
 button:active:hover,
@@ -1245,8 +1253,10 @@ button.osd {
   background-color: transparent; 
   background-image: linear-gradient(to top,#494949,#595959);
   background-clip: padding-box; 
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); 
   text-shadow: 0 1px black; -gtk-icon-shadow: 0 1px black; 
   outline-color: rgba(238, 238, 236, 0.3); 
+  border: none; 
   box-shadow: none; }
 
 button.osd.image-button { 
