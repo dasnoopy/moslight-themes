@@ -1549,7 +1549,7 @@ StScrollBar {
     padding: 4px; }
 
 .dash-background {
-  background-color: rgba(234, 234, 232, 0.3);
+  background-color: rgba(76, 86, 106, 0.0);
   margin-bottom: 16px;
   padding: 10px;
   border-radius: 12px; }
@@ -1560,7 +1560,7 @@ StScrollBar {
 .dash-separator {
   width: 1px;
   margin: 0 6.5px 16px;
-  background-color: rgba(38, 38, 36, 0.5); }
+  background-color: rgba(232, 232, 232, 0.5); }
 
 .dash-label {
   color: #f3f3f3;
@@ -1744,7 +1744,7 @@ StScrollBar {
 
 .workspace-thumbnail-indicator {
   border: 2px solid #4095ff;
-  border-radius: 3px;
+  border-radius: 9px;
   padding: 0px; }
 
 .ripple-pointer-location {
