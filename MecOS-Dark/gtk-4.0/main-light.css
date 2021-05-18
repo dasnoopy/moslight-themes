@@ -2047,7 +2047,8 @@ spinbutton.vertical > button.down {
   color: @osd_text_color;
   border-color: alpha(@borders_dark, 0.7);
   background-color: transparent;
-  background-image: image(shade(@osd_button_color,0.7), 0.7);
+  background-image: image(shade(@osd_button_color,0.7));
+  
   background-clip: padding-box;
   box-shadow: none;
 }
@@ -2055,7 +2056,7 @@ spinbutton.vertical > button.down {
   color: @osd_text_color;
   border-color: alpha(@borders_dark, 0.7);
   background-color: transparent;
-  background-image: image(shade(@osd_button_color,0.4), 0.7);
+  background-image: image(shade(@osd_button_color,0.4));
   background-clip: padding-box;
   box-shadow: none;
 }
@@ -4096,7 +4097,7 @@ popover.menu radio:checked
   background-color: alpha(@button_color,0.4);
   border-color: transparent;
   -gtk-icon-source: image(-gtk-recolor(url("global-graphics/bullet-symbolic.svg"))); 
-  -gtk-icon-shadow:transparent; 
+  -gtk-icon-shadow:none; 
 }
 popover.menu radio:checked:hover
 {
@@ -4236,8 +4237,9 @@ radio:indeterminate {
 }
 radio:active { 
   -gtk-icon-transform: 
- scale(0, 1);*/
-}  
+ scale(0, 1);
+}  */
+
 treeview.view radio:selected:focus, 
 treeview.view radio:selected { 
 
@@ -4796,7 +4798,7 @@ row:selected scale > trough > slider {
 }
 .osd scale > trough > slider {
   color: #eeeeec;
-  outline-color: alpha(@color_600,0.5)
+  outline-color: alpha(@color_600,0.5);
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
   background-image: image(rgba(53, 53, 53, 0.7));
@@ -5815,7 +5817,7 @@ window.dialog.message.csd.background {
   
 window.dialog.message.csd .dialog-action-area{
   padding:10px;}
-}
+
 window.dialog.message.csd .dialog-action-area button {
   
   padding:3px;
@@ -5919,7 +5921,7 @@ stacksidebar row.needs-attention > label {
 stacksidebar row:selected {
   background-color: @color_600;
   border-radius: 5px;
-  color: text_color;
+  color: @text_color;
   text-shadow: -0.1px    0px alpha(@text_color, 0.20),
 		        0.1px    0px alpha(@text_color, 0.20),
 		          0px  0.1px alpha(@text_color, 0.20),
@@ -5931,12 +5933,12 @@ stacksidebar row:selected {
 }
 stacksidebar row:selected:hover:dir(ltr), 
 stacksidebar row:selected:hover:dir(rtl) {
-  background-color: alpha(sidebar_text_color,0.8);
+  background-color: alpha(@sidebar_text_color,0.8);
 }
 stacksidebar row:focus:focus-visible {
   outline-width: 0;
   background-color: @color_600;
-  color: sidebar_text_color;
+  color: @sidebar_text_color;
 }
 stacksidebar row.activatable:active,
 stacksidebar row.activatable:selected:active {
@@ -6016,8 +6018,9 @@ separator.sidebar {
   background-color: #16a085;
 }
 .navigation-sidebar > row:selected:focus-visible:focus-within:hover {
-  background-color: #107360;*/
-}
+  background-color: #107360;
+} */
+
 .navigation-sidebar > row:disabled {
   color: @disabled_text_color; 
   text-shadow: -0.1px    0px alpha(@disabled_text_color, 0.2),
@@ -6651,8 +6654,8 @@ statusbar {
 /**** CSD window controls tweak ****/
 /*windowcontrols button {
   margin: 0px;
-  padding: 5px;*/
-}
+  padding: 5px;
+}*/
 
 /**** reduce navigation-sidebar row height ****/
 .navigation-sidebar > row {

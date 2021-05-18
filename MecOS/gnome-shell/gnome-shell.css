@@ -1744,7 +1744,7 @@ StScrollBar {
 
 .workspace-thumbnail-indicator {
   border: 2px solid #4095ff;
-  border-radius: 9px;
+  border-radius: 3px;
   padding: 0px; }
 
 .ripple-pointer-location {
