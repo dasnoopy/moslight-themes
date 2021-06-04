@@ -1412,9 +1412,9 @@ StScrollBar {
 
 #overviewGroup {
   background-color: #2e3440;
-/*  background-image: url("background.jpg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: cover;*/
+  background-image: url("blurred_overview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 
 .overview-controls {
