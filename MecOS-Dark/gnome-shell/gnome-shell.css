@@ -1408,7 +1408,7 @@ StScrollBar {
 
 /* OVERVIEW */
 .controls-manager, .secondary-monitor-workspaces {
-  spacing: 12px; }
+  spacing: 8px; }
 
 #overviewGroup {
   background-color: #2e3440;
@@ -1536,7 +1536,7 @@ StScrollBar {
 /* Dash */
 #dash {
   font-size: 9pt;
-  margin-top: 12px;
+  margin-top: 6px;
   padding: 0 10px; }
   #dash .placeholder {
     background-image: none;
@@ -1546,16 +1546,18 @@ StScrollBar {
     width: 32px;
     height: 32px; }
   #dash .overview-icon {
-    padding: 4px; }
+  padding: 4px; 
+  border-radius: 7px;}
 
 .dash-background {
   background-color: rgba(76, 86, 106, 0.0);
-  margin-bottom: 16px;
-  padding: 10px;
+  margin-bottom: 12px;
+  padding: 8px;
   border-radius: 12px; }
 
 .dash-item-container .app-well-app, .show-apps {
-  padding: 10px 1.5px 26px; }
+  padding: 8px 5px 20px;
+}
 
 .dash-separator {
   width: 1px;
