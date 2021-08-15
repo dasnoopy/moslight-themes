@@ -1411,8 +1411,8 @@ StScrollBar {
   spacing: 8px; }
 
 #overviewGroup {
-  background-color: #2e3440;
-/*  background-image: url("background.jpg");*/
+    background-color: #3b4252;
+/*  background-image: url("blurred_overview.jpg");*/
 /*  background-repeat: no-repeat;*/
 /*  background-size: cover;*/
   }
@@ -1451,14 +1451,14 @@ StScrollBar {
 .workspace-background {
 /*  keep in sync with BACKGROUND_CORNER_RADIUS_PIXELS in src/js/ui/workspace.js*/
   border-radius: 30px;
-  background-color: #2e3440
-  box-shadow: 4px 4px 16px 2px rgba(0, 0, 0, 0.46); }
+/*  background-color: #2e3440*/
+  box-shadow: none; /* 4px 4px 16px 2px rgba(0, 0, 0, 0.46); */ }
 
 
 .search-entry {
   width: 320px;
   padding: 7px 9px;
-  border-radius: 99px;
+  border-radius: 11px;
   color: rgba(238, 238, 236, 0.7);
   background-color: #4c566a;
   border-color: #4c566a;
@@ -1547,7 +1547,7 @@ StScrollBar {
     height: 32px; }
   #dash .overview-icon {
   padding: 4px; 
-  border-radius: 7px;}
+  border-radius: 2px;}
 
 .dash-background {
   background-color: rgba(76, 86, 106, 0.0);
