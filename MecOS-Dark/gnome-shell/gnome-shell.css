@@ -1413,8 +1413,8 @@ StScrollBar {
 #overviewGroup {
     background-color: #3b4252;
 /*  background-image: url("blurred_overview.jpg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: cover;*/
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 
 .overview-controls {
@@ -1459,29 +1459,25 @@ StScrollBar {
   width: 320px;
   padding: 7px 9px;
   border-radius: 11px;
-  color: rgba(238, 238, 236, 0.7);
-  background-color: #4c566a;
-  border-color: #4c566a;
+  color: white;
+  background-color: rgba(19, 29, 39, 0.32);
+  border-color: transparent;
   margin-top: 12px;
   margin-bottom: 6px; }
   
   .search-entry:hover {
-    background-color: #4c566a;
-    border-color: #4c566a;
-    color: #fafaf9; }
+  background-color: rgba(19, 29, 39, 0.52);
+  color: #fafaf9; }
   
   .search-entry:focus {
-    padding: 6px 8px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #4c566a;
-    color: #eeeeec;
-    box-shadow: none; }
+  border-color: transparent;
+  padding: 7px 9px;
+  color: #fafaf9;
+  box-shadow: none;}
   
   .search-entry .search-entry-icon {
     icon-size: 1.09em;
-    padding: 0 4px;
-    color: inherit; }
+    padding: 0 4px; }
 
 /* Search */
 #searchResultsContent {
@@ -1547,7 +1543,7 @@ StScrollBar {
     height: 32px; }
   #dash .overview-icon {
   padding: 4px; 
-  border-radius: 2px;}
+  border-radius: 7px;}
 
 .dash-background {
   background-color: rgba(76, 86, 106, 0.0);
