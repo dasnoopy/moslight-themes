@@ -1,4 +1,4 @@
-## My GTK3 and Gnome Shell themes 
+## My GTK3 and GTK4 and Gnome Shell themes 
 
 A collection of simple GTK2/GTK3/GTK4 and Gnome shell themes made in the sparetime.
 
