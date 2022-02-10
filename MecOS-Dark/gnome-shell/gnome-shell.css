@@ -1545,6 +1545,9 @@ StScrollBar {
   padding: 4px; 
   border-radius: 7px;}
 
+/* dash icon's shadows */
+#dash .overview-icon StIcon {icon-shadow: rgba(0, 0, 0, 0.6) 0 1px 6px;}
+
 .dash-background {
   background-color: rgba(76, 86, 106, 0.0);
   margin-bottom: 12px;
