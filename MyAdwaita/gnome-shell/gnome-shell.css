@@ -88,7 +88,7 @@ stage {
   padding: 12px;
   font-weight: bold !important;
   color: white;
-  background-color: #4c566a; }
+  background-color: #3b4252; }
   .modal-dialog .modal-dialog-linked-button:ltr, .hotplug-notification-item:ltr, .notification-banner .notification-button:ltr {
     margin-right: 1px; }
   .modal-dialog .modal-dialog-linked-button:rtl, .hotplug-notification-item:rtl, .notification-banner .notification-button:rtl {
@@ -98,20 +98,20 @@ stage {
     background-color: rgba(255, 255, 255, 0.05); }
   .modal-dialog .modal-dialog-linked-button:focus, .hotplug-notification-item:focus, .notification-banner .notification-button:focus {
     color: white;
-    background-color: #434c5e;
+    background-color: #3b4252;
     box-shadow: none; }
     .modal-dialog .modal-dialog-linked-button:focus:hover, .hotplug-notification-item:focus:hover, .notification-banner .notification-button:focus:hover {
-      background-color: #3b4252;
+      background-color: #4c566a;
       box-shadow: none; }
     .modal-dialog .modal-dialog-linked-button:focus:active, .hotplug-notification-item:focus:active, .notification-banner .notification-button:focus:active {
-      background-color: #4c566a;
+      background-color: #434c5e;
       box-shadow: none; }
   .modal-dialog .modal-dialog-linked-button:hover, .hotplug-notification-item:hover, .notification-banner .notification-button:hover {
     color: white;
-    background-color: #4C566A; }
+    background-color: #4c566a; }
   .modal-dialog .modal-dialog-linked-button:active, .hotplug-notification-item:active, .notification-banner .notification-button:active {
     color: white;
-    background-color: #3b4252; }
+    background-color: #434c5e; }
   .modal-dialog .modal-dialog-linked-button:checked, .hotplug-notification-item:checked, .notification-banner .notification-button:checked {
     color: white;
     background-color: #626262; }
@@ -1696,8 +1696,11 @@ StScrollBar {
     width: 32px;
     height: 32px; }
   #dash .app-well-app-running-dot {
-	background-color: #4095ff;
-  	margin-bottom: 1px; }
+	  height: 4px;
+	  width: 18px;
+	  border-radius: 99px;
+	  background-color: #5e81ac;
+	  margin-bottom: 1px; }
 
 /* dash icon's shadows */
 #dash .overview-icon StIcon {icon-shadow: rgba(0, 0, 0, 0.4) 0 1px 6px;}
