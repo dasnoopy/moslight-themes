@@ -20,7 +20,7 @@
 /* Global Values */
 stage {
   font-family: Product Sans, SFNS Display, Helvetica, Roboto, Cantarell, Sans-Serif; 
-  font-size: 10pt;
+  font-size: 11pt;
   color: #eceff4; }
 
 /* Common Stylings */
@@ -331,7 +331,13 @@ StScrollBar {
 
 /* Popovers/Menus */
 .popup-menu-boxpointer, .candidate-popup-boxpointer {
-  -arrow-rise: 6px; }
+  -arrow-border-radius: 7px;
+  -arrow-background-color: rgba(19, 29, 39, 0.90);
+  -arrow-border-width: 1px;
+  -arrow-border-color: #202020;
+  -arrow-base: 20px;
+  -arrow-rise: 10px;
+  -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 .popup-menu {
   min-width: 15em;
@@ -1115,7 +1121,7 @@ StScrollBar {
 .nm-dialog-scroll-view {
   padding: 6px;
   border-radius: 8px;
-  background-color: #232323; }
+  background-color: #3b4252; }
 
 .nm-dialog-item {
   padding: 12px; }
@@ -1358,7 +1364,7 @@ StScrollBar {
   height: 24px; }
 
 .screenshot-ui-window-selector {
-  background-color: #232323; }
+  background-color: #3b4252; }
   .screenshot-ui-window-selector .screenshot-ui-window-selector-window-container {
     margin: 100px; }
   .screenshot-ui-window-selector:primary-monitor .screenshot-ui-window-selector-window-container {
@@ -2004,7 +2010,7 @@ StScrollBar {
 
 /* Workspace animation */
 .workspace-animation {
-  background-color: #232323; }
+  background-color: #3b4252; }
 
 /* Tiled window previews */
 .tile-preview {
@@ -2580,7 +2586,7 @@ StScrollBar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
 
 #lockDialogGroup {
-  background-color: #232323; }
+  background-color: #3b4252; }
 
 #unlockDialogNotifications StButton#vhandle, #unlockDialogNotifications StButton#hhandle {
   background-color: rgba(19, 29, 39, 0.3); }
