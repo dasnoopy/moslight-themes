@@ -26,7 +26,7 @@ stage {
 /* Common Stylings */
 .screenshot-ui-panel, .workspace-switcher, .switcher-list, .resize-popup, .osd-window {
   color: #eceff4;
-  background-color: rgba(19, 29, 39, 0.92);
+  background-color: rgba(19, 29, 39, 0.90);
   border: 1px solid rgba(255, 255, 255, 0.02);
   border-radius: 12px;
   padding: 12px; }
@@ -332,7 +332,7 @@ StScrollBar {
 /* Popovers/Menus */
 .popup-menu-boxpointer, .candidate-popup-boxpointer {
   -arrow-border-radius: 7px;
-  -arrow-background-color: rgba(19, 29, 39, 0.90);
+  -arrow-background-color: rgba(19, 29, 39, 0.9);
   -arrow-border-width: 1px;
   -arrow-border-color: #202020;
   -arrow-base: 20px;
@@ -350,7 +350,7 @@ StScrollBar {
   border-radius: 7px;
   border: 1px solid #131D27;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  background-color: #131D27; }
+  background-color: rgba(19, 29, 39, 0.9); }
 
 .popup-menu-item {
   padding: 9px 12px;
@@ -1414,7 +1414,7 @@ StScrollBar {
 
 /* Top Bar */
 #panel {
-  background-color: rgba(19, 29, 39, 0.72);
+  background-color: rgba(19, 29, 39, 0.9);
   font-weight: normal;
   height: 2.2em;
   transition-duration: 250ms; }
@@ -1633,7 +1633,7 @@ StScrollBar {
     background-color: transparent; }
 
 .search-section-content {
-  background-color: rgba(19, 29, 39, 0.72);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.02);
   color: white;
