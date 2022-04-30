@@ -332,7 +332,7 @@ StScrollBar {
 /* Popovers/Menus */
 .popup-menu-boxpointer, .candidate-popup-boxpointer {
   -arrow-border-radius: 7px;
-  -arrow-background-color: rgba(19, 29, 39, 0.9);
+  -arrow-background-color: rgba(19, 29, 39, 0.96);
   -arrow-border-width: 1px;
   -arrow-border-color: #202020;
   -arrow-base: 20px;
@@ -408,11 +408,11 @@ StScrollBar {
     .popup-sub-menu .popup-menu-item:focus, .popup-sub-menu .popup-menu-item:hover {
       background-color: #4C566A !important; }
     .popup-sub-menu .popup-menu-item:checked {
-      background-color: #606060 !important; }
+      background-color: #3b4252 !important; }
       .popup-sub-menu .popup-menu-item:checked:focus, .popup-sub-menu .popup-menu-item:checked:hover {
-        background-color: #5b5b5b !important; }
+        background-color: #4c566a !important; }
     .popup-sub-menu .popup-menu-item:active {
-      background-color: #585858 !important; }
+      background-color: #434c5e !important; }
   .popup-sub-menu .popup-menu-section .popup-menu-item:last-child:hover, .popup-sub-menu .popup-menu-section .popup-menu-item:last-child:focus {
     border-radius: 0; }
   .popup-sub-menu .popup-menu-section:last-child .popup-menu-item:last-child {
