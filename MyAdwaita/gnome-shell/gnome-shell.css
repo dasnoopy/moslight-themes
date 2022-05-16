@@ -1509,7 +1509,6 @@ StScrollBar {
 /* Activities Icon */ 
 #panel #panelActivities.panel-button > * {
   background-image: url("assets/activities.svg");
-  background-position: center top;
   width: 24px;
   height: 24px;
   background-color: transparent;
