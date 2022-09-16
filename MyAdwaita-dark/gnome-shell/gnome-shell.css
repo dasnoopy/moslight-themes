@@ -331,10 +331,10 @@ StScrollBar {
 
 /* Popovers/Menus */
 .popup-menu-boxpointer, .candidate-popup-boxpointer {
-  -arrow-border-radius: 7px;
+  -arrow-border-radius: 13px;
   -arrow-background-color: rgba(19, 29, 39, 0.96);
   -arrow-border-width: 1px;
-  -arrow-border-color: #202020;
+  -arrow-border-color: #131D27;
   -arrow-base: 20px;
   -arrow-rise: 10px;
   -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
@@ -347,14 +347,14 @@ StScrollBar {
 
 .popup-menu-content, .candidate-popup-content {
   padding: 4px;
-  border-radius: 7px;
+  border-radius: 13px;
   border: 1px solid #131D27;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: rgba(19, 29, 39, 0.9); }
 
 .popup-menu-item {
   padding: 9px 12px;
-  border-radius: 4px;
+  border-radius: 8px;
   spacing: 4px;
   transition: 0.2s all ease;
   background-color: transparent; }
