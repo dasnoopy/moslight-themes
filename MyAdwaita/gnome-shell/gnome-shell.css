@@ -331,13 +331,14 @@ StScrollBar {
 
 /* Popovers/Menus */
 .popup-menu-boxpointer, .candidate-popup-boxpointer {
-  -arrow-border-radius: 13px;
+  -arrow-border-radius: 12px;
+  /*popup background here: */
   -arrow-background-color: rgba(19, 29, 39, 0.96);
   -arrow-border-width: 1px;
   -arrow-border-color: #131D27;
   -arrow-base: 20px;
   -arrow-rise: 10px;
-  -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+  -arrow-box-shadow: none; }
 
 .popup-menu {
   min-width: 15em;
@@ -347,10 +348,10 @@ StScrollBar {
 
 .popup-menu-content, .candidate-popup-content {
   padding: 4px;
-  border-radius: 13px;
-  border: 1px solid #131D27;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  background-color: rgba(19, 29, 39, 0.9); }
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0);
+  background-color: rgba(19, 29, 39,0); }
 
 .popup-menu-item {
   padding: 9px 12px;
@@ -1879,12 +1880,13 @@ StScrollBar {
   width: 640px;
   height: 640px; }
 
+/* icon view :  application running */
 .app-well-app-running-dot {
-  height: 5px;
-  width: 5px;
-  border-radius: 5px;
-  margin-bottom: 8px;
-  background-color: white; }
+  height: 4px;
+  width: 18px;
+  border-radius: 99px;
+  background-color: #5e81ac;
+  margin-bottom: 2px; }
 
 .rename-folder-popup .rename-folder-popup-item {
   spacing: 6px; }
