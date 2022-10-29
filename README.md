@@ -1,6 +1,6 @@
 ## My GTK3 and GTK4 and Gnome Shell themes 
 
-A collection of simple GTK2/GTK3/GTK4 and Gnome shell themes made in the sparetime.
+A collection of simple GTK2/GTK3/GTK4 and Gnome shell themes made just for fun.
 
 **MecOS** is the current maintained theme and it works **only** with gnome version **40.x**.
 
