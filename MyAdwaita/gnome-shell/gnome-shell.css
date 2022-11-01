@@ -98,22 +98,22 @@ stage {
   padding: 12px;
   transition-duration: 100ms;
   color: white;
-  background-color: #3a3a3a; }
+  background-color: #2e3440; }
   .icon-button:focus {
     transition-duration: 100ms;
     color: white;
-    background-color: #3a414b;
+    background-color: #3b4252;
     box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.6) !important; }
     .icon-button:focus:hover {
-      background-color: #404852;
+      background-color: #434c5e;
       box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.7) !important; }
     .icon-button:focus:active {
-      background-color: #474f59;
+      background-color: #4c566a;
       box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.7) !important; }
   .icon-button:hover {
     transition-duration: 100ms;
     color: white;
-    background-color: #424242; }
+    background-color: #434c5e; }
   .icon-button:insensitive {
     transition-duration: 100ms;
     color: rgba(255, 255, 255, 0.5);
@@ -121,15 +121,15 @@ stage {
   .icon-button:active {
     transition-duration: 100ms;
     color: white;
-    background-color: #494949; }
+    background-color: #4c566a; }
   .icon-button:checked {
     transition-duration: 100ms;
     color: white;
-    background-color: #515151; }
+    background-color: #3b4252; }
     .icon-button:checked:hover {
-      background-color: #595959; }
+      background-color: #434c5e; }
     .icon-button:checked:active {
-      background-color: #606060; }
+      background-color: #4c566a; }
   .icon-button > StIcon {
     icon-size: 1.09em; }
 
@@ -543,7 +543,7 @@ StScrollBar {
 .datemenu-today-button {
   border-radius: 8px;
   margin: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   transition-duration: 100ms;
   background-color: transparent;
   background-color: none;
@@ -580,7 +580,7 @@ StScrollBar {
 .calendar {
   border-radius: 8px;
   margin: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   transition-duration: 100ms;
   background-color: transparent;
   background-color: none;
@@ -688,7 +688,7 @@ StScrollBar {
 .events-button {
   border-radius: 8px;
   margin: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   transition-duration: 100ms;
   color: white;
   background-color: #2E3440;
@@ -726,7 +726,7 @@ StScrollBar {
 .world-clocks-button {
   border-radius: 8px;
   margin: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   transition-duration: 100ms;
   color: white;
   background-color: #2E3440;
@@ -770,7 +770,7 @@ StScrollBar {
 .weather-button {
   border-radius: 8px;
   margin: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   transition-duration: 100ms;
   color: white;
   background-color: #2E3440;
@@ -860,7 +860,7 @@ StScrollBar {
 .message {
   border-radius: 8px;
   margin: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   transition-duration: 100ms;
   color: white;
   background-color: #2E3440; }
@@ -1710,9 +1710,9 @@ StScrollBar {
       icon-size: 1.635em;
       border-radius: 999px;
       padding: 9px;
-      background-color: #4c566a; }
+      background-color: #434c5e; }
       .quick-toggle-menu .header .icon.active {
-        background-color: #5e81ac; }
+        background-color: #62a0ea; }
 
 .quick-settings-system-item > StBoxLayout {
   spacing: 12px; }
@@ -1726,7 +1726,7 @@ StScrollBar {
   .quick-settings-system-item .power-item:insensitive {
     transition-duration: 100ms;
     color: white;
-    background-color: #3a3a3a;
+    background-color: #434c5e;
     background-color: transparent; }
 
 .nm-network-item .wireless-secure-icon {
@@ -2475,7 +2475,7 @@ StScrollBar {
   padding: 12px;
   border-radius: 8px;
   margin: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   transition-duration: 100ms;
   color: white;
   background-color: #2E3440; }
