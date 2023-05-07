@@ -208,8 +208,8 @@ StEntry {
 
 .dash-label, .window-caption {
   background-color: rgba(160, 132, 255, 0.9);
-  color: #000000;
-  border-radius: 7px;
+  color: #ffffff;
+  border-radius: 5px;
   padding: 3px 6px;
   text-align: center; }
 
@@ -402,8 +402,9 @@ StEntry {
 .lowres-icon {
   icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
 
-.icon-dropshadow {
-  icon-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
+  /* modifica : ombra icone overview */
+  .icon-dropshadow {
+  icon-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px; }
 
 /* Entries */
 StEntry StIcon.capslock-warning {
@@ -1991,7 +1992,7 @@ StScrollBar {
   
 /* bottone rosso chiusura finestre overview */
 .window-close, .screenshot-ui-close-button {
-  background-color: rgba(255, 0, 0, 0.98);
+  background-color: rgba(88, 88, 88, 0.98);
   color: #f6f5f4;
   border-radius: 24px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -2002,7 +2003,7 @@ StScrollBar {
   .window-close StIcon, .screenshot-ui-close-button StIcon {
     icon-size: 24px; }
   .window-close:hover, .screenshot-ui-close-button:hover {
-    background-color: rgba(88, 88, 88, 0.98); }
+    background-color:  rgba(255, 0, 0, 0.98); }
   .window-close:active, .screenshot-ui-close-button:active {
     background-color: rgba(104, 104, 104, 0.98); }
 
@@ -2112,8 +2113,8 @@ StScrollBar {
 	  background-color: #9580ff;
 	  margin-bottom: 1px; }
 
-/* dash icon's shadows */
-#dash .overview-icon StIcon {icon-shadow: rgba(0, 0, 0, 0.4) 0 1px 6px;}
+/* modifica: dash icon's shadows */
+#dash .overview-icon StIcon {icon-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;}
 
 .dash-background {
   background-color: rgba(19, 29, 39, 0.0);
