@@ -206,6 +206,7 @@ StEntry {
     margin-left: 0 !important;
     margin-right: 0 !important; }
 
+/* modifica label icons overview */
 .dash-label, .window-caption {
   background-color: rgba(160, 132, 255, 0.9);
   color: #ffffff;
@@ -254,7 +255,7 @@ StEntry {
 /* OSD Elements */
 #LookingGlassDialog, .screenshot-ui-panel, .workspace-switcher, .switcher-list, .resize-popup, .osd-monitor-label, .osd-window {
   color: #ffffff;
-  background-color: #353535;
+  background-color: rgba(19, 29, 39, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.02);
   border-radius: 999px;
   padding: 12px; }
@@ -547,7 +548,7 @@ StScrollBar {
   .popup-menu-item:focus, .popup-menu-item:hover {
     transition-duration: 100ms;
     color: white;
-    background-color: #5b5b5b; }
+    background-color: #4C566A; }
   .popup-menu-item:active {
     transition-duration: 100ms;
     color: white;
@@ -2114,7 +2115,7 @@ StScrollBar {
 	  margin-bottom: 1px; }
 
 /* modifica: dash icon's shadows */
-#dash .overview-icon StIcon {icon-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;}
+#dash .overview-icon StIcon {icon-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px;}
 
 .dash-background {
   background-color: rgba(19, 29, 39, 0.0);
@@ -2170,11 +2171,12 @@ StScrollBar {
   background-color: rgba(246, 245, 244, 0.1);
   margin-bottom: 12px; }
 
+/* modifica label dash */
 .dash-label {
   color: white;
-  background-color: rgba(19, 29, 39, 0.96);
+  background-color: rgba(160, 132, 255, 0.9);
   border-radius: 5px;
-  padding: 6px 12px;
+  padding: 3px 6px;
   text-align: center;
   -y-offset: 8px; }
 
@@ -2190,26 +2192,27 @@ StScrollBar {
   page-padding-right: 18px; }
 
 /* App Icons */
+/* modifica : colore sfondo icone search mode */
 .app-well-app, .grid-search-result {
   transition-duration: 100ms; }
   .app-well-app .overview-icon, .grid-search-result .overview-icon {
     background-color: transparent; }
   .app-well-app:hover .overview-icon, .grid-search-result:hover .overview-icon {
-    background-color: rgba(19, 29, 39, 0.53); }
+    background-color: rgba(29, 39, 49, 0.53); }
   .app-well-app:selected .overview-icon, .grid-search-result:selected .overview-icon, .app-well-app:focus .overview-icon, .grid-search-result:focus .overview-icon {
-    background-color: rgba(19, 29, 39, 0.53); }
+    background-color: rgba(29, 39, 49, 0.53); }
     .app-well-app:selected .overview-icon:hover .overview-icon, .grid-search-result:selected .overview-icon:hover .overview-icon, .app-well-app:focus .overview-icon:hover .overview-icon, .grid-search-result:focus .overview-icon:hover .overview-icon {
-      background-color: rgba(19, 29, 39, 0.56); }
+      background-color: rgba(29, 39, 49, 0.56); }
     .app-well-app:selected .overview-icon:active .overview-icon, .grid-search-result:selected .overview-icon:active .overview-icon, .app-well-app:focus .overview-icon:active .overview-icon, .grid-search-result:focus .overview-icon:active .overview-icon {
-      background-color: rgba(19, 29, 39, 0.53); }
+      background-color: rgba(29, 39, 49, 0.53); }
   .app-well-app:active .overview-icon, .grid-search-result:active .overview-icon {
-    background-color: rgba(19, 29, 39, 0.56); }
+    background-color: rgba(29, 39, 49, 0.56); }
   .app-well-app:outlined .overview-icon, .grid-search-result:outlined .overview-icon, .app-well-app:checked .overview-icon, .grid-search-result:checked .overview-icon {
-    background-color: rgba(19, 29, 39, 0.59); }
+    background-color: rgba(29, 39, 49, 0.59); }
     .app-well-app:outlined .overview-icon:active .overview-icon, .grid-search-result:outlined .overview-icon:active .overview-icon, .app-well-app:checked .overview-icon:active .overview-icon, .grid-search-result:checked .overview-icon:active .overview-icon {
-      background-color: rgba(19, 29, 39, 0.662); }
+      background-color: rgba(29, 39, 49, 0.662); }
     .app-well-app:outlined .overview-icon:hover .overview-icon, .grid-search-result:outlined .overview-icon:hover .overview-icon, .app-well-app:checked .overview-icon:hover .overview-icon, .grid-search-result:checked .overview-icon:hover .overview-icon {
-      background-color: rgba(19, 29, 39, 0.65); }
+      background-color: rgba(29, 39, 49, 0.65); }
   .app-well-app:drop .overview-icon, .grid-search-result:drop .overview-icon {
     border: 2px solid rgba(160, 132, 255, 0.8);
     background-color: rgba(160, 132, 255, 0.2); }
@@ -2246,9 +2249,9 @@ StScrollBar {
 
 .app-folder-dialog {
   border-radius: 12px;
-  background-color: rgba(29, 39, 49, 0.96);
+  background-color: rgba(29, 39, 49, 0.9);
   padding: 12px;
-  box-shadow: inset 0 0 0 1px #424242; }
+  box-shadow: none; }
   .app-folder-dialog .folder-name-container {
     padding: 24px 36px 0;
     spacing: 12px;
