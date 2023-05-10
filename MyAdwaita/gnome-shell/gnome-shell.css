@@ -209,9 +209,9 @@ StEntry {
 /* modifica label icons overview */
 .dash-label, .window-caption {
   background-color: rgba(160, 132, 255, 0.9);
-  color: #ffffff;
+  color: #111213;
   border-radius: 5px;
-  padding: 3px 6px;
+  padding: 3px 9px;
   text-align: center; }
 
 /* General Typography */
@@ -2173,10 +2173,10 @@ StScrollBar {
 
 /* modifica label dash */
 .dash-label {
-  color: white;
+  color: #112313;
   background-color: rgba(160, 132, 255, 0.9);
   border-radius: 5px;
-  padding: 3px 6px;
+  padding: 3px 9px;
   text-align: center;
   -y-offset: 8px; }
 
