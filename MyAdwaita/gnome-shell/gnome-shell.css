@@ -18,19 +18,23 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
- /* like NORD ccolor cobination */
- /* accent color : #0a84ff */
- /* hover /focus : #0a60ff  */
- /* box-shadow : rgba(10, 132, 255  */
+/* like MacOS blue color cobination 
+ * accent color : #0a84ff 
+ * hover / focus : #0a60ff  
+ * box-shadow : rgba(10, 132, 255 
+ * rgba(19, 29, 39, )
+ * rgba(29, 39, 49, ) 
+ */
  
- /* like DRACULA combination */
-  /* accent color :   #7d7aff  */
- /* hover /focus  :   #3634a3  */ 
- /* box-shadow rgba(94, 92, 230  */
- /* rgba(19, 29, 39, )
-    rgba(29, 39, 49, ) */
- 
+/* like MacOS indigo combination
+ * accent color :   #7d7aff
+ * hover / focus  :   #3634a3
+ * box-shadow rgba(94, 92, 230
+ * rgba(19, 29, 39, )
+ * rgba(29, 39, 49, )
+*/
 
+/* Current color scheme : Dracula */
 
 /* Global Values */
 stage {
