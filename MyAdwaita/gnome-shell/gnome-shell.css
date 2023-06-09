@@ -610,7 +610,7 @@ StScrollBar {
     padding: 9px 12px;
     transition-duration: 100ms;
     color: white;
-    background-color: #636363;
+    background-color: #3b4252;
     border-top-width: 0; }
     .popup-sub-menu .popup-menu-item:ltr {
       padding-left: 6px; }
@@ -619,19 +619,19 @@ StScrollBar {
     .popup-sub-menu .popup-menu-item:focus, .popup-sub-menu .popup-menu-item:hover {
       transition-duration: 100ms;
       color: white;
-      background-color: #6b6b6b; }
+      background-color: #424959; }
     .popup-sub-menu .popup-menu-item:active {
       transition-duration: 100ms;
       color: white;
-      background-color: #727272; }
+      background-color: #797979; }
     .popup-sub-menu .popup-menu-item:checked {
       transition-duration: 100ms;
       color: white;
-      background-color: #7a7a7a; }
+      background-color: #818181; }
       .popup-sub-menu .popup-menu-item:checked:hover {
-        background-color: #828282; }
-      .popup-sub-menu .popup-menu-item:checked:active {
         background-color: #898989; }
+      .popup-sub-menu .popup-menu-item:checked:active {
+        background-color: #8f8f8f; }
     .popup-sub-menu .popup-menu-item:last-child {
       border-radius: 0 0 12px 12px;
       border-bottom-width: 0; }
@@ -1239,7 +1239,7 @@ StScrollBar {
 
 /* Modal Dialogs */
 .modal-dialog {
-  background-color: #353535;
+  background-color: #282a36;
   border-radius: 16px;
   box-shadow: inset 0 0 0 1px #424242; }
   .modal-dialog .modal-dialog-content-box {
@@ -2727,7 +2727,7 @@ StScrollBar {
   spacing: 6px; }
 
 #LookingGlassPropertyInspector {
-  background: #353535;
+  background: #282a36;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 6px; }
@@ -2753,7 +2753,7 @@ StScrollBar {
 
 /* Login Dialog */
 .login-dialog {
-  background-color: #353535; }
+  background-color: #282a36; }
 
 .login-dialog-button.cancel-button {
   padding: 9px; }
@@ -2862,7 +2862,7 @@ StScrollBar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
 
 #lockDialogGroup {
-  background-color: #353535; }
+  background-color: #282a36; }
 
 .unlock-dialog-clock {
   color: #f6f5f4;
