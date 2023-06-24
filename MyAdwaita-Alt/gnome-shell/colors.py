@@ -6,7 +6,6 @@
 
 
 # TODO List
-# info message about unsafe mode and extension
 # modificare anche svg
 # tema  salvabili e richiamambili in seguito 
 
@@ -86,19 +85,23 @@ G2 = str(rgb2[1])
 B2 = str(rgb2[2])
 
 print (f"{colors.reset}{colors.bold}# Change accent color for gnome shell theme v44...{colors.reset}")
-print (f"{colors.reset}{colors.fg.yellow}- new lighter color MUST BE DIFFERENT from current darker color!{colors.reset}")
-print (f"{colors.reset}{colors.fg.yellow}- new darker color MUST BE DIFFERENT from current lighter color!{colors.reset}")
 print (f"{colors.reset}{colors.fg.yellow}- new lighter and darker color MUST BE DIFFERENT!{colors.reset}")
 print (f"{colors.reset}{colors.fg.yellow}- new colors MUST BE DIFFERENT from current colors!{colors.reset}")
+print (f"{colors.reset}{colors.fg.yellow}- new lighter color MUST BE DIFFERENT from current darker color!{colors.reset}")
+print (f"{colors.reset}{colors.fg.yellow}- new darker color MUST BE DIFFERENT from current lighter color!{colors.reset}")
 print('')
 print('❯❯ Current lighter accent color : \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm  ' + search_lighter_color + '  \033[0m')
 print('❯❯ Current darker accent color  : \033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm  ' + search_darker_color + '  \033[0m')
-print('                                    •••••••')
+print('                                    ⇣⇣⇣⇣⇣⇣⇣')
 # input colors
 # lighter color
 while True:
 	try:
 		replace_lighter_color = input('❯❯ New lighter accent color     :   ')
+
+		if replace_lighter_color == "":
+			break;
+
 		if (isValidHexaCode(replace_lighter_color)):
 			rgb3 = hex_to_rgb(replace_lighter_color)
 			R3 = str(rgb3[0])
@@ -114,7 +117,11 @@ while True:
 #darker color
 while True:
 	try:
-		replace_darker_color = input('❯❯ New darker accent color       :  ')
+		replace_darker_color = input('❯❯ New darker accent color      :   ')
+
+		if replace_darker_color == "":
+			break;
+
 		if (isValidHexaCode(replace_darker_color)):
 			rgb4 = hex_to_rgb(replace_darker_color)
 			R4 = str(rgb4[0])
@@ -126,6 +133,12 @@ while True:
 			print('Not a valid HEX color code! Colors must be in #RRGGBB format.')
 	except:
 		continue
+
+if replace_lighter_color == '' or replace_darker_color == '':
+	print('')
+	print (f"{colors.reset}{colors.fg.yellow}One or both invalid colors: exit!{colors.reset}")
+	print('')
+	sys.exit(0)
 
 if replace_lighter_color == search_darker_color:
 	print('')
@@ -159,7 +172,11 @@ replace_rgba_color = 'rgba' + str(hex_to_rgb(replace_lighter_color)).rstrip(')')
 # print (replace_rgba_color)
 # sys.exit(0)
 print('')
-wait=input('Press ENTER to apply new colors...')
+
+print(f'{colors.reset}{colors.fg.green}- you must install Unsafe Mode Menu extension and activate it to allow apply new colors on the fly...')
+print(f'{colors.reset}{colors.fg.green}- link : https://github.com/linushdot/unsafe-mode-menu.{colors.reset}')
+
+wait=input('Press ENTER to proceed...')
 
 # Opening our text file in read only
 # mode using the open() function
