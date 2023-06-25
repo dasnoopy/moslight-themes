@@ -12,6 +12,10 @@
 import os
 import sys
 import configparser
+import signal
+
+signal.signal(signal.SIGINT, signal.SIG_IGN)
+signal.signal(signal.SIGTSTP, signal.SIG_IGN)
 
 class colors:
 	reset = '\033[0m'
@@ -49,6 +53,11 @@ class colors:
 		cyan = '\033[46m'
 		lightgrey = '\033[47m'
 
+def confirm_prompt(question: str) -> bool:
+    reply = None
+    while reply not in ("y", "n"):
+        reply = input(f"{question} (y/n): ").casefold()
+    return (reply == "y")
 
 def hex_to_rgb(hexa):
 	hexa = hexa.lstrip('#')
@@ -173,10 +182,16 @@ replace_rgba_color = 'rgba' + str(hex_to_rgb(replace_lighter_color)).rstrip(')')
 # sys.exit(0)
 print('')
 
-print(f'{colors.reset}{colors.fg.green}- you must install Unsafe Mode Menu extension and activate it to allow apply new colors on the fly...')
-print(f'{colors.reset}{colors.fg.green}- link : https://github.com/linushdot/unsafe-mode-menu.{colors.reset}')
+print(f'{colors.reset}{colors.fg.green}- you must install Unsafe Mode Menu extension and activate it to applying new colors on the fly...')
+print(f'{colors.reset}{colors.fg.green}- extension link : https://github.com/linushdot/unsafe-mode-menu.{colors.reset}')
 
-wait=input('Press ENTER to proceed...')
+
+
+reply = confirm_prompt("Are you sure to proceed?")
+
+if reply == False:
+	print ('ciao ciao')
+	sys.exit(0)
 
 # Opening our text file in read only
 # mode using the open() function
