@@ -7,12 +7,12 @@
  <g transform="translate(0 -1032.4)">
   <g id="toggle-on" transform="matrix(.8 0 0 .8 0 604.47)">
    <g id="toggle-on-trough" transform="translate(0 -10)">
-    <rect x="5" y="549.86" width="40" height="15" rx="7.5" ry="7.5" fill="#84A7AA" fill-opacity=".54118"/>
+    <rect x="5" y="549.86" width="40" height="15" rx="7.5" ry="7.5" fill="#ff8000" fill-opacity=".54118"/>
     <rect y="542.36" width="50" height="35" fill-opacity="0"/>
    </g>
    <g id="toggle-on-slider" transform="translate(0 70)">
     <circle cx="35" cy="478.36" r="10" fill-opacity=".18039" filter="url(#a)"/>
-    <circle cx="35" cy="477.36" r="10" fill="#84A7AA"/>
+    <circle cx="35" cy="477.36" r="10" fill="#e66700"/>
     <rect y="462.36" width="50" height="35" fill-opacity="0"/>
    </g>
   </g>

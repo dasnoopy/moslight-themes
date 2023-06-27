@@ -6,8 +6,8 @@
 
 
 # TODO List
-# modificare anche svg
 # tema  salvabili e richiamambili in seguito 
+#
 
 import os
 import sys
@@ -53,6 +53,12 @@ class colors:
 		cyan = '\033[46m'
 		lightgrey = '\033[47m'
 
+def exit_on_error(message: str):
+	print('')
+	print (f"{colors.reset}{colors.fg.yellow}{message}{colors.reset}")
+	print('')
+	sys.exit(1)
+
 def confirm_prompt(question: str) -> bool:
     reply = None
     while reply not in ("y", "n"):
@@ -94,14 +100,15 @@ G2 = str(rgb2[1])
 B2 = str(rgb2[2])
 
 print (f"{colors.reset}{colors.bold}# Change accent color for gnome shell theme v44...{colors.reset}")
-print (f"{colors.reset}{colors.fg.yellow}- new lighter and darker color MUST BE DIFFERENT!{colors.reset}")
-print (f"{colors.reset}{colors.fg.yellow}- new colors MUST BE DIFFERENT from current colors!{colors.reset}")
-print (f"{colors.reset}{colors.fg.yellow}- new lighter color MUST BE DIFFERENT from current darker color!{colors.reset}")
-print (f"{colors.reset}{colors.fg.yellow}- new darker color MUST BE DIFFERENT from current lighter color!{colors.reset}")
-print('')
-print('❯❯ Current lighter accent color : \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm  ' + search_lighter_color + '  \033[0m')
-print('❯❯ Current darker accent color  : \033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm  ' + search_darker_color + '  \033[0m')
-print('                                    ⇣⇣⇣⇣⇣⇣⇣')
+print (f"{colors.reset}{colors.fg.green}- new lighter and darker color MUST BE DIFFERENT!{colors.reset}")
+print (f"{colors.reset}{colors.fg.green}- new colors MUST BE DIFFERENT from current colors!{colors.reset}")
+print (f"{colors.reset}{colors.fg.green}- new lighter color MUST BE DIFFERENT from current darker color!{colors.reset}")
+print (f"{colors.reset}{colors.fg.green}- new darker color MUST BE DIFFERENT from current lighter color!{colors.reset}")
+print (f"{colors.reset}{colors.fg.green}- leave one or both colors empy to quit without further actions{colors.reset}")
+print ('')
+print ('❯❯ Current lighter accent color : \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm  ' + search_lighter_color + '  \033[0m')
+print ('❯❯ Current darker accent color  : \033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm  ' + search_darker_color + '  \033[0m')
+print('                                    ⇤-----⇥')
 # input colors
 # lighter color
 while True:
@@ -144,62 +151,33 @@ while True:
 		continue
 
 if replace_lighter_color == '' or replace_darker_color == '':
-	print('')
-	print (f"{colors.reset}{colors.fg.yellow}One or both invalid colors: exit!{colors.reset}")
-	print('')
-	sys.exit(0)
-
-if replace_lighter_color == search_darker_color:
-	print('')
-	print (f"{colors.reset}{colors.fg.yellow}Unable to proceed: new lighter color is equal to current darker color!{colors.reset}")
-	print('')
-	sys.exit(0)
-
-if replace_darker_color == search_lighter_color:
-	print('')
-	print (f"{colors.reset}{colors.fg.yellow}Unable to proceed: new darker color is equal to current ligher color!{colors.reset}")
-	print('')
-	sys.exit(0)
-
-if (replace_lighter_color == search_lighter_color) and (replace_darker_color == search_darker_color):
-	print('')
-	print (f"{colors.reset}{colors.fg.yellow}Unable to proceed: new colors are equal to current colors!{colors.reset}")
-	print('')
-	sys.exit(0)
-
-if replace_lighter_color == replace_darker_color:
-	print('')
-	print (f"{colors.reset}{colors.fg.yellow}Unable to proceed: new lighter and darker color are the same!{colors.reset}")
-	print('')
-	sys.exit(0)
+	 exit_on_error ('- One or both invalid colors: exit!')
+elif replace_lighter_color == search_darker_color:
+	exit_on_error('- Unable to proceed: new lighter color is equal to current darker color!')
+elif replace_darker_color == search_lighter_color:
+	exit_on_error('- Unable to proceed: new darker color is equal to current ligher color!')
+elif (replace_lighter_color == search_lighter_color) and (replace_darker_color == search_darker_color):
+	exit_on_error('- Unable to proceed: new colors are equal to current colors!')
+elif replace_lighter_color == replace_darker_color:
+	exit_on_error('- Unable to proceed: new lighter and darker color are the same!')
 
 # get shado box rgba color from ligher color
 replace_rgba_color = 'rgba' + str(hex_to_rgb(replace_lighter_color)).rstrip(')')
 #
-# print (replace_lighter_color)
-# print (replace_darker_color)
-# print (replace_rgba_color)
-# sys.exit(0)
-print('')
-
-print(f'{colors.reset}{colors.fg.green}- you must install Unsafe Mode Menu extension and activate it to applying new colors on the fly...')
-print(f'{colors.reset}{colors.fg.green}- extension link : https://github.com/linushdot/unsafe-mode-menu.{colors.reset}')
-
-
+print ('')
+print (f'{colors.reset}{colors.fg.green}- to activate new gs colors on the fly, you must install then Unsafe Mode Menu extension.{colors.reset}')
+print (f'{colors.reset}{colors.fg.green}- extension link : https://github.com/linushdot/unsafe-mode-menu.{colors.reset}')
+print (f'{colors.reset}{colors.fg.green}- Otherwise you may want use gnome-tweak tool to change gs theme, as usual.{colors.reset}')
+print ('')
 
 reply = confirm_prompt("Are you sure to proceed?")
-
 if reply == False:
-	print ('ciao ciao')
+	print ('Exiting without any change...')
 	sys.exit(0)
 
 # Opening our text file in read only
 # mode using the open() function
 with open(r'gnome-shell.css', 'r', encoding='utf-8') as file:
-
-	# Reading the content of the file
-	# using the read() function and storing
-	# them in a new variable
 	data = file.read()
 	# Searching and replacing the text
 	# using the replace() function
@@ -210,9 +188,30 @@ with open(r'gnome-shell.css', 'r', encoding='utf-8') as file:
 # Opening our text file in write only
 # mode to write the replaced content
 with open(r'gnome-shell.css', 'w', encoding='utf-8') as file:
+	file.write(data)
 
-	# Writing the replaced data in our
-	# text file
+#update also asset/svgs
+svg1="assets/checkbox.svg"
+svg2="assets/checkbox-focused.svg"
+svg3="assets/toggle-on.svg"
+
+with open(svg1, 'r', encoding='utf-8') as file:
+	data = file.read()
+	data = data.replace(search_lighter_color, replace_lighter_color)
+with open(svg1, 'w', encoding='utf-8') as file:
+	file.write(data)
+
+with open(svg2, 'r', encoding='utf-8') as file:
+	data = file.read()
+	data = data.replace(search_darker_color, replace_darker_color)
+with open(svg2, 'w', encoding='utf-8') as file:
+	file.write(data)
+
+with open(svg3, 'r', encoding='utf-8') as file:
+	data = file.read()
+	data = data.replace(search_lighter_color, replace_lighter_color)
+	data = data.replace(search_darker_color, replace_darker_color)
+with open(svg3, 'w', encoding='utf-8') as file:
 	file.write(data)
 
 #write INI file
