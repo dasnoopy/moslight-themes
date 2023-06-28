@@ -14,9 +14,6 @@ import sys
 import configparser
 import signal
 
-signal.signal(signal.SIGINT, signal.SIG_IGN)
-signal.signal(signal.SIGTSTP, signal.SIG_IGN)
-
 class colors:
 	reset = '\033[0m'
 	bold = '\033[01m'
@@ -81,9 +78,29 @@ def isValidHexaCode(str):
 			return False
 	return True
 
-#READ Previous colors from INI file
+signal.signal(signal.SIGINT, signal.SIG_IGN)
+signal.signal(signal.SIGTSTP, signal.SIG_IGN)
+
+#header
+# pulizia screen e set dbname
+os.system('clear')
+print (f"{colors.reset}{colors.bold}# Change accent color for gnome shell theme v44...{colors.reset}")
+print ('')
+
+iniFname = 'colors.ini'
 config = configparser.ConfigParser()
-config.read('COLORS.INI')
+
+# Just a small function to write the ini file
+def write_file():
+	config.write(open(iniFname, 'w', encoding='utf-8'))
+
+# if ini file is missing, create it with some default colors
+if not os.path.exists(iniFname):
+	config['COLORS'] = {'hexlighter': '#007ea7', 'hexdarker': '#004e89', 'rgbalighter': 'rgba(0, 126, 167'}
+	write_file()
+
+# Read ini file immediately...
+config.read(iniFname)
 search_lighter_color = config['COLORS']['hexlighter']
 search_darker_color = config['COLORS']['hexdarker']
 search_rgba_color = config['COLORS']['rgbalighter'] 
@@ -99,9 +116,8 @@ R2 = str(rgb2[0])
 G2 = str(rgb2[1])
 B2 = str(rgb2[2])
 
-print (f"{colors.reset}{colors.bold}# Change accent color for gnome shell theme v44...{colors.reset}")
+
 print (f"{colors.reset}{colors.fg.green}- new lighter and darker color MUST BE DIFFERENT!{colors.reset}")
-print (f"{colors.reset}{colors.fg.green}- new colors MUST BE DIFFERENT from current colors!{colors.reset}")
 print (f"{colors.reset}{colors.fg.green}- new lighter color MUST BE DIFFERENT from current darker color!{colors.reset}")
 print (f"{colors.reset}{colors.fg.green}- new darker color MUST BE DIFFERENT from current lighter color!{colors.reset}")
 print (f"{colors.reset}{colors.fg.green}- leave one or both colors empy to quit without further actions{colors.reset}")
@@ -126,7 +142,7 @@ while True:
 			print(f'\033[F{colors.reset}{colors.bold}❯❯ New lighter accent color     : \033[48;2;' + R3 + ';' + G3 + ';' + B3 + 'm  ' + replace_lighter_color + '  \033[0m')
 			break;
 		else:
-			print('Not a valid HEX color code! Colors must be in #RRGGBB format.')
+			print (f"{colors.reset}{colors.fg.yellow}- Not a valid HEX color code! Colors must be in #RRGGBB format.{colors.reset}")
 	except:
 		continue
 
@@ -146,7 +162,7 @@ while True:
 			print(f'\033[F{colors.reset}{colors.bold}❯❯ New darker accent color      : \033[48;2;' + R4 + ';' + G4 + ';' + B4 + 'm  ' + replace_darker_color + '  \033[0m')
 			break;
 		else:
-			print('Not a valid HEX color code! Colors must be in #RRGGBB format.')
+			print (f"{colors.reset}{colors.fg.yellow}- Not a valid HEX color code! Colors must be in #RRGGBB format.{colors.reset}")
 	except:
 		continue
 
@@ -156,8 +172,6 @@ elif replace_lighter_color == search_darker_color:
 	exit_on_error('- Unable to proceed: new lighter color is equal to current darker color!')
 elif replace_darker_color == search_lighter_color:
 	exit_on_error('- Unable to proceed: new darker color is equal to current ligher color!')
-elif (replace_lighter_color == search_lighter_color) and (replace_darker_color == search_darker_color):
-	exit_on_error('- Unable to proceed: new colors are equal to current colors!')
 elif replace_lighter_color == replace_darker_color:
 	exit_on_error('- Unable to proceed: new lighter and darker color are the same!')
 
@@ -214,13 +228,11 @@ with open(svg3, 'r', encoding='utf-8') as file:
 with open(svg3, 'w', encoding='utf-8') as file:
 	file.write(data)
 
-#write INI file
+#write INI file with new colors
 config['COLORS']['hexlighter'] = replace_lighter_color
 config['COLORS']['hexdarker'] = replace_darker_color
 config['COLORS']['rgbalighter'] = replace_rgba_color
-
-with open('COLORS.INI', 'w', encoding='utf-8') as configfile:
-    config.write(configfile)
+write_file()
 
 # apply new colors on the fly using dbus-send command (gnome v44  tested)
 # gnome shell session must be in unsafe mode
