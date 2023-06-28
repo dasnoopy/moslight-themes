@@ -108,7 +108,7 @@ print (f"{colors.reset}{colors.fg.green}- leave one or both colors empy to quit 
 print ('')
 print ('❯❯ Current lighter accent color : \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm  ' + search_lighter_color + '  \033[0m')
 print ('❯❯ Current darker accent color  : \033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm  ' + search_darker_color + '  \033[0m')
-print('                                    ⇤-----⇥')
+print('                                    <<< >>>')
 # input colors
 # lighter color
 while True:
