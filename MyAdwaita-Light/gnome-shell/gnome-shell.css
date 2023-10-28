@@ -282,7 +282,7 @@ StEntry {
   color: #ffffff;
   background-color: #353535;
   border: 1px solid rgba(255, 255, 255, 0.02);
-  border-radius: 11px;
+  border-radius: 9px;
   padding: 12px; }
 
 .lg-dialog StEntry {
@@ -1065,7 +1065,7 @@ StScrollBar {
 .message-media-control {
   padding: 0 12px;
   margin: 8px 0;
-  border-radius: 8px;
+  border-radius: 6px;
   color: #282828; }
   .message-media-control:hover {
     background-color: #edebe9;
@@ -2099,15 +2099,15 @@ StScrollBar {
     background-color: transparent; }
 
 .search-section-content {
-  background-color: #3d3d3c;
+  background-color: rgba(59, 69, 79, 0.5);
   color: #f6f5f4;
-  border-radius: 24px;
+  border-radius: 12px;
   padding: 12px;
   margin: 0 12px; }
 
 .list-search-result, .search-provider-icon {
   background-color: transparent;
-  border-radius: 11px; }
+  border-radius: 7px; }
   .list-search-result:hover, .search-provider-icon:hover {
     background-color: rgba(246, 245, 244, 0.1); }
   .list-search-result:selected, .search-provider-icon:selected, .list-search-result:focus, .search-provider-icon:focus {
@@ -2274,7 +2274,7 @@ StScrollBar {
     background-color: rgba(53, 132, 228, 0.2); }
   .app-well-app .overview-icon, .grid-search-result .overview-icon {
     padding: 12px;
-    border-radius: 24px;
+    border-radius: 12px;
     color: #f6f5f4; }
   .app-well-app .overview-icon.overview-icon-with-label > StBoxLayout, .grid-search-result .overview-icon.overview-icon-with-label > StBoxLayout {
     spacing: 6px; }
