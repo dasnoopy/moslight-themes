@@ -2,6 +2,9 @@
 
 A collection of simple GTK2/GTK3/GTK4 and Gnome shell themes made just for fun.
 
+**MyAdwaita** is the current maintained gnome-shell theme and it works **only** with gnome version **45.x**.
+
+
 **MecOS** is the current maintained theme and it works **only** with gnome version **40.x**.
 
 - GTK3 3.24.26 or above and GTK4.0x or above is required for gtk3/4 theme. 
