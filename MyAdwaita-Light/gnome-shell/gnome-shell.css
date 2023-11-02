@@ -1833,7 +1833,9 @@ StScrollBar {
     .quick-toggle:checked:insensitive {
       transition-duration: 100ms;
       color: rgba(40, 40, 40, 0.4);
-      background-color: rgba(40, 40, 40, 0.1); }
+      background-color: rgba(40, 40, 40, 0.1);
+      background-color: rgba(53, 132, 228, 0.5);
+      color: rgba(255, 255, 255, 0.5); }
   .quick-toggle > StBoxLayout {
     spacing: 9px; }
   .quick-toggle.button, .quick-toggle.icon-button, .quick-toggle.login-dialog-button.cancel-button, .quick-toggle.login-dialog-button.switch-user-button, .quick-toggle.login-dialog-button.login-dialog-session-list-button, .background-app-item .quick-toggle.close-button, .calendar .calendar-month-header .quick-toggle.pager-button, .calendar .quick-toggle.calendar-day {
@@ -1888,7 +1890,9 @@ StScrollBar {
     .quick-menu-toggle .quick-toggle-arrow:checked:insensitive {
       transition-duration: 100ms;
       color: rgba(40, 40, 40, 0.4);
-      background-color: rgba(40, 40, 40, 0.1); }
+      background-color: rgba(40, 40, 40, 0.1);
+      background-color: rgba(53, 132, 228, 0.5);
+      color: rgba(255, 255, 255, 0.5); }
   .quick-menu-toggle .quick-toggle-arrow:ltr {
     border-radius: 0 7px 7px 0;
     border-left-width: 1px; }
@@ -1923,8 +1927,10 @@ StScrollBar {
   margin: 4px;
   transition-duration: 100ms;
   color: #282828;
+  background-color: #dddcdc;
   background-color: #f6f5f4 !important;
-  border-radius: 7px;
+  color: #282828 !important;
+  border-radius: 9px;
   padding: 12px;
   margin: 12px 18px 0; }
   .quick-toggle-menu:hover {
