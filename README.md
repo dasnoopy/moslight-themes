@@ -1,30 +1,27 @@
 ## My GTK3 and GTK4 and Gnome Shell themes 
 
-A collection of simple GTK2/GTK3/GTK4 and Gnome shell themes made just for fun.
-
 **MyAdwaita** is the current maintained **gnome-shell** theme and it works **only** with gnome version **45.x**.
 
 ![MyAdwaita GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MyAdwaita.png)
 
 **Installation notes:**
 
-**Note** : MecOS folder contain GTK2, GTK3, GTK4 and Gnome Shell themes **only**.
+**Note** : MyAdwaita folder contain Gnome Shell themes **only**. 
 
 - Download the zip file then...
 
 *... for all users:*
 
-- as root, copy MecOS and MecOS-Dark folders into `/usr/share/themes`;
+- as root, copy MyAdwaita-Light and MyAdwaita-Dark folders into `/usr/share/themes`;
 - open Gnome-Tweak and choose the theme.
 
 *... for your account only:*
 
-- copy MecOS and MecOS-Dark folders into `~/.local/share/themes`;
-- if doesn't exist, create also a symbolic links in your home dir to that folder (this is needed for the gtk2 theme);
+- copy MyAdwaita-Light and MyAdwaita-Dark folders into `~/.local/share/themes` (if it doesn't exist, create also a symbolic links in your home dir to that folder);
 
     `$ ln -s ~/.local/share/themes .themes`
 
-- open Gnome-Tweak and choose the theme.
+- open Gnome-Tweak and choose the gnome-shell theme.
 
 **Old and unsupported themes:**
 
