@@ -2192,9 +2192,10 @@ StScrollBar {
 .dash-item-container:rtl:first-child {
   margin-right: 0; }
 
+/* modifica : sfondo bordi icone dash bar */
 .dash-item-container .app-well-app .overview-icon, .dash-item-container .grid-search-result .overview-icon {
   padding: 6px;
-  border-radius: 12px; }
+  border-radius: 8px; }
 
 .dash-item-container .show-apps {
   transition-duration: 200ms; }
