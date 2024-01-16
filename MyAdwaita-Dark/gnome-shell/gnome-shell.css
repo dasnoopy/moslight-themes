@@ -276,11 +276,11 @@ StEntry {
 .unlock-dialog-clock .unlock-dialog-clock-time, #panel, .weather-button .weather-forecast-time, .world-clocks-button .world-clocks-timezone, .world-clocks-button .world-clocks-time, .events-button .event-time, .calendar .calendar-day {
   font-feature-settings: "tnum"; }
 
-/* modifica: notifiche OSD quali volume e altro */
+/* modifica: notifiche OSD quali volume e switch desktop virtuali con frecce */
 /* OSD Elements */
 #LookingGlassDialog, .screenshot-ui-panel, .workspace-switcher, .switcher-list, .resize-popup, .osd-monitor-label, .osd-window {
   color: #ffffff;
-  background-color: rgba(19, 29, 39, 0.96);
+  background-color: rgba(19, 29, 39, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.02);
   border-radius: 9px;
   padding: 12px; }
@@ -1436,14 +1436,14 @@ StScrollBar {
   padding: 12px 18px; }
 
 .ws-switcher-indicator {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 0.1816666667em;
-  margin: 0.9083333333em;
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 0.3616666667em;
+  margin: 0.7283333333em;
   border-radius: 2.18em; }
   .ws-switcher-indicator:active {
     background-color: #ffffff;
-    padding: 0.3633333333em;
-    margin: 0.7266666667em; }
+    padding: 0.4833333333em;
+    margin: 0.6466666667em; }
 
 .icon-label-button-container {
   spacing: 6px; }
@@ -2192,7 +2192,7 @@ StScrollBar {
 .dash-item-container:rtl:first-child {
   margin-right: 0; }
 
-/* modifica : sfondo bordi icone dash bar */
+/* modifica : bordi tondi icone dash bar */
 .dash-item-container .app-well-app .overview-icon, .dash-item-container .grid-search-result .overview-icon {
   padding: 6px;
   border-radius: 8px; }
@@ -2337,12 +2337,13 @@ StScrollBar {
   width: 720px;
   height: 720px; }
 
+/* modifica: dot app running app view */
 .app-well-app-running-dot {
-  height: 5px;
-  width: 5px;
-  border-radius: 5px;
-  margin-bottom: 8px;
-  background-color: #f6f5f4; }
+  height: 4px;
+  width: 18px;
+  border-radius: 99px;
+  margin-bottom: 6px;
+  background-color: #0080ff; }
 
 .rename-folder-popup .rename-folder-popup-item {
   spacing: 6px; }
