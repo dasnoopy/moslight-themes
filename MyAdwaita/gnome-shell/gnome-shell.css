@@ -2287,12 +2287,12 @@ StScrollBar {
       #dash .dash-item-container .grid-search-result:checked .overview-icon:active {
         background-color: #686868; }
   #dash .dash-item-container .app-grid-running-dot {
-    margin-bottom: 21px; }
+    margin-bottom: 12px; }
   #dash .dash-separator {
     width: 1px;
     margin-left: 4px;
     margin-right: 4px;
-    background-color: rgba(245, 245, 245, 0.1); }
+    background-color: rgba(245, 245, 245, 0.3); }
   #dash .dash-separator,
   #dash .dash-background {
     margin-bottom: 12px; }
@@ -2383,6 +2383,7 @@ StScrollBar {
     background-color: rgba(53, 132, 228, 0.2);
     box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.8); }
 
+/*modifica : app runnin dot */
 .app-grid-running-dot {
   height: 4px;
   width: 18px;
