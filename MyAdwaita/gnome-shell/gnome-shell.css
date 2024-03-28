@@ -818,7 +818,7 @@ StScrollBar {
   border: 0px solid #424242;
   box-shadow:  2px 2px 8px rgba(10, 10, 10, 0.3); }
 
-/* modifica */
+/* modifica pop-up menus */
 .popup-menu-item {
   font-weight: normal;
   spacing: 6px;
@@ -826,7 +826,7 @@ StScrollBar {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
-  border-radius: 7px; }
+  border-radius: 5px; }
   .popup-menu-item:insensitive {
     background-color: transparent !important; }
   .popup-menu-item:focus, .popup-menu-item:hover {
@@ -920,7 +920,7 @@ StScrollBar {
   border: none !important; }
   .popup-separator-menu-item .popup-separator-menu-item-separator {
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.1); }
+    background-color: rgba(255, 255, 255, 0.3); }
   .popup-sub-menu .popup-separator-menu-item {
     background-color: transparent; }
     .popup-sub-menu .popup-separator-menu-item:ltr {
@@ -2383,7 +2383,7 @@ StScrollBar {
     background-color: rgba(53, 132, 228, 0.2);
     box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.8); }
 
-/*modifica : app runnin dot */
+/*modifica : app running dot */
 .app-grid-running-dot {
   height: 4px;
   width: 18px;
@@ -2397,16 +2397,16 @@ StScrollBar {
 .app-folder-dialog {
   width: 720px;
   height: 720px;
-  border-radius: 64px;
+  border-radius: 16px;
   background-color: #3d3d3d;
   color: whitesmoke;
   padding: 0 1px;
   box-shadow: inset 0 0 0 1px rgba(245, 245, 245, 0.1); }
   .app-folder-dialog .folder-name-container {
-    padding: 24px 36px;
+    padding: 12px 18px;
     padding-bottom: 0; }
     .app-folder-dialog .folder-name-container .folder-name-entry {
-      width: 12em; }
+      width: 6em; }
   .app-folder-dialog .icon-button, .app-folder-dialog .login-dialog-button.cancel-button, .app-folder-dialog .login-dialog-button.switch-user-button, .app-folder-dialog .login-dialog-button.login-dialog-session-list-button, .app-folder-dialog .calendar .calendar-month-header .pager-button, .calendar .calendar-month-header .app-folder-dialog .pager-button, .app-folder-dialog .message .message-header .message-expand-button, .message .message-header .app-folder-dialog .message-expand-button,
   .app-folder-dialog .message .message-header .message-close-button,
   .message .message-header .app-folder-dialog .message-close-button, .app-folder-dialog .screenshot-ui-show-pointer-button {
