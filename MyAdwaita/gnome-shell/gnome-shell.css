@@ -2394,19 +2394,20 @@ StScrollBar {
 .app-folder-dialog-container {
   padding-top: 2.2em; }
 
+/* modifica */
 .app-folder-dialog {
   width: 720px;
   height: 720px;
-  border-radius: 16px;
+  border-radius: 12px;
   background-color: #3d3d3d;
   color: whitesmoke;
   padding: 0 1px;
   box-shadow: inset 0 0 0 1px rgba(245, 245, 245, 0.1); }
   .app-folder-dialog .folder-name-container {
-    padding: 12px 18px;
+    padding: 24px 36px;
     padding-bottom: 0; }
     .app-folder-dialog .folder-name-container .folder-name-entry {
-      width: 6em; }
+      width: 12em; }
   .app-folder-dialog .icon-button, .app-folder-dialog .login-dialog-button.cancel-button, .app-folder-dialog .login-dialog-button.switch-user-button, .app-folder-dialog .login-dialog-button.login-dialog-session-list-button, .app-folder-dialog .calendar .calendar-month-header .pager-button, .calendar .calendar-month-header .app-folder-dialog .pager-button, .app-folder-dialog .message .message-header .message-expand-button, .message .message-header .app-folder-dialog .message-expand-button,
   .app-folder-dialog .message .message-header .message-close-button,
   .message .message-header .app-folder-dialog .message-close-button, .app-folder-dialog .screenshot-ui-show-pointer-button {
