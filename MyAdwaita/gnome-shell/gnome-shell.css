@@ -471,7 +471,7 @@ StEntry {
 
 /* System Elements */
 .login-dialog .login-dialog-prompt-entry, .app-folder-dialog .folder-name-container .folder-name-entry, .search-entry {
-  background-color: #464646;
+  background-color: #343d46;
   color: rgba(245, 245, 245, 0.7); }
   .login-dialog .login-dialog-prompt-entry:hover, .app-folder-dialog .folder-name-container .folder-name-entry:hover, .search-entry:hover {
     background-color: #505050;
@@ -489,7 +489,7 @@ StEntry {
 .login-dialog-button.cancel-button, .login-dialog-button.switch-user-button, .login-dialog-button.login-dialog-session-list-button {
   transition-duration: 100ms;
   color: whitesmoke;
-  background-color: #464646; }
+  background-color: #343d46; }
   .login-dialog-button.cancel-button:insensitive, .login-dialog-button.switch-user-button:insensitive, .login-dialog-button.login-dialog-session-list-button:insensitive {
     transition-duration: 100ms;
     color: rgba(245, 245, 245, 0.5);
@@ -508,7 +508,7 @@ StEntry {
   .login-dialog-button.cancel-button:active, .login-dialog-button.switch-user-button:active, .login-dialog-button.login-dialog-session-list-button:active {
     transition-duration: 100ms;
     color: whitesmoke;
-    background-color: #5d5d5d; }
+    background-color: #585d66; }
     .login-dialog-button.cancel-button:active:hover, .login-dialog-button.switch-user-button:active:hover, .login-dialog-button.login-dialog-session-list-button:active:hover {
       background-color: #676767; }
     .login-dialog-button.cancel-button:active:focus, .login-dialog-button.switch-user-button:active:focus, .login-dialog-button.login-dialog-session-list-button:active:focus {
@@ -830,7 +830,7 @@ StScrollBar {
     background-color: transparent !important; }
   .popup-menu-item:focus, .popup-menu-item:hover {
     color: #ffffff;
-    background-color: #5d5d5d; }
+    background-color: #585d66; }
   .popup-menu-item:active {
     color: #ffffff;
     background-color: #6a6a6a; }
@@ -1232,7 +1232,7 @@ StScrollBar {
     background-color: #3584e4;
     color: #ffffff; }
   .candidate-box:hover {
-    background-color: #4e4e4e;
+    background-color: #343d46;
     color: white; }
 
 .candidate-page-button-box {
@@ -1368,7 +1368,7 @@ StScrollBar {
 .audio-selection-device {
   border-radius: 16px; }
   .audio-selection-device:hover, .audio-selection-device:focus {
-    background-color: #4e4e4e; }
+    background-color: #343d46; }
   .audio-selection-device:active {
     background-color: #3584e4;
     color: #ffffff; }
@@ -1570,7 +1570,7 @@ StScrollBar {
     transition-duration: 200ms;
     border-radius: 999px; }
     .screenshot-ui-capture-button .screenshot-ui-capture-button-circle:hover, .screenshot-ui-capture-button .screenshot-ui-capture-button-circle:focus {
-      background-color: #4e4e4e; }
+      background-color: #343d46; }
   .screenshot-ui-capture-button:hover .screenshot-ui-capture-button-circle, .screenshot-ui-capture-button:focus .screenshot-ui-capture-button-circle {
     background-color: #cccccc; }
   .screenshot-ui-capture-button:active .screenshot-ui-capture-button-circle {
@@ -1935,7 +1935,7 @@ StScrollBar {
   border-radius: 7px;
   min-width: 12em;
   max-width: 12em;
-  min-height: 2.773em;
+  min-height: 3.073em;
   border: none; }
 
 .quick-toggle {
@@ -2338,7 +2338,7 @@ StScrollBar {
     color: whitesmoke;
     background-color: #3B4252; }
     .overview-tile:highlighted:hover, .grid-search-result:highlighted:hover, .overview-tile:selected:hover, .grid-search-result:selected:hover, .overview-tile:checked:hover, .grid-search-result:checked:hover {
-      background-color: #4e4e4e; }
+      background-color: #343d46; }
     .overview-tile:highlighted:active, .grid-search-result:highlighted:active, .overview-tile:selected:active, .grid-search-result:selected:active, .overview-tile:checked:active, .grid-search-result:checked:active {
       background-color: #535353; }
   .overview-tile:insensitive, .grid-search-result:insensitive {
@@ -2371,7 +2371,7 @@ StScrollBar {
       background-color: #505458; }
   .app-folder:highlighted, .app-folder:selected, .app-folder:checked {
     color: whitesmoke;
-    background-color: #4e4e4e; }
+    background-color: #343d46; }
     .app-folder:highlighted:hover, .app-folder:selected:hover, .app-folder:checked:hover {
       background-color: #595959; }
     .app-folder:highlighted:active, .app-folder:selected:active, .app-folder:checked:active {
@@ -2412,7 +2412,7 @@ StScrollBar {
   .app-folder-dialog .message .message-header .message-close-button,
   .message .message-header .app-folder-dialog .message-close-button, .app-folder-dialog .screenshot-ui-show-pointer-button {
     color: whitesmoke;
-    background-color: #4e4e4e; }
+    background-color: #343d46; }
     .app-folder-dialog .icon-button:hover, .app-folder-dialog .login-dialog-button.cancel-button:hover, .app-folder-dialog .login-dialog-button.switch-user-button:hover, .app-folder-dialog .login-dialog-button.login-dialog-session-list-button:hover, .app-folder-dialog .calendar .calendar-month-header .pager-button:hover, .calendar .calendar-month-header .app-folder-dialog .pager-button:hover, .app-folder-dialog .message .message-header .message-expand-button:hover, .message .message-header .app-folder-dialog .message-expand-button:hover,
     .app-folder-dialog .message .message-header .message-close-button:hover,
     .message .message-header .app-folder-dialog .message-close-button:hover, .app-folder-dialog .screenshot-ui-show-pointer-button:hover {
@@ -2547,7 +2547,7 @@ StScrollBar {
   padding: 6px; }
   .workspace-thumbnails .workspace-thumbnail {
     color: whitesmoke;
-    background-color: #4e4e4e;
+    background-color: #343d46;
     border-radius: 4px;
     border: 1px solid transparent; }
   .workspace-thumbnails .placeholder {
@@ -2641,7 +2641,7 @@ StScrollBar {
   border-radius: 10px;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
   color: #ffffff;
-  background-color: #5d5d5d; }
+  background-color: #585d66; }
   .keyboard-key:focus {
     color: #ffffff;
     box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.5) !important;
@@ -2735,7 +2735,7 @@ StScrollBar {
   padding: 6px; }
   .keyboard-subkeys .keyboard-key {
     color: #ffffff;
-    background-color: #5d5d5d;
+    background-color: #585d66;
     border-radius: 10px; }
     .keyboard-subkeys .keyboard-key:focus {
       color: #ffffff;
