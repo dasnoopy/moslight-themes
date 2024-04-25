@@ -87,6 +87,7 @@ os.system('clear')
 print (f"{colors.reset}{colors.bold}{colors.fg.orange}# Change accent color for gnome shell and gtk4.css version 46.x{colors.reset}")
 print ('')
 
+# define some variables
 iniFname = 'colors.ini'
 config = configparser.ConfigParser()
 
@@ -126,8 +127,8 @@ print ('❯❯ Current lighter accent color : \033[48;2;' + R1 + ';' + G1 + ';' 
 print ('❯❯ Current darker accent color  : \033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm  ' + search_darker_color + '  \033[0m')
 print ('❯❯ Current RGBA string color    : '+ search_rgba_color)
 print('                                    ⇣⇣⇣⇣⇣⇣⇣')
-# input colors
 
+# input colors
 # lighter color
 while True:
 	try:
@@ -212,7 +213,7 @@ svg="toggle-on.svg"
 
 with open(svg, 'r', encoding='utf-8') as file:
 	data = file.read()
-	data = data.replace(search_darker_color, replace_darker_color)
+	data = data.replace(search_lighter_color, replace_lighter_color)
 with open(svg, 'w', encoding='utf-8') as file:
 	file.write(data)
 	
