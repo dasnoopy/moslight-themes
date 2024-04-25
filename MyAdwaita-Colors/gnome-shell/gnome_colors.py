@@ -59,7 +59,7 @@ def exit_on_error(message: str):
 def confirm_prompt(question: str) -> bool:
     reply = None
     while reply not in ("y", "n"):
-        reply = input(f"{question} (Y/n): ").casefold()
+        reply = input(f"{question} (y/n): ").casefold()
     return (reply == "y")
 
 def hex_to_rgb(hexa):
@@ -88,9 +88,6 @@ signal.signal(signal.SIGTSTP, signal.SIG_IGN)
 #header
 # clean screen and welcome message
 os.system('clear')
-print (f"{colors.reset}{colors.bold}{colors.fg.orange}# Change accent color for gnome shell and gtk4.css version 46.x{colors.reset}")
-print ('')
-
 # define some variables
 iniFname = 'colors.ini'
 config = configparser.ConfigParser()
@@ -117,81 +114,101 @@ R2 = str(rgb2[0])
 G2 = str(rgb2[1])
 B2 = str(rgb2[2])
 
-
-print (f"{colors.reset}{colors.fg.green}- new lighter and darker color MUST BE DIFFERENT!{colors.reset}")
-print (f"{colors.reset}{colors.fg.green}- new lighter color MUST BE DIFFERENT from current darker color!{colors.reset}")
-print (f"{colors.reset}{colors.fg.green}- new darker color MUST BE DIFFERENT from current lighter color!{colors.reset}")
-print (f"{colors.reset}{colors.fg.green}- leave one or both colors value empty and quit without further actions{colors.reset}")
+print (f"{colors.reset}{colors.bold}{colors.fg.orange}❯❯ Change accent color for gnome shell and gtk4.css version 46.x{colors.reset}")
 print ('')
-print ('❯❯ Current lighter accent color : \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm  ' + search_lighter_color + '  \033[0m')
-print ('❯❯ Current darker accent color  : \033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm  ' + search_darker_color + '  \033[0m')
-print ('❯❯ Current RGBA string color    : '+ search_rgba_color)
-print('                                    ⇣⇣⇣⇣⇣⇣⇣')
+print ('❯❯ Current color schema   : \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm      \033[0m' '\033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm      ' + '\033[0m')
+print ('')
 
-# input colors
-# lighter color
-while True:
-	try:
-		replace_lighter_color = input('❯❯ New lighter accent color     :   ')
+flatred         = '#e84c3d','#a51d2d'
+flatorange      = '#ff7800','#c64600'
+flatyellow      = '#ffcd02','#ffa800'
+flatsand        = '#f0dfb4','#d5c395'
+flatnavyblue    = '#44475a','#282a36'
+flatblack       = '#2d2d2d','#262626'
+flatmagenta     = '#9a59b5','#8d44ad'
+flatteal        = '#607d8b','#4d646f'
+flatskyblue     = '#3584e4','#1a5fb4'
+flatgreen       = '#2dcc70','#27ae61'
+flatmint        = '#1bbc9b','#16a086'
+flatwhite       = '#ecf0f1','#bec3c7'
+flatgray        = '#95a5a5','#7e8c8d'
+flatforestgreen = '#4f6f52','#1a4d2e'
+flatpurple      = '#745dc5','#5b48a2'
+flatbrown       = '#986a44','#63452c'
+flatplum        = '#9141ac','#613583'
+flatwatermelon  = '#ef727a','#d95459'
+flatlime        = '#a5c63b','#8fb021'
+flatpink        = '#f47cc3','#d45b9e'
+flatmaroon      = '#79302a','#662722'
+flatcoffee      = '#a28671','#8e725d'
+flatpowderblue  = '#81a1c1','#5e81ac'
+flatblue        = '#5165a2','#384c81'
 
-		if replace_lighter_color == "":
-			break;
+colors_matrix = [[flatred,flatorange,flatyellow,flatsand],
+				 [flatnavyblue,flatblack,flatmagenta,flatteal],
+				 [flatskyblue,flatgreen,flatmint,flatwhite],
+				 [flatgray,flatforestgreen,flatpurple,flatbrown],
+				 [flatplum,flatwatermelon,flatlime,flatpink],
+				 [flatmaroon,flatcoffee,flatpowderblue,flatblue]]
+				
+colors_list = [flatred,flatorange,flatyellow,flatsand,flatnavyblue,flatblack,
+               flatmagenta,flatteal,flatskyblue,flatgreen,flatmint,flatwhite,
+               flatgray,flatforestgreen,flatpurple,flatbrown,flatplum,flatwatermelon,
+               flatlime,flatpink,flatmaroon,flatcoffee,flatpowderblue,flatblue]
 
-		if (isValidHexaCode(replace_lighter_color)):
-			rgb3 = hex_to_rgb(replace_lighter_color)
-			R3 = str(rgb3[0])
-			G3 = str(rgb3[1])
-			B3 = str(rgb3[2])
-			print(f'\033[F{colors.reset}{colors.bold}❯❯ New lighter accent color     : \033[48;2;' + R3 + ';' + G3 + ';' + B3 + 'm  ' + replace_lighter_color + '  \033[0m')
-			break;
-		else:
-			print (f"{colors.reset}{colors.fg.yellow}- Not a valid HEX color code! Colors must be in #RRGGBB format.{colors.reset}")
-	except:
-		continue
+def print_matrix_with_indices(matrix):
+    index = 1
+    # Loop over each row
+    for i in range(len(matrix)):
+        # Loop over each column in the current row
+        for j in range(len(matrix[i])):
+            # Print element at row i, column j
+            rgb1 = hex_to_rgb(matrix[i][j][0])
+            rgb2 = hex_to_rgb(matrix[i][j][1])
+            R1 = str(rgb1[0])
+            G1 = str(rgb1[1])
+            B1 = str(rgb1[2])
+            R2 = str(rgb2[0])
+            G2 = str(rgb2[1])
+            B2 = str(rgb2[2])
+            print (f" {index:>2}"') \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm      \033[0m' '\033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm      \033[0m', end=' ')
+            index += 1
+        # Print a new line after each row
+        print()
 
-#darker color
-while True:
-	try:
-		replace_darker_color = input('❯❯ New darker accent color      :   ')
+# Test the function with our matrix
+print_matrix_with_indices(colors_matrix)
+print('')
 
-		if replace_darker_color == "":
-			break;
+x = ''
+n = 24
 
-		if (isValidHexaCode(replace_darker_color)):
-			rgb4 = hex_to_rgb(replace_darker_color)
-			R4 = str(rgb4[0])
-			G4 = str(rgb4[1])
-			B4 = str(rgb4[2])
-			print(f'\033[F{colors.reset}{colors.bold}❯❯ New darker accent color      : \033[48;2;' + R4 + ';' + G4 + ';' + B4 + 'm  ' + replace_darker_color + '  \033[0m')
-			break;
-		else:
-			print (f"{colors.reset}{colors.fg.yellow}- Not a valid HEX color code! Colors must be in #RRGGBB format.{colors.reset}")
-	except:
-		continue
+while not (x.isdigit() and int(x) in range(1, n + 1)):
+    x = input(f'❯❯ Choose a new color schema (1 to {n}): ')
 
+replace_lighter_color = (colors_list[int(x)-1])[0]
+replace_darker_color  = (colors_list[int(x)-1])[1]
+
+# some checks
 if replace_lighter_color == '' or replace_darker_color == '':
-	 exit_on_error ('# No news colors defined: exit!')
+	 exit_on_error ('❯❯ No news colors defined: exit!')
 elif replace_lighter_color == search_darker_color:
-	exit_on_error('# Unable to proceed: new lighter color is equal to current darker color!')
+	exit_on_error('❯❯ Unable to proceed: new lighter color is equal to current darker color!')
 elif replace_darker_color == search_lighter_color:
-	exit_on_error('# Unable to proceed: new darker color is equal to current ligher color!')
+	exit_on_error('❯❯ Unable to proceed: new darker color is equal to current ligher color!')
 elif replace_lighter_color == replace_darker_color:
-	exit_on_error('# Unable to proceed: new lighter and darker color are the same!')
+	exit_on_error('❯❯ Unable to proceed: new lighter and darker color are the same!')
+elif replace_lighter_color == search_lighter_color and replace_darker_color == search_darker_color:
+	exit_on_error('❯❯ Nothing to change : current and new color schema are equal!')
+
+
 
 # get shadow-box rgba color from ligher color
 replace_rgba_color = 'rgba' + str(hex_to_rgb(replace_lighter_color)).rstrip(')') +','
-print ('❯❯ New RGBA string color        : ' + replace_rgba_color)
-#
-print ('')
-print (f'{colors.reset}{colors.fg.green}- to activate new gnome-shell accent color on the fly, you must install an activate the Unsafe Mode Menu extension.{colors.reset}')
-print (f'{colors.reset}{colors.fg.green}- extension github link : https://github.com/linushdot/unsafe-mode-menu.{colors.reset}')
-print (f'{colors.reset}{colors.fg.green}- Otherwise you may want use gnome-tweak tool to choose MyAdwaita-color theme, as usual.{colors.reset}')
-print ('')
 
-reply = confirm_prompt("Are you sure to proceed?")
+reply = confirm_prompt("❯❯ Are you sure to proceed?")
 if reply == False:
-	print ('# Exiting without any change...')
-	sys.exit(0)
+	exit_on_error('❯❯ Exit without do any change!')
 
 # Opening our text file in read only
 # mode using the open() function
@@ -234,7 +251,7 @@ config['COLORS']['hexdarker'] = replace_darker_color
 config['COLORS']['rgbalighter'] = replace_rgba_color
 write_file()
 
-# apply new colors on the fly using dbus-send command (gnome v44  tested)
+# apply new colors on the fly using dbus-send command (gnome v46  tested)
 # gnome shell session must be in unsafe mode
 # use  this extensions to temporary set gs in unsafe mode while using this script
 #
@@ -243,6 +260,7 @@ write_file()
 os.system("dbus-send --session --dest=org.gnome.Shell --print-reply --type=method_call /org/gnome/Shell org.gnome.Shell.Eval string:'Main.loadTheme(); ' > /dev/null")
 # final greetings
 print ('')
-print (f"{colors.reset}{colors.bold}{colors.fg.orange}# Done. Enjoy your new gnome-shell accent color ;-){colors.reset}")
+print (f"{colors.reset}{colors.bold}{colors.fg.orange}❯❯ Done. Enjoy your new gnome-shell accent color ;-){colors.reset}")
 print ('')
+
 sys.exit(0)
