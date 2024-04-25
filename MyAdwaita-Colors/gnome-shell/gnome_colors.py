@@ -12,7 +12,6 @@
 import os
 import sys
 import configparser
-import signal
 
 class colors:
 	reset = '\033[0m'
@@ -70,22 +69,6 @@ def hex_to_rgb(hexa):
 def write_file():
 	config.write(open(iniFname, 'w', encoding='utf-8'))
 
-# Function to validate
-# the HTML hexadecimal color code.
-def isValidHexaCode(str):
-	if (str[0] != '#'):
-		return False
-	if (not(len(str) == 4 or len(str) == 7)):
-		return False
-	for i in range(1, len(str)):
-		if (not((str[i] >= '0' and str[i] <= '9') or (str[i] >= 'a' and str[i] <= 'f') or (str[i] >= 'A' and str[i] <= 'F'))):
-			return False
-	return True
-
-signal.signal(signal.SIGINT, signal.SIG_IGN)
-signal.signal(signal.SIGTSTP, signal.SIG_IGN)
-
-#header
 # clean screen and welcome message
 os.system('clear')
 # define some variables
@@ -97,7 +80,7 @@ if not os.path.exists(iniFname):
 	config['COLORS'] = {'hexlighter': '#3584e4', 'hexdarker': '#478fe6', 'rgbalighter': 'rgba(53, 132, 228,'}
 	write_file()
 	
-# Read ini file immediately...
+# Read ini file...
 config.read(iniFname)
 search_lighter_color = config['COLORS']['hexlighter']
 search_darker_color = config['COLORS']['hexdarker']
@@ -119,30 +102,30 @@ print ('')
 print ('❯❯ Current color schema   : \033[48;2;' + R1 + ';' + G1 + ';' + B1 + 'm      \033[0m' '\033[48;2;' + R2 + ';' + G2 + ';' + B2 + 'm      ' + '\033[0m')
 print ('')
 
-flatred         = '#e84c3d','#a51d2d'
-flatorange      = '#ff7800','#c64600'
-flatyellow      = '#ffcd02','#ffa800'
-flatsand        = '#f0dfb4','#d5c395'
-flatnavyblue    = '#44475a','#282a36'
-flatblack       = '#2d2d2d','#262626'
-flatmagenta     = '#9a59b5','#8d44ad'
-flatteal        = '#607d8b','#4d646f'
-flatskyblue     = '#3584e4','#1a5fb4'
-flatgreen       = '#2dcc70','#27ae61'
-flatmint        = '#1bbc9b','#16a086'
-flatwhite       = '#ecf0f1','#bec3c7'
-flatgray        = '#95a5a5','#7e8c8d'
-flatforestgreen = '#4f6f52','#1a4d2e'
-flatpurple      = '#745dc5','#5b48a2'
-flatbrown       = '#986a44','#63452c'
-flatplum        = '#9141ac','#613583'
-flatwatermelon  = '#ef727a','#d95459'
-flatlime        = '#a5c63b','#8fb021'
-flatpink        = '#f47cc3','#d45b9e'
-flatmaroon      = '#79302a','#662722'
-flatcoffee      = '#a28671','#8e725d'
-flatpowderblue  = '#81a1c1','#5e81ac'
-flatblue        = '#5165a2','#384c81'
+flatred         = '#e5383b','#ba181b' #1
+flatorange      = '#e2711d','#cc5803' #2
+flatyellow      = '#ffcd02','#ffa800' #3
+flatsand        = '#f0dfb4','#d5c395' #4
+flatnavyblue    = '#44475a','#282a36' #5
+flatblack       = '#2d2d2d','#262626' #6
+flatmagenta     = '#ce4993','#6a0d83' #7
+flatteal        = '#607d8b','#4d646f' #8
+flatskyblue     = '#3584e4','#1a5fb4' #9
+flatgreen       = '#2dcc70','#27ae61' #10
+flatmint        = '#1bbc9b','#16a086' #11
+flatwhite       = '#ecf0f1','#bec3c7' #12
+flatgray        = '#95a5a5','#7e8c8d' #13
+flatforestgreen = '#9fc162','#396c2f' #14
+flatpurple      = '#745dc5','#5b48a2' #15
+flatbrown       = '#986a44','#63452c' #16
+flatplum        = '#5e335e','#4f2b4f' #17
+flatwatermelon  = '#ef727a','#d95459' #18
+flatlime        = '#a5c63b','#8fb021' #19
+flatpink        = '#f47cc3','#d45b9e' #20
+flatmaroon      = '#79302a','#662722' #21
+flatcoffee      = '#a28671','#8e725d' #22
+flatpowderblue  = '#778da9','#415a77' #23
+flatblue        = '#5165a2','#384c81' #24
 
 colors_matrix = [[flatred,flatorange,flatyellow,flatsand],
 				 [flatnavyblue,flatblack,flatmagenta,flatteal],
