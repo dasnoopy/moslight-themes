@@ -170,7 +170,7 @@ stage {
     background-color: #5d9de9; }
     .keyboard-brightness-level .button:active:hover:checked, .quick-menu-toggle .quick-toggle-arrow:active:hover:checked, .quick-toggle:active:hover:checked, .calendar .calendar-day.calendar-today:active:hover, .icon-button.default:active:hover, .default.login-dialog-button.cancel-button:active:hover, .default.login-dialog-button.switch-user-button:active:hover, .default.login-dialog-button.login-dialog-session-list-button:active:hover, .default.screenshot-ui-show-pointer-button:active:hover, .message .message-header .default.message-expand-button:active:hover,
     .message .message-header .default.message-close-button:active:hover, .calendar .calendar-month-header .default.pager-button:active:hover, .button.default:active:hover {
-      background-color: #6fa8ec; }
+      background-color: #3584e4; }
     .keyboard-brightness-level .button:active:focus:checked, .quick-menu-toggle .quick-toggle-arrow:active:focus:checked, .quick-toggle:active:focus:checked, .calendar .calendar-day.calendar-today:active:focus, .icon-button.default:active:focus, .default.login-dialog-button.cancel-button:active:focus, .default.login-dialog-button.switch-user-button:active:focus, .default.login-dialog-button.login-dialog-session-list-button:active:focus, .default.screenshot-ui-show-pointer-button:active:focus, .message .message-header .default.message-expand-button:active:focus,
     .message .message-header .default.message-close-button:active:focus, .calendar .calendar-month-header .default.pager-button:active:focus, .button.default:active:focus {
       background-color: #5b9be9; }
@@ -379,7 +379,7 @@ StEntry {
   font-size: 0.727em; }
 
 .unlock-dialog-clock .unlock-dialog-clock-time, #panel, .weather-button .weather-box .weather-grid .weather-forecast-temp, .weather-button .weather-box .weather-grid .weather-forecast-time, .world-clocks-button .world-clocks-grid .world-clocks-timezone, .world-clocks-button .world-clocks-grid .world-clocks-time, .events-button .events-box .events-list .event-box .event-time, .calendar .calendar-day-heading, .calendar .calendar-day {
-  font-feature-settings: "tnum"; }
+  font-feature-settings: "normal"; }
 
 /* modifica: notifiche OSD quali volume e switch desktop virtuali con frecce */
 /* OSD Elements */
@@ -756,7 +756,7 @@ StEntry StLabel.hint-text {
   background-size: contain;
   background-image: url("resource:///org/gnome/shell/theme/toggle-off.svg"); }
   .toggle-switch:checked {
-    background-image: url("./toggle-on.svg"); }
+    background-image: url("resource:///org/gnome/shell/theme/toggle-on.svg"); }
   .toggle-switch StIcon {
     icon-size: 16px; }
 
@@ -1007,7 +1007,7 @@ StScrollBar {
     border-radius: 7px; }
   .calendar .calendar-week-number {
     font-weight: normal;
-    font-feature-settings: "tnum";
+    font-feature-settings: "normal";
     text-align: center;
     margin: 6px;
     padding: 0 6px;
@@ -1428,7 +1428,7 @@ StScrollBar {
   border-radius: 16px;
   font-size: 3em;
   font-weight: bold;
-  font-feature-settings: "tnum";
+  font-feature-settings: "normal";
   margin: 12px;
   padding: 12px;
   text-align: center;
@@ -1935,7 +1935,7 @@ StScrollBar {
   border-radius: 7px;
   min-width: 12em;
   max-width: 12em;
-  min-height: 3.073em;
+  min-height: 2.773em;
   border: none; }
 
 .quick-toggle {
