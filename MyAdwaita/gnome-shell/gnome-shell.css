@@ -1514,7 +1514,7 @@ StScrollBar {
 
 .switcher-list {
   padding: 12px;
-  border-radius: 28px;
+  border-radius:11px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2); }
   .switcher-list .switcher-list-item-container {
     spacing: 12px; }
