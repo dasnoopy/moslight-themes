@@ -875,7 +875,7 @@ StScrollBar {
 .popup-menu-content, .candidate-popup-content {
   padding: 6px;
   background-color: #2e3440;
-  border-radius: 11px;
+  border-radius: 9px;
   border: 1px solid #424242;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
 
@@ -891,24 +891,24 @@ StScrollBar {
     background-color: transparent !important; }
   .popup-menu-item:hover {
     color: #ffffff;
-    background-color: st-lighten(st-mix(#ffffff, #424242, 9%), 4%); }
+    background-color: st-lighten(st-mix(#ffffff, #4c566a, 9%), 4%); }
   .popup-menu-item:active {
     color: #ffffff;
-    background-color: st-lighten(st-mix(#ffffff, #424242, 9%), 9%); }
+    background-color: st-lighten(st-mix(#ffffff, #4c566a, 9%), 9%); }
     .popup-menu-item:active:hover {
-      background-color: st-lighten(st-lighten(st-mix(#ffffff, #424242, 9%), 9%), 4%); }
+      background-color: st-lighten(st-lighten(st-mix(#ffffff, #4c566a, 9%), 9%), 4%); }
     .popup-menu-item:active:focus {
-      background-color: st-mix(-st-accent-color, st-lighten(st-mix(#ffffff, #424242, 9%), 9%), 5%); }
+      background-color: st-mix(-st-accent-color, st-lighten(st-mix(#ffffff, #4c566a, 9%), 9%), 5%); }
   .popup-menu-item:selected, .popup-menu-item:checked {
     color: #ffffff;
-    background-color: st-lighten(st-mix(#ffffff, #424242, 9%), 8%); }
+    background-color: st-lighten(st-mix(#ffffff, #4c566a, 9%), 8%); }
     .popup-menu-item:selected:hover, .popup-menu-item:checked:hover {
-      background-color: st-lighten(st-lighten(st-mix(#ffffff, #424242, 9%), 8%), 4%); }
+      background-color: st-lighten(st-lighten(st-mix(#ffffff, #4c566a, 9%), 8%), 4%); }
     .popup-menu-item:selected:active, .popup-menu-item:checked:active {
-      background-color: st-lighten(st-lighten(st-mix(#ffffff, #424242, 9%), 8%), 9%); }
+      background-color: st-lighten(st-lighten(st-mix(#ffffff, #4c566a, 9%), 8%), 9%); }
   .popup-menu-item:insensitive {
     color: st-transparentize(#ffffff, 0.5);
-    background-color: st-darken(st-mix(#ffffff, #424242, 9%), 3%); }
+    background-color: st-darken(st-mix(#ffffff, #4c566a, 9%), 3%); }
   .popup-menu-item:checked {
     border-radius: 12px 12px 0 0 !important; }
   .popup-menu-item .toggle-switch:ltr {
