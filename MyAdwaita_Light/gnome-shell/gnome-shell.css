@@ -2155,7 +2155,7 @@ StScrollBar {
   spacing: 6px; }
 
 .window-close, .screenshot-ui-close-button {
-  background-color: rgba(71, 71, 71, 0.98);
+  background-color: st-transparentize(-st-accent-color, 0.3);
   color: whitesmoke;
   border-radius: 999px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
@@ -2167,9 +2167,9 @@ StScrollBar {
   .window-close StIcon, .screenshot-ui-close-button StIcon {
     icon-size: 24px; }
   .window-close:hover, .screenshot-ui-close-button:hover {
-    background-color: rgba(88, 88, 88, 0.98); }
+    background-color: st-transparentize(-st-accent-color, 0.2); }
   .window-close:active, .screenshot-ui-close-button:active {
-    background-color: rgba(104, 104, 104, 0.98); }
+    background-color: st-transparentize(-st-accent-color, 0.1); }
 
 .workspace-background {
   border-radius: 30px;
