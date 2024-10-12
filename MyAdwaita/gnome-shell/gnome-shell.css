@@ -876,7 +876,7 @@ StScrollBar {
   padding: 6px;
   background-color: #2e3440;
   border-radius: 9px;
-  border: 1px solid #424242;
+  border: 1px solid #3B4252;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
 
 .popup-menu-item {
@@ -1330,7 +1330,7 @@ StScrollBar {
 .modal-dialog {
   background-color: #2e3440;
   border-radius: 18px;
-  box-shadow: inset 0 0 0 1px #424242;
+  box-shadow: inset 0 0 0 1px #3B4252;
   padding: 24px; }
   .modal-dialog .modal-dialog-content-box {
     spacing: 32px;
@@ -2280,7 +2280,7 @@ StScrollBar {
   padding-right: 6px; }
   #dash .dash-background {
     background-color: #2e3440;
-    border-radius: 16px;
+    border-radius: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 10px;
@@ -2773,7 +2773,7 @@ StScrollBar {
     color: #2e3440; }
     .keyboard-key.shift-key-uppercase:hover {
       background-color: #8c8c8c;
-      color: #424242; }
+      color: #3B4252; }
   .keyboard-key StIcon {
     icon-size: 24px; }
 

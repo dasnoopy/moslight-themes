@@ -2277,8 +2277,8 @@ StScrollBar {
   padding-left: 6px;
   padding-right: 6px; }
   #dash .dash-background {
-    background-color: #3d3d3d;
-    border-radius: 16px;
+    background-color: #2e3440;
+    border-radius: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 10px;
