@@ -2301,7 +2301,7 @@ StScrollBar {
     #dash .dash-item-container .overview-tile .overview-icon,
     #dash .dash-item-container .grid-search-result .overview-icon {
       color: whitesmoke;
-      background-color: #3d3d3d; }
+      background-color: #2e3440; }
     #dash .dash-item-container .show-apps:focus .overview-icon,
     #dash .dash-item-container .overview-tile:focus .overview-icon,
     #dash .dash-item-container .grid-search-result:focus .overview-icon {
@@ -2311,38 +2311,38 @@ StScrollBar {
       #dash .dash-item-container .show-apps:focus .overview-icon:hover,
       #dash .dash-item-container .overview-tile:focus .overview-icon:hover,
       #dash .dash-item-container .grid-search-result:focus .overview-icon:hover {
-        background-color: st-mix(-st-accent-color, st-lighten(#3d3d3d, 7%), 5%); }
+        background-color: st-mix(-st-accent-color, st-lighten(#2e3440, 7%), 5%); }
     #dash .dash-item-container .show-apps:hover .overview-icon,
     #dash .dash-item-container .overview-tile:hover .overview-icon,
     #dash .dash-item-container .grid-search-result:hover .overview-icon {
       color: whitesmoke;
-      background-color: st-lighten(#3d3d3d, 7%); }
+      background-color: st-lighten(#2e3440, 7%); }
     #dash .dash-item-container .show-apps:active .overview-icon,
     #dash .dash-item-container .overview-tile:active .overview-icon,
     #dash .dash-item-container .grid-search-result:active .overview-icon {
       color: whitesmoke;
-      background-color: st-lighten(#3d3d3d, 9%); }
+      background-color: st-lighten(#2e3440, 9%); }
       #dash .dash-item-container .show-apps:active .overview-icon:hover,
       #dash .dash-item-container .overview-tile:active .overview-icon:hover,
       #dash .dash-item-container .grid-search-result:active .overview-icon:hover {
-        background-color: st-lighten(st-lighten(#3d3d3d, 9%), 7%); }
+        background-color: st-lighten(st-lighten(#2e3440, 9%), 7%); }
       #dash .dash-item-container .show-apps:active .overview-icon:focus,
       #dash .dash-item-container .overview-tile:active .overview-icon:focus,
       #dash .dash-item-container .grid-search-result:active .overview-icon:focus {
-        background-color: st-mix(-st-accent-color, st-lighten(#3d3d3d, 9%), 5%); }
+        background-color: st-mix(-st-accent-color, st-lighten(#2e3440, 9%), 5%); }
     #dash .dash-item-container .show-apps:checked .overview-icon,
     #dash .dash-item-container .overview-tile:checked .overview-icon,
     #dash .dash-item-container .grid-search-result:checked .overview-icon {
       color: whitesmoke;
-      background-color: st-lighten(#3d3d3d, 8%); }
+      background-color: st-lighten(#2e3440, 8%); }
       #dash .dash-item-container .show-apps:checked .overview-icon:hover,
       #dash .dash-item-container .overview-tile:checked .overview-icon:hover,
       #dash .dash-item-container .grid-search-result:checked .overview-icon:hover {
-        background-color: st-lighten(st-lighten(#3d3d3d, 8%), 7%); }
+        background-color: st-lighten(st-lighten(#2e3440, 8%), 7%); }
       #dash .dash-item-container .show-apps:checked .overview-icon:active,
       #dash .dash-item-container .overview-tile:checked .overview-icon:active,
       #dash .dash-item-container .grid-search-result:checked .overview-icon:active {
-        background-color: st-lighten(st-lighten(#3d3d3d, 8%), 9%); }
+        background-color: st-lighten(st-lighten(#2e3440, 8%), 9%); }
   #dash .dash-item-container .app-grid-running-dot {
     offset-y: -12px; }
   #dash .dash-separator {
