@@ -359,10 +359,10 @@ StEntry {
     background-color: st-darken(st-mix(#ffffff, #2e3440, 9%), 3%); }
 
 .dash-label, .window-caption, .screenshot-ui-tooltip {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(25, 25, 25, 0.9);
   border: 0px solid rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 3px 9px;
   text-align: center; }
 
