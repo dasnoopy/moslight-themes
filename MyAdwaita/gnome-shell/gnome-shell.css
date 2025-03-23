@@ -2084,7 +2084,7 @@ StScrollBar {
     border-radius: 7px 0 0 7px; }
 
 .quick-toggle-has-menu .quick-toggle-separator {
-  width: 1px; }
+  width: 0px; }
 
 .quick-toggle-has-menu .quick-toggle-menu-button {
   color: #ffffff;
