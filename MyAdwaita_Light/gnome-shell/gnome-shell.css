@@ -1950,7 +1950,7 @@ StScrollBar {
   #panel .power-status.panel-status-indicators-box {
     spacing: 0; }
   #panel .privacy-indicator {
-    color: #ff7800; }
+    color: -st-accent-color; }
 
 #appMenu {
   spacing: 0.409em; }
