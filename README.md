@@ -1,7 +1,8 @@
-## My GTK3 and GTK4 and Gnome Shell themes 
+## MyAdwaita GNOME Shell theme 
 
-Current **MyAdwaita** theme is a **gnome-shell** theme **only** for GNOME version **48.x**.
-(All previous, unmaintained, version of my gnome-shell themes are stored in "Previous versions" folder.)
+**MyAdwaita** theme is a **gnome-shell** theme **only** for GNOME version **48.x**.
+
+(All previous, unmaintained, version of my gnome-shell and GTK3/4 themes are archived in "Previous versions" folder.)
 
 ![MyAdwaita GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MyAdwaita.png)
 
