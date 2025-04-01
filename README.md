@@ -14,12 +14,12 @@
 
 *... for all users:*
 
-- as root, copy MyAdwaita-Light and MyAdwaita-Dark folders into `/usr/share/themes`;
+- as root, copy MyAdwaita folder into `/usr/share/themes`;
 - open Gnome-Tweak and choose the theme.
 
 *... for your account only:*
 
-- copy MyAdwaita-Light and MyAdwaita-Dark folders into `~/.local/share/themes` (if it doesn't exist, create also a symbolic links in your home dir to that folder);
+- copy MyAdwaita folder into `~/.local/share/themes` (if that folder doesn't exist then create also a symbolic links in your home folder to that folder);
 
     `$ ln -s ~/.local/share/themes .themes`
 
