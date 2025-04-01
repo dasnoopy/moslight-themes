@@ -4,7 +4,7 @@
 
 (All previous, unmaintained, version of my gnome-shell and GTK3/4 themes are archived in "Previous versions" folder.)
 
-![MyAdwaita GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MyAdwaita.png)
+![MyAdwaita GWF](https://raw.github.com/dasnoopy/moslight-themes/master/Screenshots/MyAdwaita48.jpg)
 
 **Installation notes:**
 
