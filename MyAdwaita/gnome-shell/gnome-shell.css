@@ -1076,7 +1076,7 @@ StScrollBar {
     border-radius: 8px; }
   .calendar .calendar-week-number {
     font-weight: bold;
-    font-feature-settings: "normal;";
+    font-feature-settings: "normal";
     text-align: center;
     margin: 7px;
     padding: 0 6px;
