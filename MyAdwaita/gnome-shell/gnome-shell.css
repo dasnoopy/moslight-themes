@@ -1075,14 +1075,14 @@ StScrollBar {
     padding: 3px 6px;
     border-radius: 8px; }
   .calendar .calendar-week-number {
-    font-weight: normal;
-    font-feature-settings: "normal";
+    font-weight: bold;
+    font-feature-settings: "normal;";
     text-align: center;
-    margin: 6px;
+    margin: 7px;
     padding: 0 6px;
     border-radius: 999px;
     background-color: rgba(155, 155, 157, 0.2);
-    color: #9b9b9d; }
+    color: #f2f2f7; }
 
 .events-button .events-box .events-title {
   color: #9b9b9d;
