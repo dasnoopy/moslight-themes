@@ -36,7 +36,7 @@ stage {
 .app-folder-dialog .overview-tile, .app-folder-dialog .grid-search-result, .app-folder, .overview-tile, .grid-search-result, #dash .dash-item-container .show-apps .overview-icon,
 #dash .dash-item-container .overview-tile .overview-icon,
 #dash .dash-item-container .grid-search-result .overview-icon, .list-search-result, .search-provider-icon, .switcher-list .item-box, .audio-device-selection-dialog .audio-selection-box .audio-selection-device {
-  border-radius: 7px;
+  border-radius: 9px;
   padding: 6px;
   spacing: 6px;
   text-align: center;
@@ -53,7 +53,7 @@ stage {
 .unlock-dialog .screenshot-ui-show-pointer-button, .unlock-dialog .login-dialog-auth-list-item, #LookingGlassDialog .notebook-tab, .screenshot-ui-show-pointer-button, .screenshot-ui-type-button, #LookingGlassDebugFlags .lg-debug-flag-button, #LookingGlassPropertyInspector .lg-obj-inspector-close-button,
 #LookingGlassPropertyInspector .lg-obj-inspector-button, #LookingGlassDialog > #Toolbar .lg-toolbar-button, .icon-button, .login-dialog-button.cancel-button, .login-dialog-button.switch-user-button, .login-dialog-button.login-dialog-session-list-button, .message .message-header .message-expand-button,
 .message .message-header .message-close-button, .message-notification-group .message-collapse-button, .calendar .calendar-month-header .pager-button, .button {
-  border-radius: 8px;
+  border-radius: 9px;
   padding: 3px 24px;
   font-weight: bold;
   transition: border-width 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
@@ -261,7 +261,7 @@ stage {
     background-color: st-darken(#47474c, 3%); }
 
 .unlock-dialog .login-dialog-prompt-entry, .login-dialog .login-dialog-prompt-entry, .app-folder-dialog .folder-name-container .folder-name-entry, .search-entry, .lg-dialog StEntry, StEntry {
-  border-radius: 8px;
+  border-radius: 9px;
   padding: 9px 9px;
   selection-background-color: st-transparentize(-st-accent-color, 0.7);
   selected-color: #ffffff; }
@@ -286,7 +286,7 @@ StEntry {
 .message .message-header .message-close-button {
   font-weight: bold;
   padding: 6px 12px;
-  border-radius: 8px;
+  border-radius: 9px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15); }
   .notification-button:focus, .message .message-header .message-expand-button:focus,
@@ -363,7 +363,7 @@ StEntry {
   background-color: rgba(36, 36, 40, 0.8);
   border: 0px solid rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 3px 7px;
   text-align: center; }
 
@@ -1013,7 +1013,7 @@ StScrollBar {
   padding: 4px; }
 
 .datemenu-popover {
-  border-radius: 11px; }
+  border-radius: 15px; }
 
 .datemenu-calendar-column {
   spacing: 6px; }
@@ -1357,7 +1357,7 @@ StScrollBar {
 /* Modal Dialogs */
 .modal-dialog {
   background-color: #36363a;
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 24px;
   spacing: 18px;
   box-shadow: 0 12px 8px 12px rgba(0, 0, 0, 0.03); }
@@ -2025,7 +2025,7 @@ StScrollBar {
 
 .quick-settings {
   padding: 13px;
-  border-radius: 11px; }
+  border-radius: 15px; }
   .quick-settings .icon-button, .quick-settings .login-dialog-button.cancel-button, .quick-settings .login-dialog-button.switch-user-button, .quick-settings .login-dialog-button.login-dialog-session-list-button, .quick-settings .calendar .calendar-month-header .pager-button, .calendar .calendar-month-header .quick-settings .pager-button, .quick-settings .message-notification-group .message-collapse-button, .message-notification-group .quick-settings .message-collapse-button, .quick-settings .message .message-header .message-expand-button, .message .message-header .quick-settings .message-expand-button,
   .quick-settings .message .message-header .message-close-button,
   .message .message-header .quick-settings .message-close-button, .quick-settings .screenshot-ui-show-pointer-button, .quick-settings .button {
