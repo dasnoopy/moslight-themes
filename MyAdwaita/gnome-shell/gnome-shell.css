@@ -899,7 +899,7 @@ StScrollBar {
 .popup-menu-content, .candidate-popup-content {
   padding: 6px;
   background-color: #36363a;
-  border-radius: 9px;
+  border-radius: 15px;
   border: 1px solid #424247;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
 
@@ -907,7 +907,7 @@ StScrollBar {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
-  border-radius: 5px; }
+  border-radius: 9px; }
   .popup-menu-item:insensitive {
     background-color: transparent !important; }
   .popup-menu-item:active {
@@ -1357,7 +1357,7 @@ StScrollBar {
 /* Modal Dialogs */
 .modal-dialog {
   background-color: #36363a;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 24px;
   spacing: 18px;
   box-shadow: 0 12px 8px 12px rgba(0, 0, 0, 0.03); }
