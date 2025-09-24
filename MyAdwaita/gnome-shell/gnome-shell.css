@@ -1101,7 +1101,7 @@ StScrollBar {
     font-weight: bold;
     font-feature-settings: "normal";
     text-align: center;
-    margin: 7px;
+    margin: 6px;
     padding: 0 6px;
     border-radius: 999px;
     background-color: rgba(155, 155, 157, 0.2);
@@ -2014,8 +2014,7 @@ StScrollBar {
         box-shadow: inset 0 0 0 100px rgba(250, 250, 251, 0.28); }
         #panel:overview .panel-button.clock-display:active .clock:hover, #panel:overview .panel-button.clock-display:checked .clock:hover {
           box-shadow: inset 0 0 0 100px rgba(250, 250, 251, 0.32); }
-  #panel .panel-status-indicators-box,
-  #panel .panel-status-menu-box {
+  #panel .panel-status-indicators-box {
     spacing: 2px; }
   #panel .power-status.panel-status-indicators-box {
     spacing: 0; }
@@ -2041,7 +2040,7 @@ StScrollBar {
 .quick-settings {
   padding: 13px;
   border-radius: 15px; }
-  .quick-settings .icon-button, .quick-settings .login-dialog-button.cancel-button, .quick-settings .login-dialog-button.switch-user-button, .quick-settings .login-dialog-button.login-dialog-session-list-button, .quick-settings .calendar .calendar-month-header .pager-button, .calendar .calendar-month-header .quick-settings .pager-button, .quick-settings .message-notification-group .message-collapse-button, .message-notification-group .quick-settings .message-collapse-button, .quick-settings .message .message-header .message-expand-button, .message .message-header .quick-settings .message-expand-button,
+  .quick-settings .icon-button, .quick-settings .login-dialog-button.a11y-button, .quick-settings .login-dialog-button.cancel-button, .quick-settings .login-dialog-button.switch-user-button, .quick-settings .login-dialog-button.login-dialog-session-list-button, .quick-settings .calendar .calendar-month-header .pager-button, .calendar .calendar-month-header .quick-settings .pager-button, .quick-settings .message-notification-group .message-collapse-button, .message-notification-group .quick-settings .message-collapse-button, .quick-settings .message .message-header .message-expand-button, .message .message-header .quick-settings .message-expand-button,
   .quick-settings .message .message-header .message-close-button,
   .message .message-header .quick-settings .message-close-button, .quick-settings .screenshot-ui-show-pointer-button, .quick-settings .button {
     padding: 10.5px; }
