@@ -1,6 +1,6 @@
 ## MyAdwaita GNOME Shell theme 
 
-**MyAdwaita** theme is a **gnome-shell** theme **only** for GNOME version **48.x**.
+**MyAdwaita** theme is a **gnome-shell** theme **only** for GNOME version **49.x**.
 
 (All previous, unmaintained, themes are archived in "Previous versions" folder.)
 
