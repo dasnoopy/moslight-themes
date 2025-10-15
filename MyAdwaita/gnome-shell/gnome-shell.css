@@ -1190,7 +1190,7 @@ StScrollBar {
     margin-left: 12px; }
   .message-view .message {
     margin-bottom: 12px !important;
-    border-radius: 18px; }
+    border-radius: 7px; }
 
 .message-list-controls {
   padding: 12px;
