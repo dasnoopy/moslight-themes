@@ -1190,18 +1190,18 @@ StScrollBar {
     margin-left: 12px; }
   .message-view .message {
     margin-bottom: 12px !important;
-    border-radius: 7px; }
+    border-radius: 9px; }
 
 .message-list-controls {
   padding: 12px;
   padding-bottom: 6px;
   spacing: 6px; }
   .message-list-controls .message-list-clear-button {
-    border-radius: 32px; }
+    border-radius: 7px; }
   .message-list-controls .dnd-button {
     border-width: 2px;
     border-color: transparent;
-    border-radius: 32px;
+    border-radius: 7px;
     border-style: solid; }
   .message-list-controls .dnd-button:focus {
     border-color: st-transparentize(-st-accent-color, 0.4); }
@@ -1659,12 +1659,12 @@ StScrollBar {
   padding: 2px 2px; }
 
 .ws-switcher-indicator {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   padding: 2.6666666667px;
   margin: 13.3333333333px;
   border-radius: 32px; }
   .ws-switcher-indicator:active {
-    background-color: #ffffff;
+    background-color: -st-accent-color;
     padding: 5.3333333333px;
     margin: 10.6666666667px; }
 
