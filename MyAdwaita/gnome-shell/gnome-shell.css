@@ -362,7 +362,7 @@ StEntry {
 
 .dash-label, .window-caption, .screenshot-ui-tooltip {
   background-color: rgba(36, 36, 40, 0.8);
-  border: 0px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #ffffff;
   border-radius: 5px;
   padding: 3px 7px;
@@ -2075,7 +2075,8 @@ StScrollBar {
 
 .quick-toggle-has-menu .quick-toggle {
   min-width: auto;
-  max-width: auto; }
+  max-width: auto; 
+  margin: 1px; }
   .quick-toggle-has-menu .quick-toggle:ltr {
     border-radius: 7px 0 0 7px; }
     .quick-toggle-has-menu .quick-toggle:ltr > StBoxLayout {
@@ -2101,7 +2102,8 @@ StScrollBar {
 
 .quick-toggle-has-menu .quick-toggle-menu-button {
   color: #ffffff;
-  background-color: st-mix(#ffffff, #4a4a4f, 9%); }
+  background-color: st-mix(#ffffff, #4a4a4f, 9%);
+   margin: 1px; }
   .quick-toggle-has-menu .quick-toggle-menu-button:focus {
     color: #ffffff;
     box-shadow: inset 0 0 0 2px st-transparentize(st-mix(-st-accent-color, #ffffff, 60%), 0.2) !important;
@@ -2446,9 +2448,9 @@ StScrollBar {
   #dash .dash-item-container .app-grid-running-dot {
     offset-y: -12px; }
   #dash .dash-separator {
-    width: 1px;
-    margin-left: 4px;
-    margin-right: 4px;
+    width: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
     background-color: rgba(250, 250, 251, 0.1); }
   #dash .dash-separator,
   #dash .dash-background {
